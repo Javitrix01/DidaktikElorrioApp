@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DidaktikElorrioApp</string>
+    <string name="mapa">Mapa</string>
+    <string name="menu_actividades">Menu Actividades</string>
 </resources>
