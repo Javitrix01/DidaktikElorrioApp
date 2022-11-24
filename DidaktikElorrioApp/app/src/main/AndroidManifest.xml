@@ -14,6 +14,9 @@
         android:theme="@style/Theme.DidaktikElorrioApp"
         tools:targetApi="31">
         <activity
+            android:name=".Mapa_Cruces_Con_Nombre"
+            android:exported="false" />
+        <activity
             android:name=".Mostrar_Foto_Mapa"
             android:exported="false" />
         <activity
