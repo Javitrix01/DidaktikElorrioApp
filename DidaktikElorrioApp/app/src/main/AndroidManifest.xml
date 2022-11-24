@@ -14,6 +14,15 @@
         android:theme="@style/Theme.DidaktikElorrioApp"
         tools:targetApi="31">
         <activity
+            android:name=".Puzzle_Pasteleria"
+            android:exported="false" />
+        <activity
+            android:name=".IntroduccionParada4"
+            android:exported="false" />
+        <activity
+            android:name=".IntroduccionParada3"
+            android:exported="false" />
+        <activity
             android:name=".IntroduccionParada2"
             android:exported="false" />
         <activity
