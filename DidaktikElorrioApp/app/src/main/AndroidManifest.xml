@@ -14,6 +14,9 @@
         android:theme="@style/Theme.DidaktikElorrioApp"
         tools:targetApi="31">
         <activity
+            android:name=".IntroduccionParada6"
+            android:exported="false" />
+        <activity
             android:name=".IntroduccionParada5"
             android:exported="false" />
         <activity
