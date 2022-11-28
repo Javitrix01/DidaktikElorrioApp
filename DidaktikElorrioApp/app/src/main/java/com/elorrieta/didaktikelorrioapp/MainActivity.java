@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         //Cambia los colores del texto
         //DidaktikApp!
         TextView textViewTitulo = findViewById(R.id.textViewTitulo);
-        String text = "<font color=#FF0000>D</font><font color=#FF7F00>i</font><font color=#FFFF00>d</font><font color=#00FF00>a</font>"+
+        String text = "<font color=#FF0000>D</font><font color=#FF7F00>i</font><font color=#FFCC00>d</font><font color=#00FF00>a</font>"+
                       "<font color=#0000FF>k</font><font color=#4B0082>t</font><font color=#9400D3>i</font><font color=#FF0000>k</font>"+
-                      "<font color=#FF7F00>A</font><font color=#FFFF00>p</font><font color=#00FF00>p</font><font color=#0000FF>!</font>";
+                      "<font color=#FF7F00>A</font><font color=#FFCC00>p</font><font color=#00FF00>p</font><font color=#0000FF>!</font>";
         textViewTitulo.setText(Html.fromHtml(text));
 
         //la pone visible
