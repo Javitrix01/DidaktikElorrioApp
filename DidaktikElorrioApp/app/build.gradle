@@ -25,6 +25,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    sourceSets{
+        main{
+            res.srcDirs=['res/drawable/grabacion71.m4a']
+        }
+    }
 }
 
 dependencies {
