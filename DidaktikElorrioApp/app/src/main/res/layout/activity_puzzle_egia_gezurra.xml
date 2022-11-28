@@ -84,14 +84,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="E" />
+            android:text="@string/e" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="G" />
+            android:text="@string/g" />
 
     </LinearLayout>
 
@@ -112,13 +112,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P1E"
                 android:layout_width="85dp"
                 android:layout_height="match_parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P1G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -131,13 +131,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P2E"
                 android:layout_width="85dp"
                 android:layout_height="match_parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P2G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -150,13 +150,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P3E"
                 android:layout_width="83dp"
                 android:layout_height="wrap_content"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P3G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -169,14 +169,14 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P4E"
                 android:layout_width="85dp"
                 android:layout_height="match_parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="73dp"
+                android:id="@+id/P4G"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -188,13 +188,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P5E"
                 android:layout_width="84dp"
                 android:layout_height="wrap_content"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P5G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -207,13 +207,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P6E"
                 android:layout_width="85dp"
                 android:layout_height="wrap_content"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P6G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -226,13 +226,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P7E"
                 android:layout_width="84dp"
                 android:layout_height="wrap_content"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P7G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -245,13 +245,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/P8E"
                 android:layout_width="83dp"
                 android:layout_height="wrap_content"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/P8G"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
