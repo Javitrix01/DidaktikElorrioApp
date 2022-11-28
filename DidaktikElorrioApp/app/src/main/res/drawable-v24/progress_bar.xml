@@ -11,7 +11,7 @@
         build a shape in XML-->
     <shape
         android:innerRadiusRatio="3"
-        android:shape="ring"
+        android:shape="rectangle"
         android:thicknessRatio="8"
         android:useLevel="false">
 
@@ -24,7 +24,7 @@
             of the shape-->
         <gradient
             android:angle="0"
-            android:endColor="#FFFF8AB2"
+            android:endColor="#03D8F4"
             android:startColor="#00ffffff"
             android:type="sweep"
             android:useLevel="false" />
