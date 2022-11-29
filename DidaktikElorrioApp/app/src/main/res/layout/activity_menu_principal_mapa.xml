@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="417dp"
-        android:layout_height="38dp"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +24,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/menu_actividades" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#AA4465" />
 
         <Button
             android:id="@+id/btnMapa"
