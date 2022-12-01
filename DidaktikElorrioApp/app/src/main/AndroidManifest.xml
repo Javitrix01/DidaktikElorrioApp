@@ -56,6 +56,21 @@
             android:name=".MenuPrincipalMapa"
             android:exported="false" />
         <activity
+            android:name=".GameActivity15"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity9"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseDifficultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainPuzzle"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

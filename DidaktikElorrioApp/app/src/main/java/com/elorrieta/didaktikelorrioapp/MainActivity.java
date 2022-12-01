@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
             Handler handler = new Handler();
-            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MenuPrincipalMapa.class)), 2500); //2,5 segundos
+            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MainPuzzle.class)), 2500); //2,5 segundos
             handler.postDelayed(this::finish,3000); //3 segundos
         }
         MainActivity.control = false;
