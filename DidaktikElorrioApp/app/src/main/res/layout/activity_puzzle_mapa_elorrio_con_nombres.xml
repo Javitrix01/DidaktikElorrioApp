@@ -19,7 +19,7 @@
         tools:srcCompat="@drawable/mapaelorrioconnombre" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnMapaElorrioConNombre"
         android:layout_width="199dp"
         android:layout_height="48dp"
         android:text="@string/jarraitu"
