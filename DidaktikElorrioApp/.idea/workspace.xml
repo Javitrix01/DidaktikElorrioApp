@@ -10,13 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e2044e-9521-4fbf-bd32-2cfeb12db0c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cruceselorrio.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mapaelorrio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mapaelorrioconnombre.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mapa_cruces_con_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mapa_cruces_con_nombre.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mostrar_foto_mapa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mostrar_foto_mapa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_mapa_elorrio_poner_nombres.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_mapa_elorrio_poner_nombres.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_poner_nombre_cruces.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_poner_nombre_cruces.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_mapa_elorrio_con_nombres.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_mapa_elorrio_con_nombres.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_pasteleria.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_pasteleria.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
