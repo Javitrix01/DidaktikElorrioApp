@@ -22,8 +22,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="367dp"
-        android:layout_height="169dp"
+        android:layout_width="275dp"
+        android:layout_height="126dp"
         android:layout_marginBottom="84dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/progressBar3"

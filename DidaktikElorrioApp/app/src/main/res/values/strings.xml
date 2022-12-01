@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DidaktikElorrioApp</string>
     <string name="mapa">Mapa</string>
-    <string name="menu_actividades">Menu Actividades</string>
+    <string name="menu_actividades">Lista Actividades</string>
     <string name="jarraitu">Jarraitu</string>
     <string name="baieztatu">Baieztatu</string>
     <string name="titulo_app">DidaktikApp!</string>

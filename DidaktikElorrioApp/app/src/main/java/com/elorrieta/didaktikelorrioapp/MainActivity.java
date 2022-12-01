@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,13 +48,14 @@ public class MainActivity extends AppCompatActivity {
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
             Handler handler = new Handler();
-            //handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MenuPrincipalMapa.class)), 2500); //2,5 segundos
-            //handler.postDelayed(this::finish,3000); //3 segundos
+            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MenuPrincipalMapa.class)), 3000); //3 segundos
+            handler.postDelayed(this::finish,3500); //3,5 segundos
         }
         MainActivity.control = false;
+
     }
 
-    //CÓDIGO DE PRUEBA DE LA BASE DE DATOS - NO BORRAR
+    //TODO: CÓDIGO DE PRUEBA DE LA BASE DE DATOS - NO BORRAR
     /*
         //asignar el textview a la variable por el id
         textViewDB = findViewById(R.id.textViewDB);
@@ -86,5 +89,15 @@ public class MainActivity extends AppCompatActivity {
             for (User user : userList) {
             textViewDB.setText(textViewDB.getText()+user.toString()+"\n");
         }
+    */
+
+    /*
+        COMO HACER UNA RELACION ENTRE DOS TABLAS
+
+        En una entidad intermedia que se crea por la relacion de las otras 2 entidades ->
+        @Entity(primaryKeys = {"id1","id2"])
+        Para hacer consultas entre entidades
+        @Query("SELECT * FROM entidad1 INNER JOIN entidad2 ON entidad2.id = entidad1.id")
+        List<entidad1> query();
     */
 }
