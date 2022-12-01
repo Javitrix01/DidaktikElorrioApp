@@ -11,8 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+import com.elorrieta.didaktikelorrioapp.entities.Activity;
 
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     //variable para el control de la funcion carga()
@@ -43,8 +47,15 @@ public class MainActivity extends AppCompatActivity {
         carga(control);
     }
 
-    //funcion que espera un tiempo especifico y pasa a la siguiente pantalla
+    /**
+     * Funcion que espera un tiempo especifico y pasa a la siguiente pantalla.
+     *
+     * @param   control Variable para controlar que la carga solo se realiza una vez.
+    */
     protected void carga(boolean control){
+        //comprueba la base de datos
+        llamadaBD();
+
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
             Handler handler = new Handler();
@@ -52,6 +63,29 @@ public class MainActivity extends AppCompatActivity {
             handler.postDelayed(this::finish,3500); //3,5 segundos
         }
         MainActivity.control = false;
+    }
+
+    /**
+     * Funcion para llamar a la base de datos, comprobar si faltan datos y guardar los necesarios.
+     */
+    public void llamadaBD(){
+
+        //crea las actividades necesarias
+        Activity activity1 = new Activity(1, "KURUTZIAGAKO GURUTZEA", "a", "43° 7′ 41.37′′ N", "2° 32′ 23.28′′ W" , false);
+        Activity activity2 = new Activity(2, "SORTZEZ GARBIAREN BASILIKA", "a", "43° 7′ 48.7′′ N", "2° 32′ 33.32′′ W" , false);
+        Activity activity3 = new Activity(3, "ELORRIOKO UDALETXEA", "a", "43° 7′ 49.89′′ N", "2° 32′ 31.44′′ W" , false);
+        Activity activity4 = new Activity(4, "PELLO GOZOTEGIA", "a", "43° 7′ 51.51′′ N", "2° 32′ 35.69′′ W" , false);
+        Activity activity5 = new Activity(5, "ARESPAKOTXAGA JAUREGIA", "a", "43° 7′ 50.49′′ N", "2° 32′ 38.06′′ W" , false);
+        Activity activity6 = new Activity(6, "ERREBONBILLOAK", "a", "43° 7′ 48.49′′ N", "2° 32′ 31.31′′ W" , false);
+        Activity activity7 = new Activity(7, "ARGINETAKO NEKROPOLIA", "a", "43° 8′ 23.66′′ N", "2° 32′ 9.51′′ W" , false);
+
+        //crear una instancia de la base de datos
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "DidaktikAppDB").allowMainThreadQueries().build(); // <-- poner esto para que permita realizar consultas
+
+        //comprueba si existen las actividades necesarias
+        List<Activity> comprobacionActividades = new ArrayList<>();
+        comprobacionActividades = db.ActivityDao().getAll();
 
     }
 

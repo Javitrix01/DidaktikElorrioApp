@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuPrincipalMapa">
+    tools:context=".MenuPrincipalMapa"
+    android:animateLayoutChanges="true">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -53,11 +54,13 @@
 
     <ListView
         android:id="@+id/listaMenuPrincipal"
-        android:layout_width="246dp"
-        android:layout_height="687dp"
+        android:layout_width="253dp"
+        android:layout_height="686dp"
+        android:layout_marginStart="4dp"
         android:background="#5CFFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
+import androidx.transition.Fade;
+import androidx.transition.Transition;
 
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -33,6 +35,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         ListView lista = findViewById(R.id.listaMenuPrincipal);
 
         //propiedades asignadas al crearse la actividad
+        lista.setX(-200);
         lista.setVisibility(View.INVISIBLE);
 
         //funcion que carga las actividades en la lista
@@ -42,6 +45,8 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         botonAbrirMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //aplica la animacion para cuando aparezca la lista
+                lista.animate().translationX(0);
                 lista.setVisibility(View.VISIBLE);
             }
         });
@@ -49,6 +54,8 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         botonAbrirMapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //aplica la animacion para cuando desaparezca la lista
+                lista.animate().translationX(-200);
                 lista.setVisibility(View.INVISIBLE);
             }
         });
@@ -62,9 +69,10 @@ public class MenuPrincipalMapa extends AppCompatActivity {
     public void cargarActividadesLista(ListView lista){
         ArrayList<String> prueba = new ArrayList<>();
 
-        String[] actividades = {"Kurutziagako gurutzea","Basilika","Udaletxe","Pello gozotegia","Jauregia","Errebonbilloa","Nekropolia"};
+        //TODO: DATOS HARDCODEADOS -> IMPLEMENTAR LLAMADAS A LA BASE DE DATOS PARA RECOGER LA INFORMACION NECESARIA
+        String[] actividades = {"Kurutziagako gurutzea","Basilika","Udaletxea","Pello gozotegia","Jauregia","Errebonbilloa","Nekropolia"};
         for (int i=0; i<7; i++){
-            String stringVariable = (i+1)+" aktibitatea: "+actividades[i];
+            String stringVariable = (i+1)+". aktibitatea: \""+actividades[i]+"\"";
             prueba.add(stringVariable);
         }
 
