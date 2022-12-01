@@ -10,12 +10,11 @@
         android:id="@+id/imageView7"
         android:layout_width="395dp"
         android:layout_height="407dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
@@ -127,13 +126,13 @@
         app:layout_constraintVertical_bias="0.745">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtPreguntaCruces"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="TextView" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/etRespuestaPreguntaCruces"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -142,14 +141,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnJarraituPuzCrucesNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/baieztatu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
