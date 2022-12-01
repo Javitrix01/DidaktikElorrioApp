@@ -35,11 +35,11 @@
                     android:id="@+id/P1E"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                 <CheckBox
                     android:id="@+id/P1G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -58,7 +58,7 @@
 
                 <CheckBox
                     android:id="@+id/P2G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -77,7 +77,7 @@
 
                 <CheckBox
                     android:id="@+id/P3G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -115,7 +115,7 @@
 
                 <CheckBox
                     android:id="@+id/P5G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -134,7 +134,7 @@
 
                 <CheckBox
                     android:id="@+id/P6G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -153,7 +153,7 @@
 
                 <CheckBox
                     android:id="@+id/P7G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -172,7 +172,7 @@
 
                 <CheckBox
                     android:id="@+id/P8G"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
