@@ -14,6 +14,15 @@
         android:theme="@style/Theme.DidaktikElorrioApp"
         tools:targetApi="31">
         <activity
+            android:name=".Puzzle_Egia_Gezurra"
+            android:exported="false" />
+        <activity
+            android:name=".Puzzle_Mapa_Elorrio_Con_Nombres"
+            android:exported="false" />
+        <activity
+            android:name=".Puzzle_Mapa_Elorrio_Poner_Nombres"
+            android:exported="false" />
+        <activity
             android:name=".IntroduccionParada7"
             android:exported="false" />
         <activity
@@ -79,6 +88,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
