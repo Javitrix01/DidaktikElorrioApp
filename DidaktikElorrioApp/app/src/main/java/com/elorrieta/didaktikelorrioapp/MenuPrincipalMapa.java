@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,9 +15,11 @@ import androidx.transition.Fade;
 import androidx.transition.Transition;
 
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
@@ -41,6 +44,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
 
         //propiedades asignadas al crearse la actividad
         lista.setX(-200);
+        lista.setClickable(true);
         lista.setVisibility(View.INVISIBLE);
 
         //funcion que carga las actividades en la lista
@@ -66,18 +70,31 @@ public class MenuPrincipalMapa extends AppCompatActivity {
      * @param   lista   Lista en la que se van a cargar las actividades.
      */
     public void cargarActividadesLista(ListView lista){
-        ArrayList<String> prueba = new ArrayList<>();
+        //crea un arraylist para guardar el texto en la lista
+        ArrayList<String> listaActividades = new ArrayList<>();
 
+        //asigna la instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+        //recoge todas las actividades de la base de datos
+        List<Activity> actividades = db.activityDao().getAll();
 
-
-        List<Activity> actividades;
-
+        //guarda el texto de todas las actividades para mostrarlas en la lista
         for (int i=0; i<7; i++){
-            String stringVariable = (i+1)+". aktibitatea: \""+actividades[i]+"\"";
-            prueba.add(stringVariable);
+            String stringVariable = (i+1)+". aktibitatea: \""+actividades.get(i).getActivity_name()+"\"";
+            listaActividades.add(stringVariable);
         }
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, prueba);
+        //crea el adaptador para la lista
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, listaActividades);
         lista.setAdapter(arrayAdapter);
+
+        //crea un escuchador para que se pueda mostrar la informacion de las actividades cuando se hace click en ellas
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Toast.makeText(MenuPrincipalMapa.this, "CLICK "+i, Toast.LENGTH_LONG);
+            }
+        });
     }
 }
