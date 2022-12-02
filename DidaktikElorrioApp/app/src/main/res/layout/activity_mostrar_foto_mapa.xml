@@ -7,14 +7,22 @@
     tools:context=".Mostrar_Foto_Mapa">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="389dp"
-        android:layout_height="434dp"
+        android:id="@+id/MapaElorrio"
+        android:layout_width="401dp"
+        android:layout_height="451dp"
         android:contentDescription="@string/mapaelorrio"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@drawable/elorriokomapa" />
+        app:srcCompat="@drawable/mapaelorrio" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:text="@string/jarraitu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MapaElorrio" />
 </androidx.constraintlayout.widget.ConstraintLayout>

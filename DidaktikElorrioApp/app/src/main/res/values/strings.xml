@@ -8,5 +8,7 @@
     <string name="e">E</string>
     <string name="g">G</string>
     <string name="mapaelorrio">MapaElorrio</string>
+    <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
+    <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
 
 </resources>
