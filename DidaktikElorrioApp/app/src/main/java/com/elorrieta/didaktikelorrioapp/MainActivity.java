@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
+import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -79,14 +80,37 @@ public class MainActivity extends AppCompatActivity {
         Activity activity6 = new Activity(6, "ERREBONBILLOAK", "a", "43° 7′ 48.49′′ N", "2° 32′ 31.31′′ W" , false);
         Activity activity7 = new Activity(7, "ARGINETAKO NEKROPOLIA", "a", "43° 8′ 23.66′′ N", "2° 32′ 9.51′′ W" , false);
 
+        //crea una lista con todas las actividades
+        List<Activity> actividades = new ArrayList<>();
+        actividades.add(activity1);
+        actividades.add(activity2);
+        actividades.add(activity3);
+        actividades.add(activity4);
+        actividades.add(activity5);
+        actividades.add(activity6);
+        actividades.add(activity7);
+
         //crear una instancia de la base de datos
         AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "DidaktikAppDB").allowMainThreadQueries().build(); // <-- poner esto para que permita realizar consultas
 
-        //comprueba si existen las actividades necesarias
-        List<Activity> comprobacionActividades = new ArrayList<>();
-        comprobacionActividades = db.ActivityDao().getAll();
+        //por cada actividad la borra de la base de datos para que no haya inconsistencias y la añade
+        for (Activity activity : actividades){
+            db.activityDao().deleteActivity(activity);
+            db.activityDao().insertActivity(activity);
+        }
 
+        //comprueba si existen las actividades necesarias
+        List<Activity> comprobacionActividades;
+        comprobacionActividades = db.activityDao().getAll();
+        Log.d("DEBUGG-DB", ""+comprobacionActividades.size());
+
+        //comprueba que no falte ninguna actividad, si falta alguna la añade
+        for (int i=0; i<comprobacionActividades.size(); i++){
+            if (comprobacionActividades.get(i).getId() != actividades.get(i).getId()){
+                db.activityDao().insertActivity(actividades.get(i));
+            }
+        }
     }
 
     //TODO: CÓDIGO DE PRUEBA DE LA BASE DE DATOS - NO BORRAR

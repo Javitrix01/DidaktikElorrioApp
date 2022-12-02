@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
+import androidx.room.Room;
 import androidx.transition.Fade;
 import androidx.transition.Transition;
 
@@ -17,7 +18,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+import com.elorrieta.didaktikelorrioapp.entities.Activity;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class MenuPrincipalMapa extends AppCompatActivity {
 
@@ -42,22 +47,16 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         cargarActividadesLista(lista);
 
         //accion del boton para ver la lista
-        botonAbrirMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //aplica la animacion para cuando aparezca la lista
-                lista.animate().translationX(0);
-                lista.setVisibility(View.VISIBLE);
-            }
+        botonAbrirMenu.setOnClickListener(view -> {
+            //aplica la animacion para cuando aparezca la lista
+            lista.animate().translationX(0);
+            lista.setVisibility(View.VISIBLE);
         });
         //accion del boton para volver al mapa
-        botonAbrirMapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //aplica la animacion para cuando desaparezca la lista
-                lista.animate().translationX(-200);
-                lista.setVisibility(View.INVISIBLE);
-            }
+        botonAbrirMapa.setOnClickListener(view -> {
+            //aplica la animacion para cuando desaparezca la lista
+            lista.animate().translationX(-200);
+            lista.setVisibility(View.INVISIBLE);
         });
     }
 
@@ -69,8 +68,10 @@ public class MenuPrincipalMapa extends AppCompatActivity {
     public void cargarActividadesLista(ListView lista){
         ArrayList<String> prueba = new ArrayList<>();
 
-        //TODO: DATOS HARDCODEADOS -> IMPLEMENTAR LLAMADAS A LA BASE DE DATOS PARA RECOGER LA INFORMACION NECESARIA
-        String[] actividades = {"Kurutziagako gurutzea","Basilika","Udaletxea","Pello gozotegia","Jauregia","Errebonbilloa","Nekropolia"};
+
+
+        List<Activity> actividades;
+
         for (int i=0; i<7; i++){
             String stringVariable = (i+1)+". aktibitatea: \""+actividades[i]+"\"";
             prueba.add(stringVariable);
