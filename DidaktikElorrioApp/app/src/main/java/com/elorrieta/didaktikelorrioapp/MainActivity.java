@@ -9,15 +9,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
 import androidx.room.Room;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 
 import org.w3c.dom.Text;
-=======
->>>>>>> Javi
 
 import java.util.ArrayList;
 import java.util.List;
@@ -161,4 +158,11 @@ public class MainActivity extends AppCompatActivity {
         @Query("SELECT * FROM entidad1 INNER JOIN entidad2 ON entidad2.id = entidad1.id")
         List<entidad1> query();
     */
+
+    /*
+        Comentar las creadciones de los objetos de la base de datos y sus inserts
+        Exportar la base de datos -> meterla en assets ->
+        en el archivo Appdatabase -> añadir .createFromAsset("path.db")
+        Appdatabase appDatabase = Room.database
+     */
 }

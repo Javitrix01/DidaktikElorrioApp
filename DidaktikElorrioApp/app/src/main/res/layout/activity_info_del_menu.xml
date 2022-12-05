@@ -6,10 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".InfoDelMenu">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7A939393"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="406dp"
-        android:layout_height="441dp"
+        android:layout_width="367dp"
+        android:layout_height="454dp"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,27 +30,48 @@
             android:id="@+id/textViewTituloAct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:background="#CDFFFFFF"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="1px"
+            android:background="#AA4465" />
 
         <TextView
             android:id="@+id/textViewDescripcion"
             android:layout_width="match_parent"
             android:layout_height="210dp"
-            android:text="TextView" />
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="#CCFFFFFF" />
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView2"
             android:layout_width="match_parent"
-            android:layout_height="212dp" />
+            android:layout_height="210dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnitzuli"
         android:layout_width="207dp"
         android:layout_height="48dp"
+        android:background="#AA4465"
         android:text="@string/itzuli"
+        android:textColor="#EFEBE9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.633"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
