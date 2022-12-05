@@ -28,9 +28,9 @@ public class GameActivity9 extends AppCompatActivity {
     private final int[][] BUTTON_ID = {{R.id.b900, R.id.b901, R.id.b902},
             {R.id.b910, R.id.b911, R.id.b912},
             {R.id.b920, R.id.b921, R.id.b922}};
-    private final int[] CARDS_ID = {R.drawable.card900, R.drawable.mapaelorriopieza1, R.drawable.mapaelorriopieza2,
-            R.drawable.mapaelorriopieza3, R.drawable.mapaelorriopieza4, R.drawable.mapaelorriopieza5,
-            R.drawable.mapaelorriopieza6, R.drawable.mapaelorriopieza7, R.drawable.mapaelorriopieza8};
+    private final int[] CARDS_ID = {R.drawable.card900, R.drawable.mapaelorriopieza1_, R.drawable.mapaelorriopieza2_,
+            R.drawable.mapaelorriopieza3_, R.drawable.mapaelorriopieza4_, R.drawable.mapaelorriopieza5_,
+            R.drawable.mapaelorriopieza6_, R.drawable.mapaelorriopieza7_, R.drawable.mapaelorriopieza8_};
 
     private String whatToShow;
     private TextView scoreTV;
