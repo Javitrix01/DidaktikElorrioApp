@@ -8,6 +8,7 @@ import android.text.Html;
 import android.util.Log;
 
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main); final ProgressBar progressBar = findViewById(R.id.progressBar3);
 
-        setContentView(R.layout.activity_main);
+
 
         //oculta la barra de arriba
         getSupportActionBar().hide();
