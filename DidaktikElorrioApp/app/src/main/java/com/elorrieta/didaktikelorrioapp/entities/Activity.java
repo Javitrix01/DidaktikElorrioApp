@@ -76,4 +76,17 @@ public class Activity {
     public void setActivity_visited(boolean activity_visited) {
         this.activity_visited = activity_visited;
     }
+
+    //toString
+    @Override
+    public String toString() {
+        return "Activity{" +
+                "id=" + id +
+                ", activity_name='" + activity_name + '\'' +
+                ", activity_description='" + activity_description + '\'' +
+                ", activity_coords_long='" + activity_coords_long + '\'' +
+                ", activity_coords_lat='" + activity_coords_lat + '\'' +
+                ", activity_visited=" + activity_visited +
+                '}';
+    }
 }
