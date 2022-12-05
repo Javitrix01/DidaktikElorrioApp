@@ -8,11 +8,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     //variable para el control de la funcion carga()
@@ -30,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Cambia los colores del texto
         //DidaktikApp!
-        TextView textViewTitulo = findViewById(R.id.textViewTitulo);
+        TextView textViewTitulo = findViewById(R.id.textViewTituloAct);
         String text = "<font color=#FF0000>D</font><font color=#FF7F00>i</font><font color=#FFCC00>d</font><font color=#00FF00>a</font>"+
                       "<font color=#0000FF>k</font><font color=#4B0082>t</font><font color=#9400D3>i</font><font color=#FF0000>k</font>"+
                       "<font color=#FF7F00>A</font><font color=#FFCC00>p</font><font color=#00FF00>p</font><font color=#0000FF>!</font>";
