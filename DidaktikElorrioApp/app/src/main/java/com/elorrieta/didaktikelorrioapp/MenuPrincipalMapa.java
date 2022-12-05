@@ -93,7 +93,11 @@ public class MenuPrincipalMapa extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Toast.makeText(MenuPrincipalMapa.this, "CLICK "+i, Toast.LENGTH_LONG);
+                Toast.makeText(MenuPrincipalMapa.this, "CLICK "+i, Toast.LENGTH_LONG).show();
+
+                //aplica la animacion para cuando desaparezca la lista
+                lista.animate().translationX(-200);
+                lista.setVisibility(View.INVISIBLE);
             }
         });
     }
