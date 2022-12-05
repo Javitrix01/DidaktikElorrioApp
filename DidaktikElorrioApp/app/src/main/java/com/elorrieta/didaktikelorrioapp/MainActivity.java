@@ -9,15 +9,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
+
 import androidx.room.Room;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 
 import org.w3c.dom.Text;
-=======
->>>>>>> Javi
+
 
 import java.util.ArrayList;
 import java.util.List;
