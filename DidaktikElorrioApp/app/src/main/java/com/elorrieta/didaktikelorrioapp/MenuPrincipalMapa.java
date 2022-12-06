@@ -2,13 +2,17 @@ package com.elorrieta.didaktikelorrioapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ClipData;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.room.Room;
 import androidx.transition.Fade;
@@ -25,6 +29,7 @@ import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -37,7 +42,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuPrincipalMapa extends AppCompatActivity implements OnMapReadyCallback {
+public class MenuPrincipalMapa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,11 +82,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements OnMapReadyCa
     /**
      * Funcion para cargar las acitivades en la lista y que se puedan visualizar.
      *
-     * @param   lista           Lista en la que se van a cargar las actividades.
-     * @param   botonAbrirMenu  Boton que abre el menu de la lista de actividades.
-     * @param   botonAbrirMapa  Boton que cierra el menu de actividades y vuelve al mapa.
+     * @param lista          Lista en la que se van a cargar las actividades.
+     * @param botonAbrirMenu Boton que abre el menu de la lista de actividades.
+     * @param botonAbrirMapa Boton que cierra el menu de actividades y vuelve al mapa.
      */
-    public void cargarActividadesLista(ListView lista, Button botonAbrirMenu, Button botonAbrirMapa){
+    public void cargarActividadesLista(ListView lista, Button botonAbrirMenu, Button botonAbrirMapa) {
         //crea un arraylist para guardar el texto en la lista
         ArrayList<String> listaActividades = new ArrayList<>();
 
@@ -91,8 +96,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements OnMapReadyCa
         List<Activity> actividades = db.activityDao().getAll();
 
         //guarda el texto de todas las actividades para mostrarlas en la lista
-        for (int i=0; i<7; i++){
-            String stringVariable = (i+1)+". aktibitatea: \""+actividades.get(i).getActivity_name()+"\"";
+        for (int i = 0; i < 7; i++) {
+            String stringVariable = (i + 1) + ". aktibitatea: \"" + actividades.get(i).getActivity_name() + "\"";
             listaActividades.add(stringVariable);
         }
 
@@ -122,11 +127,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements OnMapReadyCa
                 //añade la informacion
                 tvTitulo.setText(actividades.get(i).getActivity_name());
                 tvDescripcion.setText(actividades.get(i).getActivity_description());
-                //informacion del mapa
-                MapView mpMapa = findViewById(R.id.mapView2);
-                SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                        .findFragmentById(R.id.mapView2);
-                mapFragment.getMapAsync(this);
+
+                //TODO: informacion del mapa
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {
@@ -138,18 +140,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements OnMapReadyCa
 
                         //esconde la actividad
                         FrameLayout rootLayout = findViewById(android.R.id.content);
-                        rootLayout.removeViewAt(rootLayout.getChildCount()-1);
+                        rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
                     }
                 });
             }
         });
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
     }
 }
 
