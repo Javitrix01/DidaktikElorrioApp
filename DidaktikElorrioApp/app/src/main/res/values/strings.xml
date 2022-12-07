@@ -12,7 +12,7 @@
     <string name="mapaelorrio">MapaElorrio</string>
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
-    <string name="explicacionPuzzle">1.- Juega y disfruta. Tu objetivo es mover las piezas del mapa a su lugar.\n\n2.- Si no estás satisfecho con la posición inicial o cometiste un error, puedes barajar de nuevo y comenzar. desde el principio, porque recuerda que no siempre es posible.\n\n3.-Hemos puesto numeros en cada foto del mapa para que os facilite la actividad.\n\n 4.- Por ultimo si os atascais en el puzzle podeis no hacerlo y saltarlo dando a jarraitu</string>
+    <string name="explicacionPuzzle">1.- Jolastu eta gozatu. Zure helburua piezak mapatik bere lekura mugitzea da\n\n2.- Hasierako posizioarekin gustura ez bazaude edo akatsen bat egin bazenu, berriro aztertu eta has zaitezke. hasieratik, beti posible ez dela gogoratzen duzulako\n\n3.- Mapako argazki bakoitzean zenbakiak jarri ditugu jarduera errazteko\n\n4.- Azkenik, puzzlean ausartegiak bazaudete, ez egin, eta jauzi egin dezakegu, jarraian.</string>
     <string name="logo">mpieza la Aventura!</string>
     <string name="developers">developer - Gal Tager</string>
     <string name="game8">Puzzle Mapa</string>
