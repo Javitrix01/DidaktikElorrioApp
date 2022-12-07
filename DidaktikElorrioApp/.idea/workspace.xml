@@ -16,12 +16,9 @@
   <component name="ChangeListManager">
     <list default="true" id="34e2044e-9521-4fbf-bd32-2cfeb12db0c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/DidaktikElorrioApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/DidaktikElorrioApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MenuPrincipalMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MenuPrincipalMapa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/appdatabase/AppDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/appdatabase/AppDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +109,10 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.1498718583">
+      <recent name="com.elorrieta.didaktikelorrioapp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.elorrieta.didaktikelorrioapp.appdatabase" />
       <recent name="com.elorrieta.didaktikelorrioapp" />
     </key>
     <key name="android.template.420641738">

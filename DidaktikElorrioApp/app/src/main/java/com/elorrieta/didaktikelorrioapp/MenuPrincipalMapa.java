@@ -9,6 +9,8 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+
 import java.util.ArrayList;
 
 public class MenuPrincipalMapa extends AppCompatActivity {

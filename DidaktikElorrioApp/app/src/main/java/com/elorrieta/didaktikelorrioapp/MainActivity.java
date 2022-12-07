@@ -14,8 +14,6 @@ import androidx.room.Room;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
