@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         //oculta la barra de arriba
         getSupportActionBar().hide();
 
-        final ProgressBar progressBar = findViewById(R.id.progressBar3);
-
         //Cambia los colores del texto
         //DidaktikApp!
         TextView textViewTitulo = findViewById(R.id.textViewTituloAct);

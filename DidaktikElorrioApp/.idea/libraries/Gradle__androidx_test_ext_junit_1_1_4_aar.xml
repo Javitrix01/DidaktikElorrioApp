@@ -2,14 +2,18 @@
   <library name="Gradle: androidx.test.ext:junit:1.1.4@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/res" />
-      <root url="file://$USER_HOME$/Documents/Isra/Repositorios/Event4u/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Documents/Isra/Repositorios/Event4u/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Isra/Repositorios/Event4u/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Isra/Repositorios/Event4u/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b9061d84ae7da5141f64df65e418789/transformed/junit-1.1.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Documents/Isra/Repositorios/Event4u/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/655c1d81d380f40e589e7d7f4a8ab2f4b63fd65e/junit-1.1.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Isra/Repositorios/Event4u/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/655c1d81d380f40e589e7d7f4a8ab2f4b63fd65e/junit-1.1.4-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/655c1d81d380f40e589e7d7f4a8ab2f4b63fd65e/junit-1.1.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Documents/Isra/Repositorios/Event4u/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/d914051e731bfeb245b42dc64dd933bc02c5eb32/junit-1.1.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Isra/Repositorios/Event4u/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/d914051e731bfeb245b42dc64dd933bc02c5eb32/junit-1.1.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.4/d914051e731bfeb245b42dc64dd933bc02c5eb32/junit-1.1.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

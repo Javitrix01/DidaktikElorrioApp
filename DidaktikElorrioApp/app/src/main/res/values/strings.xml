@@ -1,26 +1,18 @@
 <resources>
     <string name="app_name">DidaktikElorrioApp</string>
-<<<<<<< HEAD
-
     <string name="mapa">Mapa</string>
     <string name="menu_actividades">Aktibitate zerrenda</string>
     <string name="jarraitu">Jarraitu</string>
     <string name="baieztatu">Baieztatu</string>
-
-=======
-    <string name="mapa">Mapa</string>
-    <string name="menu_actividades">Lista Actividades</string>
-    <string name="jarraitu">Jarraitu</string>
-    <string name="baieztatu">Baieztatu</string>
->>>>>>> parent of 549b084 (Cambiar Imagenes)
     <string name="titulo_app">DidaktikApp!</string>
     <string name="e">E</string>
     <string name="g">G</string>
+    <string name="puzzle1">Una vez aprendido el mapa</string>
+    <string name="puzzle2">Empieza el juego</string>
     <string name="mapaelorrio">MapaElorrio</string>
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
-<<<<<<< HEAD
-    <string name="explicacionPuzzle">1.- Juega y disfruta. Tu objetivo es mover las piezas del mapa a su lugar.\n\n2.- Si no estás satisfecho con la posición inicial o cometiste un error, puedes barajar de nuevo y comenzar. desde el principio, porque recuerda que no siempre es posible.\n\n3.-Por ultimo hemos puesto numeros en cada foto del mapa para que os facilite la actividad.</string>
+    <string name="explicacionPuzzle">1.- Juega y disfruta. Tu objetivo es mover las piezas del mapa a su lugar.\n\n2.- Si no estás satisfecho con la posición inicial o cometiste un error, puedes barajar de nuevo y comenzar. desde el principio, porque recuerda que no siempre es posible.\n\n3.-Hemos puesto numeros en cada foto del mapa para que os facilite la actividad.\n\n 4.- Por ultimo si os atascais en el puzzle podeis no hacerlo y saltarlo dando a jarraitu</string>
     <string name="logo">mpieza la Aventura!</string>
     <string name="developers">developer - Gal Tager</string>
     <string name="game8">Puzzle Mapa</string>
@@ -87,13 +79,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="itzuli">itzuli</string>
-
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-=======
-
->>>>>>> parent of 549b084 (Cambiar Imagenes)
 </resources>

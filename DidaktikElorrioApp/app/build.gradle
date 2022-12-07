@@ -40,4 +40,9 @@ dependencies {
     implementation'com.daimajia.androidanimations:library:2.3@aar' //animations -yoyo
     implementation 'com.google.android.material:material:1.2.1' //material desing
 
+    def room_version = "2.4.3"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
 }
