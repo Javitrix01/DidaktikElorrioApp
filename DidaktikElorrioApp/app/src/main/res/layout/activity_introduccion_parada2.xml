@@ -7,6 +7,7 @@
     tools:context=".IntroduccionParada2">
 
     <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="409dp"
         android:layout_height="147dp"
         android:layout_marginStart="1dp"
@@ -32,18 +33,6 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="245dp"
-        android:layout_height="193dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
-
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="141dp"
@@ -53,6 +42,29 @@
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
+        app:layout_constraintVertical_bias="0.389"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:text="@string/Intro_ActBasilica" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
