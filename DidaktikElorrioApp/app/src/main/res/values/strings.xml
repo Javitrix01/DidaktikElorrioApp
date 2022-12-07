@@ -12,5 +12,13 @@
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
     <string name="itzuli">itzuli</string>
     <string name="zein_gurutze">Zein gurutze falta da?</string>
+    <string name="argi_etako_nekropolia">Argiñetako Nekropolia Bilbon dago</string>
+    <string name="argi_etako_nekropolia_erromantikoa">Argiñetako nekropolia hilerri erromantikoa da</string>
+    <string name="v_eta_x_mendeen_eraiki_zen">V. eta X. mendeen artean eraiki zen</string>
+    <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
+    <string name="bisigodoak_hilobiak_egin_zituzten">Bisigodoak hilobiak egin zituzten</string>
+    <string name="hilobiak_3_zatitan_eginda">Hilobiak 3. zatitan eginda daude: gainaldea triangelua, erdian borobilezko harria eta beheko aldean hilobia.</string>
+    <string name="ingelesezko_inskripzioak">Ingelesezko inskripzioak daude hilobietan idatzia</string>
+    <string name="estelak_hilobiak_baino_zaharragoak_dira">Estelak hilobiak baino zaharragoak dira</string>
 
 </resources>

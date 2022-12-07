@@ -15,9 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a88bc09f-50d5-41de-81c6-4410d000869b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mapacrucessinnombre.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_poner_nombre_cruces.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_poner_nombre_cruces.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_egia_gezurra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_puzzle_egia_gezurra.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
