@@ -10,7 +10,7 @@ import com.elorrieta.didaktikelorrioapp.R;
 public class Sound{
     public static  boolean activitySwitchFlag = false;
     public static  boolean backFromGame = false;
-    public static MediaPlayer menuClickSound, buttonGameSound,winningSound,backgroundMusic,gameMusic;
+    public static MediaPlayer menuClickSound, buttonGameSound,winningSound,backgroundMusic,gameMusic,testuGurutza;
     public static boolean check = true;
 
     public Sound(){
@@ -21,6 +21,7 @@ public class Sound{
         winningSound =MediaPlayer.create(mContext,R.raw.victory);
         backgroundMusic = MediaPlayer.create(mContext,R.raw.backgroundsound);
         gameMusic = MediaPlayer.create(mContext,R.raw.gamesound);
+        testuGurutza = MediaPlayer.create(mContext,R.raw.gurutza);
 
         gameMusic.setLooping(true);
         backgroundMusic.setLooping(true);
@@ -70,6 +71,7 @@ public class Sound{
         menuClickSound.release();
         winningSound.release();
         buttonGameSound.release();
+        testuGurutza.release();
     }
 
 
