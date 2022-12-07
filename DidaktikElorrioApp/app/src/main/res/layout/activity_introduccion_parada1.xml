@@ -6,31 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".IntroduccionParada1">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="252dp"
-        android:layout_height="213dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="151dp"
-        android:layout_height="122dp"
+        android:layout_width="134dp"
+        android:layout_height="161dp"
+        android:contentDescription="@string/una_cruz_con_ojos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.498"
+        tools:srcCompat="@drawable/cruz1" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="409dp"
         android:layout_height="147dp"
         android:layout_marginStart="1dp"
@@ -55,4 +45,27 @@
             android:text="@string/jarraitu" />
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="404dp"
+        android:layout_height="271dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Intro_ActCruces" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
