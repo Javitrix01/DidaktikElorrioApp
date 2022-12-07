@@ -1,5 +1,9 @@
 package com.elorrieta.didaktikelorrioapp;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.graphics.text.LineBreaker;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,8 +14,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+import com.elorrieta.didaktikelorrioapp.entities.Activity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MenuPrincipalMapa extends AppCompatActivity {
 
@@ -99,7 +105,13 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                 tvTitulo.setText(actividades.get(i).getActivity_name());
                 tvDescripcion.setText(actividades.get(i).getActivity_description());
 
+                //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+                }
+
                 //TODO: informacion del mapa
+                //https://www.youtube.com/watch?v=HbCSuExETzY
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {

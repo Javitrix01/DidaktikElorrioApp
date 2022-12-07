@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutInfoActividad"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoDelMenu">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewFondo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#7A939393"
@@ -18,8 +19,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="367dp"
-        android:layout_height="454dp"
+        android:layout_width="376dp"
+        android:layout_height="462dp"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:background="#CDFFFFFF"
             android:textAlignment="center"
+            android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -50,7 +52,8 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="0dp"
-            android:background="#CCFFFFFF" />
+            android:background="#CCFFFFFF"
+            android:padding="10dp" />
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView2"
@@ -59,19 +62,20 @@
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             tools:ignore="SpeakableTextPresentCheck" />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/btnitzuli"
         android:layout_width="207dp"
         android:layout_height="48dp"
-        android:background="#AA4465"
+        android:background="@drawable/rounded_button"
         android:text="@string/itzuli"
         android:textColor="#EFEBE9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.633"
+        app:layout_constraintVertical_bias="0.472"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

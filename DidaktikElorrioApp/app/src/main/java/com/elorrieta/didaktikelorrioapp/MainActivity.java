@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     public void llamadaBD(){
 
         //crea las actividades necesarias
-        Activity activity1 = new Activity(1, "KURUTZIAGAKO GURUTZEA", "a", "43° 7′ 41.37′′ N", "2° 32′ 23.28′′ W" , false);
+        Activity activity1 = new Activity(1, "KURUTZIAGAKO GURUTZEA", "aaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaa aaaa", "43° 7′ 41.37′′ N", "2° 32′ 23.28′′ W" , false);
         Activity activity2 = new Activity(2, "SORTZEZ GARBIAREN BASILIKA", "a", "43° 7′ 48.7′′ N", "2° 32′ 33.32′′ W" , false);
         Activity activity3 = new Activity(3, "ELORRIOKO UDALETXEA", "a", "43° 7′ 49.89′′ N", "2° 32′ 31.44′′ W" , false);
         Activity activity4 = new Activity(4, "PELLO GOZOTEGIA", "a", "43° 7′ 51.51′′ N", "2° 32′ 35.69′′ W" , false);
