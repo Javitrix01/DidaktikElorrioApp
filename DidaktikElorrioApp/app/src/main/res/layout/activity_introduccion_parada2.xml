@@ -35,15 +35,15 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="141dp"
-        android:layout_height="146dp"
+        android:layout_width="149dp"
+        android:layout_height="175dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.424"
+        tools:srcCompat="@drawable/cura1" />
 
     <ScrollView
         android:layout_width="413dp"
