@@ -2,13 +2,13 @@ package com.elorrieta.didaktikelorrioapp.appdatabase;
 
 import android.content.Context;
 
-import androidx.room.*;
-import androidx.room.RoomDatabase;
-
-import com.elorrieta.didaktikelorrioapp.dao.ActivityDao;
 import com.elorrieta.didaktikelorrioapp.dao.UserDao;
+import com.elorrieta.didaktikelorrioapp.dao.ActivityDao;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.elorrieta.didaktikelorrioapp.entities.User;
+
+import androidx.room.*;
+import androidx.room.RoomDatabase;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
