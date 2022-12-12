@@ -2827,6 +2827,7 @@ drawable orange_line
 drawable progress_bar
 drawable restart
 drawable rightnavigate
+drawable rounded_button
 drawable scroll_view_style
 drawable scrollbar
 drawable soundoff
@@ -3256,6 +3257,7 @@ id labeled
 id languageChipGroup
 id last
 id layout
+id layoutInfoActividad
 id left
 id leftBtn
 id leftToRight
@@ -3504,6 +3506,7 @@ id textView
 id textView17
 id textView18
 id textView19
+id textView2
 id textView3
 id textView4
 id textView5
@@ -3573,6 +3576,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewFondo
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner

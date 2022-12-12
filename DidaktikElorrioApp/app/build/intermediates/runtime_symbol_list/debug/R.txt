@@ -2826,6 +2826,7 @@ int drawable orange_line 0x7f080137
 int drawable progress_bar 0x7f080141
 int drawable restart 0x7f080142
 int drawable rightnavigate 0x7f080143
+int drawable rounded_button 0x7f080157
 int drawable scroll_view_style 0x7f080144
 int drawable scrollbar 0x7f080145
 int drawable soundoff 0x7f080146
@@ -3255,6 +3256,7 @@ int id labeled 0x7f0a019c
 int id languageChipGroup 0x7f0a019d
 int id last 0x7f0a019e
 int id layout 0x7f0a019f
+int id layoutInfoActividad 0x7f0a02ff
 int id left 0x7f0a01a0
 int id leftBtn 0x7f0a01a1
 int id leftToRight 0x7f0a01a2
@@ -3503,6 +3505,7 @@ int id textView 0x7f0a0293
 int id textView17 0x7f0a029b
 int id textView18 0x7f0a029c
 int id textView19 0x7f0a02f6
+int id textView2 0x7f0a0300
 int id textView3 0x7f0a029d
 int id textView4 0x7f0a029e
 int id textView5 0x7f0a029f
@@ -3572,6 +3575,7 @@ int id unlabeled 0x7f0a02d7
 int id up 0x7f0a02d8
 int id useLogo 0x7f0a02d9
 int id vertical_only 0x7f0a02da
+int id viewFondo 0x7f0a0301
 int id view_offset_helper 0x7f0a02db
 int id view_transition 0x7f0a02dc
 int id view_tree_lifecycle_owner 0x7f0a02dd

@@ -137,6 +137,7 @@ drawable orange_line
 drawable progress_bar
 drawable restart
 drawable rightnavigate
+drawable rounded_button
 drawable scroll_view_style
 drawable scrollbar
 drawable soundoff
@@ -328,6 +329,7 @@ id imageView8
 id imageView9
 id languageChipGroup
 id last
+id layoutInfoActividad
 id leftBtn
 id level3
 id level4
@@ -375,6 +377,7 @@ id textView
 id textView17
 id textView18
 id textView19
+id textView2
 id textView3
 id textView4
 id textView5
@@ -413,6 +416,7 @@ id textViewScore9
 id textViewTituloAct
 id third_line
 id txtPreguntaCruces
+id viewFondo
 layout activity_choose_difficult
 layout activity_crear_mapa_puzzle
 layout activity_errebonbiloa
