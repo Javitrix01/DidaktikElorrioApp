@@ -70,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
     public void llamadaBD(){
 
         //crea las actividades necesarias
-        Activity activity1 = new Activity(1, "KURUTZIAGAKO GURUTZEA", "aaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaa aaaa", "43° 7′ 41.37′′ N", "2° 32′ 23.28′′ W" , false);
-        Activity activity2 = new Activity(2, "SORTZEZ GARBIAREN BASILIKA", "a", "43° 7′ 48.7′′ N", "2° 32′ 33.32′′ W" , false);
-        Activity activity3 = new Activity(3, "ELORRIOKO UDALETXEA", "a", "43° 7′ 49.89′′ N", "2° 32′ 31.44′′ W" , false);
-        Activity activity4 = new Activity(4, "PELLO GOZOTEGIA", "a", "43° 7′ 51.51′′ N", "2° 32′ 35.69′′ W" , false);
-        Activity activity5 = new Activity(5, "ARESPAKOTXAGA JAUREGIA", "a", "43° 7′ 50.49′′ N", "2° 32′ 38.06′′ W" , false);
-        Activity activity6 = new Activity(6, "ERREBONBILLOAK", "a", "43° 7′ 48.49′′ N", "2° 32′ 31.31′′ W" , false);
-        Activity activity7 = new Activity(7, "ARGINETAKO NEKROPOLIA", "a", "43° 8′ 23.66′′ N", "2° 32′ 9.51′′ W" , false);
+        Activity activity1 = new Activity(1, "KURUTZIAGAKO GURUTZEA", "Kurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.", "43° 7′ 41.37′′ N", "2° 32′ 23.28′′ W" , false);
+        Activity activity2 = new Activity(2, "SORTZEZ GARBIAREN BASILIKA", "Sortzez Garbiaren Basilika Bizkaiko tenplurik handiena da eta Elorrioko plazan aurkitu dezakezu.", "43° 7′ 48.7′′ N", "2° 32′ 33.32′′ W" , false);
+        Activity activity3 = new Activity(3, "ELORRIOKO UDALETXEA", "Elorrioko udaletxea Gernikako Arbola plazan kokatuta dago eta XVIII. mendean eraiki zuten.", "43° 7′ 49.89′′ N", "2° 32′ 31.44′′ W" , false);
+        Activity activity4 = new Activity(4, "PELLO GOZOTEGIA", "Reliquias de San Valentín bizkotxo zoragarriak dira,  usain sekretudunak, txokolate zurizko geruza fin batez eta esnedun txokolate txorrotada batez estaliak.", "43° 7′ 51.51′′ N", "2° 32′ 35.69′′ W" , false);
+        Activity activity5 = new Activity(5, "ARESPAKOTXAGA JAUREGIA", "Arespakotxaga-Mendibil jauregia oinplano angeluzuzeneko eraikina da, Elorrioko alde zaharreko Don Tello kalean kokatuta dago.", "43° 7′ 50.49′′ N", "2° 32′ 38.06′′ W" , false);
+        Activity activity6 = new Activity(6, "ERREBONBILLOAK", "Errebonbilloaren estatua Elorrioko plaza ondoan aurkitzen da 2003tik. Honek, ia ondare guztiak bezala, istorio interesgarri eta polit bat dauka.", "43° 7′ 48.49′′ N", "2° 32′ 31.31′′ W" , false);
+        Activity activity7 = new Activity(7, "ARGINETAKO NEKROPOLIA", "Argiñetako nekropolia Elorrioko San Adrian de Argiñeta ermitan aurki dezakezun antzinako hilerri erromantikoa da.", "43° 8′ 23.66′′ N", "2° 32′ 9.51′′ W" , false);
 
         //crea una lista con todas las actividades
         List<Activity> actividades = new ArrayList<>();
