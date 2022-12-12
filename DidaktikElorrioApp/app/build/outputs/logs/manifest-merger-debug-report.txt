@@ -137,7 +137,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\in
 	tools:targetApi
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-29
 	android:icon
-		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:23:9-43
+		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:23:9-56
 	android:allowBackup
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme

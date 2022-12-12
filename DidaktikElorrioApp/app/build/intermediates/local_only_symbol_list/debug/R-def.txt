@@ -160,6 +160,7 @@ layout activity_puzzle_pasteleria
 layout activity_puzzle_poner_nombre_cruces
 layout list_card
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 string baieztatu
