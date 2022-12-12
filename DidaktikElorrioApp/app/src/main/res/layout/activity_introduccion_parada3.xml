@@ -25,15 +25,15 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="141dp"
-        android:layout_height="146dp"
+        android:layout_width="220dp"
+        android:layout_height="208dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.413"
+        tools:srcCompat="@drawable/alcalde1" />
 
     <LinearLayout
         android:id="@+id/linearLayout9"
