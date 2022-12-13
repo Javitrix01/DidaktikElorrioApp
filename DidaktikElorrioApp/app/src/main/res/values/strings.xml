@@ -7,13 +7,13 @@
     <string name="titulo_app">DidaktikApp!</string>
     <string name="e">E</string>
     <string name="g">G</string>
-    <string name="puzzle1">Una vez aprendido el mapa</string>
-    <string name="puzzle2">Empieza el juego</string>
+    <string name="puzzle1">Mapa buruz ikasi ondoren,</string>
+    <string name="puzzle2"> jokoa hasten da!!</string>
     <string name="mapaelorrio">MapaElorrio</string>
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
     <string name="explicacionPuzzle">1.- Jolastu eta gozatu. Zure helburua piezak mapatik bere lekura mugitzea da\n\n2.- Hasierako posizioarekin gustura ez bazaude edo akatsen bat egin bazenu, berriro aztertu eta has zaitezke. hasieratik, beti posible ez dela gogoratzen duzulako\n\n3.- Mapako argazki bakoitzean zenbakiak jarri ditugu jarduera errazteko\n\n4.- Azkenik, puzzlean ausartegiak bazaudete, ez egin, eta jauzi egin dezakegu, jarraian.</string>
-    <string name="logo">mpieza la Aventura!</string>
+    <string name="logo">lorrion Barne</string>
     <string name="developers">developer - Gal Tager</string>
     <string name="game8">Puzzle Mapa</string>
     <string name="game15">15 puzzle</string>
@@ -30,7 +30,7 @@
     <string name="level24">24</string>
     <string name="action_settings">Settings</string>
     <string name="firstLogo">E</string>
-    <string name="full_logo">Memoriza la foto!!!</string>
+    <string name="full_logo">Gogoratu argazkia!!</string>
     <string name="play">Play</string>
     <string name="leader_board">Leader Board</string>
     <string name="setting">Setting</string>
