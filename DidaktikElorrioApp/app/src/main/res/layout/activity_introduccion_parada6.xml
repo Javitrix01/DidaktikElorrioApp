@@ -7,20 +7,19 @@
     tools:context=".IntroduccionParada6">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="413dp"
         android:layout_height="216dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Intro_ActBasilica" />
+            android:text="@string/errebonbilloaren" />
     </ScrollView>
 
     <LinearLayout
@@ -31,10 +30,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.608">
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -51,13 +50,13 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="141dp"
-        android:layout_height="146dp"
+        android:layout_width="230dp"
+        android:layout_height="207dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.429"
+        tools:srcCompat="@drawable/sombrero1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
