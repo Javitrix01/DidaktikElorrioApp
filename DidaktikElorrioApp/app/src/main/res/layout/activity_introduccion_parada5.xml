@@ -7,14 +7,14 @@
     tools:context=".IntroduccionParada5">
 
     <ScrollView
+        android:id="@+id/SVJauregia"
         android:layout_width="413dp"
         android:layout_height="216dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView3"
@@ -24,6 +24,7 @@
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/linearLayout10"
         android:layout_width="409dp"
         android:layout_height="147dp"
         android:layout_marginStart="1dp"
@@ -33,8 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797">
+        app:layout_constraintTop_toBottomOf="@+id/SVJauregia"
+        app:layout_constraintVertical_bias="0.673">
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -55,9 +56,9 @@
         android:layout_height="213dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
+        app:layout_constraintVertical_bias="0.438"
         tools:srcCompat="@drawable/reina1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
