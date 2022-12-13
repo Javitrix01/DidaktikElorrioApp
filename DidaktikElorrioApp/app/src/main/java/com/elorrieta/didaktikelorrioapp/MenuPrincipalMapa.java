@@ -130,8 +130,3 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         });
     }
 }
-
-/*
-    https://gist.github.com/joshdholtz/4522551
-    https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
- */

@@ -88,20 +88,22 @@ public class MainActivity extends AppCompatActivity {
         actividades.add(activity6);
         actividades.add(activity7);
 
-        //crear una instancia de la base de datos
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "DidaktikAppDB").allowMainThreadQueries().build(); // <-- poner esto para que permita realizar consultas
 
+        //crear una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+
+        /*
         //por cada actividad la borra de la base de datos para que no haya inconsistencias y la añade
         for (Activity activity : actividades){
             db.activityDao().deleteActivity(activity);
             db.activityDao().insertActivity(activity);
         }
+        */
+
 
         //comprueba si existen las actividades necesarias
         List<Activity> comprobacionActividades;
         comprobacionActividades = db.activityDao().getAll();
-        Log.d("DEBUGG-DB", ""+comprobacionActividades.size());
 
         //comprueba que no falte ninguna actividad, si falta alguna la añade
         for (int i=0; i<comprobacionActividades.size(); i++){
