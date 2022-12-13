@@ -3297,6 +3297,7 @@ int id unlabeled 0x7f0a0242
 int id up 0x7f0a0243
 int id useLogo 0x7f0a0244
 int id vertical_only 0x7f0a0245
+int id view 0x7f0a0259
 int id viewFondo 0x7f0a0246
 int id view_offset_helper 0x7f0a0247
 int id view_transition 0x7f0a0248

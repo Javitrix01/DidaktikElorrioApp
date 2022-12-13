@@ -138,6 +138,7 @@ id textView9
 id textViewDescripcion
 id textViewTituloAct
 id txtPreguntaCruces
+id view
 id viewFondo
 layout activity_crear_mapa_puzzle
 layout activity_errebonbiloa
