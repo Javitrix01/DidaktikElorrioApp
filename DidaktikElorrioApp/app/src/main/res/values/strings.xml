@@ -16,9 +16,9 @@
     <string name="logo">lorrion Barne</string>
     <string name="developers">developer - Gal Tager</string>
     <string name="game8">Puzzle Mapa</string>
-    <string name="game15">15 puzzle</string>
+    <string name="game15">Mapa Elorrio</string>
     <string name="game24">24 puzzle</string>
-    <string name="Score">Score: </string>
+    <string name="Score">Mugimenduak: </string>
     <string name="bestScore">Record: </string>
     <string name="you_won">You have won! Congratulations!</string>
     <string name="about_title">About:</string>

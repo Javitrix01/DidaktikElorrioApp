@@ -1709,7 +1709,7 @@
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
     <string name="Intro_ActCruces">KURUTZIAGAKO GURUTZEA:\n\nKurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.\n\nMahatsondoz apaindutako ardatz baten gainean jasotzen da gurutze, mahatsondo horien artean hegaztiak eta munstroak tartekatzen dira, ongiaren eta gaizkiaren arteko borrokaren erakusgarri bikaina izanik. Haren gainean hainbat santu jagole agertzen dira, horma-hobietan sartuta: San Pedro, San Andres, San Joan Bataiatzailea, Santa Marina, Santa Katalina Alexandriakoa eta Santiago erromesa.\n\nGurutzearen aurrealdean, Kristo Gurutziltzatua ikusten da, hilzorian, buruan arantza-koroa duela eta gona motz batez jantzia. Atzealdean, Ama Birjinak Haurtxoa du aldakan eutsia, eta samurtasunez igurzten dio oinatxoa.\n\nElorrion bederatzi gurutze daude. Kurutziagako Gurutzea, Santa Anako Gurutzea, Kurutzebarriko Gurutzea, Ganondoko Gurutzea, Santa Elenako Gurutzea, Iguriako Gurutzea, San Joango Gurutzea, Txanberiko Gurutzea eta Kurutzondoko Gurutzea. Hona hemen 8 gurutzeen mapa, 1 falta da:</string>
-    <string name="Score">Score: </string>
+    <string name="Score">daramatzazun mugimenduak: </string>
     <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
     <string name="_3x3">3X3</string>
     <string name="_4x4">4X4</string>
@@ -1814,7 +1814,7 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="full_logo">Gogoratu argazkia!!</string>
     <string name="g">G</string>
-    <string name="game15">15 puzzle</string>
+    <string name="game15">Mapa Elorrio</string>
     <string name="game24">24 puzzle</string>
     <string name="game8">Puzzle Mapa</string>
     <string name="hasmemorizado">Has memorizado??</string>

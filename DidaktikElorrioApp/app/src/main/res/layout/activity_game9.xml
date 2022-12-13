@@ -185,6 +185,13 @@
                 android:layout_marginBottom="@dimen/button_margin_border"
                 android:contentDescription="@string/button" />
         </GridLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_list"
+            android:text="Trampa Egin!!" />
     </LinearLayout>
 
     <Button

@@ -253,6 +253,7 @@ id btnPasteleriaBaieztatu
 id btnitzuli
 id button
 id button2
+id button3
 id button7
 id card1
 id card1515
@@ -327,6 +328,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id jarraituPuzzle
 id languageChipGroup
 id last
 id layoutInfoActividad
