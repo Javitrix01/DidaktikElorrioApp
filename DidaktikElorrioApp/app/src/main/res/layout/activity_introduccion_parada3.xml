@@ -7,6 +7,7 @@
     tools:context=".IntroduccionParada3">
 
     <ScrollView
+        android:id="@+id/SVUdaletxe"
         android:layout_width="413dp"
         android:layout_height="216dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
@@ -20,13 +21,14 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Intro_ActBasilica" />
+            android:text="@string/elorrioko_udaletxea_elorrioko_udaletxea_gernikako_arbola_plazan_kokatuta_dago_eta_xviii_mendean_eraiki_zuten_estilo_euskal_barrokoa_da_eta_asmo_urbanoa_eta_monumentala_du" />
     </ScrollView>
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="220dp"
         android:layout_height="208dp"
+        android:contentDescription="@string/alcalde"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
