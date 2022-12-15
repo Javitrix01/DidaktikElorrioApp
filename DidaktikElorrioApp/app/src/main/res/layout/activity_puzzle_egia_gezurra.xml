@@ -16,15 +16,15 @@
 
         <LinearLayout
             android:id="@+id/linearLayout5"
-            android:layout_width="159dp"
-            android:layout_height="452dp"
+            android:layout_width="161dp"
+            android:layout_height="439dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/linearLayout3"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.495">
+            app:layout_constraintVertical_bias="0.442">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,19 +123,19 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="63dp"
                 android:orientation="horizontal">
 
                 <CheckBox
                     android:id="@+id/P6E"
-                    android:layout_width="85dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
                     android:id="@+id/P6G"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="66dp"
                     android:layout_weight="1"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
@@ -220,52 +220,52 @@
             app:layout_constraintVertical_bias="0.586">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textViewGaldera1"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="TextView" />
+                android:text="@string/argi_etako_nekropolia" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewGaldera2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="TextView" />
+                android:text="@string/argi_etako_nekropolia_erromantikoa" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textViewGaldera3"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="TextView" />
+                android:text="@string/v_eta_x_mendeen_eraiki_zen" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textViewGaldera4"
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
-                android:text="TextView" />
+                android:text="@string/_22_hilobik_osatzen_dute_nekropolia" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textViewGaldera5"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="TextView" />
+                android:text="@string/bisigodoak_hilobiak_egin_zituzten" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textViewGaldera6"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="TextView" />
+                android:layout_height="62dp"
+                android:text="@string/hilobiak_3_zatitan_eginda" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textViewGaldera7"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="TextView" />
+                android:text="@string/ingelesezko_inskripzioak" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textViewGaldera8"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="TextView" />
+                android:text="@string/estelak_hilobiak_baino_zaharragoak_dira" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
