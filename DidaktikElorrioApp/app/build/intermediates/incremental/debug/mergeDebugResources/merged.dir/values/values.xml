@@ -15,7 +15,11 @@
         </item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
+<<<<<<< HEAD
         <item>@font/fontdiner_swanky</item>
+=======
+        <item>@font/baloo</item>
+>>>>>>> main
     </array>
     <attr format="enum" name="animateCircleAngleTo">
         <enum name="bestChoice" value="0"/>
@@ -613,6 +617,11 @@
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+<<<<<<< HEAD
+=======
+    <color name="White">#fff</color>
+    <color name="Wood">#C45818</color>
+>>>>>>> main
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -620,8 +629,15 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+<<<<<<< HEAD
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+=======
+    <color name="alphaWhite">#7affffff</color>
+    <color name="androidx_core_ripple_material_light">#1f000000</color>
+    <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+    <color name="backgroundColor">#191919</color>
+>>>>>>> main
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -639,6 +655,12 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+<<<<<<< HEAD
+=======
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+>>>>>>> main
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -688,6 +710,10 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="error_color_material_dark">#ff7043</color>
     <color name="error_color_material_light">#ff5722</color>
+<<<<<<< HEAD
+=======
+    <color name="fontOfButtons">#422c10</color>
+>>>>>>> main
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -863,6 +889,10 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
+<<<<<<< HEAD
+=======
+    <color name="secondWood">#F2A94B</color>
+>>>>>>> main
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
@@ -958,6 +988,15 @@
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="appcompat_dialog_background_inset">16dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="buttonNavigation">50dp</dimen>
+    <dimen name="buttonSize15">80dp</dimen>
+    <dimen name="buttonSize24">60dp</dimen>
+    <dimen name="buttonSize9">100dp</dimen>
+    <dimen name="button_margin">3dp</dimen>
+    <dimen name="button_margin_border">15dp</dimen>
+>>>>>>> main
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -1487,6 +1526,16 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="textRecord15">30sp</dimen>
+    <dimen name="textRecord24">30sp</dimen>
+    <dimen name="textRecord9">30sp</dimen>
+    <dimen name="textScore15">30sp</dimen>
+    <dimen name="textScore24">30sp</dimen>
+    <dimen name="textScore9">30sp</dimen>
+    <dimen name="titleSize">60sp</dimen>
+>>>>>>> main
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -1686,6 +1735,17 @@
     <item quantity="one"><ns2:g id="count">%d</ns2:g> new notification</item>
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
+<<<<<<< HEAD
+=======
+    <string name="GozotegiIntro">Gozotegi Pello:\n\nReliquias de San Valentín bizkotxo zoragarriak dira, usain sekretudunak, txokolate zurizko geruza fin batez eta esnedun txokolate txorrotada batez estaliak. Durangoko eta Elorrioko gozotegietan erosi ahalko dituzu eta santuaren argazkia duen kaxa polit batean bilduta emango dizkizute.</string>
+    <string name="Intro_ActBasilica">SORTZEZ GARBIAREN BASILIKA:\n\nSortzez Garbiaren Basilika Bizkaiko tenplurik handiena da eta Elorrioko plazan aurkitu dezakezu. Elorrioko herritarrak ziren Diego Martín de Arcek, Juan de Munarrek, Juan Antonio de Ontañónek eta Antonio Jiménez Echevarríak XV-XVI (15-16). mendetan sortu zuten.\n\nGarai batean, basilikan kontuz ibili behar zen, harrizko aingeruei, denboraren poderioz, buruak erortzen baizitzaizkien.\n\nGaur egun, basilika ekitaldi erlijiosoetarako erabiltzen da, hala nola, igandero ematen da meza eta batzuetan ezkontzak, bataioak eta jaunartzeak ospatzen dira.</string>
+    <string name="Intro_ActCruces">KURUTZIAGAKO GURUTZEA:\n\nKurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.\n\nMahatsondoz apaindutako ardatz baten gainean jasotzen da gurutze, mahatsondo horien artean hegaztiak eta munstroak tartekatzen dira, ongiaren eta gaizkiaren arteko borrokaren erakusgarri bikaina izanik. Haren gainean hainbat santu jagole agertzen dira, horma-hobietan sartuta: San Pedro, San Andres, San Joan Bataiatzailea, Santa Marina, Santa Katalina Alexandriakoa eta Santiago erromesa.\n\nGurutzearen aurrealdean, Kristo Gurutziltzatua ikusten da, hilzorian, buruan arantza-koroa duela eta gona motz batez jantzia. Atzealdean, Ama Birjinak Haurtxoa du aldakan eutsia, eta samurtasunez igurzten dio oinatxoa.\n\nElorrion bederatzi gurutze daude. Kurutziagako Gurutzea, Santa Anako Gurutzea, Kurutzebarriko Gurutzea, Ganondoko Gurutzea, Santa Elenako Gurutzea, Iguriako Gurutzea, San Joango Gurutzea, Txanberiko Gurutzea eta Kurutzondoko Gurutzea. Hona hemen 8 gurutzeen mapa, 1 falta da:</string>
+    <string name="Score">Mugimenduak: </string>
+    <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
+    <string name="_3x3">3X3</string>
+    <string name="_4x4">4X4</string>
+    <string name="_5x5">5X5</string>
+>>>>>>> main
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -1713,19 +1773,51 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns2:g example="Mail" id="application_name">%s</ns2:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+<<<<<<< HEAD
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">DidaktikElorrioApp</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="baieztatu">Baieztatu</string>
+=======
+    <string name="about_text"><b>15 puzzle</b>\n\nThe number in the title game is set on the number of cells. Each cell is numbered. One of the cells is not occupied. The player can move the cells by the free cell. Goal of the game - moving the cells of the box to achieve the ordering of numbers in ascending order, it is desirable to making as little as possible moves. Cells moved by pressing.\n\nby: <b> Mr. Alex</b></string>
+    <string name="about_title">About:</string>
+    <string name="accept_changes">Accept Changes</string>
+    <string name="action_settings">Settings</string>
+    <string name="alcalde">Alcalde</string>
+    <string name="android_animations_lib_name">AndroidAnimations</string>
+    <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="app_name">DidaktikElorrioApp</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="arespakotxaga_jauregia">ARESPAKOTXAGA JAUREGIA:\n\nArespakotxaga-Mendibil jauregia oinplano angeluzuzeneko eraikina da, Elorrioko alde zaharreko Don Tello kalean kokatuta dago. Altuera handiko eraikina da. Beheko solairuaz gain, beste bi pisu ditu. Lehenengo solairuaren erdian balkoi bat aurkitu daiteke. Gainera ganbaran, hiru zulo irekitzen dira eta eskuineko alboko aldeak armarri bat du. Beste alboko eta atzeko aldeetan, burdinezko hesiak dituen horma batek mugatzen duen lorategia du.\n\nArespakotxaga Jauregiaz aparte, beste sei jauregi aurkitu ahal dituzu Elorrion zehar. Hona hemen jauregi guztien mapa bat:</string>
+    <string name="argi_etako_nekropolia">Argiñetako Nekropolia Bilbon dago</string>
+    <string name="argi_etako_nekropolia_erromantikoa">Argiñetako nekropolia hilerri erromantikoa da</string>
+    <string name="arginekropolia">Argiñetako nekropolia Elorrioko San Adrian de Argiñeta ermitan aurki dezakezun antzinako hilerri erromantikoa da. V. (5) eta X(10). mendeen artean sortu zen, baina XVI. (16) mendean berreraiki zuten. Bertako baselizaz gain, 21 hilobik osatzen dute.\n\nGoi Erdi Arora arte eraikitako sarkofagoen kopurua nahiz kronologia aintzat hartuta, nekropolia Euskal Herriko hileta-monumenturik garrantzitsuenetariko bat da.\n\n711. urtean Guadaleteko batailaren ostean arabiarrengandik ihesi zetozen bisigodoak Elorrioraino heldu ziren eta, antza denez, Argiñetan egin zituzten eurentzako hilobiak. Zati bitan eginda daude hilobiak: Gainaldea triangelu itxurakoa da eta beheko partean harrian landutako hilobia dago. San Adrian ermitaren aurrealdean daude hilobiok. Latinezko inskripzioak ere badira hilobi batzuetan eta horietako baten arabera, 893. urte ingurukoa da hilobi hori. Argiñeta berezi egiten dutenak estelak ere badira. Hauek hilobiak baino zaharragoak dira, kristau aurreko garaikoak.</string>
+    <string name="baieztatu">Baieztatu</string>
+    <string name="bestScore">Record: </string>
+    <string name="bisigodoak_hilobiak_egin_zituzten">Bisigodoak hilobiak egin zituzten</string>
+    <string name="board_15">15 board</string>
+    <string name="board_24">24 board</string>
+    <string name="board_8">8 board</string>
+>>>>>>> main
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an accessibility action to collapse the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
     <string description="A description of an accessibility action to expand the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_expand">Expand the bottom sheet</string>
     <string description="A description of an action that a user of an accessibility service can perform to expand a bottomsheet halfway to its full height. [CHAR LIMIT=25]" name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string description="An accessibility feedback when the bottom sheet drag handle is clicked [CHAR LIMIT=NONE]" name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
     <string description="The content description of bottom sheet drag handles [CHAR LIMIT=NONE]" name="bottomsheet_drag_handle_content_description">Drag handle</string>
+<<<<<<< HEAD
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+=======
+    <string name="button">button</string>
+    <string name="buttonSound">Sound ON or OFF</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="choose_puzzle">Choose Puzzle</string>
+>>>>>>> main
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
@@ -1746,11 +1838,22 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
+<<<<<<< HEAD
     <string name="e">E</string>
+=======
+    <string name="developers">developer - Gal Tager</string>
+    <string name="e">E</string>
+    <string name="elorrioko_udaletxea_elorrioko_udaletxea_gernikako_arbola_plazan_kokatuta_dago_eta_xviii_mendean_eraiki_zuten_estilo_euskal_barrokoa_da_eta_asmo_urbanoa_eta_monumentala_du">ELORRIOKO UDALETXEA:\n\nElorrioko udaletxea Gernikako Arbola plazan kokatuta dago eta XVIII. mendean eraiki zuten.\n\nEstilo euskal barrokoa da, eta asmo urbanoa eta monumentala du.</string>
+    <string name="empiezaPuzzle">Pues empieza el puzzle!!!</string>
+    <string name="empty">Empty</string>
+    <string name="english">English</string>
+    <string name="errebonbilloaren">Errebonbilloaren estatua Elorrioko plaza ondoan aurkitzen da 2003tik. Honek, ia ondare guztiak bezala, istorio interesgarri eta polit bat dauka. Kasu honetan, hauxe da: 1571an Lepantoko gudatik bueltan zeuden herriko 15 soldaduek Elorriora heltzean, tiroak bota zituzten pozaren pozez. Hori dela eta, urtero, urriaren lehenengo domekan gauza bera egiten da gazte haiek oroitzeko goizeko eta arratsaldeko 6retan.</string>
+>>>>>>> main
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
   </string>
     <string name="error_icon_content_description">Error</string>
+<<<<<<< HEAD
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
@@ -1760,6 +1863,46 @@
     <string name="item_view_role_description">Tab</string>
     <string name="itzuli">itzuli</string>
     <string name="jarraitu">Jarraitu</string>
+=======
+    <string name="estelak_hilobiak_baino_zaharragoak_dira">Estelak hilobiak baino zaharragoak dira</string>
+    <string name="explicacionPuzzle">1.- Jolastu eta gozatu. Zure helburua piezak mapatik bere lekura mugitzea da\n\n2.- Hasierako posizioarekin gustura ez bazaude edo akatsen bat egin bazenu, berriro aztertu eta has zaitezke. hasieratik, beti posible ez dela gogoratzen duzulako\n\n3.- Mapako argazki bakoitzean zenbakiak jarri ditugu jarduera errazteko\n\n4.- Azkenik, puzzlean ausartegiak bazaudete, ez egin, eta jauzi egin dezakegu, jarraian.</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="finished_button">Submit</string>
+    <string name="finished_dialog_text">Congratulations \n You won the game in</string>
+    <string name="finished_edittext">Enter you Name</string>
+    <string name="finished_name">Please Enter Your Name</string>
+    <string name="finished_steps"> Steps</string>
+    <string name="firstLogo">E</string>
+    <string name="firstMsg">First time ?\nTry 8 Board\nfor a warm up.</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="full_logo">Gogoratu argazkia!!</string>
+    <string name="g">G</string>
+    <string name="game15">Mapa Elorrio</string>
+    <string name="game24">24 puzzle</string>
+    <string name="game8">Puzzle Mapa</string>
+    <string name="hasmemorizado">Has memorizado??</string>
+    <string name="hebrew">Hebrew</string>
+    <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hilobiak_3_zatitan_eginda">Hilobiak 3. zatitan eginda daude: gainaldea triangelua, erdian borobilezko harria eta beheko aldean hilobia.</string>
+    <string name="hint">Hint</string>
+    <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
+    <string name="info_dialog_button">I got it</string>
+    <string name="info_text">1) First chose the size of the board.\n2) There is no need to shuffle… we will do it\nfor you.\n3) You are ready. Play and injoy. Your goal is to move the puzzle parts to their place: the sequence you dicided to solve.\n \nAlso, take a tip form us: if you are unhappy with the starting position, or made a mistake you can just shuffle again and start from the beginning.\n \nAnd remember not everything is possible.</string>
+    <string name="info_text_init">It\'s very simple to start but hard to finish</string>
+    <string name="info_title">how to play?</string>
+    <string name="information">information</string>
+    <string name="ingelesezko_inskripzioak">Ingelesezko inskripzioak daude hilobietan idatzia</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="itzuli">itzuli</string>
+    <string name="jarraitu">Jarraitu</string>
+    <string name="lastMsg">before trying 24 board\ntry first 15 Board</string>
+    <string name="leader_board">Leader Board</string>
+    <string name="level15">15</string>
+    <string name="level24">24</string>
+    <string name="logo">lorrion Barne</string>
+>>>>>>> main
     <string name="m3_sys_motion_easing_emphasized" translatable="false">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="m3_sys_motion_easing_emphasized_accelerate" translatable="false">cubic-bezier(0.3, 0.0, 0.8, 0.2)</string>
     <string name="m3_sys_motion_easing_emphasized_decelerate" translatable="false">cubic-bezier(0.1, 0.7, 0.1, 1.0)</string>
@@ -1857,14 +2000,48 @@
     <string name="mtrl_switch_track_path" translatable="false">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string description="Button text to indicate that the widget will ignore the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_cancel">Cancel</string>
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
+<<<<<<< HEAD
+=======
+    <string name="mute_unmute_sound">Mute/Unmute Sound</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="notSave">Saving missing! Press a new game.</string>
+>>>>>>> main
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+<<<<<<< HEAD
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="titulo_app">DidaktikApp!</string>
+=======
+    <string name="play">Play</string>
+    <string name="playZoo">Play</string>
+    <string name="previous">Previous</string>
+    <string name="puzzle1">Mapa buruz ikasi ondoren,</string>
+    <string name="puzzle2"> jokoa hasten da!!</string>
+    <string name="rank">Rank</string>
+    <string name="score">Score</string>
+    <string name="search_menu_title">Search</string>
+    <string name="secondMsg">do you feel\nluck today?\ntry 24 board</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="setting">Setting</string>
+    <string name="sound_off">Sound OFF</string>
+    <string name="sound_on">Sound On</string>
+    <string name="sound_setting">Sound Setting</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_activity_borrarluego">borrarluego</string>
+    <string name="titulo_app">DidaktikApp!</string>
+    <string name="una_cruz_con_ojos">Una Cruz con ojos</string>
+    <string name="v_eta_x_mendeen_eraiki_zen">V. eta X. mendeen artean eraiki zen</string>
+    <string name="you_won">You have won! Congratulations!</string>
+    <string name="you_won_24">You won the most difficult level\' new levels will open soon</string>
+    <string name="you_won_toast">You Won the game, Go Back and try the Harder Board</string>
+    <string name="zein_gurutze">Zein gurutze falta da?</string>
+    <string name="zoo">Zoo</string>
+>>>>>>> main
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -1878,6 +2055,15 @@
     <item name="android:windowEnterAnimation">@anim/mtrl_bottom_sheet_slide_in</item>
     <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
   </style>
+<<<<<<< HEAD
+=======
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+>>>>>>> main
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
@@ -8387,6 +8573,52 @@
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
+<<<<<<< HEAD
+=======
+    <style name="bNavigationStyle">
+        <item name="android:layout_width">@dimen/buttonNavigation</item>
+        <item name="android:layout_height">@dimen/buttonNavigation</item>
+    </style>
+    <style name="gridBGameStyle15">
+        <item name="android:layout_width">@dimen/buttonSize15</item>
+        <item name="android:layout_height">@dimen/buttonSize15</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="gridBGameStyle24">
+        <item name="android:layout_width">@dimen/buttonSize24</item>
+        <item name="android:layout_height">@dimen/buttonSize24</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="gridBGameStyle9">
+        <item name="android:layout_width">@dimen/buttonSize9</item>
+        <item name="android:layout_height">@dimen/buttonSize9</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="textGameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="textPuzzleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Wood</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+>>>>>>> main
     <declare-styleable name="ActionBar">
         
         <attr name="navigationMode">
