@@ -80,6 +80,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="itzuli">itzuli</string>
+
     <string name="zein_gurutze">Zein gurutze falta da?</string>
     <string name="argi_etako_nekropolia">Argiñetako Nekropolia Bilbon dago</string>
     <string name="argi_etako_nekropolia_erromantikoa">Argiñetako nekropolia hilerri erromantikoa da</string>
@@ -98,5 +99,11 @@
     <string name="arespakotxaga_jauregia">ARESPAKOTXAGA JAUREGIA:\n\nArespakotxaga-Mendibil jauregia oinplano angeluzuzeneko eraikina da, Elorrioko alde zaharreko Don Tello kalean kokatuta dago. Altuera handiko eraikina da. Beheko solairuaz gain, beste bi pisu ditu. Lehenengo solairuaren erdian balkoi bat aurkitu daiteke. Gainera ganbaran, hiru zulo irekitzen dira eta eskuineko alboko aldeak armarri bat du. Beste alboko eta atzeko aldeetan, burdinezko hesiak dituen horma batek mugatzen duen lorategia du.\n\nArespakotxaga Jauregiaz aparte, beste sei jauregi aurkitu ahal dituzu Elorrion zehar. Hona hemen jauregi guztien mapa bat:</string>
     <string name="errebonbilloaren">Errebonbilloaren estatua Elorrioko plaza ondoan aurkitzen da 2003tik. Honek, ia ondare guztiak bezala, istorio interesgarri eta polit bat dauka. Kasu honetan, hauxe da: 1571an Lepantoko gudatik bueltan zeuden herriko 15 soldaduek Elorriora heltzean, tiroak bota zituzten pozaren pozez. Hori dela eta, urtero, urriaren lehenengo domekan gauza bera egiten da gazte haiek oroitzeko goizeko eta arratsaldeko 6retan.</string>
     <string name="arginekropolia">Argiñetako nekropolia Elorrioko San Adrian de Argiñeta ermitan aurki dezakezun antzinako hilerri erromantikoa da. V. (5) eta X(10). mendeen artean sortu zen, baina XVI. (16) mendean berreraiki zuten. Bertako baselizaz gain, 21 hilobik osatzen dute.\n\nGoi Erdi Arora arte eraikitako sarkofagoen kopurua nahiz kronologia aintzat hartuta, nekropolia Euskal Herriko hileta-monumenturik garrantzitsuenetariko bat da.\n\n711. urtean Guadaleteko batailaren ostean arabiarrengandik ihesi zetozen bisigodoak Elorrioraino heldu ziren eta, antza denez, Argiñetan egin zituzten eurentzako hilobiak. Zati bitan eginda daude hilobiak: Gainaldea triangelu itxurakoa da eta beheko partean harrian landutako hilobia dago. San Adrian ermitaren aurrealdean daude hilobiok. Latinezko inskripzioak ere badira hilobi batzuetan eta horietako baten arabera, 893. urte ingurukoa da hilobi hori. Argiñeta berezi egiten dutenak estelak ere badira. Hauek hilobiak baino zaharragoak dira, kristau aurreko garaikoak.</string>
+
+
+    <string name="location_permission_denied">LocPermission_denied</string>
+    <string name="permission_required_toast">PermissionRequired_Toast</string>
+    <string name="permission_rationale_location">PermissionRationaleLocation</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
