@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
         comprobacionActividades = db.activityDao().getAll();
 
         //comprueba que no falte ninguna actividad, si falta alguna la añade
-        for (int i=0; i<comprobacionActividades.size(); i++){
-            if (comprobacionActividades.get(i).getId() != actividades.get(i).getId()){
+        for (int i=0; i<actividades.size(); i++){
+            if (actividades.get(i).getId() != comprobacionActividades.get(i).getId()){
                 db.activityDao().insertActivity(actividades.get(i));
             }
         }
