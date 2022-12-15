@@ -47,7 +47,7 @@
     <dimen name="textScore9">30sp</dimen>
     <dimen name="titleSize">60sp</dimen>
     <string name="Intro_ActCruces">KURUTZIAGAKO GURUTZEA:\n\nKurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.\n\nMahatsondoz apaindutako ardatz baten gainean jasotzen da gurutze, mahatsondo horien artean hegaztiak eta munstroak tartekatzen dira, ongiaren eta gaizkiaren arteko borrokaren erakusgarri bikaina izanik. Haren gainean hainbat santu jagole agertzen dira, horma-hobietan sartuta: San Pedro, San Andres, San Joan Bataiatzailea, Santa Marina, Santa Katalina Alexandriakoa eta Santiago erromesa.\n\nGurutzearen aurrealdean, Kristo Gurutziltzatua ikusten da, hilzorian, buruan arantza-koroa duela eta gona motz batez jantzia. Atzealdean, Ama Birjinak Haurtxoa du aldakan eutsia, eta samurtasunez igurzten dio oinatxoa.\n\nElorrion bederatzi gurutze daude. Kurutziagako Gurutzea, Santa Anako Gurutzea, Kurutzebarriko Gurutzea, Ganondoko Gurutzea, Santa Elenako Gurutzea, Iguriako Gurutzea, San Joango Gurutzea, Txanberiko Gurutzea eta Kurutzondoko Gurutzea. Hona hemen 8 gurutzeen mapa, 1 falta da:</string>
-    <string name="Score">Score: </string>
+    <string name="Score">Mugimenduak: </string>
     <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
     <string name="_3x3">3X3</string>
     <string name="_4x4">4X4</string>
@@ -85,9 +85,9 @@
     <string name="firstLogo">E</string>
     <string name="firstMsg">First time ?\nTry 8 Board\nfor a warm up.</string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="full_logo">Memoriza la foto!!!</string>
+    <string name="full_logo">Gogoratu argazkia!!</string>
     <string name="g">G</string>
-    <string name="game15">15 puzzle</string>
+    <string name="game15">Mapa Elorrio</string>
     <string name="game24">24 puzzle</string>
     <string name="game8">Puzzle Mapa</string>
     <string name="hasmemorizado">Has memorizado??</string>
@@ -106,7 +106,7 @@
     <string name="leader_board">Leader Board</string>
     <string name="level15">15</string>
     <string name="level24">24</string>
-    <string name="logo">mpieza la Aventura!</string>
+    <string name="logo">lorrion Barne</string>
     <string name="mapa">Mapa</string>
     <string name="mapaelorrio">MapaElorrio</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
@@ -118,8 +118,8 @@
     <string name="play">Play</string>
     <string name="playZoo">Play</string>
     <string name="previous">Previous</string>
-    <string name="puzzle1">Una vez aprendido el mapa</string>
-    <string name="puzzle2">Empieza el juego</string>
+    <string name="puzzle1">Mapa buruz ikasi ondoren,</string>
+    <string name="puzzle2"> jokoa hasten da!!</string>
     <string name="rank">Rank</string>
     <string name="score">Score</string>
     <string name="secondMsg">do you feel\nluck today?\ntry 24 board</string>

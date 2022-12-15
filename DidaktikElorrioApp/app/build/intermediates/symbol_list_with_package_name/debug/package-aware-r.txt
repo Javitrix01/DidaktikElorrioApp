@@ -3046,6 +3046,7 @@ id btnPasteleriaBaieztatu
 id btnitzuli
 id button
 id button2
+id button3
 id button7
 id buttonPanel
 id cache_measures
@@ -3251,6 +3252,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id jarraituPuzzle
 id jumpToEnd
 id jumpToStart
 id labeled

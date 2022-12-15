@@ -22,14 +22,14 @@
             android:layout_alignParentLeft="true"
             android:contentDescription="@string/button"
             />
+
         <ImageButton
             android:id="@+id/bSoundOffOn9"
             style="@style/bNavigationStyle"
-            android:src="@drawable/soundoff"
-            android:background="@android:color/transparent"
             android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
             android:contentDescription="@string/button"
-            />
+            android:src="@drawable/soundoff" />
         <ImageButton
             android:id="@+id/bNewGame9"
             android:background="@drawable/restart"
@@ -185,6 +185,13 @@
                 android:layout_marginBottom="@dimen/button_margin_border"
                 android:contentDescription="@string/button" />
         </GridLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_list"
+            android:text="Trampa Egin!!" />
     </LinearLayout>
 
     <Button
