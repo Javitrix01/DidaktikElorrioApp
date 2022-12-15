@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -29,19 +30,24 @@ public final class ActivityIntroduccionParada2Binding implements ViewBinding {
   public final ImageView imageView8;
 
   @NonNull
+  public final LinearLayout linearLayout8;
+
+  @NonNull
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView textViewIntroBasilica;
 
   private ActivityIntroduccionParada2Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP2, @NonNull ImageView imageView8, @NonNull SeekBar seekBar,
-      @NonNull TextView textView3) {
+      @NonNull Button btnJarraituP2, @NonNull ImageView imageView8,
+      @NonNull LinearLayout linearLayout8, @NonNull SeekBar seekBar,
+      @NonNull TextView textViewIntroBasilica) {
     this.rootView = rootView;
     this.btnJarraituP2 = btnJarraituP2;
     this.imageView8 = imageView8;
+    this.linearLayout8 = linearLayout8;
     this.seekBar = seekBar;
-    this.textView3 = textView3;
+    this.textViewIntroBasilica = textViewIntroBasilica;
   }
 
   @Override
@@ -83,20 +89,26 @@ public final class ActivityIntroduccionParada2Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout8;
+      LinearLayout linearLayout8 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout8 == null) {
+        break missingId;
+      }
+
       id = R.id.seekBar;
       SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
       if (seekBar == null) {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.textViewIntroBasilica;
+      TextView textViewIntroBasilica = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroBasilica == null) {
         break missingId;
       }
 
       return new ActivityIntroduccionParada2Binding((ConstraintLayout) rootView, btnJarraituP2,
-          imageView8, seekBar, textView3);
+          imageView8, linearLayout8, seekBar, textViewIntroBasilica);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

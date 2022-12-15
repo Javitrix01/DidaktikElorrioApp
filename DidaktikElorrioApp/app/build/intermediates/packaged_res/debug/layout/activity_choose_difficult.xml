@@ -195,6 +195,6 @@
         android:alpha="0.4"
         android:clickable="false"
         android:scaleType="fitXY"
-        android:src="@drawable/card2424"
+        android:src="@drawable/animated_charc"
         android:visibility="invisible" />
 </RelativeLayout>

@@ -82,7 +82,7 @@ public final class ActivityGame15Binding implements ViewBinding {
   public final TextView gameTitle15;
 
   @NonNull
-  public final Button hint;
+  public final Button jarraituPuzzle;
 
   @NonNull
   public final TextView tBestScore15;
@@ -103,9 +103,9 @@ public final class ActivityGame15Binding implements ViewBinding {
       @NonNull ImageButton b1522, @NonNull ImageButton b1523, @NonNull ImageButton b1530,
       @NonNull ImageButton b1531, @NonNull ImageButton b1532, @NonNull ImageButton b1533,
       @NonNull ImageButton bBackMenu15, @NonNull ImageButton bNewGame15,
-      @NonNull ImageButton bSoundOffOn15, @NonNull TextView gameTitle15, @NonNull Button hint,
-      @NonNull TextView tBestScore15, @NonNull TextView tSScore15, @NonNull TextView tScore15,
-      @NonNull TextView textBestScore15) {
+      @NonNull ImageButton bSoundOffOn15, @NonNull TextView gameTitle15,
+      @NonNull Button jarraituPuzzle, @NonNull TextView tBestScore15, @NonNull TextView tSScore15,
+      @NonNull TextView tScore15, @NonNull TextView textBestScore15) {
     this.rootView = rootView;
     this.b1500 = b1500;
     this.b1501 = b1501;
@@ -127,7 +127,7 @@ public final class ActivityGame15Binding implements ViewBinding {
     this.bNewGame15 = bNewGame15;
     this.bSoundOffOn15 = bSoundOffOn15;
     this.gameTitle15 = gameTitle15;
-    this.hint = hint;
+    this.jarraituPuzzle = jarraituPuzzle;
     this.tBestScore15 = tBestScore15;
     this.tSScore15 = tSScore15;
     this.tScore15 = tScore15;
@@ -281,9 +281,9 @@ public final class ActivityGame15Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.hint;
-      Button hint = ViewBindings.findChildViewById(rootView, id);
-      if (hint == null) {
+      id = R.id.jarraituPuzzle;
+      Button jarraituPuzzle = ViewBindings.findChildViewById(rootView, id);
+      if (jarraituPuzzle == null) {
         break missingId;
       }
 
@@ -313,7 +313,7 @@ public final class ActivityGame15Binding implements ViewBinding {
 
       return new ActivityGame15Binding((RelativeLayout) rootView, b1500, b1501, b1502, b1503, b1510,
           b1511, b1512, b1513, b1520, b1521, b1522, b1523, b1530, b1531, b1532, b1533, bBackMenu15,
-          bNewGame15, bSoundOffOn15, gameTitle15, hint, tBestScore15, tSScore15, tScore15,
+          bNewGame15, bSoundOffOn15, gameTitle15, jarraituPuzzle, tBestScore15, tSScore15, tScore15,
           textBestScore15);
     }
     String missingId = rootView.getResources().getResourceName(id);

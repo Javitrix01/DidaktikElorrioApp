@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,25 +25,34 @@ public final class ActivityIntroduccionParada5Binding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ScrollView SVJauregia;
+
+  @NonNull
   public final Button btnJarraituP5;
 
   @NonNull
   public final ImageView imageView16;
 
   @NonNull
+  public final LinearLayout linearLayout10;
+
+  @NonNull
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView6;
+  public final TextView textViewIntroJauregia;
 
   private ActivityIntroduccionParada5Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP5, @NonNull ImageView imageView16, @NonNull SeekBar seekBar,
-      @NonNull TextView textView6) {
+      @NonNull ScrollView SVJauregia, @NonNull Button btnJarraituP5, @NonNull ImageView imageView16,
+      @NonNull LinearLayout linearLayout10, @NonNull SeekBar seekBar,
+      @NonNull TextView textViewIntroJauregia) {
     this.rootView = rootView;
+    this.SVJauregia = SVJauregia;
     this.btnJarraituP5 = btnJarraituP5;
     this.imageView16 = imageView16;
+    this.linearLayout10 = linearLayout10;
     this.seekBar = seekBar;
-    this.textView6 = textView6;
+    this.textViewIntroJauregia = textViewIntroJauregia;
   }
 
   @Override
@@ -71,6 +82,12 @@ public final class ActivityIntroduccionParada5Binding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.SVJauregia;
+      ScrollView SVJauregia = ViewBindings.findChildViewById(rootView, id);
+      if (SVJauregia == null) {
+        break missingId;
+      }
+
       id = R.id.btnJarraituP5;
       Button btnJarraituP5 = ViewBindings.findChildViewById(rootView, id);
       if (btnJarraituP5 == null) {
@@ -83,20 +100,26 @@ public final class ActivityIntroduccionParada5Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout10;
+      LinearLayout linearLayout10 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout10 == null) {
+        break missingId;
+      }
+
       id = R.id.seekBar;
       SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
       if (seekBar == null) {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
+      id = R.id.textViewIntroJauregia;
+      TextView textViewIntroJauregia = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroJauregia == null) {
         break missingId;
       }
 
-      return new ActivityIntroduccionParada5Binding((ConstraintLayout) rootView, btnJarraituP5,
-          imageView16, seekBar, textView6);
+      return new ActivityIntroduccionParada5Binding((ConstraintLayout) rootView, SVJauregia,
+          btnJarraituP5, imageView16, linearLayout10, seekBar, textViewIntroJauregia);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
