@@ -109,6 +109,21 @@
             android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
             android:exported="false" />
         <activity
+            android:name="com.elorrieta.didaktikelorrioapp.GameActivity15"
+            android:exported="false" />
+        <activity
+            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
+            android:exported="false" />
+        <activity
+            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
+            android:exported="false" />
+        <activity
+            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
             android:exported="true" >
             <intent-filter>
