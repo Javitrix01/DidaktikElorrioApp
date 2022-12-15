@@ -11,4 +11,10 @@
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
     <string name="itzuli">itzuli</string>
+    <string name="location_permission_denied">LocPermission_denied</string>
+    <string name="permission_required_toast">PermissionRequired_Toast</string>
+    <string name="permission_rationale_location">PermissionRationaleLocation</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
