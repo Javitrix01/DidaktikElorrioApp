@@ -186,15 +186,15 @@
         android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:alpha="0.4"/>
+
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/card2424"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.4"
         android:clickable="false"
         android:scaleType="fitXY"
         android:src="@drawable/card2424"
-        android:id="@+id/card2424"
-        android:background="@android:color/transparent"
-        android:visibility="invisible"
-        android:layout_centerHorizontal="true"
-        android:alpha="0.4"/>
+        android:visibility="invisible" />
 </RelativeLayout>

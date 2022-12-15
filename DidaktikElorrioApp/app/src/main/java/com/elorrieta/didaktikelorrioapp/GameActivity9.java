@@ -1,6 +1,7 @@
 package com.elorrieta.didaktikelorrioapp;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -212,7 +213,9 @@ public class GameActivity9 extends AppCompatActivity {
         if(cards.finished(N, N)){
             showGame();
             Sound.winningSound.start();
-            openDialog();
+            Intent intent = new Intent(GameActivity9.this, MenuPrincipalMapa.class);
+            startActivity(intent);
+            //openDialog();
             if ((numOfSteps < recordSteps) || (recordSteps == 0)) {
                 recordTV.setText(Integer.toString(numOfSteps));
             }
