@@ -8,14 +8,13 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="394dp"
-        android:layout_height="306dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="421dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/arespagotxajauregia" />
 
     <EditText
         android:id="@+id/editTextTextPersonName15"

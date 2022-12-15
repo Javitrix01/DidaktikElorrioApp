@@ -6,19 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".IntroduccionParada5">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="245dp"
-        android:layout_height="193dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:id="@+id/SVJauregia"
+        android:layout_width="413dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewIntroJauregia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arespakotxaga_jauregia" />
+    </ScrollView>
 
     <LinearLayout
+        android:id="@+id/linearLayout10"
         android:layout_width="409dp"
         android:layout_height="147dp"
         android:layout_marginStart="1dp"
@@ -28,8 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797">
+        app:layout_constraintTop_toBottomOf="@+id/SVJauregia"
+        app:layout_constraintVertical_bias="0.673">
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -46,13 +52,13 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="141dp"
-        android:layout_height="146dp"
+        android:layout_width="222dp"
+        android:layout_height="213dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.438"
+        tools:srcCompat="@drawable/reina1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
