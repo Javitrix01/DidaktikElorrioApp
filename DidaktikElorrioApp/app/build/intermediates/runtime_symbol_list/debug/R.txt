@@ -2854,7 +2854,6 @@ int id Choose 0x7f0a0004
 int id FUNCTION 0x7f0a0005
 int id Levels 0x7f0a0006
 int id META 0x7f0a0007
-int id MapaElorrio 0x7f0a0008
 int id NO_DEBUG 0x7f0a0009
 int id P1E 0x7f0a000a
 int id P1G 0x7f0a000b
@@ -3054,7 +3053,6 @@ int id btnMenuActividades 0x7f0a00cc
 int id btnPasteleriaBaieztatu 0x7f0a00cd
 int id btnitzuli 0x7f0a00ce
 int id button 0x7f0a00cf
-int id button2 0x7f0a00d0
 int id button3 0x7f0a00d1
 int id button7 0x7f0a00d2
 int id buttonPanel 0x7f0a00d3
@@ -3751,7 +3749,6 @@ int layout activity_introduccion_parada7 0x7f0d002a
 int layout activity_main 0x7f0d002b
 int layout activity_mapa_cruces_con_nombre 0x7f0d002c
 int layout activity_menu_principal_mapa 0x7f0d002d
-int layout activity_mostrar_foto_mapa 0x7f0d002e
 int layout activity_puzzle 0x7f0d002f
 int layout activity_puzzle_egia_gezurra 0x7f0d0030
 int layout activity_puzzle_mapa_elorrio_con_nombres 0x7f0d0031
