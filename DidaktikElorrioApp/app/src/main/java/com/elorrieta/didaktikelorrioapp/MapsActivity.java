@@ -258,18 +258,16 @@ public class MapsActivity extends AppCompatActivity
     private final LocationListener locationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
-
-            Toast.makeText(MapsActivity.this, "Dentro o fuera", Toast.LENGTH_SHORT).show();
             if(location != null) {
-
+/**Solo cambiar la variable loc que es un marcador(anteriormente creado)
+ * la comparativa es la distancia al marcador ej: 50 es en metros
+ * Descomentar el intent provocara que cuando se este a menos de X metros se habra una nueva actividad*/
                 if (location.distanceTo(loc)<50){
                     Toast.makeText(MapsActivity.this, "Dentro", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(getApplicationContext(),"Aun mas idiota", Toast.LENGTH_SHORT);
-                    Toast.makeText(MapsActivity.this, "fuera", Toast.LENGTH_SHORT).show();
                     //Intent intent = new Intent(MapsActivity.this,Activity2.class);
                     //MapsActivity.this.startActivity(intent);
+                } else {
+
                 }
             }
         }
