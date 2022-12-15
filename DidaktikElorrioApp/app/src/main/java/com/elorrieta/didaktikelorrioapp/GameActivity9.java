@@ -74,6 +74,14 @@ public class GameActivity9 extends AppCompatActivity {
         dataBase.setPrefRef("PRESNAME9", "PRESSCORE9");
         setContentView(R.layout.activity_game9);
 
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
+
+        //BOTON PASAR PUZZLE
+        Button botonPasar = findViewById(R.id.button3);
+        botonPasar.setClickable(false);
+        botonPasar.setVisibility(View.INVISIBLE);
+
         whatToShow = getIntent().getStringExtra("whatToShow");
 
 
@@ -177,6 +185,16 @@ public class GameActivity9 extends AppCompatActivity {
                 numOfSteps++;
                 showGame(); // place the new images on the buttons
                 checkFinish();
+
+                //TODO: ----
+                if (numOfSteps >= 5) {
+                    //si pasa de un numero de pasos le permite pasar el puzzle
+                    Button botonPasar = findViewById(R.id.button3);
+                    botonPasar.setVisibility(View.VISIBLE);
+                    botonPasar.setClickable(true);
+
+                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+                }
             }
         }
     }

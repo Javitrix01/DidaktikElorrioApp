@@ -34,6 +34,9 @@ public class MainPuzzle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
 
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
+
         sound.createSound(MainPuzzle.this);
 
 

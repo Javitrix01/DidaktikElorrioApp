@@ -64,7 +64,8 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_difficult);
 
-
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
 
         Button game9Btn = findViewById(R.id.btn1);
         Button game15Btn = findViewById(R.id.btn2);
@@ -144,7 +145,7 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn1:
-                    Sound.menuClickSound.start();
+                    //Sound.menuClickSound.start();
                     Sound.activitySwitchFlag = true;
                     sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(3, "Cards");

@@ -157,6 +157,7 @@ font fontdiner_swanky
 id Choose
 id Levels
 id MapaElorrio
+id MenuLateral
 id P1E
 id P1G
 id P2E
@@ -241,6 +242,8 @@ id bSoundOffOn24
 id bSoundOffOn9
 id bSoundOffOnChoose
 id bird
+id botonprueba
+id botonprueba2
 id btn1
 id btn2
 id btn3
@@ -361,7 +364,8 @@ id linearLayout9
 id lion
 id listaMenuPrincipal
 id logo
-id mapView
+id map
+id mapPRUEBA
 id mapView2
 id progressBar3
 id rightBtn
@@ -451,6 +455,7 @@ layout activity_introduccion_parada6
 layout activity_introduccion_parada7
 layout activity_main
 layout activity_mapa_cruces_con_nombre
+layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
 layout activity_puzzle
@@ -543,6 +548,7 @@ string lastMsg
 string leader_board
 string level15
 string level24
+string location_permission_denied
 string logo
 string mapa
 string mapaelorrio
@@ -552,6 +558,8 @@ string mute_unmute_sound
 string name
 string next
 string notSave
+string permission_rationale_location
+string permission_required_toast
 string play
 string playZoo
 string previous
@@ -566,6 +574,8 @@ string sound_off
 string sound_on
 string sound_setting
 string title_activity_borrarluego
+string title_activity_maps
+string title_activity_maps2
 string titulo_app
 string una_cruz_con_ojos
 string v_eta_x_mendeen_eraiki_zen

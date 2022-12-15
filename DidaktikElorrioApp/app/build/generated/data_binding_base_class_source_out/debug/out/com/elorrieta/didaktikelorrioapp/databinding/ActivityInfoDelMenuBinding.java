@@ -26,10 +26,16 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
   public final Button btnitzuli;
 
   @NonNull
+  public final ConstraintLayout layoutInfoActividad;
+
+  @NonNull
   public final LinearLayout linearLayout6;
 
   @NonNull
   public final MapView mapView2;
+
+  @NonNull
+  public final TextView textView2;
 
   @NonNull
   public final TextView textViewDescripcion;
@@ -37,15 +43,22 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTituloAct;
 
+  @NonNull
+  public final View viewFondo;
+
   private ActivityInfoDelMenuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnitzuli,
-      @NonNull LinearLayout linearLayout6, @NonNull MapView mapView2,
-      @NonNull TextView textViewDescripcion, @NonNull TextView textViewTituloAct) {
+      @NonNull ConstraintLayout layoutInfoActividad, @NonNull LinearLayout linearLayout6,
+      @NonNull MapView mapView2, @NonNull TextView textView2, @NonNull TextView textViewDescripcion,
+      @NonNull TextView textViewTituloAct, @NonNull View viewFondo) {
     this.rootView = rootView;
     this.btnitzuli = btnitzuli;
+    this.layoutInfoActividad = layoutInfoActividad;
     this.linearLayout6 = linearLayout6;
     this.mapView2 = mapView2;
+    this.textView2 = textView2;
     this.textViewDescripcion = textViewDescripcion;
     this.textViewTituloAct = textViewTituloAct;
+    this.viewFondo = viewFondo;
   }
 
   @Override
@@ -81,6 +94,8 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout layoutInfoActividad = (ConstraintLayout) rootView;
+
       id = R.id.linearLayout6;
       LinearLayout linearLayout6 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout6 == null) {
@@ -90,6 +105,12 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
       id = R.id.mapView2;
       MapView mapView2 = ViewBindings.findChildViewById(rootView, id);
       if (mapView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
         break missingId;
       }
 
@@ -105,8 +126,15 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInfoDelMenuBinding((ConstraintLayout) rootView, btnitzuli, linearLayout6,
-          mapView2, textViewDescripcion, textViewTituloAct);
+      id = R.id.viewFondo;
+      View viewFondo = ViewBindings.findChildViewById(rootView, id);
+      if (viewFondo == null) {
+        break missingId;
+      }
+
+      return new ActivityInfoDelMenuBinding((ConstraintLayout) rootView, btnitzuli,
+          layoutInfoActividad, linearLayout6, mapView2, textView2, textViewDescripcion,
+          textViewTituloAct, viewFondo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
