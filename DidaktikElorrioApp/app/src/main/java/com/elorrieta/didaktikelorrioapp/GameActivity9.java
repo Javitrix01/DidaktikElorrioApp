@@ -41,6 +41,9 @@ public class GameActivity9 extends AppCompatActivity {
     private ImageButton soundBtn;
     private boolean check;
 
+    //variable para el control de la opcion secreta para pasar el puzzle
+    private int contador = 0;
+
     DataBase dataBase = new DataBase(this);
     Sound sound=new Sound();
 
@@ -186,8 +189,8 @@ public class GameActivity9 extends AppCompatActivity {
                 showGame(); // place the new images on the buttons
                 checkFinish();
 
-                //TODO: ----
-                if (numOfSteps >= 5) {
+                //si se llega a 200 intentos deja que se salte el puzzle
+                if (numOfSteps >= 200) {
                     //si pasa de un numero de pasos le permite pasar el puzzle
                     Button botonPasar = findViewById(R.id.button3);
                     botonPasar.setVisibility(View.VISIBLE);
@@ -289,6 +292,7 @@ public class GameActivity9 extends AppCompatActivity {
 
     }
     public void soundOffOn(){
+        //contador para la opcion secreta para pasar el puzzle
         if(Sound.check)
         {
             Sound.check=false;
@@ -299,6 +303,18 @@ public class GameActivity9 extends AppCompatActivity {
             Sound.check=true;
             soundBtn.setImageResource(R.drawable.soundon);
         }
+
+        //si se hace click 10 veces en el cambio de sonido te muestra el boton para pasar el puzzle
+        contador++;
+        if (contador >= 10) {
+            //si pasa de un numero de pasos le permite pasar el puzzle
+            Button botonPasar = findViewById(R.id.button3);
+            botonPasar.setVisibility(View.VISIBLE);
+            botonPasar.setClickable(true);
+
+            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+        }
+
         sound.setSounds();
         sound.setMusic();
     }

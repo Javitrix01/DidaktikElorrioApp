@@ -26,9 +26,11 @@ import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
@@ -41,6 +43,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         ActivityCompat.OnRequestPermissionsResultCallback{
 
     private Location loc;
+    private LocationSource.OnLocationChangedListener mListener;
     ArrayList<String> menuEntries = new ArrayList<>();
     LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
     LatLng Basilika = new LatLng(43.1301944, -002.5425889);
@@ -77,6 +80,13 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3, 1, locationListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
+
+        //opciones de inicializacion del mapa
+        while (true){
+            activate(mListener);
+            //TODO:
+            onLocationChanged();
+        }
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
@@ -283,6 +293,35 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             // Permission was not granted, display error dialog.
             showMissingPermissionError();
             permissionDenied = false;
+        }
+    }
+
+    //TODO:_______
+    //PARTE QUE CONTROLA EL ZOOM DEL MAPA HACIA EL SITIO EN EL QUE ESTA EL TELEFONO
+
+    public void activate(LocationSource.OnLocationChangedListener listener)
+    {
+        mListener = listener;
+    }
+
+    public void deactivate()
+    {
+        mListener = null;
+    }
+
+    public void onLocationChanged(Location location)
+    {
+        if( mListener != null )
+        {
+            mListener.onLocationChanged( location );
+
+            LatLngBounds bounds = this.map.getProjection().getVisibleRegion().latLngBounds;
+
+            if(!bounds.contains(new LatLng(location.getLatitude(), location.getLongitude())))
+            {
+                //Move the camera to the user's location if they are off-screen!
+                map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
+            }
         }
     }
 
