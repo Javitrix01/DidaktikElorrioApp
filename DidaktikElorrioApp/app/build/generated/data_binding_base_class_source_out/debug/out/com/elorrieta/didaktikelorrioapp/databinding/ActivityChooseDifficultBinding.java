@@ -61,7 +61,7 @@ public final class ActivityChooseDifficultBinding implements ViewBinding {
   public final ImageButton levelBackMenu;
 
   @NonNull
-  public final TextView textView21;
+  public final TextView textView19;
 
   private ActivityChooseDifficultBinding(@NonNull RelativeLayout rootView,
       @NonNull AppCompatTextView Choose, @NonNull AppCompatTextView Levels,
@@ -69,7 +69,7 @@ public final class ActivityChooseDifficultBinding implements ViewBinding {
       @NonNull Button btn3, @NonNull Button btn4, @NonNull AppCompatImageView card1515,
       @NonNull AppCompatImageView card2424, @NonNull AppCompatImageView card908,
       @NonNull ImageButton howToPlayBtn, @NonNull ImageButton levelBackMenu,
-      @NonNull TextView textView21) {
+      @NonNull TextView textView19) {
     this.rootView = rootView;
     this.Choose = Choose;
     this.Levels = Levels;
@@ -83,7 +83,7 @@ public final class ActivityChooseDifficultBinding implements ViewBinding {
     this.card908 = card908;
     this.howToPlayBtn = howToPlayBtn;
     this.levelBackMenu = levelBackMenu;
-    this.textView21 = textView21;
+    this.textView19 = textView19;
   }
 
   @Override
@@ -185,15 +185,15 @@ public final class ActivityChooseDifficultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
+      id = R.id.textView19;
+      TextView textView19 = ViewBindings.findChildViewById(rootView, id);
+      if (textView19 == null) {
         break missingId;
       }
 
       return new ActivityChooseDifficultBinding((RelativeLayout) rootView, Choose, Levels,
           bSoundOffOnChoose, btn1, btn2, btn3, btn4, card1515, card2424, card908, howToPlayBtn,
-          levelBackMenu, textView21);
+          levelBackMenu, textView19);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

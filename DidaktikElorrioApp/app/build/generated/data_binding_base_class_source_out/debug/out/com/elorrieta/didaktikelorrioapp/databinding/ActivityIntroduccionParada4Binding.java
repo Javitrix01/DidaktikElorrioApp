@@ -32,16 +32,16 @@ public final class ActivityIntroduccionParada4Binding implements ViewBinding {
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView5;
+  public final TextView textViewIntroGozotegi;
 
   private ActivityIntroduccionParada4Binding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnJarraituP4, @NonNull ImageView imageView15, @NonNull SeekBar seekBar,
-      @NonNull TextView textView5) {
+      @NonNull TextView textViewIntroGozotegi) {
     this.rootView = rootView;
     this.btnJarraituP4 = btnJarraituP4;
     this.imageView15 = imageView15;
     this.seekBar = seekBar;
-    this.textView5 = textView5;
+    this.textViewIntroGozotegi = textViewIntroGozotegi;
   }
 
   @Override
@@ -89,14 +89,14 @@ public final class ActivityIntroduccionParada4Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
+      id = R.id.textViewIntroGozotegi;
+      TextView textViewIntroGozotegi = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroGozotegi == null) {
         break missingId;
       }
 
       return new ActivityIntroduccionParada4Binding((ConstraintLayout) rootView, btnJarraituP4,
-          imageView15, seekBar, textView5);
+          imageView15, seekBar, textViewIntroGozotegi);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

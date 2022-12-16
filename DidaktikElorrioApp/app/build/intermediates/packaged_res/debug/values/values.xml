@@ -113,6 +113,7 @@
     <string name="leader_board">Leader Board</string>
     <string name="level15">15</string>
     <string name="level24">24</string>
+    <string name="location_permission_denied">LocPermission_denied</string>
     <string name="logo">lorrion Barne</string>
     <string name="mapa">Mapa</string>
     <string name="mapaelorrio">MapaElorrio</string>
@@ -122,6 +123,8 @@
     <string name="name">Name</string>
     <string name="next">Next</string>
     <string name="notSave">Saving missing! Press a new game.</string>
+    <string name="permission_rationale_location">PermissionRationaleLocation</string>
+    <string name="permission_required_toast">PermissionRequired_Toast</string>
     <string name="play">Play</string>
     <string name="playZoo">Play</string>
     <string name="previous">Previous</string>
@@ -136,6 +139,8 @@
     <string name="sound_on">Sound On</string>
     <string name="sound_setting">Sound Setting</string>
     <string name="title_activity_borrarluego">borrarluego</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity</string>
     <string name="titulo_app">DidaktikApp!</string>
     <string name="una_cruz_con_ojos">Una Cruz con ojos</string>
     <string name="v_eta_x_mendeen_eraiki_zen">V. eta X. mendeen artean eraiki zen</string>

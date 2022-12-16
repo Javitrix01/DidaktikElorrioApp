@@ -86,34 +86,34 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
   public final LinearLayout linearLayout5;
 
   @NonNull
-  public final TextView textView10;
-
-  @NonNull
-  public final TextView textView11;
-
-  @NonNull
-  public final TextView textView12;
-
-  @NonNull
-  public final TextView textView13;
-
-  @NonNull
-  public final TextView textView14;
-
-  @NonNull
-  public final TextView textView15;
-
-  @NonNull
-  public final TextView textView16;
-
-  @NonNull
   public final TextView textView17;
 
   @NonNull
   public final TextView textView18;
 
   @NonNull
-  public final TextView textView9;
+  public final TextView textViewGaldera1;
+
+  @NonNull
+  public final TextView textViewGaldera2;
+
+  @NonNull
+  public final TextView textViewGaldera3;
+
+  @NonNull
+  public final TextView textViewGaldera4;
+
+  @NonNull
+  public final TextView textViewGaldera5;
+
+  @NonNull
+  public final TextView textViewGaldera6;
+
+  @NonNull
+  public final TextView textViewGaldera7;
+
+  @NonNull
+  public final TextView textViewGaldera8;
 
   private ActivityPuzzleEgiaGezurraBinding(@NonNull ConstraintLayout rootView,
       @NonNull CheckBox P1E, @NonNull CheckBox P1G, @NonNull CheckBox P2E, @NonNull CheckBox P2G,
@@ -122,10 +122,12 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
       @NonNull CheckBox P7E, @NonNull CheckBox P7G, @NonNull CheckBox P8E, @NonNull CheckBox P8G,
       @NonNull Button button7, @NonNull ConstraintLayout constraintLayout,
       @NonNull LinearLayout linearLayout3, @NonNull LinearLayout linearLayout4,
-      @NonNull LinearLayout linearLayout5, @NonNull TextView textView10,
-      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView13,
-      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
-      @NonNull TextView textView17, @NonNull TextView textView18, @NonNull TextView textView9) {
+      @NonNull LinearLayout linearLayout5, @NonNull TextView textView17,
+      @NonNull TextView textView18, @NonNull TextView textViewGaldera1,
+      @NonNull TextView textViewGaldera2, @NonNull TextView textViewGaldera3,
+      @NonNull TextView textViewGaldera4, @NonNull TextView textViewGaldera5,
+      @NonNull TextView textViewGaldera6, @NonNull TextView textViewGaldera7,
+      @NonNull TextView textViewGaldera8) {
     this.rootView = rootView;
     this.P1E = P1E;
     this.P1G = P1G;
@@ -148,16 +150,16 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
     this.linearLayout3 = linearLayout3;
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
-    this.textView10 = textView10;
-    this.textView11 = textView11;
-    this.textView12 = textView12;
-    this.textView13 = textView13;
-    this.textView14 = textView14;
-    this.textView15 = textView15;
-    this.textView16 = textView16;
     this.textView17 = textView17;
     this.textView18 = textView18;
-    this.textView9 = textView9;
+    this.textViewGaldera1 = textViewGaldera1;
+    this.textViewGaldera2 = textViewGaldera2;
+    this.textViewGaldera3 = textViewGaldera3;
+    this.textViewGaldera4 = textViewGaldera4;
+    this.textViewGaldera5 = textViewGaldera5;
+    this.textViewGaldera6 = textViewGaldera6;
+    this.textViewGaldera7 = textViewGaldera7;
+    this.textViewGaldera8 = textViewGaldera8;
   }
 
   @Override
@@ -313,48 +315,6 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView12;
-      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
-      if (textView12 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView13;
-      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
-      if (textView13 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView14;
-      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
-      if (textView14 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView15;
-      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
-      if (textView15 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView16;
-      TextView textView16 = ViewBindings.findChildViewById(rootView, id);
-      if (textView16 == null) {
-        break missingId;
-      }
-
       id = R.id.textView17;
       TextView textView17 = ViewBindings.findChildViewById(rootView, id);
       if (textView17 == null) {
@@ -367,16 +327,59 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
+      id = R.id.textViewGaldera1;
+      TextView textViewGaldera1 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera2;
+      TextView textViewGaldera2 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera3;
+      TextView textViewGaldera3 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera4;
+      TextView textViewGaldera4 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera5;
+      TextView textViewGaldera5 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera6;
+      TextView textViewGaldera6 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera7;
+      TextView textViewGaldera7 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewGaldera8;
+      TextView textViewGaldera8 = ViewBindings.findChildViewById(rootView, id);
+      if (textViewGaldera8 == null) {
         break missingId;
       }
 
       return new ActivityPuzzleEgiaGezurraBinding((ConstraintLayout) rootView, P1E, P1G, P2E, P2G,
           P3E, P3G, P4E, P4G, P5E, P5G, P6E, P6G, P7E, P7G, P8E, P8G, button7, constraintLayout,
-          linearLayout3, linearLayout4, linearLayout5, textView10, textView11, textView12,
-          textView13, textView14, textView15, textView16, textView17, textView18, textView9);
+          linearLayout3, linearLayout4, linearLayout5, textView17, textView18, textViewGaldera1,
+          textViewGaldera2, textViewGaldera3, textViewGaldera4, textViewGaldera5, textViewGaldera6,
+          textViewGaldera7, textViewGaldera8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

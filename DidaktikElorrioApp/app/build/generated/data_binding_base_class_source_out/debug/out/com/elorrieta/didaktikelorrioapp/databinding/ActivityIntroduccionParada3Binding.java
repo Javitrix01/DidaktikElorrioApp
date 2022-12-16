@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,25 +25,34 @@ public final class ActivityIntroduccionParada3Binding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ScrollView SVUdaletxe;
+
+  @NonNull
   public final Button btnJarraituP3;
 
   @NonNull
   public final ImageView imageView14;
 
   @NonNull
+  public final LinearLayout linearLayout9;
+
+  @NonNull
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView4;
+  public final TextView textViewIntroUdaletxe;
 
   private ActivityIntroduccionParada3Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP3, @NonNull ImageView imageView14, @NonNull SeekBar seekBar,
-      @NonNull TextView textView4) {
+      @NonNull ScrollView SVUdaletxe, @NonNull Button btnJarraituP3, @NonNull ImageView imageView14,
+      @NonNull LinearLayout linearLayout9, @NonNull SeekBar seekBar,
+      @NonNull TextView textViewIntroUdaletxe) {
     this.rootView = rootView;
+    this.SVUdaletxe = SVUdaletxe;
     this.btnJarraituP3 = btnJarraituP3;
     this.imageView14 = imageView14;
+    this.linearLayout9 = linearLayout9;
     this.seekBar = seekBar;
-    this.textView4 = textView4;
+    this.textViewIntroUdaletxe = textViewIntroUdaletxe;
   }
 
   @Override
@@ -71,6 +82,12 @@ public final class ActivityIntroduccionParada3Binding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.SVUdaletxe;
+      ScrollView SVUdaletxe = ViewBindings.findChildViewById(rootView, id);
+      if (SVUdaletxe == null) {
+        break missingId;
+      }
+
       id = R.id.btnJarraituP3;
       Button btnJarraituP3 = ViewBindings.findChildViewById(rootView, id);
       if (btnJarraituP3 == null) {
@@ -83,20 +100,26 @@ public final class ActivityIntroduccionParada3Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout9;
+      LinearLayout linearLayout9 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout9 == null) {
+        break missingId;
+      }
+
       id = R.id.seekBar;
       SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
       if (seekBar == null) {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.textViewIntroUdaletxe;
+      TextView textViewIntroUdaletxe = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroUdaletxe == null) {
         break missingId;
       }
 
-      return new ActivityIntroduccionParada3Binding((ConstraintLayout) rootView, btnJarraituP3,
-          imageView14, seekBar, textView4);
+      return new ActivityIntroduccionParada3Binding((ConstraintLayout) rootView, SVUdaletxe,
+          btnJarraituP3, imageView14, linearLayout9, seekBar, textViewIntroUdaletxe);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

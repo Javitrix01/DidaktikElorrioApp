@@ -4,7 +4,7 @@
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\48e56c303e0d31753f46166d8e551339\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\cd33f26b4f6a5be75c2c675ec5e179dc\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\c75633332e0d7727fdc9111989dafeb4\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,6 +24,9 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ScrollView SVNecropolis;
+
+  @NonNull
   public final Button btnJarraituP7;
 
   @NonNull
@@ -32,16 +36,18 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView8;
+  public final TextView textViewIntroNecropolis;
 
   private ActivityIntroduccionParada7Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP7, @NonNull ImageView imageView18, @NonNull SeekBar seekBar,
-      @NonNull TextView textView8) {
+      @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP7,
+      @NonNull ImageView imageView18, @NonNull SeekBar seekBar,
+      @NonNull TextView textViewIntroNecropolis) {
     this.rootView = rootView;
+    this.SVNecropolis = SVNecropolis;
     this.btnJarraituP7 = btnJarraituP7;
     this.imageView18 = imageView18;
     this.seekBar = seekBar;
-    this.textView8 = textView8;
+    this.textViewIntroNecropolis = textViewIntroNecropolis;
   }
 
   @Override
@@ -71,6 +77,12 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.SVNecropolis;
+      ScrollView SVNecropolis = ViewBindings.findChildViewById(rootView, id);
+      if (SVNecropolis == null) {
+        break missingId;
+      }
+
       id = R.id.btnJarraituP7;
       Button btnJarraituP7 = ViewBindings.findChildViewById(rootView, id);
       if (btnJarraituP7 == null) {
@@ -89,14 +101,14 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
+      id = R.id.textViewIntroNecropolis;
+      TextView textViewIntroNecropolis = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroNecropolis == null) {
         break missingId;
       }
 
-      return new ActivityIntroduccionParada7Binding((ConstraintLayout) rootView, btnJarraituP7,
-          imageView18, seekBar, textView8);
+      return new ActivityIntroduccionParada7Binding((ConstraintLayout) rootView, SVNecropolis,
+          btnJarraituP7, imageView18, seekBar, textViewIntroNecropolis);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
