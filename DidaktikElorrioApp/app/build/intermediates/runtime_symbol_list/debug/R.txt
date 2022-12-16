@@ -2672,6 +2672,7 @@ int drawable avd_hide_password 0x7f080075
 int drawable avd_show_password 0x7f080076
 int drawable back 0x7f080077
 int drawable background 0x7f080078
+int drawable backgroundblue 0x7f080156
 int drawable bird 0x7f080079
 int drawable btn_checkbox_checked_mtrl 0x7f08007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08007b
