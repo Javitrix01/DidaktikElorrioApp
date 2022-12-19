@@ -2673,6 +2673,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable background
+drawable backgroundblue
 drawable bird
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2894,6 +2895,7 @@ drawable tooltip_frame_light
 drawable us
 drawable white_line
 drawable yellow_line
+font asap
 font baloo
 font fontdiner_swanky
 id ALT

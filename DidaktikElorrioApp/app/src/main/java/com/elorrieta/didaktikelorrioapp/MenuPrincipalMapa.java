@@ -82,11 +82,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         setContentView(R.layout.activity_menu_principal_mapa);
 
         //opciones de inicializacion del mapa
-        while (true){
+        /*while (true){
             activate(mListener);
             //TODO:
             onLocationChanged();
-        }
+        }*/
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);

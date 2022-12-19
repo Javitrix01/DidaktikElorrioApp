@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gamebackground"
+    android:background="@drawable/backgroundblue"
     tools:ignore="RtlHardcoded">
 
     <RelativeLayout
@@ -48,7 +48,11 @@
         <TextView
             android:id="@+id/gameTitle9"
             style="@style/textPuzzleStyle"
-            android:text="@string/game8" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:text="@string/game8"
+            android:textColor="#FFFFFF" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,6 +64,7 @@
             <TextView
                 android:id="@+id/tSScore9"
                 style="@style/textGameStyle"
+                android:fontFamily="@font/asap"
                 android:text="@string/Score"
                 android:textSize="@dimen/textScore9" />
 
@@ -79,6 +84,7 @@
             <TextView
                 android:id="@+id/tBestSScore9"
                 style="@style/textGameStyle"
+                android:fontFamily="@font/asap"
                 android:text="@string/bestScore"
                 android:textSize="@dimen/textRecord9" />
 
@@ -190,6 +196,7 @@
             android:id="@+id/button3"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:background="@drawable/gradient_list"
             android:text="Trampa Egin!!" />
     </LinearLayout>
@@ -202,5 +209,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:background="@drawable/gradient_list"
-        android:text="@string/jarraitu" />
+        android:text="@string/jarraitu"
+        android:visibility="invisible" />
 </RelativeLayout>

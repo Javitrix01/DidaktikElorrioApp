@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundblue">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
         android:layout_height="60dp"
         android:clickable="false"
         android:scaleType="fitXY"
-        android:src="@drawable/card2424"
+        android:src="@drawable/card908"
         android:id="@+id/card2424"
         android:background="@android:color/transparent"
         android:visibility="invisible"

@@ -45,6 +45,7 @@ drawable animated_charc
 drawable arespagotxajauregia
 drawable back
 drawable background
+drawable backgroundblue
 drawable bird
 drawable card1500
 drawable card1501
@@ -152,6 +153,7 @@ drawable soundon
 drawable us
 drawable white_line
 drawable yellow_line
+font asap
 font baloo
 font fontdiner_swanky
 id Choose
