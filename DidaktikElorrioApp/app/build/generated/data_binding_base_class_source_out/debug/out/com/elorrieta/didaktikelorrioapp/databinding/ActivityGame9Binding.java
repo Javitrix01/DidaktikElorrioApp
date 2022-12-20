@@ -64,9 +64,6 @@ public final class ActivityGame9Binding implements ViewBinding {
   public final TextView gameTitle9;
 
   @NonNull
-  public final Button hint;
-
-  @NonNull
   public final TextView tBestSScore9;
 
   @NonNull
@@ -83,8 +80,8 @@ public final class ActivityGame9Binding implements ViewBinding {
       @NonNull ImageButton b911, @NonNull ImageButton b912, @NonNull ImageButton b920,
       @NonNull ImageButton b921, @NonNull ImageButton b922, @NonNull ImageButton bBackMenu9,
       @NonNull ImageButton bNewGame9, @NonNull ImageButton bSoundOffOn9, @NonNull Button button3,
-      @NonNull TextView gameTitle9, @NonNull Button hint, @NonNull TextView tBestSScore9,
-      @NonNull TextView tBestScore9, @NonNull TextView tSScore9, @NonNull TextView tScore9) {
+      @NonNull TextView gameTitle9, @NonNull TextView tBestSScore9, @NonNull TextView tBestScore9,
+      @NonNull TextView tSScore9, @NonNull TextView tScore9) {
     this.rootView = rootView;
     this.b900 = b900;
     this.b901 = b901;
@@ -100,7 +97,6 @@ public final class ActivityGame9Binding implements ViewBinding {
     this.bSoundOffOn9 = bSoundOffOn9;
     this.button3 = button3;
     this.gameTitle9 = gameTitle9;
-    this.hint = hint;
     this.tBestSScore9 = tBestSScore9;
     this.tBestScore9 = tBestScore9;
     this.tSScore9 = tSScore9;
@@ -218,12 +214,6 @@ public final class ActivityGame9Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.hint;
-      Button hint = ViewBindings.findChildViewById(rootView, id);
-      if (hint == null) {
-        break missingId;
-      }
-
       id = R.id.tBestSScore9;
       TextView tBestSScore9 = ViewBindings.findChildViewById(rootView, id);
       if (tBestSScore9 == null) {
@@ -249,8 +239,8 @@ public final class ActivityGame9Binding implements ViewBinding {
       }
 
       return new ActivityGame9Binding((RelativeLayout) rootView, b900, b901, b902, b910, b911, b912,
-          b920, b921, b922, bBackMenu9, bNewGame9, bSoundOffOn9, button3, gameTitle9, hint,
-          tBestSScore9, tBestScore9, tSScore9, tScore9);
+          b920, b921, b922, bBackMenu9, bNewGame9, bSoundOffOn9, button3, gameTitle9, tBestSScore9,
+          tBestScore9, tSScore9, tScore9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

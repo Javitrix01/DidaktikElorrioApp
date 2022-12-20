@@ -76,24 +76,12 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card1513.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza1.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza1.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza8.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza8.png"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_card1506.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card1506.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_card2412.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card2412.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza7.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza7.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_elephant.jpeg.flat",
@@ -284,10 +272,6 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card2423.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza5.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza5.png"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_card1504.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card1504.png"
     },
@@ -342,10 +326,6 @@
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_choose_difficult.xml.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_choose_difficult.xml"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza2.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza2.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_scroll_view_style.xml.flat",
@@ -492,10 +472,6 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card2422.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza4.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza4.png"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_backgroundblue.jpg.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\backgroundblue.jpg"
     },
@@ -528,20 +504,16 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_puzzle.xml.flat",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_puzzle.xml"
+    },
+    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_introduccion_parada4.xml.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_introduccion_parada4.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_restart.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\restart.png"
-    },
-    {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_puzzle.xml.flat",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_puzzle.xml"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza6.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza6.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_game15.xml.flat",
@@ -580,16 +552,12 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card1515.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/drawable_mapaelorriopieza3.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/drawable/mapaelorriopieza3.png"
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_mapaelorriopieza2.png.flat",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\mapaelorriopieza2.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\font_asap.xml.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\font\\asap.xml"
-    },
-    {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_mapaelorriopieza2.png.flat",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\mapaelorriopieza2.png"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\anim_slide_out_right.xml.flat",
@@ -604,16 +572,16 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_info_del_menu.xml.flat",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_info_del_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\anim_slide_in_right.xml.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\anim\\slide_in_right.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_rightnavigate.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\rightnavigate.png"
-    },
-    {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\layout_activity_info_del_menu.xml.flat",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_info_del_menu.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_elorriokomapa.jpg.flat",
@@ -678,6 +646,10 @@
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\drawable_card2417.png.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\drawable\\card2417.png"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-72:/layout_activity_home.xml.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-74:/layout/activity_home.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-72:\\mipmap-mdpi_ic_launcher.png.flat",

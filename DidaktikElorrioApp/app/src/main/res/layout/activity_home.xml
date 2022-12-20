@@ -11,18 +11,19 @@
     <LinearLayout
         android:id="@+id/first"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="171dp"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/PuzzelIt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:fontFamily="@font/baloo"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/fontdiner_swanky"
             android:paddingBottom="30dp"
             android:text="@string/full_logo"
-            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textColor="#323232"
             android:textSize="40sp"
             android:visibility="invisible" />
     </LinearLayout>
@@ -37,24 +38,26 @@
 
         <ImageView
             android:id="@+id/imageView19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="388dp"
+            android:layout_height="533dp"
             app:srcCompat="@drawable/mapaelorrio" />
     </LinearLayout>
+
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:layout_alignBottom="@id/second"
         android:id="@+id/last"
-            android:paddingBottom="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/second"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:paddingBottom="10dp">
 
         <Button
             android:id="@+id/start_button"
             android:layout_width="214dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/menubutton"
+            android:background="@drawable/rounded_button"
             android:text="@string/jarraitu" />
     </LinearLayout>
-    </RelativeLayout>
+</RelativeLayout>

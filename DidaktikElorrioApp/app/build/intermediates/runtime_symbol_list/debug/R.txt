@@ -2894,9 +2894,9 @@ int drawable tooltip_frame_light 0x7f080153
 int drawable us 0x7f080154
 int drawable white_line 0x7f080155
 int drawable yellow_line 0x7f080156
-int font asap 0x7f090002
-int font baloo 0x7f090000
-int font fontdiner_swanky 0x7f090001
+int font asap 0x7f090000
+int font baloo 0x7f090001
+int font fontdiner_swanky 0x7f090002
 int id ALT 0x7f0a0000
 int id BOTTOM_END 0x7f0a0001
 int id BOTTOM_START 0x7f0a0002
@@ -3120,7 +3120,6 @@ int id cancel_button 0x7f0a00db
 int id card1 0x7f0a00dc
 int id card1515 0x7f0a00dd
 int id card2 0x7f0a00de
-int id card2424 0x7f0a00df
 int id card3 0x7f0a00e0
 int id card4 0x7f0a00e1
 int id card908 0x7f0a00e2

@@ -107,27 +107,31 @@ public class GameActivity9 extends AppCompatActivity {
         recordTV = findViewById(R.id.tBestScore9);
         Button hintBtn = findViewById(R.id.hint);
 
+        /*
         AnimationDrawable animationDrawable = (AnimationDrawable) hintBtn.getBackground();
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(2000);
         animationDrawable.start();
+         */
 
 
+        /*
         titleTV.setTypeface(digitalFont);
         textScoreTV.setTypeface(digitalFont);
         scoreTV.setTypeface(digitalFont);
         textRecordTV.setTypeface(digitalFont);
         recordTV.setTypeface(digitalFont);
+         */
 
-        hintBtn.setOnClickListener(navigateBtnsClickListener);
+        //hintBtn.setOnClickListener(navigateBtnsClickListener);
         newGameBtn.setOnClickListener(navigateBtnsClickListener);
         backBtn.setOnClickListener(navigateBtnsClickListener);
         soundBtn.setOnClickListener(navigateBtnsClickListener);
         if (whatToShow != null) {
-            if (whatToShow.equals("Zoo"))
-                hintBtn.setVisibility(View.VISIBLE);
+            if (whatToShow.equals("Zoo")){}
+                //hintBtn.setVisibility(View.VISIBLE);
             else
-                hintBtn.setVisibility(View.INVISIBLE);
+                //hintBtn.setVisibility(View.INVISIBLE);
 
             if (Sound.check)
                 soundBtn.setImageResource(R.drawable.soundon);
