@@ -88,8 +88,8 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-74:\\layout\\activity_puzzle_egia_gezurra.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/layout/activity_home.xml",
-        "source": "com.elorrieta.didaktikelorrioapp-main-74:/layout/activity_home.xml"
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/layout/activity_info_del_menu.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-74:/layout/activity_info_del_menu.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:\\layout\\activity_game24.xml",
