@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,14 +22,19 @@ public final class ActivityMapaCrucesConNombreBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView Memoriza;
+
+  @NonNull
   public final Button btnJarraituCrucesCnombre;
 
   @NonNull
   public final ImageView imageView6;
 
   private ActivityMapaCrucesConNombreBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituCrucesCnombre, @NonNull ImageView imageView6) {
+      @NonNull TextView Memoriza, @NonNull Button btnJarraituCrucesCnombre,
+      @NonNull ImageView imageView6) {
     this.rootView = rootView;
+    this.Memoriza = Memoriza;
     this.btnJarraituCrucesCnombre = btnJarraituCrucesCnombre;
     this.imageView6 = imageView6;
   }
@@ -60,6 +66,12 @@ public final class ActivityMapaCrucesConNombreBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Memoriza;
+      TextView Memoriza = ViewBindings.findChildViewById(rootView, id);
+      if (Memoriza == null) {
+        break missingId;
+      }
+
       id = R.id.btnJarraituCrucesCnombre;
       Button btnJarraituCrucesCnombre = ViewBindings.findChildViewById(rootView, id);
       if (btnJarraituCrucesCnombre == null) {
@@ -72,7 +84,7 @@ public final class ActivityMapaCrucesConNombreBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMapaCrucesConNombreBinding((ConstraintLayout) rootView,
+      return new ActivityMapaCrucesConNombreBinding((ConstraintLayout) rootView, Memoriza,
           btnJarraituCrucesCnombre, imageView6);
     }
     String missingId = rootView.getResources().getResourceName(id);

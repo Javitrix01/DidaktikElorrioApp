@@ -45,6 +45,11 @@ drawable animated_charc
 drawable arespagotxajauregia
 drawable back
 drawable background
+drawable background2
+drawable background3
+drawable background4
+drawable background5
+drawable background666
 drawable bird
 drawable card1500
 drawable card1501
@@ -156,6 +161,7 @@ font baloo
 font fontdiner_swanky
 id Choose
 id Levels
+id Memoriza
 id MenuLateral
 id P1E
 id P1G
@@ -563,6 +569,7 @@ string logo
 string mapa
 string mapaelorrio
 string mapaelorrioconnombresdeubicaciones
+string memoriza_ezazu
 string menu_actividades
 string mute_unmute_sound
 string name
