@@ -50,10 +50,17 @@
     <string name="Intro_ActBasilica">SORTZEZ GARBIAREN BASILIKA:\n\nSortzez Garbiaren Basilika Bizkaiko tenplurik handiena da eta Elorrioko plazan aurkitu dezakezu. Elorrioko herritarrak ziren Diego Martín de Arcek, Juan de Munarrek, Juan Antonio de Ontañónek eta Antonio Jiménez Echevarríak XV-XVI (15-16). mendetan sortu zuten.\n\nGarai batean, basilikan kontuz ibili behar zen, harrizko aingeruei, denboraren poderioz, buruak erortzen baizitzaizkien.\n\nGaur egun, basilika ekitaldi erlijiosoetarako erabiltzen da, hala nola, igandero ematen da meza eta batzuetan ezkontzak, bataioak eta jaunartzeak ospatzen dira.</string>
     <string name="Intro_ActCruces">KURUTZIAGAKO GURUTZEA:\n\nKurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.\n\nMahatsondoz apaindutako ardatz baten gainean jasotzen da gurutze, mahatsondo horien artean hegaztiak eta munstroak tartekatzen dira, ongiaren eta gaizkiaren arteko borrokaren erakusgarri bikaina izanik. Haren gainean hainbat santu jagole agertzen dira, horma-hobietan sartuta: San Pedro, San Andres, San Joan Bataiatzailea, Santa Marina, Santa Katalina Alexandriakoa eta Santiago erromesa.\n\nGurutzearen aurrealdean, Kristo Gurutziltzatua ikusten da, hilzorian, buruan arantza-koroa duela eta gona motz batez jantzia. Atzealdean, Ama Birjinak Haurtxoa du aldakan eutsia, eta samurtasunez igurzten dio oinatxoa.\n\nElorrion bederatzi gurutze daude. Kurutziagako Gurutzea, Santa Anako Gurutzea, Kurutzebarriko Gurutzea, Ganondoko Gurutzea, Santa Elenako Gurutzea, Iguriako Gurutzea, San Joango Gurutzea, Txanberiko Gurutzea eta Kurutzondoko Gurutzea. Hona hemen 8 gurutzeen mapa, 1 falta da:</string>
     <string name="Score">Mugimenduak: </string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
     <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
+    <string name="_3">3</string>
     <string name="_3x3">3X3</string>
+    <string name="_4">4</string>
     <string name="_4x4">4X4</string>
+    <string name="_5">5</string>
     <string name="_5x5">5X5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
     <string name="about_text"><b>15 puzzle</b>\n\nThe number in the title game is set on the number of cells. Each cell is numbered. One of the cells is not occupied. The player can move the cells by the free cell. Goal of the game - moving the cells of the box to achieve the ordering of numbers in ascending order, it is desirable to making as little as possible moves. Cells moved by pressing.\n\nby: <b> Mr. Alex</b></string>
     <string name="about_title">About:</string>
     <string name="accept_changes">Accept Changes</string>

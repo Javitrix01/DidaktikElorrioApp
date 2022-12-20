@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <EditText
         android:id="@+id/et_SantaElena"
@@ -109,7 +109,7 @@
         app:layout_constraintVertical_bias="0.166" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_SantaAna"
         android:layout_width="84dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -147,7 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745">
+        app:layout_constraintVertical_bias="0.776">
 
         <TextView
             android:id="@+id/txtPreguntaCruces"

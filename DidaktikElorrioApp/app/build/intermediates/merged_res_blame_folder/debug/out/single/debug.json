@@ -4,10 +4,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/cura1.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_background.jpg.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/background.jpg"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/layout_activity_game24.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-7:/layout/activity_game24.xml"
     },
@@ -552,6 +548,10 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/card2419.png"
     },
     {
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_gamebackground.png.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/gamebackground.png"
+    },
+    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_card2415.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/card2415.png"
     },
@@ -672,12 +672,12 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-7:/layout/dialog_zoo.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_card1507.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/card1507.png"
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_background.png.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/background.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_gamebackground.jpg.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/gamebackground.jpg"
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_card1507.png.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-7:/drawable/card1507.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-5:/drawable_card2420.png.flat",

@@ -27,9 +27,6 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final Button btnJarraituPuzCrucesNombre;
 
   @NonNull
-  public final EditText editTextTextPersonName;
-
-  @NonNull
   public final EditText etGanondo;
 
   @NonNull
@@ -48,6 +45,9 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final EditText etSanJuan;
 
   @NonNull
+  public final EditText etSantaAna;
+
+  @NonNull
   public final EditText etSantaElena;
 
   @NonNull
@@ -63,21 +63,21 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final TextView txtPreguntaCruces;
 
   private ActivityPuzzlePonerNombreCrucesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituPuzCrucesNombre, @NonNull EditText editTextTextPersonName,
-      @NonNull EditText etGanondo, @NonNull EditText etIguriakoGurutzea,
-      @NonNull EditText etKurutzebarri, @NonNull EditText etKurutziaga,
-      @NonNull EditText etKurutzondo, @NonNull EditText etSanJuan, @NonNull EditText etSantaElena,
-      @NonNull EditText etTxanberi, @NonNull ImageView imageView7,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView txtPreguntaCruces) {
+      @NonNull Button btnJarraituPuzCrucesNombre, @NonNull EditText etGanondo,
+      @NonNull EditText etIguriakoGurutzea, @NonNull EditText etKurutzebarri,
+      @NonNull EditText etKurutziaga, @NonNull EditText etKurutzondo, @NonNull EditText etSanJuan,
+      @NonNull EditText etSantaAna, @NonNull EditText etSantaElena, @NonNull EditText etTxanberi,
+      @NonNull ImageView imageView7, @NonNull LinearLayout linearLayout2,
+      @NonNull TextView txtPreguntaCruces) {
     this.rootView = rootView;
     this.btnJarraituPuzCrucesNombre = btnJarraituPuzCrucesNombre;
-    this.editTextTextPersonName = editTextTextPersonName;
     this.etGanondo = etGanondo;
     this.etIguriakoGurutzea = etIguriakoGurutzea;
     this.etKurutzebarri = etKurutzebarri;
     this.etKurutziaga = etKurutziaga;
     this.etKurutzondo = etKurutzondo;
     this.etSanJuan = etSanJuan;
+    this.etSantaAna = etSantaAna;
     this.etSantaElena = etSantaElena;
     this.etTxanberi = etTxanberi;
     this.imageView7 = imageView7;
@@ -118,12 +118,6 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName;
-      EditText editTextTextPersonName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName == null) {
-        break missingId;
-      }
-
       id = R.id.et_Ganondo;
       EditText etGanondo = ViewBindings.findChildViewById(rootView, id);
       if (etGanondo == null) {
@@ -160,6 +154,12 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
         break missingId;
       }
 
+      id = R.id.et_SantaAna;
+      EditText etSantaAna = ViewBindings.findChildViewById(rootView, id);
+      if (etSantaAna == null) {
+        break missingId;
+      }
+
       id = R.id.et_SantaElena;
       EditText etSantaElena = ViewBindings.findChildViewById(rootView, id);
       if (etSantaElena == null) {
@@ -191,9 +191,9 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
       }
 
       return new ActivityPuzzlePonerNombreCrucesBinding((ConstraintLayout) rootView,
-          btnJarraituPuzCrucesNombre, editTextTextPersonName, etGanondo, etIguriakoGurutzea,
-          etKurutzebarri, etKurutziaga, etKurutzondo, etSanJuan, etSantaElena, etTxanberi,
-          imageView7, linearLayout2, txtPreguntaCruces);
+          btnJarraituPuzCrucesNombre, etGanondo, etIguriakoGurutzea, etKurutzebarri, etKurutziaga,
+          etKurutzondo, etSanJuan, etSantaAna, etSantaElena, etTxanberi, imageView7, linearLayout2,
+          txtPreguntaCruces);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
