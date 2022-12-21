@@ -3314,6 +3314,7 @@ int id immediateStop 0x7f0a019d
 int id included 0x7f0a019e
 int id indeterminate 0x7f0a019f
 int id info 0x7f0a01a0
+int id infoMap 0x7f0a030e
 int id inspection_slot_table_set 0x7f0a01a1
 int id invisible 0x7f0a01a2
 int id inward 0x7f0a01a3
@@ -3359,7 +3360,6 @@ int id logo 0x7f0a01ca
 int id ltr 0x7f0a01cb
 int id map 0x7f0a01cc
 int id mapPRUEBA 0x7f0a01cd
-int id mapView2 0x7f0a01ce
 int id marquee 0x7f0a01cf
 int id masked 0x7f0a01d0
 int id match_constraint 0x7f0a01d1

@@ -3315,6 +3315,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id infoMap
 id inspection_slot_table_set
 id invisible
 id inward
@@ -3360,7 +3361,6 @@ id logo
 id ltr
 id map
 id mapPRUEBA
-id mapView2
 id marquee
 id masked
 id match_constraint
