@@ -77,20 +77,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     @SuppressLint({"MissingPermission", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         enableMyLocation();
-
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3, 1, locationListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
-
-        //opciones de inicializacion del mapa
-        /*while (true){
-            activate(mListener);
-            //TODO:
-            onLocationChanged();
-        }*/
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
