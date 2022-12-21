@@ -15,9 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="613534f2-da25-4097-b6cf-4b1bce802194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_errebonbiloa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_errebonbiloa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_introduccion_parada6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_introduccion_parada6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_introduccion_parada7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_introduccion_parada7.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
