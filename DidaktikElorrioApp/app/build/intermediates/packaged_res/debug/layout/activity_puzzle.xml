@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
+    android:background="@drawable/background666"
     android:orientation="vertical"
     tools:context=".MainPuzzle">
 
@@ -39,7 +39,10 @@
             android:id="@+id/fourth_line"
             android:layout_width="20dp"
             android:layout_height="200dp"
-            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
             android:layout_toEndOf="@id/third_line"
             android:background="@drawable/orange_line" />
 

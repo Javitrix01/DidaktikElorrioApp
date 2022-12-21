@@ -2673,6 +2673,11 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable background
+drawable background2
+drawable background3
+drawable background4
+drawable background5
+drawable background666
 drawable bird
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2904,6 +2909,7 @@ id Choose
 id FUNCTION
 id Levels
 id META
+id Memoriza
 id MenuLateral
 id NO_DEBUG
 id P1E
@@ -4106,6 +4112,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string memoriza_ezazu
 string menu_actividades
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
