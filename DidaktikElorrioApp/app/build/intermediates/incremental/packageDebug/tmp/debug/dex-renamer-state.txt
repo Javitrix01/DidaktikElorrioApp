@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Tue Dec 20 14:00:51 CET 2022
+=======
+#Wed Dec 21 08:49:50 CET 2022
+>>>>>>> Aitor2
 path.4=1/classes.dex
 path.3=15/classes.dex
 path.2=12/classes.dex
