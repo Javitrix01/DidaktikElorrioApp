@@ -4047,6 +4047,7 @@ int string hint 0x7f12007b
 int string icon_content_description 0x7f12007c
 int string in_progress 0x7f12007d
 int string indeterminate 0x7f12007e
+int string infoMapa 0x7f120117
 int string info_dialog_button 0x7f12007f
 int string info_text 0x7f120080
 int string info_text_init 0x7f120081

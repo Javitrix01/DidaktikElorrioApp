@@ -537,6 +537,7 @@ string hasmemorizado
 string hebrew
 string hilobiak_3_zatitan_eginda
 string hint
+string infoMapa
 string info_dialog_button
 string info_text
 string info_text_init

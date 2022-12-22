@@ -57,8 +57,11 @@
 
         <ImageView
             android:id="@+id/infoMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:contentDescription="@string/infoMapa"
+            app:srcCompat="@drawable/backgroundblue" />
 
     </LinearLayout>
 

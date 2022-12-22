@@ -13,6 +13,7 @@ import android.graphics.text.LineBreaker;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -61,6 +62,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     private Location loc;
     private LocationSource.OnLocationChangedListener mListener;
+    private Bitmap infoMapBitmap = null;
     ArrayList<String> menuEntries = new ArrayList<>();
     LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
     LatLng Basilika = new LatLng(43.1301944, -002.5425889);
@@ -169,6 +171,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 botonAbrirMapa.setClickable(false);
                 botonAbrirMenu.setClickable(false);
                 map.getUiSettings().setScrollGesturesEnabled(false);
+                map.getUiSettings().setMyLocationButtonEnabled(false);
+                map.getUiSettings().setZoomGesturesEnabled(false);
 
                 //abre la nueva actividad
                 FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -189,14 +193,13 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
                 //TODO: informacion del mapa
                 //latitud y longitud del mapa
+                ImageView ivInfoMapa = findViewById(R.id.infoMap);
                 String lat = actividades.get(i).getActivity_coords_lat();
                 String lng = actividades.get(i).getActivity_coords_long();
                 String url = "http://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
-                new DownloadImageTask(findViewById(R.id.infoMap))
-                        .execute(url);
-
-
+                //new DownloadImageTask(findViewById(R.id.infoMap)).execute(url);
+                new DownloadImageFromInternet((ImageView) findViewById(R.id.infoMap)).execute(url);
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {
@@ -206,6 +209,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                         botonAbrirMapa.setClickable(true);
                         botonAbrirMenu.setClickable(true);
                         map.getUiSettings().setScrollGesturesEnabled(true);
+                        map.getUiSettings().setMyLocationButtonEnabled(true);
+                        map.getUiSettings().setZoomGesturesEnabled(true);
 
                         //esconde la actividad
                         FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -216,6 +221,30 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         });
     }
 
+    private class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
+        ImageView imageView;
+        public DownloadImageFromInternet(ImageView imageView) {
+            this.imageView=imageView;
+            Toast.makeText(getApplicationContext(), "Please wait, it may take a few minute...",Toast.LENGTH_SHORT).show();
+        }
+        protected Bitmap doInBackground(String... urls) {
+            String imageURL=urls[0];
+            Bitmap bimage=null;
+            try {
+                InputStream in=new java.net.URL(imageURL).openStream();
+                bimage=BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                Log.e("Error Message", e.getMessage());
+                e.printStackTrace();
+            }
+            return bimage;
+        }
+        protected void onPostExecute(Bitmap result) {
+            imageView.setImageBitmap(result);
+        }
+    }
+
+    /*
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
 
@@ -237,9 +266,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         }
 
         protected void onPostExecute(Bitmap result) {
+            infoMapBitmap = result;
             bmImage.setImageBitmap(result);
         }
     }
+    */
 
     /**==============================FUNCIONES DEL MAPA==================================*/
     @SuppressLint("MissingPermission")
@@ -309,7 +340,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     @Override
     public boolean onMyLocationButtonClick() {
-        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         return false;

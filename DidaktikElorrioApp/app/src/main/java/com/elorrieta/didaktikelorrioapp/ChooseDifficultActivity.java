@@ -141,7 +141,7 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn1:
-                    //Sound.menuClickSound.start();
+                    Sound.menuClickSound.start();
                     Sound.activitySwitchFlag = true;
                     sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(3, "Cards");

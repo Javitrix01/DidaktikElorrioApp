@@ -4048,6 +4048,7 @@ string hint
 string icon_content_description
 string in_progress
 string indeterminate
+string infoMapa
 string info_dialog_button
 string info_text
 string info_text_init
