@@ -41,6 +41,7 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.libraries.places.api.Places;
 import com.squareup.picasso.Picasso;
 
 import java.io.BufferedInputStream;
@@ -97,6 +98,14 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
 
+        //inicializar la API de google
+        Places.initialize(getApplicationContext(),"AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
+
+        //default location para que no haga pointer a un objeto nulo
+        loc = new Location("defaultLocation");
+        loc.setAltitude(0);
+        loc.setLongitude(0);
+
         //MAPA PRINCIPAL
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
@@ -111,7 +120,9 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         ListView lista = findViewById(R.id.listaMenuPrincipal);
 
         //propiedades asignadas al crearse la actividad
-        lista.setX(-200);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            lista.setX(-200);
+        }
         lista.setClickable(true);
         lista.setVisibility(View.INVISIBLE);
 
@@ -121,13 +132,17 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         //accion del boton para ver la lista
         botonAbrirMenu.setOnClickListener(view -> {
             //aplica la animacion para cuando aparezca la lista
-            lista.animate().translationX(0);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
+                lista.animate().translationX(0);
+            }
             lista.setVisibility(View.VISIBLE);
         });
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
             //aplica la animacion para cuando desaparezca la lista
-            lista.animate().translationX(-200);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
+                lista.animate().translationX(-200);
+            }
             lista.setVisibility(View.INVISIBLE);
         });
     }
@@ -163,7 +178,9 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //aplica la animacion para cuando desaparezca la lista
-                lista.animate().translationX(-200);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
+                    lista.animate().translationX(-200);
+                }
                 lista.setVisibility(View.INVISIBLE);
                 //desactiva los botones
                 botonAbrirMapa.setClickable(false);
@@ -191,11 +208,12 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 //latitud y longitud del mapa
                 String lat = actividades.get(i).getActivity_coords_lat();
                 String lng = actividades.get(i).getActivity_coords_long();
-                String url = "http://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
-                new DownloadImageTask(findViewById(R.id.infoMap))
-                        .execute(url);
-
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+                    new DownloadImageTask(findViewById(R.id.infoMap))
+                            .execute(url);
+                }
 
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
@@ -216,6 +234,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         });
     }
 
+    @SuppressLint("NewApi")
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
 
@@ -392,6 +411,15 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 .newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
     private final LocationListener locationListener = new LocationListener() {
+        @Override
+        public void onProviderEnabled(@NonNull String provider) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(@NonNull String provider) {
+
+        }
         @Override
         public void onLocationChanged(Location location) {
             if(location != null) {
