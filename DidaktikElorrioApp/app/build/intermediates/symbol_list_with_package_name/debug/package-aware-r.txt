@@ -3248,6 +3248,11 @@ id immediateStop
 id included
 id indeterminate
 id info
+<<<<<<< HEAD
+=======
+id infoMap
+id inspection_slot_table_set
+>>>>>>> Aitor_22_12_2022
 id invisible
 id inward
 id italic
@@ -3285,8 +3290,14 @@ id listMode
 id list_item
 id listaMenuPrincipal
 id logo
+<<<<<<< HEAD
 id mapView
 id mapView2
+=======
+id ltr
+id map
+id mapPRUEBA
+>>>>>>> Aitor_22_12_2022
 id marquee
 id masked
 id match_constraint
@@ -3949,6 +3960,12 @@ string hide_bottom_view_on_scroll_behavior
 string hilobiak_3_zatitan_eginda
 string hint
 string icon_content_description
+<<<<<<< HEAD
+=======
+string in_progress
+string indeterminate
+string infoMapa
+>>>>>>> Aitor_22_12_2022
 string info_dialog_button
 string info_text
 string info_text_init

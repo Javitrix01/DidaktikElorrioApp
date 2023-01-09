@@ -25,7 +25,15 @@
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/ic_eem_logo_vertical.xml" value="0.2205" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/rounded_button.xml" value="0.105" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_crear_mapa_puzzle.xml" value="0.175" />
+<<<<<<< HEAD
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_info_del_menu.xml" value="0.25" />
+=======
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_errebonbiloa.xml" value="0.12273550724637682" />
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_game15.xml" value="0.12273550724637682" />
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_game9.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_info_del_menu.xml" value="0.1" />
+>>>>>>> Aitor_22_12_2022
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada1.xml" value="0.358695652173913" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada3.xml" value="0.36666666666666664" />
@@ -35,7 +43,7 @@
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada7.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_mapa_cruces_con_nombre.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_menu_principal_mapa.xml" value="0.25" />
+        <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_menu_principal_mapa.xml" value="0.1" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_mostrar_foto_mapa.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_egia_gezurra.xml" value="0.33" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_mapa_elorrio_con_nombres.xml" value="0.17831813576494426" />

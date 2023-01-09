@@ -155,6 +155,26 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+<<<<<<< HEAD
+=======
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+>>>>>>> Aitor_22_12_2022
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.elorrieta.didaktikelorrioapp.androidx-startup"

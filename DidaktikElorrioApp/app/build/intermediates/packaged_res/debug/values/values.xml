@@ -94,6 +94,7 @@
     <string name="hebrew">Hebrew</string>
     <string name="hilobiak_3_zatitan_eginda">Hilobiak 3. zatitan eginda daude: gainaldea triangelua, erdian borobilezko harria eta beheko aldean hilobia.</string>
     <string name="hint">Hint</string>
+    <string name="infoMapa">informacion exacta de la posicion del mapa en la desctripcion de la actividad</string>
     <string name="info_dialog_button">I got it</string>
     <string name="info_text">1) First chose the size of the board.\n2) There is no need to shuffle… we will do it\nfor you.\n3) You are ready. Play and injoy. Your goal is to move the puzzle parts to their place: the sequence you dicided to solve.\n \nAlso, take a tip form us: if you are unhappy with the starting position, or made a mistake you can just shuffle again and start from the beginning.\n \nAnd remember not everything is possible.</string>
     <string name="info_text_init">It\'s very simple to start but hard to finish</string>

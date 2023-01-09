@@ -7,16 +7,48 @@
     tools:context=".MenuPrincipalMapa"
     android:animateLayoutChanges="true">
 
+<<<<<<< HEAD
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
         android:layout_height="44dp"
+=======
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapPRUEBA"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:context=".MapsActivity"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/listaMenuPrincipal"
+        android:layout_width="256dp"
+        android:layout_height="0dp"
+        android:background="#CDFFFFFF"
+        android:paddingStart="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+>>>>>>> Aitor_22_12_2022
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/listaMenuPrincipal">
 
         <Button
             android:id="@+id/btnMenuActividades"

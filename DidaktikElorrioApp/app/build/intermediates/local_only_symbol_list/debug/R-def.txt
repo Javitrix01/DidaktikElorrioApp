@@ -328,6 +328,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id infoMap
 id jarraituPuzzle
 id languageChipGroup
 id last
@@ -348,8 +349,13 @@ id linearLayout7
 id lion
 id listaMenuPrincipal
 id logo
+<<<<<<< HEAD
 id mapView
 id mapView2
+=======
+id map
+id mapPRUEBA
+>>>>>>> Aitor_22_12_2022
 id progressBar3
 id rightBtn
 id second
@@ -508,6 +514,7 @@ string hasmemorizado
 string hebrew
 string hilobiak_3_zatitan_eginda
 string hint
+string infoMapa
 string info_dialog_button
 string info_text
 string info_text_init
