@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundblue"
+    android:background="@drawable/gamebackground"
     tools:ignore="RtlHardcoded">
 
     <RelativeLayout
@@ -36,7 +36,6 @@
             style="@style/bNavigationStyle"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/button"/>
-
     </RelativeLayout>
 
     <LinearLayout
@@ -49,12 +48,7 @@
         <TextView
             android:id="@+id/gameTitle9"
             style="@style/textPuzzleStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontdiner_swanky"
-            android:text="@string/game8"
-            android:textColor="#FFFFFF"
-            android:textSize="48sp" />
+            android:text="@string/game8" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -66,7 +60,6 @@
             <TextView
                 android:id="@+id/tSScore9"
                 style="@style/textGameStyle"
-                android:fontFamily="@font/asap"
                 android:text="@string/Score"
                 android:textSize="@dimen/textScore9" />
 
@@ -86,7 +79,6 @@
             <TextView
                 android:id="@+id/tBestSScore9"
                 style="@style/textGameStyle"
-                android:fontFamily="@font/asap"
                 android:text="@string/bestScore"
                 android:textSize="@dimen/textRecord9" />
 
@@ -192,19 +184,23 @@
                 android:layout_marginEnd="@dimen/button_margin_border"
                 android:layout_marginBottom="@dimen/button_margin_border"
                 android:contentDescription="@string/button" />
-
         </GridLayout>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_button"
-            android:backgroundTint="#CBFFFFFF"
-            android:fontFamily="@font/asap"
+            android:background="@drawable/gradient_list"
             android:text="Trampa Egin!!" />
-
     </LinearLayout>
 
+    <Button
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/gradient_list"
+        android:text="@string/jarraitu" />
 </RelativeLayout>

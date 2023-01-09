@@ -71,11 +71,11 @@
         android:layout_height="48dp"
         android:background="@drawable/rounded_button"
         android:text="@string/itzuli"
-        android:textColor="#000000"
+        android:textColor="#EFEBE9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.211"
+        app:layout_constraintVertical_bias="0.472"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

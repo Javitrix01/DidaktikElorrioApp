@@ -15,7 +15,6 @@
         </item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/asap</item>
         <item>@font/baloo</item>
     </array>
     <attr format="enum" name="animateCircleAngleTo">
@@ -1734,10 +1733,17 @@
     <string name="Intro_ActBasilica">SORTZEZ GARBIAREN BASILIKA:\n\nSortzez Garbiaren Basilika Bizkaiko tenplurik handiena da eta Elorrioko plazan aurkitu dezakezu. Elorrioko herritarrak ziren Diego Martín de Arcek, Juan de Munarrek, Juan Antonio de Ontañónek eta Antonio Jiménez Echevarríak XV-XVI (15-16). mendetan sortu zuten.\n\nGarai batean, basilikan kontuz ibili behar zen, harrizko aingeruei, denboraren poderioz, buruak erortzen baizitzaizkien.\n\nGaur egun, basilika ekitaldi erlijiosoetarako erabiltzen da, hala nola, igandero ematen da meza eta batzuetan ezkontzak, bataioak eta jaunartzeak ospatzen dira.</string>
     <string name="Intro_ActCruces">KURUTZIAGAKO GURUTZEA:\n\nKurutziagako gurutzea, gurutze errenazentista bat da eta XVI. mendean sortu zen, 1522. urtean.\n\nMahatsondoz apaindutako ardatz baten gainean jasotzen da gurutze, mahatsondo horien artean hegaztiak eta munstroak tartekatzen dira, ongiaren eta gaizkiaren arteko borrokaren erakusgarri bikaina izanik. Haren gainean hainbat santu jagole agertzen dira, horma-hobietan sartuta: San Pedro, San Andres, San Joan Bataiatzailea, Santa Marina, Santa Katalina Alexandriakoa eta Santiago erromesa.\n\nGurutzearen aurrealdean, Kristo Gurutziltzatua ikusten da, hilzorian, buruan arantza-koroa duela eta gona motz batez jantzia. Atzealdean, Ama Birjinak Haurtxoa du aldakan eutsia, eta samurtasunez igurzten dio oinatxoa.\n\nElorrion bederatzi gurutze daude. Kurutziagako Gurutzea, Santa Anako Gurutzea, Kurutzebarriko Gurutzea, Ganondoko Gurutzea, Santa Elenako Gurutzea, Iguriako Gurutzea, San Joango Gurutzea, Txanberiko Gurutzea eta Kurutzondoko Gurutzea. Hona hemen 8 gurutzeen mapa, 1 falta da:</string>
     <string name="Score">Mugimenduak: </string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
     <string name="_22_hilobik_osatzen_dute_nekropolia">22 hilobik osatzen dute Nekropolia</string>
+    <string name="_3">3</string>
     <string name="_3x3">3X3</string>
+    <string name="_4">4</string>
     <string name="_4x4">4X4</string>
+    <string name="_5">5</string>
     <string name="_5x5">5X5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -1866,7 +1872,7 @@
     <string name="information">information</string>
     <string name="ingelesezko_inskripzioak">Ingelesezko inskripzioak daude hilobietan idatzia</string>
     <string name="item_view_role_description">Tab</string>
-    <string name="itzuli">Itzuli</string>
+    <string name="itzuli">itzuli</string>
     <string name="jarraitu">Jarraitu</string>
     <string name="lastMsg">before trying 24 board\ntry first 15 Board</string>
     <string name="leader_board">Leader Board</string>
@@ -1908,6 +1914,7 @@
     <string description="Suffix for time in 12-hour standard, after noon. [CHAR_LIMIT=2]" name="material_timepicker_pm">PM</string>
     <string description="Title for the dialog with a time picker. [CHAR_LIMIT=32]" name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="memoriza_ezazu">Memoriza ezazu gurutzen izenak</string>
     <string name="menu_actividades">Aktibitate zerrenda</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked" translatable="false">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>

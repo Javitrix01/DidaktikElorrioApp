@@ -7,36 +7,10 @@
     tools:context=".MenuPrincipalMapa"
     android:animateLayoutChanges="true">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/mapPRUEBA"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="415dp"
-        android:layout_height="689dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        tools:context=".MapsActivity"
-        tools:ignore="MissingConstraints" />
-
-    <ListView
-        android:id="@+id/listaMenuPrincipal"
-        android:layout_width="256dp"
-        android:layout_height="689dp"
-        android:background="#CDFFFFFF"
-        android:paddingStart="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
         android:layout_height="44dp"
-        android:background="#FFFFFF"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +24,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#FFFFFF"
             android:text="@string/menu_actividades" />
 
         <View
@@ -64,8 +37,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#FFFFFF"
             android:text="@string/mapa" />
     </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="411dp"
+        android:layout_height="688dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ListView
+        android:id="@+id/listaMenuPrincipal"
+        android:layout_width="253dp"
+        android:layout_height="686dp"
+        android:layout_marginStart="4dp"
+        android:background="#5CFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
