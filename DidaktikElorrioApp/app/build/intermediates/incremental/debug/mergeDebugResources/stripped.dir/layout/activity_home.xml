@@ -5,24 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< HEAD
     android:background="@drawable/background"
+=======
+    android:background="@drawable/backgroundblue"
+>>>>>>> Aitor_22_12_2022_DU
     tools:context=".HomeActivity">
 
     <LinearLayout
         android:id="@+id/first"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="171dp"
+>>>>>>> Aitor_22_12_2022_DU
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/PuzzelIt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_marginTop="50dp"
             android:fontFamily="@font/baloo"
             android:paddingBottom="30dp"
             android:text="@string/full_logo"
             android:textColor="@android:color/black"
+=======
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:paddingBottom="30dp"
+            android:text="@string/full_logo"
+            android:textAlignment="center"
+            android:textColor="#323232"
+>>>>>>> Aitor_22_12_2022_DU
             android:textSize="40sp"
             android:visibility="invisible" />
     </LinearLayout>
@@ -37,6 +54,7 @@
 
         <ImageView
             android:id="@+id/imageView19"
+<<<<<<< HEAD
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/mapaelorrio" />
@@ -49,12 +67,35 @@
             android:layout_alignBottom="@id/second"
         android:id="@+id/last"
             android:paddingBottom="10dp">
+=======
+            android:layout_width="388dp"
+            android:layout_height="533dp"
+            app:srcCompat="@drawable/mapaelorrio" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/second"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:paddingBottom="10dp">
+>>>>>>> Aitor_22_12_2022_DU
 
         <Button
             android:id="@+id/start_button"
             android:layout_width="214dp"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:background="@drawable/menubutton"
             android:text="@string/jarraitu" />
     </LinearLayout>
     </RelativeLayout>
+=======
+            android:background="@drawable/rounded_button"
+            android:text="@string/jarraitu" />
+    </LinearLayout>
+</RelativeLayout>
+>>>>>>> Aitor_22_12_2022_DU

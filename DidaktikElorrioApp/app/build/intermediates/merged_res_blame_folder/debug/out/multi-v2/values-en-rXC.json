@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-en-rXC/values-en-rXC.xml",
+=======
+            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-en-rXC/values-en-rXC.xml",
+>>>>>>> Aitor_22_12_2022_DU
             "map": [
                 {
                     "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\3ab57e222d20792f120b18e88dd10d60\\transformed\\ui-1.1.1\\res\\values-en-rXC\\values-en-rXC.xml",

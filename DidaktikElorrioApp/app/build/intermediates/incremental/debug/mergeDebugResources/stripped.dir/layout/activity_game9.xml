@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/gamebackground"
+=======
+    android:background="@drawable/backgroundblue"
+>>>>>>> Aitor_22_12_2022_DU
     tools:ignore="RtlHardcoded">
 
     <RelativeLayout
@@ -36,6 +40,10 @@
             style="@style/bNavigationStyle"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/button"/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> Aitor_22_12_2022_DU
     </RelativeLayout>
 
     <LinearLayout
@@ -48,7 +56,16 @@
         <TextView
             android:id="@+id/gameTitle9"
             style="@style/textPuzzleStyle"
+<<<<<<< HEAD
             android:text="@string/game8" />
+=======
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:text="@string/game8"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+>>>>>>> Aitor_22_12_2022_DU
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,6 +77,10 @@
             <TextView
                 android:id="@+id/tSScore9"
                 style="@style/textGameStyle"
+<<<<<<< HEAD
+=======
+                android:fontFamily="@font/asap"
+>>>>>>> Aitor_22_12_2022_DU
                 android:text="@string/Score"
                 android:textSize="@dimen/textScore9" />
 
@@ -79,6 +100,10 @@
             <TextView
                 android:id="@+id/tBestSScore9"
                 style="@style/textGameStyle"
+<<<<<<< HEAD
+=======
+                android:fontFamily="@font/asap"
+>>>>>>> Aitor_22_12_2022_DU
                 android:text="@string/bestScore"
                 android:textSize="@dimen/textRecord9" />
 
@@ -184,12 +209,17 @@
                 android:layout_marginEnd="@dimen/button_margin_border"
                 android:layout_marginBottom="@dimen/button_margin_border"
                 android:contentDescription="@string/button" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> Aitor_22_12_2022_DU
         </GridLayout>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:background="@drawable/gradient_list"
             android:text="Trampa Egin!!" />
     </LinearLayout>
@@ -203,4 +233,14 @@
         android:layout_marginBottom="30dp"
         android:background="@drawable/gradient_list"
         android:text="@string/jarraitu" />
+=======
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#CBFFFFFF"
+            android:fontFamily="@font/asap"
+            android:text="Trampa Egin!!" />
+
+    </LinearLayout>
+
+>>>>>>> Aitor_22_12_2022_DU
 </RelativeLayout>

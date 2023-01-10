@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/background7"
+=======
+>>>>>>> Aitor_22_12_2022_DU
     tools:context=".Errebonbiloa">
 
     <ImageView
