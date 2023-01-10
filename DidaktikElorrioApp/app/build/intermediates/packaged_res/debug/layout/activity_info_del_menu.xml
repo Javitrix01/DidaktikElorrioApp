@@ -55,13 +55,10 @@
             android:background="#CCFFFFFF"
             android:padding="10dp" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView2"
+        <ImageView
+            android:id="@+id/infoMap"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
@@ -71,11 +68,11 @@
         android:layout_height="48dp"
         android:background="@drawable/rounded_button"
         android:text="@string/itzuli"
-        android:textColor="#EFEBE9"
+        android:textColor="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.472"
+        app:layout_constraintVertical_bias="0.211"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

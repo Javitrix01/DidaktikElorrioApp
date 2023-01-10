@@ -1,30 +1,106 @@
 package com.elorrieta.didaktikelorrioapp;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.text.LineBreaker;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.LocationSource;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.CancellationToken;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.squareup.picasso.Picasso;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuPrincipalMapa extends AppCompatActivity {
+public class MenuPrincipalMapa extends AppCompatActivity implements
+        GoogleMap.OnMyLocationButtonClickListener,
+        GoogleMap.OnMyLocationClickListener,
+        OnMapReadyCallback,
+        ActivityCompat.OnRequestPermissionsResultCallback{
 
+    private Location loc;
+    private LocationSource.OnLocationChangedListener mListener;
+    ArrayList<String> menuEntries = new ArrayList<>();
+    LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
+    LatLng Basilika = new LatLng(43.1301944, -002.5425889);
+    LatLng Udaletxea = new LatLng(43.1305250, -002.5420667);
+    LatLng Gozotegia = new LatLng(43.1309750, -002.5432472);
+    LatLng Jauregia = new LatLng(43.1306917, -002.5439056);
+    LatLng Errebonbilloa = new LatLng(43.1301361, -002.5420306);
+    LatLng nekropolia = new LatLng(	43.1399056, -002.5359750);
+    LatLng Elorrieta = new LatLng(43.28378511002439, -2.9643885432325296);
+
+    /**
+     * Request code for location permission request.
+     *
+     * @see #onRequestPermissionsResult(int, String[], int[])
+     */
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
+
+    /**
+     * Flag indicating whether a requested permission has been denied after returning in {@link
+     * #onRequestPermissionsResult(int, String[], int[])}.
+     */
+
+    private boolean permissionDenied = false;
+
+    private GoogleMap map;
+    private GoogleMap infoMap;
+
+    @SuppressLint({"MissingPermission", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        enableMyLocation();
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3, 1, locationListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
+
+        //MAPA PRINCIPAL
+        SupportMapFragment mapFragment =
+                (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
+        mapFragment.getMapAsync(this);
 
         //oculta la barra de arriba
         getSupportActionBar().hide();
@@ -92,6 +168,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                 //desactiva los botones
                 botonAbrirMapa.setClickable(false);
                 botonAbrirMenu.setClickable(false);
+                map.getUiSettings().setScrollGesturesEnabled(false);
 
                 //abre la nueva actividad
                 FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -111,7 +188,15 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                 }
 
                 //TODO: informacion del mapa
-                //https://www.youtube.com/watch?v=HbCSuExETzY
+                //latitud y longitud del mapa
+                String lat = actividades.get(i).getActivity_coords_lat();
+                String lng = actividades.get(i).getActivity_coords_long();
+                String url = "http://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                //MAPA INFO
+                new DownloadImageTask(findViewById(R.id.infoMap))
+                        .execute(url);
+
+
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {
@@ -120,6 +205,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                         //activa los botones
                         botonAbrirMapa.setClickable(true);
                         botonAbrirMenu.setClickable(true);
+                        map.getUiSettings().setScrollGesturesEnabled(true);
 
                         //esconde la actividad
                         FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -129,9 +215,196 @@ public class MenuPrincipalMapa extends AppCompatActivity {
             }
         });
     }
-}
 
-/*
-    https://gist.github.com/joshdholtz/4522551
-    https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
- */
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
+
+        public DownloadImageTask(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mIcon11 = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon11 = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return mIcon11;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
+    }
+
+    /**==============================FUNCIONES DEL MAPA==================================*/
+    @SuppressLint("MissingPermission")
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+        map = googleMap;
+        map.setMyLocationEnabled(true);
+        loc = new Location("Test");
+        loc.setLatitude(Elorrieta.latitude);
+        loc.setLongitude(Elorrieta.longitude);
+
+        map.addMarker(new MarkerOptions()
+                .position(Kurutziaga)
+                .title("Lehenengo gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Basilika)
+                .title("Bigarren gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Udaletxea)
+                .title("Hirugarren gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Gozotegia)
+                .title("Laugarren gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Jauregia)
+                .title("Bostgarren gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Errebonbilloa)
+                .title("Seigarren gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(nekropolia)
+                .title("Lehenengo gurutze"));
+        map.addMarker(new MarkerOptions()
+                .position(Elorrieta)
+                .title("Elorrieta"));
+        map.moveCamera(CameraUpdateFactory.newLatLng(Kurutziaga));
+        map.setMapType(googleMap.MAP_TYPE_HYBRID);
+        map.setOnMyLocationButtonClickListener(this);
+        map.setOnMyLocationClickListener(this);
+
+        //ajusta el zoom del mapa
+        FusedLocationProviderClient fusedLocationProviderClient;
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        fusedLocationProviderClient.getLastLocation()
+                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        // Got last known location. In some rare situations this can be null.
+                        if (location != null) {
+                            // Logic to handle location object
+                            float zoom = 19.0f; //el valor maximo es 21!!
+                            LatLng lastKnownLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                            map.moveCamera(CameraUpdateFactory.newLatLngZoom(lastKnownLatLng, zoom));
+                        }
+                    }
+                });
+    }
+
+    /**
+     * Enables the My Location layer if the fine location permission has been granted.
+     */
+
+    @SuppressLint("MissingPermission")
+    private void enableMyLocation() {
+         PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
+    }
+
+    @Override
+    public boolean onMyLocationButtonClick() {
+        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        // Return false so that we don't consume the event and the default behavior still occurs
+        // (the camera animates to the user's current position).
+        return false;
+    }
+
+    @Override
+    public void onMyLocationClick(@NonNull Location location) {
+        Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+    }
+
+    // [START maps_check_location_permission_result]
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        if (requestCode != LOCATION_PERMISSION_REQUEST_CODE) {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+            return;
+        }
+
+        if (PermissionUtils.isPermissionGranted(permissions, grantResults,
+                android.Manifest.permission.ACCESS_FINE_LOCATION) || PermissionUtils
+                .isPermissionGranted(permissions, grantResults,
+                        Manifest.permission.ACCESS_COARSE_LOCATION)) {
+            // Enable the my location layer if the permission has been granted.
+            enableMyLocation();
+        } else {
+            // Permission was denied. Display an error message
+            // [START_EXCLUDE]
+            // Display the missing permission error dialog when the fragments resume.
+            permissionDenied = true;
+            // [END_EXCLUDE]
+        }
+    }
+    // [END maps_check_location_permission_result]
+
+    @Override
+    protected void onResumeFragments() {
+        super.onResumeFragments();
+        if (permissionDenied) {
+            // Permission was not granted, display error dialog.
+            showMissingPermissionError();
+            permissionDenied = false;
+        }
+    }
+
+    //TODO:_______
+    //PARTE QUE CONTROLA EL ZOOM DEL MAPA HACIA EL SITIO EN EL QUE ESTA EL TELEFONO
+
+    public void activate(LocationSource.OnLocationChangedListener listener)
+    {
+        mListener = listener;
+    }
+
+    public void deactivate()
+    {
+        mListener = null;
+    }
+
+    public void onLocationChanged(Location location)
+    {
+        if( mListener != null )
+        {
+            mListener.onLocationChanged( location );
+
+            LatLngBounds bounds = this.map.getProjection().getVisibleRegion().latLngBounds;
+
+            if(!bounds.contains(new LatLng(location.getLatitude(), location.getLongitude())))
+            {
+                //Move the camera to the user's location if they are off-screen!
+                map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
+            }
+        }
+    }
+
+    /**
+     * Displays a dialog with error message explaining that the location permission is missing.
+     */
+    private void showMissingPermissionError() {
+        PermissionUtils.PermissionDeniedDialog
+                .newInstance(true).show(getSupportFragmentManager(), "dialog");
+    }
+    private final LocationListener locationListener = new LocationListener() {
+        @Override
+        public void onLocationChanged(Location location) {
+            if(location != null) {
+/**Solo cambiar la variable loc que es un marcador(anteriormente creado)
+ * la comparativa es la distancia al marcador ej: 50 es en metros
+ * Descomentar el intent provocara que cuando se este a menos de X metros se habra una nueva actividad*/
+                if (location.distanceTo(loc)<50){
+                    //Intent intent = new Intent(MapsActivity.this,Activity2.class);
+                    //MapsActivity.this.startActivity(intent);
+                } else {
+
+                }
+            }
+        }
+    };
+}

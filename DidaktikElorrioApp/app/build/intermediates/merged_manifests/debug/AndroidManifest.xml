@@ -184,6 +184,11 @@
             android:name="androidx.window.sidecar"
             android:required="false" />
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
+            android:exported="false" />
+
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:directBootAware="true"
