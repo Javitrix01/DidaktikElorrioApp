@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-tr/values-tr.xml",
-=======
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-tr/values-tr.xml",
->>>>>>> Aitor_22_12_2022_DU
             "map": [
                 {
                     "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\c75633332e0d7727fdc9111989dafeb4\\transformed\\core-1.8.0\\res\\values-tr\\values-tr.xml",
@@ -17,11 +13,28 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "123",
+                        "startLines": "131",
                         "startColumns": "4",
-                        "startOffsets": "11023",
+                        "startOffsets": "11596",
                         "endColumns": "100",
-                        "endOffsets": "11119"
+                        "endOffsets": "11692"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\832873f439420606276d927cc1153142\\transformed\\places-2.4.0\\res\\values-tr\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,257,317,409,469,513,598,672",
+                        "endColumns": "72,59,91,59,43,84,73,52",
+                        "endOffsets": "256,316,408,468,512,597,671,724"
+                    },
+                    "to": {
+                        "startLines": "121,122,123,124,125,126,127,128",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "10872,10949,11013,11109,11173,11221,11310,11388",
+                        "endColumns": "76,63,95,63,47,88,77,56",
+                        "endOffsets": "10944,11008,11104,11168,11216,11305,11383,11440"
                     }
                 },
                 {
@@ -112,62 +125,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\3ab57e222d20792f120b18e88dd10d60\\transformed\\ui-1.1.1\\res\\values-tr\\values-tr.xml",
-=======
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\c75633332e0d7727fdc9111989dafeb4\\transformed\\core-1.8.0\\res\\values-tr\\values-tr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "131",
-                        "startColumns": "4",
-                        "startOffsets": "11596",
-                        "endColumns": "100",
-                        "endOffsets": "11692"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\e63148f59155546e23ce23794467cf5f\\transformed\\play-services-basement-18.0.0\\res\\values-tr\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "142",
-                        "endOffsets": "337"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "4567",
-                        "endColumns": "146",
-                        "endOffsets": "4709"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\54662029eb1adec21824d6ae8cea3cdc\\transformed\\play-services-base-18.0.1\\res\\values-tr\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,299,450,582,683,826,952,1075,1177,1345,1448,1601,1731,1872,2035,2093,2153",
-                        "endColumns": "105,150,131,100,142,125,122,101,167,102,152,129,140,162,57,59,75",
-                        "endOffsets": "298,449,581,682,825,951,1074,1176,1344,1447,1600,1730,1871,2034,2092,2152,2228"
-                    },
-                    "to": {
-                        "startLines": "39,40,41,42,43,44,45,46,48,49,50,51,52,53,54,55,56",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3551,3661,3816,3952,4057,4204,4334,4461,4714,4886,4993,5150,5284,5429,5596,5658,5722",
-                        "endColumns": "109,154,135,104,146,129,126,105,171,106,156,133,144,166,61,63,79",
-                        "endOffsets": "3656,3811,3947,4052,4199,4329,4456,4562,4881,4988,5145,5279,5424,5591,5653,5717,5797"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\3ab57e222d20792f120b18e88dd10d60\\transformed\\ui-1.1.1\\res\\values-tr\\values-tr.xml",
->>>>>>> Aitor_22_12_2022_DU
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -182,43 +140,6 @@
                         "endColumns": "92,83,94,99,83,82,104,87,83,67,65,70,67,117",
                         "endOffsets": "3462,3546,5892,5992,6076,6391,6496,10570,10654,10722,10788,11591,11760,11878"
                     }
-<<<<<<< HEAD
-=======
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\482703b57e186ad5b17081ff1d18732e\\transformed\\navigation-ui-2.5.2\\res\\values-tr\\values-tr.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,160",
-                        "endColumns": "104,116",
-                        "endOffsets": "155,272"
-                    },
-                    "to": {
-                        "startLines": "114,115",
-                        "startColumns": "4,4",
-                        "startOffsets": "10265,10370",
-                        "endColumns": "104,116",
-                        "endOffsets": "10365,10482"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\832873f439420606276d927cc1153142\\transformed\\places-2.4.0\\res\\values-tr\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "184,257,317,409,469,513,598,672",
-                        "endColumns": "72,59,91,59,43,84,73,52",
-                        "endOffsets": "256,316,408,468,512,597,671,724"
-                    },
-                    "to": {
-                        "startLines": "121,122,123,124,125,126,127,128",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "10872,10949,11013,11109,11173,11221,11310,11388",
-                        "endColumns": "76,63,95,63,47,88,77,56",
-                        "endOffsets": "10944,11008,11104,11168,11216,11305,11383,11440"
-                    }
->>>>>>> Aitor_22_12_2022_DU
                 }
             ]
         }

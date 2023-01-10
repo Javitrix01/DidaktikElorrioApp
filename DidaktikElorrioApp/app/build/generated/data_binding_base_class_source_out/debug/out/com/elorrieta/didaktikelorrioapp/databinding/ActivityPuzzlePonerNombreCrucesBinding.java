@@ -60,7 +60,7 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final LinearLayout linearLayout2;
 
   @NonNull
-  public final LinearLayout linearLayout5;
+  public final LinearLayout linearLayoutNombresCruces;
 
   @NonNull
   public final TextView textView24;
@@ -114,6 +114,12 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final TextView textView40;
 
   @NonNull
+  public final TextView textView41;
+
+  @NonNull
+  public final TextView textView42;
+
+  @NonNull
   public final TextView txtPreguntaCruces;
 
   private ActivityPuzzlePonerNombreCrucesBinding(@NonNull ConstraintLayout rootView,
@@ -122,13 +128,14 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
       @NonNull EditText etKurutziaga, @NonNull EditText etKurutzondo, @NonNull EditText etSanJuan,
       @NonNull EditText etSantaAna, @NonNull EditText etSantaElena, @NonNull EditText etTxanberi,
       @NonNull ImageView imageView7, @NonNull LinearLayout linearLayout2,
-      @NonNull LinearLayout linearLayout5, @NonNull TextView textView24,
+      @NonNull LinearLayout linearLayoutNombresCruces, @NonNull TextView textView24,
       @NonNull TextView textView25, @NonNull TextView textView26, @NonNull TextView textView27,
       @NonNull TextView textView28, @NonNull TextView textView29, @NonNull TextView textView30,
       @NonNull TextView textView31, @NonNull TextView textView32, @NonNull TextView textView33,
       @NonNull TextView textView34, @NonNull TextView textView35, @NonNull TextView textView36,
       @NonNull TextView textView37, @NonNull TextView textView38, @NonNull TextView textView39,
-      @NonNull TextView textView40, @NonNull TextView txtPreguntaCruces) {
+      @NonNull TextView textView40, @NonNull TextView textView41, @NonNull TextView textView42,
+      @NonNull TextView txtPreguntaCruces) {
     this.rootView = rootView;
     this.btnJarraituPuzCrucesNombre = btnJarraituPuzCrucesNombre;
     this.etGanondo = etGanondo;
@@ -142,7 +149,7 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
     this.etTxanberi = etTxanberi;
     this.imageView7 = imageView7;
     this.linearLayout2 = linearLayout2;
-    this.linearLayout5 = linearLayout5;
+    this.linearLayoutNombresCruces = linearLayoutNombresCruces;
     this.textView24 = textView24;
     this.textView25 = textView25;
     this.textView26 = textView26;
@@ -160,6 +167,8 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
     this.textView38 = textView38;
     this.textView39 = textView39;
     this.textView40 = textView40;
+    this.textView41 = textView41;
+    this.textView42 = textView42;
     this.txtPreguntaCruces = txtPreguntaCruces;
   }
 
@@ -262,9 +271,9 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
         break missingId;
       }
 
-      id = R.id.linearLayout5;
-      LinearLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
+      id = R.id.linearLayoutNombresCruces;
+      LinearLayout linearLayoutNombresCruces = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayoutNombresCruces == null) {
         break missingId;
       }
 
@@ -370,6 +379,18 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
         break missingId;
       }
 
+      id = R.id.textView41;
+      TextView textView41 = ViewBindings.findChildViewById(rootView, id);
+      if (textView41 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView42;
+      TextView textView42 = ViewBindings.findChildViewById(rootView, id);
+      if (textView42 == null) {
+        break missingId;
+      }
+
       id = R.id.txtPreguntaCruces;
       TextView txtPreguntaCruces = ViewBindings.findChildViewById(rootView, id);
       if (txtPreguntaCruces == null) {
@@ -379,9 +400,10 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
       return new ActivityPuzzlePonerNombreCrucesBinding((ConstraintLayout) rootView,
           btnJarraituPuzCrucesNombre, etGanondo, etIguriakoGurutzea, etKurutzebarri, etKurutziaga,
           etKurutzondo, etSanJuan, etSantaAna, etSantaElena, etTxanberi, imageView7, linearLayout2,
-          linearLayout5, textView24, textView25, textView26, textView27, textView28, textView29,
-          textView30, textView31, textView32, textView33, textView34, textView35, textView36,
-          textView37, textView38, textView39, textView40, txtPreguntaCruces);
+          linearLayoutNombresCruces, textView24, textView25, textView26, textView27, textView28,
+          textView29, textView30, textView31, textView32, textView33, textView34, textView35,
+          textView36, textView37, textView38, textView39, textView40, textView41, textView42,
+          txtPreguntaCruces);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

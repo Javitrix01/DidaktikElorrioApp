@@ -83,7 +83,7 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
   public final LinearLayout linearLayout4;
 
   @NonNull
-  public final LinearLayout linearLayout5;
+  public final LinearLayout linearLayoutNombresCruces;
 
   @NonNull
   public final TextView textView17;
@@ -122,7 +122,7 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
       @NonNull CheckBox P7E, @NonNull CheckBox P7G, @NonNull CheckBox P8E, @NonNull CheckBox P8G,
       @NonNull Button button7, @NonNull ConstraintLayout constraintLayout,
       @NonNull LinearLayout linearLayout3, @NonNull LinearLayout linearLayout4,
-      @NonNull LinearLayout linearLayout5, @NonNull TextView textView17,
+      @NonNull LinearLayout linearLayoutNombresCruces, @NonNull TextView textView17,
       @NonNull TextView textView18, @NonNull TextView textViewGaldera1,
       @NonNull TextView textViewGaldera2, @NonNull TextView textViewGaldera3,
       @NonNull TextView textViewGaldera4, @NonNull TextView textViewGaldera5,
@@ -149,7 +149,7 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
     this.constraintLayout = constraintLayout;
     this.linearLayout3 = linearLayout3;
     this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
+    this.linearLayoutNombresCruces = linearLayoutNombresCruces;
     this.textView17 = textView17;
     this.textView18 = textView18;
     this.textViewGaldera1 = textViewGaldera1;
@@ -309,9 +309,9 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout5;
-      LinearLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
+      id = R.id.linearLayoutNombresCruces;
+      LinearLayout linearLayoutNombresCruces = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayoutNombresCruces == null) {
         break missingId;
       }
 
@@ -377,9 +377,9 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
 
       return new ActivityPuzzleEgiaGezurraBinding((ConstraintLayout) rootView, P1E, P1G, P2E, P2G,
           P3E, P3G, P4E, P4G, P5E, P5G, P6E, P6G, P7E, P7G, P8E, P8G, button7, constraintLayout,
-          linearLayout3, linearLayout4, linearLayout5, textView17, textView18, textViewGaldera1,
-          textViewGaldera2, textViewGaldera3, textViewGaldera4, textViewGaldera5, textViewGaldera6,
-          textViewGaldera7, textViewGaldera8);
+          linearLayout3, linearLayout4, linearLayoutNombresCruces, textView17, textView18,
+          textViewGaldera1, textViewGaldera2, textViewGaldera3, textViewGaldera4, textViewGaldera5,
+          textViewGaldera6, textViewGaldera7, textViewGaldera8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

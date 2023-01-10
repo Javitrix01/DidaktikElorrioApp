@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-night-v8/values-night-v8.xml",
-=======
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-night-v8/values-night-v8.xml",
->>>>>>> Aitor_22_12_2022_DU
             "map": [
                 {
                     "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",

@@ -10,10 +10,10 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.elorrieta.didaktikelorrioapp.R;
-import com.google.android.gms.maps.MapView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -35,18 +35,18 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   public final ListView listaMenuPrincipal;
 
   @NonNull
-  public final MapView mapView;
+  public final FragmentContainerView mapPRUEBA;
 
   private ActivityMenuPrincipalMapaBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnMapa, @NonNull Button btnMenuActividades,
       @NonNull LinearLayout linearLayout, @NonNull ListView listaMenuPrincipal,
-      @NonNull MapView mapView) {
+      @NonNull FragmentContainerView mapPRUEBA) {
     this.rootView = rootView;
     this.btnMapa = btnMapa;
     this.btnMenuActividades = btnMenuActividades;
     this.linearLayout = linearLayout;
     this.listaMenuPrincipal = listaMenuPrincipal;
-    this.mapView = mapView;
+    this.mapPRUEBA = mapPRUEBA;
   }
 
   @Override
@@ -100,14 +100,14 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.mapView;
-      MapView mapView = ViewBindings.findChildViewById(rootView, id);
-      if (mapView == null) {
+      id = R.id.mapPRUEBA;
+      FragmentContainerView mapPRUEBA = ViewBindings.findChildViewById(rootView, id);
+      if (mapPRUEBA == null) {
         break missingId;
       }
 
       return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, btnMapa,
-          btnMenuActividades, linearLayout, listaMenuPrincipal, mapView);
+          btnMenuActividades, linearLayout, listaMenuPrincipal, mapPRUEBA);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

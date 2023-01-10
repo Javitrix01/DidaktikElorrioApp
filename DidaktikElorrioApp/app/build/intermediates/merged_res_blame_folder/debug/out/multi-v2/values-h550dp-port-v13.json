@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
-=======
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
->>>>>>> Aitor_22_12_2022_DU
             "map": [
                 {
                     "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",

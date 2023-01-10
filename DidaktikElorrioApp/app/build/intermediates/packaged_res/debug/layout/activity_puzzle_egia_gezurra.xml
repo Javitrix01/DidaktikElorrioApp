@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout5"
+            android:id="@+id/linearLayoutNombresCruces"
             android:layout_width="161dp"
             android:layout_height="439dp"
             android:orientation="vertical"
@@ -186,7 +186,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="7dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutNombresCruces"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.942"
             app:layout_constraintStart_toStartOf="parent"
