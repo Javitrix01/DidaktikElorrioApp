@@ -343,6 +343,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id infoMap
 id jarraituPuzzle
 id languageChipGroup
 id last
@@ -367,8 +368,7 @@ id lion
 id listaMenuPrincipal
 id logo
 id map
-id mapView
-id mapView2
+id mapPRUEBA
 id progressBar3
 id rightBtn
 id scrollView2
