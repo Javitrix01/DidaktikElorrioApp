@@ -50,7 +50,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.DidaktikElorrioApp" >
-
+        <activity
+            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

@@ -20,33 +20,33 @@
 13-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:5-85
 13-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:22-82
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:5-67
-14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:22-64
+14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:5-67
+14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:22-64
 15    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:5-98
-15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:22-95
+15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:5-98
+15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:22-95
 16
 17    <permission
-17-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:14:5-17:47
+17-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:5-14:47
 18        android:name="com.example.permission.MAPS_RECEIVE"
-18-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
+18-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:9-59
 19        android:protectionLevel="signature" />
-19-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
+19-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:14:9-44
 20
 21    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
-21-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
-21-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
+21-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:5-75
+21-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:22-72
 22
 23    <permission
-23-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:14:5-17:47
+23-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:5-14:47
 24        android:name="com.example.permission.MAPS_RECEIVE"
-24-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
+24-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:9-59
 25        android:protectionLevel="signature" />
-25-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
+25-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:14:9-44
 26
 27    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
-27-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
-27-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
+27-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:5-75
+27-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:22-72
 28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
 28-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:10:5-76
 28-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:10:22-73
@@ -71,380 +71,385 @@
 39    </queries>
 40
 41    <application
-41-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:5-143:19
+41-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:24:5-142:19
 42        android:allowBackup="true"
-42-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-35
+42-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:25:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 43-->[androidx.core:core:1.8.0] C:\Users\in2dm3\.gradle\caches\transforms-3\c75633332e0d7727fdc9111989dafeb4\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 44        android:dataExtractionRules="@xml/data_extraction_rules"
-44-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-65
+44-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:26:9-65
 45        android:debuggable="true"
 46        android:fullBackupContent="@xml/backup_rules"
-46-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:30:9-54
+46-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:9-54
 47        android:icon="@mipmap/ic_launcher"
-47-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-43
+47-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-43
 48        android:label="@string/app_name"
-48-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:32:9-41
+48-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-41
 49        android:roundIcon="@mipmap/ic_launcher_round"
-49-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:33:9-54
+49-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:30:9-54
 50        android:supportsRtl="true"
-50-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:34:9-35
+50-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-35
 51        android:testOnly="true"
 52        android:theme="@style/Theme.DidaktikElorrioApp" >
-52-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:9-56
-53
-54        <!--
-55             TODO: Before you run your application, you need a Google Maps API key.
-56
-57             To get one, follow the directions here:
+52-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:32:9-56
+53        <activity
+53-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:34:9-36:40
+54            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
+54-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:13-49
+55            android:exported="false" />
+55-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:36:13-37
+56        <!--
+57             TODO: Before you run your application, you need a Google Maps API key.
 58
-59                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+59             To get one, follow the directions here:
 60
-61             Once you have your API key (it starts with "AIza"), define a new property in your
-62             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-63             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-64        -->
-65        <meta-data
-65-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:49:9-51:71
-66            android:name="com.google.android.geo.API_KEY"
-66-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:50:13-58
-67            android:value="AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc" />
-67-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:51:13-68
-68
-69        <activity
-69-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:53:9-56:60
-70            android:name="com.elorrieta.didaktikelorrioapp.MapsActivity"
-70-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:54:13-41
-71            android:exported="false"
-71-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:55:13-37
-72            android:label="@string/title_activity_maps2" />
-72-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:56:13-57
-73        <activity
-73-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:57:9-63:20
-74            android:name="com.elorrieta.didaktikelorrioapp.InfoDelMenu"
-74-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:58:13-40
-75            android:exported="false" >
-75-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:59:13-37
-76            <meta-data
-76-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:60:13-62:36
-77                android:name="android.app.lib_name"
-77-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:61:17-52
-78                android:value="" />
-78-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:62:17-33
-79        </activity>
-80        <activity
-80-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:64:9-66:40
-81            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Egia_Gezurra"
-81-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:65:13-48
-82            android:exported="false" />
-82-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:66:13-37
-83        <activity
-83-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:67:9-69:40
-84            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Con_Nombres"
-84-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:68:13-60
-85            android:exported="false" />
-85-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:69:13-37
-86        <activity
-86-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:70:9-72:40
-87            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Poner_Nombres"
-87-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:71:13-62
-88            android:exported="false" />
-88-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:72:13-37
-89        <activity
-89-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:73:9-75:40
-90            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada7"
-90-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:74:13-48
-91            android:exported="false" />
-91-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:75:13-37
-92        <activity
-92-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:76:9-78:40
-93            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada6"
-93-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:77:13-48
-94            android:exported="false" />
-94-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:78:13-37
-95        <activity
-95-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:79:9-81:40
-96            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada5"
-96-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:80:13-48
-97            android:exported="false" />
-97-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:81:13-37
-98        <activity
-98-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:82:9-84:40
-99            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Pasteleria"
-99-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:83:13-46
-100            android:exported="false" />
-100-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:84:13-37
-101        <activity
-101-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:85:9-87:40
-102            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada4"
-102-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:86:13-48
-103            android:exported="false" />
-103-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:87:13-37
-104        <activity
-104-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:88:9-90:40
-105            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada3"
-105-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:89:13-48
-106            android:exported="false" />
-106-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:90:13-37
-107        <activity
-107-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:91:9-93:40
-108            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada2"
-108-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:92:13-48
-109            android:exported="false" />
-109-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:93:13-37
-110        <activity
-110-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:94:9-96:40
-111            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Poner_Nombre_Cruces"
-111-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:95:13-55
-112            android:exported="false" />
-112-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:96:13-37
-113        <activity
-113-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:97:9-99:40
-114            android:name="com.elorrieta.didaktikelorrioapp.Mapa_Cruces_Con_Nombre"
-114-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:98:13-51
-115            android:exported="false" />
-115-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:99:13-37
-116        <activity
-116-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:100:9-102:40
-117            android:name="com.elorrieta.didaktikelorrioapp.Mostrar_Foto_Mapa"
-117-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:101:13-46
-118            android:exported="false" />
-118-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:102:13-37
-119        <activity
-119-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:103:9-105:40
-120            android:name="com.elorrieta.didaktikelorrioapp.CrearMapa_puzzle"
-120-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:104:13-45
-121            android:exported="false" />
-121-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:105:13-37
-122        <activity
-122-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:106:9-108:40
-123            android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
-123-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:107:13-41
-124            android:exported="false" />
-124-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:108:13-37
-125        <activity
-125-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:109:9-111:40
-126            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada1"
-126-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:110:13-48
-127            android:exported="false" />
-127-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:111:13-37
-128        <activity
-128-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:112:9-114:40
-129            android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
-129-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:113:13-46
-130            android:exported="false" />
-130-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:114:13-37
-131        <activity
-131-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:115:9-117:40
-132            android:name="com.elorrieta.didaktikelorrioapp.GameActivity15"
-132-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:116:13-43
-133            android:exported="false" />
-133-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:117:13-37
-134        <activity
-134-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:118:9-120:40
-135            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
-135-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:119:13-42
-136            android:exported="false" />
-136-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:120:13-37
-137        <activity
-137-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:121:9-123:40
-138            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
-138-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:122:13-52
-139            android:exported="false" />
-139-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:13-37
-140        <activity
-140-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:124:9-126:40
-141            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
-141-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:125:13-39
-142            android:exported="false" />
-142-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:13-37
-143        <activity
-143-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:127:9-129:40
-144            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
-144-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:128:13-41
-145            android:exported="false" />
-145-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:13-37
-146        <activity
-146-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:130:9-138:20
-147            android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
-147-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:131:13-41
-148            android:exported="true" >
-148-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-36
-149            <intent-filter>
-149-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:13-137:29
-150                <action android:name="android.intent.action.MAIN" />
-150-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:134:17-69
-150-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:134:25-66
-151
-152                <category android:name="android.intent.category.LAUNCHER" />
-152-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:136:17-77
-152-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:136:27-74
-153            </intent-filter>
-154        </activity>
-155
-156        <meta-data
-156-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:140:9-142:57
-157            android:name="preloaded_fonts"
-157-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-43
-158            android:resource="@array/preloaded_fonts" />
-158-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:142:13-54
-159
-160        <activity
-160-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:25:9-27:39
-161            android:name="androidx.compose.ui.tooling.PreviewActivity"
-161-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:26:13-71
-162            android:exported="true" />
-162-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:27:13-36
-163        <activity
-163-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:25:9-27:39
-164            android:name="androidx.activity.ComponentActivity"
-164-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:26:13-63
-165            android:exported="true" />
-165-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:27:13-36
-166        <activity
-166-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:14:9-20:20
-167            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-167-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:15:13-91
-168            android:exported="false"
-168-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:16:13-37
-169            android:label="@string/places_autocomplete_label"
-169-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:17:13-62
-170            android:theme="@style/PlacesAutocompleteOverlay"
-170-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:18:13-61
-171            android:windowSoftInputMode="adjustResize" >
-171-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:19:13-55
-172        </activity> <!-- Needs to be explicitly declared on P+ -->
-173        <uses-library
-173-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
-174            android:name="org.apache.http.legacy"
-174-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
-175            android:required="false" />
-175-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
-176
-177        <activity
-177-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-178            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-178-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-179            android:exported="false"
-179-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-180-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-181
-182        <meta-data
-182-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-183            android:name="com.google.android.gms.version"
-183-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-184            android:value="@integer/google_play_services_version" />
-184-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-185
-186        <uses-library
-186-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-187            android:name="androidx.window.extensions"
-187-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-188            android:required="false" />
-188-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-189        <uses-library
-189-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-190            android:name="androidx.window.sidecar"
-190-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-191            android:required="false" />
-191-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-192
-193        <provider
-193-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
-194            android:name="com.squareup.picasso.PicassoProvider"
-194-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
-195            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
-195-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
-196            android:exported="false" />
-196-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
-197
-198        <service
-198-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
-199            android:name="androidx.room.MultiInstanceInvalidationService"
-199-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
-200            android:directBootAware="true"
-200-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
-201            android:exported="false" />
-201-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
-202
-203        <provider
-203-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-204            android:name="androidx.startup.InitializationProvider"
-204-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-205            android:authorities="com.elorrieta.didaktikelorrioapp.androidx-startup"
-205-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-206            android:exported="false" >
-206-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-207            <meta-data
-207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-208                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-209                android:value="androidx.startup" />
-209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-210            <meta-data
-210-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-211                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-211-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-212                android:value="androidx.startup" />
-212-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-213            <meta-data
-213-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:31:13-33:52
-214                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-214-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:32:17-85
-215                android:value="androidx.startup" />
-215-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:33:17-49
-216        </provider>
-217
-218        <receiver
-218-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:36:9-45:20
-219            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-219-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:37:13-76
-220            android:directBootAware="false"
-220-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:38:13-44
-221            android:enabled="true"
-221-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:39:13-35
-222            android:exported="true"
-222-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:40:13-36
-223            android:permission="android.permission.DUMP" >
-223-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:41:13-57
-224            <intent-filter>
-224-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:42:13-44:29
-225                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-225-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:17-91
-225-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:25-88
-226            </intent-filter>
-227        </receiver>
-228
-229        <service
-229-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
-230            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-230-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
-231            android:exported="false" >
-231-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
-232            <meta-data
-232-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
-233                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-233-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
-234                android:value="cct" />
-234-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
-235        </service>
-236        <service
-236-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
-237            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-237-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
-238            android:exported="false"
-238-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
-239            android:permission="android.permission.BIND_JOB_SERVICE" >
-239-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
-240        </service>
-241
-242        <receiver
-242-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
-243            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-243-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
-244            android:exported="false" />
-244-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
-245    </application>
-246
-247</manifest>
+61                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+62
+63             Once you have your API key (it starts with "AIza"), define a new property in your
+64             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+65             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+66        -->
+67        <meta-data
+67-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:48:9-50:71
+68            android:name="com.google.android.geo.API_KEY"
+68-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:49:13-58
+69            android:value="AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc" />
+69-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:50:13-68
+70
+71        <activity
+71-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:52:9-55:60
+72            android:name="com.elorrieta.didaktikelorrioapp.MapsActivity"
+72-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:53:13-41
+73            android:exported="false"
+73-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:54:13-37
+74            android:label="@string/title_activity_maps2" />
+74-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:55:13-57
+75        <activity
+75-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:56:9-62:20
+76            android:name="com.elorrieta.didaktikelorrioapp.InfoDelMenu"
+76-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:57:13-40
+77            android:exported="false" >
+77-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:58:13-37
+78            <meta-data
+78-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:59:13-61:36
+79                android:name="android.app.lib_name"
+79-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:60:17-52
+80                android:value="" />
+80-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:61:17-33
+81        </activity>
+82        <activity
+82-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:63:9-65:40
+83            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Egia_Gezurra"
+83-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:64:13-48
+84            android:exported="false" />
+84-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:65:13-37
+85        <activity
+85-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:66:9-68:40
+86            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Con_Nombres"
+86-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:67:13-60
+87            android:exported="false" />
+87-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:68:13-37
+88        <activity
+88-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:69:9-71:40
+89            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Poner_Nombres"
+89-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:70:13-62
+90            android:exported="false" />
+90-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:71:13-37
+91        <activity
+91-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:72:9-74:40
+92            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada7"
+92-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:73:13-48
+93            android:exported="false" />
+93-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:74:13-37
+94        <activity
+94-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:75:9-77:40
+95            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada6"
+95-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:76:13-48
+96            android:exported="false" />
+96-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:77:13-37
+97        <activity
+97-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:78:9-80:40
+98            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada5"
+98-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:79:13-48
+99            android:exported="false" />
+99-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:80:13-37
+100        <activity
+100-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:81:9-83:40
+101            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Pasteleria"
+101-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:82:13-46
+102            android:exported="false" />
+102-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:83:13-37
+103        <activity
+103-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:84:9-86:40
+104            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada4"
+104-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:85:13-48
+105            android:exported="false" />
+105-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:86:13-37
+106        <activity
+106-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:87:9-89:40
+107            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada3"
+107-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:88:13-48
+108            android:exported="false" />
+108-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:89:13-37
+109        <activity
+109-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:90:9-92:40
+110            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada2"
+110-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:91:13-48
+111            android:exported="false" />
+111-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:92:13-37
+112        <activity
+112-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:93:9-95:40
+113            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Poner_Nombre_Cruces"
+113-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:94:13-55
+114            android:exported="false" />
+114-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:95:13-37
+115        <activity
+115-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:96:9-98:40
+116            android:name="com.elorrieta.didaktikelorrioapp.Mapa_Cruces_Con_Nombre"
+116-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:97:13-51
+117            android:exported="false" />
+117-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:98:13-37
+118        <activity
+118-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:99:9-101:40
+119            android:name="com.elorrieta.didaktikelorrioapp.Mostrar_Foto_Mapa"
+119-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:100:13-46
+120            android:exported="false" />
+120-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:101:13-37
+121        <activity
+121-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:102:9-104:40
+122            android:name="com.elorrieta.didaktikelorrioapp.CrearMapa_puzzle"
+122-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:103:13-45
+123            android:exported="false" />
+123-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:104:13-37
+124        <activity
+124-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:105:9-107:40
+125            android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
+125-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:106:13-41
+126            android:exported="false" />
+126-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:107:13-37
+127        <activity
+127-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:108:9-110:40
+128            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada1"
+128-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:109:13-48
+129            android:exported="false" />
+129-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:110:13-37
+130        <activity
+130-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:111:9-113:40
+131            android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
+131-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:112:13-46
+132            android:exported="false" />
+132-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:113:13-37
+133        <activity
+133-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:114:9-116:40
+134            android:name="com.elorrieta.didaktikelorrioapp.GameActivity15"
+134-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:115:13-43
+135            android:exported="false" />
+135-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:116:13-37
+136        <activity
+136-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:117:9-119:40
+137            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
+137-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:118:13-42
+138            android:exported="false" />
+138-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:119:13-37
+139        <activity
+139-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:120:9-122:40
+140            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
+140-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:121:13-52
+141            android:exported="false" />
+141-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:122:13-37
+142        <activity
+142-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:9-125:40
+143            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
+143-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:124:13-39
+144            android:exported="false" />
+144-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:125:13-37
+145        <activity
+145-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:9-128:40
+146            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
+146-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:127:13-41
+147            android:exported="false" />
+147-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:128:13-37
+148        <activity
+148-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:9-137:20
+149            android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
+149-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:130:13-41
+150            android:exported="true" >
+150-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:131:13-36
+151            <intent-filter>
+151-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-136:29
+152                <action android:name="android.intent.action.MAIN" />
+152-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:17-69
+152-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:25-66
+153
+154                <category android:name="android.intent.category.LAUNCHER" />
+154-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:17-77
+154-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:27-74
+155            </intent-filter>
+156        </activity>
+157
+158        <meta-data
+158-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:139:9-141:57
+159            android:name="preloaded_fonts"
+159-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:140:13-43
+160            android:resource="@array/preloaded_fonts" />
+160-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-54
+161
+162        <activity
+162-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:25:9-27:39
+163            android:name="androidx.compose.ui.tooling.PreviewActivity"
+163-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:26:13-71
+164            android:exported="true" />
+164-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:27:13-36
+165        <activity
+165-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:25:9-27:39
+166            android:name="androidx.activity.ComponentActivity"
+166-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:26:13-63
+167            android:exported="true" />
+167-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:27:13-36
+168        <activity
+168-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:14:9-20:20
+169            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+169-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:15:13-91
+170            android:exported="false"
+170-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:16:13-37
+171            android:label="@string/places_autocomplete_label"
+171-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:17:13-62
+172            android:theme="@style/PlacesAutocompleteOverlay"
+172-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:18:13-61
+173            android:windowSoftInputMode="adjustResize" >
+173-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:19:13-55
+174        </activity> <!-- Needs to be explicitly declared on P+ -->
+175        <uses-library
+175-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+176            android:name="org.apache.http.legacy"
+176-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+177            android:required="false" />
+177-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+178
+179        <activity
+179-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+180            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+180-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+181            android:exported="false"
+181-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+182-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+183
+184        <meta-data
+184-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+185            android:name="com.google.android.gms.version"
+185-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+187
+188        <uses-library
+188-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+189            android:name="androidx.window.extensions"
+189-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+190            android:required="false" />
+190-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+191        <uses-library
+191-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+192            android:name="androidx.window.sidecar"
+192-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+193            android:required="false" />
+193-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+194
+195        <provider
+195-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+196            android:name="com.squareup.picasso.PicassoProvider"
+196-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+197            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
+197-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+198            android:exported="false" />
+198-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+199
+200        <service
+200-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+201            android:name="androidx.room.MultiInstanceInvalidationService"
+201-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+202            android:directBootAware="true"
+202-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+203            android:exported="false" />
+203-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+204
+205        <provider
+205-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+206            android:name="androidx.startup.InitializationProvider"
+206-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+207            android:authorities="com.elorrieta.didaktikelorrioapp.androidx-startup"
+207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+208            android:exported="false" >
+208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+209            <meta-data
+209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+210                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+210-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+211                android:value="androidx.startup" />
+211-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+212            <meta-data
+212-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+213                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+213-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+214                android:value="androidx.startup" />
+214-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+215            <meta-data
+215-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:31:13-33:52
+216                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+216-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:32:17-85
+217                android:value="androidx.startup" />
+217-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:33:17-49
+218        </provider>
+219
+220        <receiver
+220-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:36:9-45:20
+221            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+221-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:37:13-76
+222            android:directBootAware="false"
+222-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:38:13-44
+223            android:enabled="true"
+223-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:39:13-35
+224            android:exported="true"
+224-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:40:13-36
+225            android:permission="android.permission.DUMP" >
+225-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:41:13-57
+226            <intent-filter>
+226-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:42:13-44:29
+227                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+227-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:17-91
+227-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:25-88
+228            </intent-filter>
+229        </receiver>
+230
+231        <service
+231-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+232            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+232-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+233            android:exported="false" >
+233-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+234            <meta-data
+234-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+235                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+235-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+236                android:value="cct" />
+236-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+237        </service>
+238        <service
+238-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+239            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+239-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+240            android:exported="false"
+240-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+241            android:permission="android.permission.BIND_JOB_SERVICE" >
+241-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+242        </service>
+243
+244        <receiver
+244-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+245            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+245-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+246            android:exported="false" />
+246-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+247    </application>
+248
+249</manifest>

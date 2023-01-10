@@ -476,6 +476,7 @@ layout activity_mapa_cruces_con_nombre
 layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
+layout activity_mostrar_fotos_basilica
 layout activity_puzzle
 layout activity_puzzle_egia_gezurra
 layout activity_puzzle_mapa_elorrio_con_nombres

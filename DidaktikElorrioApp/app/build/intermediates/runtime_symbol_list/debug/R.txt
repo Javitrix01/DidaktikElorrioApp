@@ -4238,6 +4238,7 @@ int layout activity_mapa_cruces_con_nombre 0x7f0d002c
 int layout activity_maps 0x7f0d002d
 int layout activity_menu_principal_mapa 0x7f0d002e
 int layout activity_mostrar_foto_mapa 0x7f0d002f
+int layout activity_mostrar_fotos_basilica 0x7f0d0090
 int layout activity_puzzle 0x7f0d0030
 int layout activity_puzzle_egia_gezurra 0x7f0d0031
 int layout activity_puzzle_mapa_elorrio_con_nombres 0x7f0d0032
