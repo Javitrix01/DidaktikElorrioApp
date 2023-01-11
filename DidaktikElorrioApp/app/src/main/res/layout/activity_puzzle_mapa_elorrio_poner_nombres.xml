@@ -8,14 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="516dp"
-        android:layout_height="414dp"
+        android:layout_width="409dp"
+        android:layout_height="209dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/mapaelorrioconnombre" />
+        tools:srcCompat="@drawable/Arespakotxaga" />
 
     <Button
         android:id="@+id/btnBaieztatuNombresElorrio"
@@ -29,112 +29,142 @@
         app:layout_constraintVertical_bias="0.784" />
 
     <LinearLayout
-        android:layout_width="258dp"
-        android:layout_height="193dp"
+        android:layout_width="269dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btnBaieztatuNombresElorrio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout11"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.428">
+        app:layout_constraintVertical_bias="0.197">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="52dp"
+            android:text="Bainuetxeak"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="41dp"
+            android:text="Zearsolo jauregia edo Jara etxe"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="50dp"
+            android:text="Urkizu Tola Jauregia"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="46dp"
+            android:text="Arespakotxaga Jauregia"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="47dp"
+            android:text="Arespakotxaga Azkarraga"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="48dp"
+            android:text="Olazabal Jauregia edo Modet"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="44dp"
+            android:text="Urkizu Aldatsekua Jauregia"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout11"
-        android:layout_width="99dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="106dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btnBaieztatuNombresElorrio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.375">
+        app:layout_constraintVertical_bias="0.4">
 
-        <TextView
-            android:id="@+id/textView10"
+        <EditText
+            android:id="@+id/et_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_1" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
-        <TextView
-            android:id="@+id/textView11"
+        <EditText
+            android:id="@+id/et_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_2" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView12"
+        <EditText
+            android:id="@+id/et_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_3" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <EditText
+            android:id="@+id/et_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_4" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView14"
+        <EditText
+            android:id="@+id/et_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_5" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView15"
+        <EditText
+            android:id="@+id/et_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_6" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView16"
+        <EditText
+            android:id="@+id/et_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/_7" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
