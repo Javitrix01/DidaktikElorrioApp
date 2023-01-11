@@ -43,6 +43,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 
 import java.io.BufferedInputStream;
@@ -80,6 +81,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     Location JauregiaLocation = new Location("");
     Location ErrebonbilloaLocation = new Location("");
     Location NekropoliaLocation = new Location("");
+    Location ElorrietaLocation = new Location("");
 
 
     /**
@@ -126,6 +128,9 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         ErrebonbilloaLocation.setLongitude(-002.5420306);
         NekropoliaLocation.setLatitude(43.1399056);
         NekropoliaLocation.setLongitude(-002.5359750);
+
+        ElorrietaLocation.setLatitude(43.28378511002439);
+        ElorrietaLocation.setLongitude(-2.9643885432325296);
 
         //default location para que no haga pointer a un objeto nulo
         loc = new Location("defaultLocation");
@@ -295,25 +300,32 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
         map.addMarker(new MarkerOptions()
                 .position(Kurutziaga)
-                .title("Lehenengo gurutze"));
+                .title("1 - Kurutziagako Gurutzea")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Basilika)
-                .title("Bigarren gurutze"));
+                .title("2 - Sortzez Garbiaren Basilika")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Udaletxea)
-                .title("Hirugarren gurutze"));
+                .title("3 - Elorrioko Udaletxea")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Gozotegia)
-                .title("Laugarren gurutze"));
+                .title("4 - Pello Gozotegia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Jauregia)
-                .title("Bostgarren gurutze"));
+                .title("5 - Arespakotxaga Jauregia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Errebonbilloa)
-                .title("Seigarren gurutze"));
+                .title("6 - Errebonbilloak")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Nekropolia)
-                .title("Lehenengo gurutze"));
+                .title("7 - Arginetako Nekropolia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Elorrieta)
                 .title("Elorrieta"));
@@ -332,7 +344,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                         // Got last known location. In some rare situations this can be null.
                         if (location != null) {
                             // Logic to handle location object
-                            float zoom = 19.0f; //el valor maximo es 21!!
+                            float zoom = 18.0f; //el valor maximo es 21!!
                             LatLng lastKnownLatLng = new LatLng(location.getLatitude(), location.getLongitude());
                             map.moveCamera(CameraUpdateFactory.newLatLngZoom(lastKnownLatLng, zoom));
                         }
@@ -351,7 +363,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     @Override
     public boolean onMyLocationButtonClick() {
-        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         return false;
@@ -359,7 +371,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     @Override
     public void onMyLocationClick(@NonNull Location location) {
-        Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
     }
 
     // [START maps_check_location_permission_result]
@@ -456,22 +468,22 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 /*
                  * Solo cambiar la variable loc que es un marcador(anteriormente creado)
                  * la comparativa es la distancia al marcador ej: 10 es en metros
-                 * Descomentar el intent provocara que cuando se este a menos de X metros se habra una nueva actividad
+                 * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
                 //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
-                if ((location.distanceTo(KurutziagaLocation)<10)&&(!actividades.get(6).isActivity_visited())){
+                if ((location.distanceTo(KurutziagaLocation)<25)&&(!actividades.get(6).isActivity_visited())){
                     //inicia primera actividad
-                    if ((location.distanceTo(BasilikaLocation)<10)&&(actividades.get(0).isActivity_visited())) {
+                    if ((location.distanceTo(BasilikaLocation)<25)&&(actividades.get(0).isActivity_visited())) {
                         //inicia segunda actividad
-                        if ((location.distanceTo(UdaletxeaLocation)<10)&&(actividades.get(1).isActivity_visited())){
+                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(actividades.get(1).isActivity_visited())){
                             //inicia tercera actividad
-                            if ((location.distanceTo(GozotegiaLocation)<10)&&(actividades.get(2).isActivity_visited())){
+                            if ((location.distanceTo(GozotegiaLocation)<25)&&(actividades.get(2).isActivity_visited())){
                                 //inicia cuarta actividad
-                                if ((location.distanceTo(JauregiaLocation)<10)&&(actividades.get(3).isActivity_visited())){
+                                if ((location.distanceTo(JauregiaLocation)<25)&&(actividades.get(3).isActivity_visited())){
                                     //inicia quinta actividad
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<10)&&(actividades.get(4).isActivity_visited())){
+                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(actividades.get(4).isActivity_visited())){
                                         //inicia sexta actividad
-                                        if ((location.distanceTo(NekropoliaLocation)<10)&&(actividades.get(5).isActivity_visited())){
+                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(actividades.get(5).isActivity_visited())){
                                             //inicia septima actividad
                                         }
                                     }
