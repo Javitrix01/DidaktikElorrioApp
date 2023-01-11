@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Arespakotxaga" />
+        tools:srcCompat="@drawable/arespakotxaga" />
 
     <Button
         android:id="@+id/btnBaieztatuNombresElorrio"
