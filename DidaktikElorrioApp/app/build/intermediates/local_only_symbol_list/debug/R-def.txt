@@ -43,6 +43,7 @@ dimen titleSize
 drawable alcalde1
 drawable animated_charc
 drawable arespagotxajauregia
+drawable arespakotxaga
 drawable back
 drawable background
 drawable background2
@@ -288,6 +289,13 @@ id dog
 id dolphin
 id elephant
 id englishChip
+id et_1
+id et_2
+id et_3
+id et_4
+id et_5
+id et_6
+id et_7
 id et_Ganondo
 id et_Iguriako_Gurutzea
 id et_Kurutzebarri
@@ -395,13 +403,6 @@ id tScore9
 id tableLayout
 id textBestScore15
 id textView
-id textView10
-id textView11
-id textView12
-id textView13
-id textView14
-id textView15
-id textView16
 id textView17
 id textView18
 id textView19

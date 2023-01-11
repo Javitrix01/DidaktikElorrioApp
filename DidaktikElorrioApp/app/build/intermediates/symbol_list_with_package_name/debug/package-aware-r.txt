@@ -3043,6 +3043,7 @@ drawable abc_vector_test
 drawable alcalde1
 drawable animated_charc
 drawable arespagotxajauregia
+drawable arespakotxaga
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -3594,6 +3595,13 @@ id endToStart
 id englishChip
 id enterAlways
 id enterAlwaysCollapsed
+id et_1
+id et_2
+id et_3
+id et_4
+id et_5
+id et_6
+id et_7
 id et_Ganondo
 id et_Iguriako_Gurutzea
 id et_Kurutzebarri
@@ -3984,13 +3992,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView10
-id textView11
-id textView12
-id textView13
-id textView14
-id textView15
-id textView16
 id textView17
 id textView18
 id textView19

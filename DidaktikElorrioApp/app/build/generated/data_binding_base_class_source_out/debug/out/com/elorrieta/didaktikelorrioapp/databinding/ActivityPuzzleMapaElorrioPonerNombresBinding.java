@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,31 +27,31 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
   public final Button btnBaieztatuNombresElorrio;
 
   @NonNull
+  public final EditText et1;
+
+  @NonNull
+  public final EditText et2;
+
+  @NonNull
+  public final EditText et3;
+
+  @NonNull
+  public final EditText et4;
+
+  @NonNull
+  public final EditText et5;
+
+  @NonNull
+  public final EditText et6;
+
+  @NonNull
+  public final EditText et7;
+
+  @NonNull
   public final ImageView imageView19;
 
   @NonNull
   public final LinearLayout linearLayout11;
-
-  @NonNull
-  public final TextView textView10;
-
-  @NonNull
-  public final TextView textView11;
-
-  @NonNull
-  public final TextView textView12;
-
-  @NonNull
-  public final TextView textView13;
-
-  @NonNull
-  public final TextView textView14;
-
-  @NonNull
-  public final TextView textView15;
-
-  @NonNull
-  public final TextView textView16;
 
   @NonNull
   public final TextView textView3;
@@ -74,24 +75,23 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
   public final TextView textView9;
 
   private ActivityPuzzleMapaElorrioPonerNombresBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnBaieztatuNombresElorrio, @NonNull ImageView imageView19,
-      @NonNull LinearLayout linearLayout11, @NonNull TextView textView10,
-      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView13,
-      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
+      @NonNull Button btnBaieztatuNombresElorrio, @NonNull EditText et1, @NonNull EditText et2,
+      @NonNull EditText et3, @NonNull EditText et4, @NonNull EditText et5, @NonNull EditText et6,
+      @NonNull EditText et7, @NonNull ImageView imageView19, @NonNull LinearLayout linearLayout11,
       @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView5,
       @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8,
       @NonNull TextView textView9) {
     this.rootView = rootView;
     this.btnBaieztatuNombresElorrio = btnBaieztatuNombresElorrio;
+    this.et1 = et1;
+    this.et2 = et2;
+    this.et3 = et3;
+    this.et4 = et4;
+    this.et5 = et5;
+    this.et6 = et6;
+    this.et7 = et7;
     this.imageView19 = imageView19;
     this.linearLayout11 = linearLayout11;
-    this.textView10 = textView10;
-    this.textView11 = textView11;
-    this.textView12 = textView12;
-    this.textView13 = textView13;
-    this.textView14 = textView14;
-    this.textView15 = textView15;
-    this.textView16 = textView16;
     this.textView3 = textView3;
     this.textView4 = textView4;
     this.textView5 = textView5;
@@ -135,6 +135,48 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
         break missingId;
       }
 
+      id = R.id.et_1;
+      EditText et1 = ViewBindings.findChildViewById(rootView, id);
+      if (et1 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_2;
+      EditText et2 = ViewBindings.findChildViewById(rootView, id);
+      if (et2 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_3;
+      EditText et3 = ViewBindings.findChildViewById(rootView, id);
+      if (et3 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_4;
+      EditText et4 = ViewBindings.findChildViewById(rootView, id);
+      if (et4 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_5;
+      EditText et5 = ViewBindings.findChildViewById(rootView, id);
+      if (et5 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_6;
+      EditText et6 = ViewBindings.findChildViewById(rootView, id);
+      if (et6 == null) {
+        break missingId;
+      }
+
+      id = R.id.et_7;
+      EditText et7 = ViewBindings.findChildViewById(rootView, id);
+      if (et7 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView19;
       ImageView imageView19 = ViewBindings.findChildViewById(rootView, id);
       if (imageView19 == null) {
@@ -144,48 +186,6 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
       id = R.id.linearLayout11;
       LinearLayout linearLayout11 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout11 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView12;
-      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
-      if (textView12 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView13;
-      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
-      if (textView13 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView14;
-      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
-      if (textView14 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView15;
-      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
-      if (textView15 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView16;
-      TextView textView16 = ViewBindings.findChildViewById(rootView, id);
-      if (textView16 == null) {
         break missingId;
       }
 
@@ -232,9 +232,9 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
       }
 
       return new ActivityPuzzleMapaElorrioPonerNombresBinding((ConstraintLayout) rootView,
-          btnBaieztatuNombresElorrio, imageView19, linearLayout11, textView10, textView11,
-          textView12, textView13, textView14, textView15, textView16, textView3, textView4,
-          textView5, textView6, textView7, textView8, textView9);
+          btnBaieztatuNombresElorrio, et1, et2, et3, et4, et5, et6, et7, imageView19,
+          linearLayout11, textView3, textView4, textView5, textView6, textView7, textView8,
+          textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

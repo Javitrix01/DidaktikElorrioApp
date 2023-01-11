@@ -3042,6 +3042,7 @@ int drawable abc_vector_test 0x7f080071
 int drawable alcalde1 0x7f080072
 int drawable animated_charc 0x7f080073
 int drawable arespagotxajauregia 0x7f080074
+int drawable arespakotxaga 0x7f080165
 int drawable avd_hide_password 0x7f080075
 int drawable avd_show_password 0x7f080076
 int drawable back 0x7f080077
@@ -3593,6 +3594,13 @@ int id endToStart 0x7f0a0131
 int id englishChip 0x7f0a0132
 int id enterAlways 0x7f0a0133
 int id enterAlwaysCollapsed 0x7f0a0134
+int id et_1 0x7f0a033a
+int id et_2 0x7f0a033b
+int id et_3 0x7f0a033c
+int id et_4 0x7f0a033d
+int id et_5 0x7f0a033e
+int id et_6 0x7f0a033f
+int id et_7 0x7f0a0340
 int id et_Ganondo 0x7f0a0135
 int id et_Iguriako_Gurutzea 0x7f0a0136
 int id et_Kurutzebarri 0x7f0a0137
@@ -3983,13 +3991,6 @@ int id textSpacerNoTitle 0x7f0a02b7
 int id textStart 0x7f0a02b8
 int id textTop 0x7f0a02b9
 int id textView 0x7f0a02ba
-int id textView10 0x7f0a02bb
-int id textView11 0x7f0a02bc
-int id textView12 0x7f0a02bd
-int id textView13 0x7f0a02be
-int id textView14 0x7f0a02bf
-int id textView15 0x7f0a02c0
-int id textView16 0x7f0a02c1
 int id textView17 0x7f0a02c2
 int id textView18 0x7f0a02c3
 int id textView19 0x7f0a02c4
