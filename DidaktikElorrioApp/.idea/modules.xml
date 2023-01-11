@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.DidaktikElorrioApp.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DidaktikElorrioApp.iml" filepath="$PROJECT_DIR$/.idea/modules/DidaktikElorrioApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DidaktikElorrioApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DidaktikElorrioApp.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DidaktikElorrioApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DidaktikElorrioApp.app.androidTest.iml" />
