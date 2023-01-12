@@ -32,10 +32,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1511.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card2424.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card2424.png"
     },
@@ -52,10 +48,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/soundoff.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-mdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_mapaelorriopieza3.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/mapaelorriopieza3.png"
     },
@@ -68,24 +60,12 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1503.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card1504.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1504.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/layout_activity_introduccion_parada2.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/layout/activity_introduccion_parada2.xml"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card2416.png.flat",
@@ -102,10 +82,6 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_facebook.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/facebook.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_grid_border.xml.flat",
@@ -216,10 +192,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/dolphin.jpeg"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_horse.jpeg.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/horse.jpeg"
     },
@@ -250,10 +222,6 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card1501.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1501.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card904.png.flat",
@@ -404,14 +372,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1514.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/font_asap.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/font/asap.xml"
     },
@@ -430,10 +390,6 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card2420.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card2420.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_mapaelorriopieza5.png.flat",
@@ -456,10 +412,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/layout/activity_crear_mapa_puzzle.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_dialog_border.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/dialog_border.xml"
     },
@@ -474,10 +426,6 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/layout_activity_home.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/layout/activity_home.xml"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_elorriokomapa.jpg.flat",
@@ -530,6 +478,10 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/font_baloo.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/font/baloo.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/raw_gurutza.m4a.flat",
@@ -632,16 +584,16 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1508.png"
     },
     {
+        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card1512.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card1512.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/layout_activity_puzzle_pasteleria.xml.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/layout/activity_puzzle_pasteleria.xml"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_rightnavigate.png.flat",
@@ -698,10 +650,6 @@
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/drawable_card2421.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-75:/drawable/card2421.png"
-    },
-    {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-75:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-73:/layout_activity_puzzle_mapa_elorrio_poner_nombres.xml.flat",

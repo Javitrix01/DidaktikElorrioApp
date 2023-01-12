@@ -216,11 +216,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\in
 	android:fullBackupContent
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:30:9-54
 	android:roundIcon
-		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:33:9-54
+		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:33:9-53
 	tools:targetApi
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:36:9-29
 	android:icon
-		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-43
+		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-48
 	android:allowBackup
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-35
 	android:theme
