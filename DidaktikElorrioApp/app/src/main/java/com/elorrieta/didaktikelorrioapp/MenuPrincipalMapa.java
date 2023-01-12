@@ -116,8 +116,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         //inicializar la API de google
         Places.initialize(getApplicationContext(),"AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
 
-<<<<<<< HEAD
-=======
+
         //poner la latitud y longitud de cada localizacion
         KurutziagaLocation.setLatitude(43.1281365);
         KurutziagaLocation.setLongitude(-2.5397199);
@@ -137,11 +136,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         ElorrietaLocation.setLatitude(43.28378511002439);
         ElorrietaLocation.setLongitude(-2.9643885432325296);
 
->>>>>>> main
-        //default location para que no haga pointer a un objeto nulo
-        loc = new Location("defaultLocation");
-        loc.setAltitude(0);
-        loc.setLongitude(0);
+
 
         //MAPA PRINCIPAL
         SupportMapFragment mapFragment =
@@ -223,12 +218,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 botonAbrirMapa.setClickable(false);
                 botonAbrirMenu.setClickable(false);
                 map.getUiSettings().setScrollGesturesEnabled(false);
-<<<<<<< HEAD
-=======
+
                 map.getUiSettings().setZoomGesturesEnabled(false);
                 map.getUiSettings().setMyLocationButtonEnabled(false);
                 map.getUiSettings().setRotateGesturesEnabled(false);
->>>>>>> main
+
 
                 //abre la nueva actividad
                 FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -252,20 +246,19 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 LinearLayout layoutInfoActividad = findViewById(R.id.linearLayout6);
                 String lat = actividades.get(i).getActivity_coords_lat();
                 String lng = actividades.get(i).getActivity_coords_long();
-<<<<<<< HEAD
+
                 String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
                     new DownloadImageTask(findViewById(R.id.infoMap))
                             .execute(url);
                 }
-=======
+
                 String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
                 new DownloadImageTask(mapaInfoActividad)
                         .execute(url);
 
->>>>>>> main
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {
@@ -275,12 +268,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                         botonAbrirMapa.setClickable(true);
                         botonAbrirMenu.setClickable(true);
                         map.getUiSettings().setScrollGesturesEnabled(true);
-<<<<<<< HEAD
-=======
+
                         map.getUiSettings().setZoomGesturesEnabled(true);
                         map.getUiSettings().setMyLocationButtonEnabled(true);
                         map.getUiSettings().setRotateGesturesEnabled(true);
->>>>>>> main
+
 
                         //esconde la actividad
                         FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -477,7 +469,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     private final LocationListener locationListener = new LocationListener() {
         @Override
         public void onProviderEnabled(@NonNull String provider) {
-<<<<<<< HEAD
+
 
         }
 
@@ -495,8 +487,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                     //Intent intent = new Intent(MapsActivity.this,Activity2.class);
                     //MapsActivity.this.startActivity(intent);
                 } else {
-=======
->>>>>>> main
+
 
         }
 
