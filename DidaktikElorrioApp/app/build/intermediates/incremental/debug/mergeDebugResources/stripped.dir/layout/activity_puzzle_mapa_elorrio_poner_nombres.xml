@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Puzzle_Mapa_Elorrio_Poner_Nombres">
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="409dp"
-        android:layout_height="209dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Arespakotxaga" />
-
     <Button
         android:id="@+id/btnBaieztatuNombresElorrio"
         android:layout_width="235dp"
@@ -24,21 +13,19 @@
         android:text="@string/baieztatu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:layout_width="269dp"
         android:layout_height="340dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnBaieztatuNombresElorrio"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/linearLayout11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.197">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859">
 
         <TextView
             android:id="@+id/textView3"
@@ -93,20 +80,19 @@
     <LinearLayout
         android:id="@+id/linearLayout11"
         android:layout_width="106dp"
-        android:layout_height="352dp"
+        android:layout_height="354dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnBaieztatuNombresElorrio"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827">
 
         <EditText
             android:id="@+id/et_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
@@ -117,6 +103,7 @@
             android:id="@+id/et_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
@@ -126,15 +113,18 @@
             android:id="@+id/et_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/et_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
@@ -144,27 +134,43 @@
             android:id="@+id/et_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/et_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/et_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="412dp"
+        android:layout_height="217dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arespakotxaga" />
 </androidx.constraintlayout.widget.ConstraintLayout>

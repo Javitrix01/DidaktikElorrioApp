@@ -35,22 +35,43 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         btnBaieztatu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(!et5.equals("5")){
-                   Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en BainuEtxea", Toast.LENGTH_LONG).show();
-                }else if(!et3.equals("3")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Zearsolo jauregia", Toast.LENGTH_LONG).show();
-                }else if(!et7.equals("7")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Tola Jauregia", Toast.LENGTH_LONG).show();
-                }else if(!et1.equals("1")){
-                  Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Jauregia", Toast.LENGTH_LONG).show();
-                }else if(!et2.equals("2")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Azkarraga", Toast.LENGTH_LONG).show();
-                }else if(!et4.equals("4")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Olazabal Jauregia", Toast.LENGTH_LONG).show();
-                }else if(!et6.equals("6")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Aldatsekua Jauregia", Toast.LENGTH_LONG).show();
-                }else if (et5.equals("5")&& et3.equals("3")&& et7.equals("7")&& et1.equals("1")&& et2.equals("2")&& et4.equals("4")&& et6.equals("6")){
-                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Oso Ondo", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "BainuEtxea ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en BainuEtxea", Toast.LENGTH_LONG).show();
                 }
+                if(!et3.equals("3")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Zearsolo jauregia ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Zearsolo jauregia", Toast.LENGTH_LONG).show();
+                }
+                if(!et7.equals("7")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Urkizu Tola Jauregia ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Tola Jauregia", Toast.LENGTH_LONG).show();
+                }
+                if(!et1.equals("1")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Arespakotxaga Jauregia ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Jauregia", Toast.LENGTH_LONG).show();
+                }
+                if(!et2.equals("2")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Arespakotxaga Azkarraga ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Azkarraga", Toast.LENGTH_LONG).show();
+                }
+                if(!et4.equals("4")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Olazabal Jauregia ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Olazabal Jauregia", Toast.LENGTH_LONG).show();
+                } if(!et6.equals("6")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Urkizu Aldatsekua Jauregia ondo", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Aldatsekua Jauregia", Toast.LENGTH_LONG).show();
+                }
+                /*if (et5.equals("5")&& et3.equals("3")&& et7.equals("7")&& et1.equals("1")&& et2.equals("2")&& et4.equals("4")&& et6.equals("6")){
+                    Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Oso Ondo", Toast.LENGTH_LONG).show();
+
+                }*/
             }
         });
 
