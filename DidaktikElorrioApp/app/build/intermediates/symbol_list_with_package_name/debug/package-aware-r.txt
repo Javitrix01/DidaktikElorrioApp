@@ -3048,6 +3048,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable background
+<<<<<<< HEAD
 drawable background2
 drawable background3
 drawable background4
@@ -3056,6 +3057,9 @@ drawable background6
 drawable background666
 drawable background7
 drawable background8
+=======
+drawable backgroundblue
+>>>>>>> main
 drawable bird
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3284,6 +3288,7 @@ drawable tooltip_frame_light
 drawable us
 drawable white_line
 drawable yellow_line
+font asap
 font baloo
 font fontdiner_swanky
 id ALT
@@ -3294,7 +3299,7 @@ id Choose
 id FUNCTION
 id Levels
 id META
-id Memoriza
+id MapaElorrio
 id MenuLateral
 id NO_DEBUG
 id P1E
@@ -3499,6 +3504,7 @@ id btnMenuActividades
 id btnPasteleriaBaieztatu
 id btnitzuli
 id button
+id button2
 id button3
 id button7
 id buttonPanel
@@ -3508,7 +3514,6 @@ id cancel_button
 id card1
 id card1515
 id card2
-id card2424
 id card3
 id card4
 id card908
@@ -3586,6 +3591,14 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextPersonName
+id editTextTextPersonName10
+id editTextTextPersonName11
+id editTextTextPersonName12
+id editTextTextPersonName13
+id editTextTextPersonName14
+id editTextTextPersonName15
+id editTextTextPersonName8
 id edit_query
 id elastic
 id elephant
@@ -3607,7 +3620,6 @@ id et_Iguriako_Gurutzea
 id et_Kurutzebarri
 id et_Kurutzondo
 id et_SanJuan
-id et_SantaAna
 id et_SantaElena
 id et_Txanberi
 id et_kurutziaga
@@ -3733,7 +3745,6 @@ id line3
 id linear
 id linearLayout
 id linearLayout10
-id linearLayout11
 id linearLayout2
 id linearLayout3
 id linearLayout4
@@ -3997,6 +4008,7 @@ id textView17
 id textView18
 id textView19
 id textView2
+<<<<<<< HEAD
 id textView24
 id textView25
 id textView26
@@ -4023,6 +4035,8 @@ id textView6
 id textView7
 id textView8
 id textView9
+=======
+>>>>>>> main
 id textViewDescripcion
 id textViewGaldera1
 id textViewGaldera2
@@ -4092,6 +4106,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id view
 id viewFondo
 id view_offset_helper
 id view_transition
@@ -4255,6 +4270,7 @@ layout activity_main
 layout activity_mapa_cruces_con_nombre
 layout activity_maps
 layout activity_menu_principal_mapa
+layout activity_mostrar_foto_mapa
 layout activity_puzzle
 layout activity_puzzle_egia_gezurra
 layout activity_puzzle_mapa_elorrio_con_nombres
@@ -4352,6 +4368,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw backgroundsound
@@ -4365,17 +4382,10 @@ string GozotegiIntro
 string Intro_ActBasilica
 string Intro_ActCruces
 string Score
-string _1
-string _2
 string _22_hilobik_osatzen_dute_nekropolia
-string _3
 string _3x3
-string _4
 string _4x4
-string _5
 string _5x5
-string _6
-string _7
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4554,7 +4564,6 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
-string memoriza_ezazu
 string menu_actividades
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked

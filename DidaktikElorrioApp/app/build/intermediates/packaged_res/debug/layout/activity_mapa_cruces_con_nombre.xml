@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
     tools:context=".Mapa_Cruces_Con_Nombre">
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="470dp"
         android:layout_height="249dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="124dp"
         android:contentDescription="@string/cruces_de_elorrio_con_nombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Memoriza"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cruceselorrio" />
 
     <Button
@@ -27,20 +26,9 @@
         android:text="@string/jarraitu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.822" />
-
-    <TextView
-        android:id="@+id/Memoriza"
-        android:layout_width="333dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="80dp"
-        android:text="@string/memoriza_ezazu"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.665" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

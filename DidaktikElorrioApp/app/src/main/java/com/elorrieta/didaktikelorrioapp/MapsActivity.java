@@ -76,11 +76,6 @@ public class MapsActivity extends AppCompatActivity
      * #onRequestPermissionsResult(int, String[], int[])}.
      */
 
-
-
-
-
-
     private boolean permissionDenied = false;
 
     private GoogleMap map;
@@ -106,15 +101,10 @@ public class MapsActivity extends AppCompatActivity
 
         /**============================FUNCIONES ONCLICK DE LOS BOTONES=================== */
         botonPrueba.setOnClickListener(view -> {
-
             listView.setVisibility(View.VISIBLE);
-
         });
         botonPrueba2.setOnClickListener(view -> {
-
             listView.setVisibility(View.GONE);
-
-
         });
 
 
@@ -178,26 +168,7 @@ public class MapsActivity extends AppCompatActivity
 
     @SuppressLint("MissingPermission")
     private void enableMyLocation() {
-
-        if (ContextCompat.checkSelfPermission(this, permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, new String[] {permission.ACCESS_FINE_LOCATION}, 0);
-            ActivityCompat.requestPermissions(this, new String[] {permission.ACCESS_COARSE_LOCATION}, 0);
-        }
-
-       PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
-
-        // [START maps_check_location_permission]
-        // 1. Check if permissions are granted, if so, enable the my location layer
-      // if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-
-        //    return;
-
-         //   PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
-
-
-        // 2. Otherwise, request location permissions from the user.
-
-        // [END maps_check_location_permission]
+        PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
     }
 
     @Override

@@ -259,8 +259,12 @@
         app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.146"
         tools:ignore="SpeakableTextPresentCheck" />
+=======
+        app:layout_constraintVertical_bias="0.323" />
+>>>>>>> main
 
     <EditText
         android:id="@+id/et_SantaElena"
@@ -328,7 +332,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/et_SantaAna"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="84dp"
         android:layout_height="48dp"
         android:autofillHints=""
@@ -367,8 +371,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:layout_constraintVertical_bias="0.0">
+=======
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745">
+>>>>>>> main
 
         <TextView
             android:id="@+id/txtPreguntaCruces"

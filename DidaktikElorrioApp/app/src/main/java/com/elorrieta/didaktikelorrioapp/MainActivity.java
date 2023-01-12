@@ -11,6 +11,7 @@ import android.text.Html;
 import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
         //oculta la barra de arriba
         getSupportActionBar().hide();
@@ -64,6 +62,23 @@ public class MainActivity extends AppCompatActivity {
     protected void carga(boolean control){
         //comprueba la base de datos
         llamadaBD();
+
+        //no pasa de pantalla hasta que se responda a los permisos
+        boolean permisos = true;
+        do {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 0);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 0);
+            }
+            else if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+                permisos = false;
+            }
+        } while (permisos);
+
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            Toast.makeText(this, "Ez dira kokapen-baimenak eman, aplikazioak ez du behar bezala funtzionatuko.", Toast.LENGTH_LONG).show();
+//            startActivity(new Intent(MainActivity.this, MainPuzzle.class));
+//        }
 
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
@@ -99,24 +114,27 @@ public class MainActivity extends AppCompatActivity {
         actividades.add(activity6);
         actividades.add(activity7);
 
+
         //crear una instancia de la base de datos
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "DidaktikAppDB").allowMainThreadQueries().build(); // <-- poner esto para que permita realizar consultas
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         //por cada actividad la borra de la base de datos para que no haya inconsistencias y la añade
         for (Activity activity : actividades){
             db.activityDao().deleteActivity(activity);
             db.activityDao().insertActivity(activity);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
         //comprueba si existen las actividades necesarias
         List<Activity> comprobacionActividades;
         comprobacionActividades = db.activityDao().getAll();
-        Log.d("DEBUGG-DB", ""+comprobacionActividades.size());
 
         //comprueba que no falte ninguna actividad, si falta alguna la añade
-        for (int i=0; i<comprobacionActividades.size(); i++){
-            if (comprobacionActividades.get(i).getId() != actividades.get(i).getId()){
+        for (int i=0; i<actividades.size(); i++){
+            if (actividades.get(i).getId() != comprobacionActividades.get(i).getId()){
                 db.activityDao().insertActivity(actividades.get(i));
             }
         }

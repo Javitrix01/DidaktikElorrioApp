@@ -46,6 +46,7 @@ drawable arespagotxajauregia
 drawable arespakotxaga
 drawable back
 drawable background
+<<<<<<< HEAD
 drawable background2
 drawable background3
 drawable background4
@@ -54,6 +55,9 @@ drawable background6
 drawable background666
 drawable background7
 drawable background8
+=======
+drawable backgroundblue
+>>>>>>> main
 drawable bird
 drawable card1500
 drawable card1501
@@ -161,11 +165,12 @@ drawable soundon
 drawable us
 drawable white_line
 drawable yellow_line
+font asap
 font baloo
 font fontdiner_swanky
 id Choose
 id Levels
-id Memoriza
+id MapaElorrio
 id MenuLateral
 id P1E
 id P1G
@@ -274,12 +279,12 @@ id btnMenuActividades
 id btnPasteleriaBaieztatu
 id btnitzuli
 id button
+id button2
 id button3
 id button7
 id card1
 id card1515
 id card2
-id card2424
 id card3
 id card4
 id card908
@@ -287,6 +292,14 @@ id constraintLayout
 id constraintLayout2
 id dog
 id dolphin
+id editTextTextPersonName
+id editTextTextPersonName10
+id editTextTextPersonName11
+id editTextTextPersonName12
+id editTextTextPersonName13
+id editTextTextPersonName14
+id editTextTextPersonName15
+id editTextTextPersonName8
 id elephant
 id englishChip
 id et_1
@@ -301,7 +314,6 @@ id et_Iguriako_Gurutzea
 id et_Kurutzebarri
 id et_Kurutzondo
 id et_SanJuan
-id et_SantaAna
 id et_SantaElena
 id et_Txanberi
 id et_kurutziaga
@@ -363,7 +375,6 @@ id levelBackMenu
 id levelChipGroup
 id linearLayout
 id linearLayout10
-id linearLayout11
 id linearLayout2
 id linearLayout3
 id linearLayout4
@@ -408,6 +419,7 @@ id textView17
 id textView18
 id textView19
 id textView2
+<<<<<<< HEAD
 id textView24
 id textView25
 id textView26
@@ -434,6 +446,8 @@ id textView6
 id textView7
 id textView8
 id textView9
+=======
+>>>>>>> main
 id textViewDescripcion
 id textViewGaldera1
 id textViewGaldera2
@@ -472,6 +486,7 @@ id textViewScore9
 id textViewTituloAct
 id third_line
 id txtPreguntaCruces
+id view
 id viewFondo
 layout activity_choose_difficult
 layout activity_crear_mapa_puzzle
@@ -492,6 +507,7 @@ layout activity_main
 layout activity_mapa_cruces_con_nombre
 layout activity_maps
 layout activity_menu_principal_mapa
+layout activity_mostrar_foto_mapa
 layout activity_puzzle
 layout activity_puzzle_egia_gezurra
 layout activity_puzzle_mapa_elorrio_con_nombres
@@ -507,6 +523,7 @@ layout dialog_zoo
 layout fragment_view_pager
 layout list_card
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 raw backgroundsound
 raw buttonpressed
@@ -518,17 +535,10 @@ string GozotegiIntro
 string Intro_ActBasilica
 string Intro_ActCruces
 string Score
-string _1
-string _2
 string _22_hilobik_osatzen_dute_nekropolia
-string _3
 string _3x3
-string _4
 string _4x4
-string _5
 string _5x5
-string _6
-string _7
 string about_text
 string about_title
 string accept_changes
@@ -603,7 +613,6 @@ string logo
 string mapa
 string mapaelorrio
 string mapaelorrioconnombresdeubicaciones
-string memoriza_ezazu
 string menu_actividades
 string mute_unmute_sound
 string name

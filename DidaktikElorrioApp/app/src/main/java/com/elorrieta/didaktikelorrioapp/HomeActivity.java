@@ -52,8 +52,8 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if (!Sound.backgroundMusic.isPlaying())
-            Sound.backgroundMusic.start();
+        if (!Sound.backgroundMusic.isPlaying()){}
+            //Sound.backgroundMusic.start();
     }
 
     @Override
@@ -71,6 +71,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
 
         final ImageButton infoBtn = this.findViewById(R.id.howToPlayBtn);
         Button startButton = findViewById(R.id.start_button);
