@@ -474,6 +474,7 @@ layout dialog_zoo
 layout fragment_view_pager
 layout list_card
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 raw backgroundsound
 raw buttonpressed
