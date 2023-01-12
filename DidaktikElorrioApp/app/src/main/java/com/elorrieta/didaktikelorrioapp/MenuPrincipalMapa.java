@@ -94,7 +94,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         enableMyLocation();
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3, 1, locationListener);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10, 10, locationListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
 

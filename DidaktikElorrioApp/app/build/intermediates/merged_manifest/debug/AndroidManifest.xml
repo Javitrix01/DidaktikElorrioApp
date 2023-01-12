@@ -8,6 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
 
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
@@ -52,18 +56,9 @@
         android:theme="@style/Theme.DidaktikElorrioApp" >
         <activity
             android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
-            android:exported="false" />
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc" />

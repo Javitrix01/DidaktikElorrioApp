@@ -652,6 +652,10 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-75:\\layout\\activity_puzzle_mapa_elorrio_poner_nombres.xml"
     },
     {
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-73:\\layout_activity_mostrar_fotos_basilica.xml.flat",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-75:\\layout\\activity_mostrar_fotos_basilica.xml"
+    },
+    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-merged_res-73:\\layout_activity_introduccion_parada3.xml.flat",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-75:\\layout\\activity_introduccion_parada3.xml"
     },

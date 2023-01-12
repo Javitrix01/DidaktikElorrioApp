@@ -106,5 +106,6 @@
     <string name="permission_rationale_location">PermissionRationaleLocation</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_maps2">MapsActivity</string>
+    <string name="btnCamara">btnCamera</string>
 
 </resources>

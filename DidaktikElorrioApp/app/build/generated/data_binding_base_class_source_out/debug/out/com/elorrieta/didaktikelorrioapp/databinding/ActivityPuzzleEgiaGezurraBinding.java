@@ -23,6 +23,9 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button BaieztatuEgiaGezurra;
+
+  @NonNull
   public final CheckBox P1E;
 
   @NonNull
@@ -71,9 +74,6 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
   public final CheckBox P8G;
 
   @NonNull
-  public final Button button7;
-
-  @NonNull
   public final ConstraintLayout constraintLayout;
 
   @NonNull
@@ -116,11 +116,11 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
   public final TextView textViewGaldera8;
 
   private ActivityPuzzleEgiaGezurraBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CheckBox P1E, @NonNull CheckBox P1G, @NonNull CheckBox P2E, @NonNull CheckBox P2G,
-      @NonNull CheckBox P3E, @NonNull CheckBox P3G, @NonNull CheckBox P4E, @NonNull CheckBox P4G,
-      @NonNull CheckBox P5E, @NonNull CheckBox P5G, @NonNull CheckBox P6E, @NonNull CheckBox P6G,
-      @NonNull CheckBox P7E, @NonNull CheckBox P7G, @NonNull CheckBox P8E, @NonNull CheckBox P8G,
-      @NonNull Button button7, @NonNull ConstraintLayout constraintLayout,
+      @NonNull Button BaieztatuEgiaGezurra, @NonNull CheckBox P1E, @NonNull CheckBox P1G,
+      @NonNull CheckBox P2E, @NonNull CheckBox P2G, @NonNull CheckBox P3E, @NonNull CheckBox P3G,
+      @NonNull CheckBox P4E, @NonNull CheckBox P4G, @NonNull CheckBox P5E, @NonNull CheckBox P5G,
+      @NonNull CheckBox P6E, @NonNull CheckBox P6G, @NonNull CheckBox P7E, @NonNull CheckBox P7G,
+      @NonNull CheckBox P8E, @NonNull CheckBox P8G, @NonNull ConstraintLayout constraintLayout,
       @NonNull LinearLayout linearLayout3, @NonNull LinearLayout linearLayout4,
       @NonNull LinearLayout linearLayout5, @NonNull TextView textView17,
       @NonNull TextView textView18, @NonNull TextView textViewGaldera1,
@@ -129,6 +129,7 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
       @NonNull TextView textViewGaldera6, @NonNull TextView textViewGaldera7,
       @NonNull TextView textViewGaldera8) {
     this.rootView = rootView;
+    this.BaieztatuEgiaGezurra = BaieztatuEgiaGezurra;
     this.P1E = P1E;
     this.P1G = P1G;
     this.P2E = P2E;
@@ -145,7 +146,6 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
     this.P7G = P7G;
     this.P8E = P8E;
     this.P8G = P8G;
-    this.button7 = button7;
     this.constraintLayout = constraintLayout;
     this.linearLayout3 = linearLayout3;
     this.linearLayout4 = linearLayout4;
@@ -189,6 +189,12 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.BaieztatuEgiaGezurra;
+      Button BaieztatuEgiaGezurra = ViewBindings.findChildViewById(rootView, id);
+      if (BaieztatuEgiaGezurra == null) {
+        break missingId;
+      }
+
       id = R.id.P1E;
       CheckBox P1E = ViewBindings.findChildViewById(rootView, id);
       if (P1E == null) {
@@ -285,12 +291,6 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button7;
-      Button button7 = ViewBindings.findChildViewById(rootView, id);
-      if (button7 == null) {
-        break missingId;
-      }
-
       id = R.id.constraintLayout;
       ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout == null) {
@@ -375,11 +375,11 @@ public final class ActivityPuzzleEgiaGezurraBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPuzzleEgiaGezurraBinding((ConstraintLayout) rootView, P1E, P1G, P2E, P2G,
-          P3E, P3G, P4E, P4G, P5E, P5G, P6E, P6G, P7E, P7G, P8E, P8G, button7, constraintLayout,
-          linearLayout3, linearLayout4, linearLayout5, textView17, textView18, textViewGaldera1,
-          textViewGaldera2, textViewGaldera3, textViewGaldera4, textViewGaldera5, textViewGaldera6,
-          textViewGaldera7, textViewGaldera8);
+      return new ActivityPuzzleEgiaGezurraBinding((ConstraintLayout) rootView, BaieztatuEgiaGezurra,
+          P1E, P1G, P2E, P2G, P3E, P3G, P4E, P4G, P5E, P5G, P6E, P6G, P7E, P7G, P8E, P8G,
+          constraintLayout, linearLayout3, linearLayout4, linearLayout5, textView17, textView18,
+          textViewGaldera1, textViewGaldera2, textViewGaldera3, textViewGaldera4, textViewGaldera5,
+          textViewGaldera6, textViewGaldera7, textViewGaldera8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3282,6 +3282,7 @@ font fontdiner_swanky
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BaieztatuEgiaGezurra
 id CTRL
 id Choose
 id FUNCTION
@@ -3476,6 +3477,7 @@ id btn2
 id btn3
 id btn4
 id btnBaieztatuNombresElorrio
+id btnCamara
 id btnJarraituCrucesCnombre
 id btnJarraituErre
 id btnJarraituP1
@@ -3494,7 +3496,6 @@ id btnitzuli
 id button
 id button2
 id button3
-id button7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4406,6 +4407,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btnCamara
 string button
 string buttonSound
 string character_counter_content_description

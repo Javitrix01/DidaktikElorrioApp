@@ -156,6 +156,7 @@ drawable white_line
 drawable yellow_line
 font baloo
 font fontdiner_swanky
+id BaieztatuEgiaGezurra
 id Choose
 id Levels
 id MapaElorrio
@@ -251,6 +252,7 @@ id btn2
 id btn3
 id btn4
 id btnBaieztatuNombresElorrio
+id btnCamara
 id btnJarraituCrucesCnombre
 id btnJarraituErre
 id btnJarraituP1
@@ -269,7 +271,6 @@ id btnitzuli
 id button
 id button2
 id button3
-id button7
 id card1
 id card1515
 id card2
@@ -523,6 +524,7 @@ string bisigodoak_hilobiak_egin_zituzten
 string board_15
 string board_24
 string board_8
+string btnCamara
 string button
 string buttonSound
 string choose_language
