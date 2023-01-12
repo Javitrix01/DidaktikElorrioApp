@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -29,19 +30,24 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
   public final ImageView imageView17;
 
   @NonNull
+  public final ScrollView scrollView2;
+
+  @NonNull
   public final SeekBar seekBar;
 
   @NonNull
-  public final TextView textView7;
+  public final TextView textViewIntroErrenbonbiloa;
 
   private ActivityIntroduccionParada6Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP6, @NonNull ImageView imageView17, @NonNull SeekBar seekBar,
-      @NonNull TextView textView7) {
+      @NonNull Button btnJarraituP6, @NonNull ImageView imageView17,
+      @NonNull ScrollView scrollView2, @NonNull SeekBar seekBar,
+      @NonNull TextView textViewIntroErrenbonbiloa) {
     this.rootView = rootView;
     this.btnJarraituP6 = btnJarraituP6;
     this.imageView17 = imageView17;
+    this.scrollView2 = scrollView2;
     this.seekBar = seekBar;
-    this.textView7 = textView7;
+    this.textViewIntroErrenbonbiloa = textViewIntroErrenbonbiloa;
   }
 
   @Override
@@ -83,20 +89,26 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scrollView2;
+      ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView2 == null) {
+        break missingId;
+      }
+
       id = R.id.seekBar;
       SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
       if (seekBar == null) {
         break missingId;
       }
 
-      id = R.id.textView7;
-      TextView textView7 = ViewBindings.findChildViewById(rootView, id);
-      if (textView7 == null) {
+      id = R.id.textViewIntroErrenbonbiloa;
+      TextView textViewIntroErrenbonbiloa = ViewBindings.findChildViewById(rootView, id);
+      if (textViewIntroErrenbonbiloa == null) {
         break missingId;
       }
 
       return new ActivityIntroduccionParada6Binding((ConstraintLayout) rootView, btnJarraituP6,
-          imageView17, seekBar, textView7);
+          imageView17, scrollView2, seekBar, textViewIntroErrenbonbiloa);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

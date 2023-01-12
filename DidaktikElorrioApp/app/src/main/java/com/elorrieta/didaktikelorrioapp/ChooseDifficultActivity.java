@@ -64,7 +64,8 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_difficult);
 
-
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
 
         Button game9Btn = findViewById(R.id.btn1);
         Button game15Btn = findViewById(R.id.btn2);
@@ -81,12 +82,17 @@ public class ChooseDifficultActivity extends AppCompatActivity {
 
 
         infoBtn = findViewById(R.id.howToPlayBtn);
+        infoBtn.setVisibility(View.INVISIBLE);
+        infoBtn.setClickable(false);
         ImageButton backBtn = findViewById(R.id.levelBackMenu);
         soundBtn = findViewById(R.id.bSoundOffOnChoose);
 
         card9 = findViewById(R.id.card908);
         card15 = findViewById(R.id.card1515);
-        card24 = findViewById(R.id.card2424);
+        //card24 = findViewById(R.id.card2424);
+        card9.setVisibility(View.INVISIBLE);
+        card15.setVisibility(View.INVISIBLE);
+        //card24.setVisibility(View.INVISIBLE);
 
 
 
@@ -104,14 +110,6 @@ public class ChooseDifficultActivity extends AppCompatActivity {
             soundBtn.setImageResource(R.drawable.soundoff);
 
 
-        infoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Sound.menuClickSound.start();
-                openDialog();
-            }
-        });
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -123,7 +121,6 @@ public class ChooseDifficultActivity extends AppCompatActivity {
                 YoYo.with(Techniques.SlideInLeft)
                         .duration(2000)
                         .repeat(0);
-                infoBtn.setVisibility(View.VISIBLE);
                 YoYo.with(Techniques.FadeIn)
                         .duration(3000)
                         .repeat(0);
@@ -144,7 +141,7 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn1:
-                    Sound.menuClickSound.start();
+                    //Sound.menuClickSound.start();
                     Sound.activitySwitchFlag = true;
                     sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(3, "Cards");
@@ -416,7 +413,7 @@ public class ChooseDifficultActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                card24.setVisibility(View.VISIBLE);
+                //card24.setVisibility(View.VISIBLE);
 
                 YoYo.with(Techniques.RotateIn)
                         .duration(20000)

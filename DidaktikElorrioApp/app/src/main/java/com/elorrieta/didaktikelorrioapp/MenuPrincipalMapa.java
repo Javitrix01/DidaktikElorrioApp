@@ -1,10 +1,8 @@
 package com.elorrieta.didaktikelorrioapp;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
-<<<<<<< HEAD
-import android.graphics.Color;
-import android.graphics.text.LineBreaker;
-=======
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,9 +13,7 @@ import android.graphics.text.LineBreaker;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.media.Image;
 import android.os.AsyncTask;
->>>>>>> Aitor_22_12_2022
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,13 +23,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
-<<<<<<< HEAD
-=======
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -46,8 +42,9 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.libraries.places.api.Places;
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
->>>>>>> Aitor_22_12_2022
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -59,27 +56,33 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuPrincipalMapa extends AppCompatActivity {
+public class MenuPrincipalMapa extends AppCompatActivity implements
+        GoogleMap.OnMyLocationButtonClickListener,
+        GoogleMap.OnMyLocationClickListener,
+        OnMapReadyCallback,
+        ActivityCompat.OnRequestPermissionsResultCallback{
 
-<<<<<<< HEAD
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_principal_mapa);
-
-=======
     private Location loc;
     private LocationSource.OnLocationChangedListener mListener;
-    private Bitmap infoMapBitmap = null;
     ArrayList<String> menuEntries = new ArrayList<>();
+    //localizaciones de las actividades
     LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
     LatLng Basilika = new LatLng(43.1301944, -002.5425889);
     LatLng Udaletxea = new LatLng(43.1305250, -002.5420667);
     LatLng Gozotegia = new LatLng(43.1309750, -002.5432472);
     LatLng Jauregia = new LatLng(43.1306917, -002.5439056);
     LatLng Errebonbilloa = new LatLng(43.1301361, -002.5420306);
-    LatLng nekropolia = new LatLng(	43.1399056, -002.5359750);
+    LatLng Nekropolia = new LatLng(	43.1399056, -002.5359750);
     LatLng Elorrieta = new LatLng(43.28378511002439, -2.9643885432325296);
+    Location KurutziagaLocation = new Location("");
+    Location BasilikaLocation = new Location("");
+    Location UdaletxeaLocation = new Location("");
+    Location GozotegiaLocation = new Location("");
+    Location JauregiaLocation = new Location("");
+    Location ErrebonbilloaLocation = new Location("");
+    Location NekropoliaLocation = new Location("");
+    Location ElorrietaLocation = new Location("");
+
 
     /**
      * Request code for location permission request.
@@ -107,12 +110,38 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
 
+        //inicializar la API de google
+        Places.initialize(getApplicationContext(),"AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
+
+        //poner la latitud y longitud de cada localizacion
+        KurutziagaLocation.setLatitude(43.1281365);
+        KurutziagaLocation.setLongitude(-2.5397199);
+        BasilikaLocation.setLatitude(43.1301944);
+        BasilikaLocation.setLongitude(-002.5425889);
+        UdaletxeaLocation.setLatitude(43.1305250);
+        UdaletxeaLocation.setLongitude(-002.5420667);
+        GozotegiaLocation.setLatitude(43.1309750);
+        GozotegiaLocation.setLongitude(-002.5432472);
+        JauregiaLocation.setLatitude(43.1306917);
+        JauregiaLocation.setLongitude(-002.5439056);
+        ErrebonbilloaLocation.setLatitude(43.1301361);
+        ErrebonbilloaLocation.setLongitude(-002.5420306);
+        NekropoliaLocation.setLatitude(43.1399056);
+        NekropoliaLocation.setLongitude(-002.5359750);
+
+        ElorrietaLocation.setLatitude(43.28378511002439);
+        ElorrietaLocation.setLongitude(-2.9643885432325296);
+
+        //default location para que no haga pointer a un objeto nulo
+        loc = new Location("defaultLocation");
+        loc.setAltitude(0);
+        loc.setLongitude(0);
+
         //MAPA PRINCIPAL
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
         mapFragment.getMapAsync(this);
 
->>>>>>> Aitor_22_12_2022
         //oculta la barra de arriba
         getSupportActionBar().hide();
 
@@ -176,15 +205,13 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                 //aplica la animacion para cuando desaparezca la lista
                 lista.animate().translationX(-200);
                 lista.setVisibility(View.INVISIBLE);
-                //desactiva los botones
+                //desactiva los botones y opciones del mapa
                 botonAbrirMapa.setClickable(false);
                 botonAbrirMenu.setClickable(false);
-<<<<<<< HEAD
-=======
                 map.getUiSettings().setScrollGesturesEnabled(false);
-                map.getUiSettings().setMyLocationButtonEnabled(false);
                 map.getUiSettings().setZoomGesturesEnabled(false);
->>>>>>> Aitor_22_12_2022
+                map.getUiSettings().setMyLocationButtonEnabled(false);
+                map.getUiSettings().setRotateGesturesEnabled(false);
 
                 //abre la nueva actividad
                 FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -203,15 +230,16 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                     tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
                 }
 
-                //TODO: informacion del mapa
                 //latitud y longitud del mapa
-                ImageView ivInfoMapa = findViewById(R.id.infoMap);
+                ImageView mapaInfoActividad = findViewById(R.id.infoMap);
+                LinearLayout layoutInfoActividad = findViewById(R.id.linearLayout6);
                 String lat = actividades.get(i).getActivity_coords_lat();
                 String lng = actividades.get(i).getActivity_coords_long();
-                String url = "http://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
-                //new DownloadImageTask(findViewById(R.id.infoMap)).execute(url);
-                new DownloadImageFromInternet((ImageView) findViewById(R.id.infoMap)).execute(url);
+                new DownloadImageTask(mapaInfoActividad)
+                        .execute(url);
+
 
                 Button botonVolver = findViewById(R.id.btnitzuli);
                 botonVolver.setOnClickListener(new View.OnClickListener() {
@@ -220,12 +248,10 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                         //activa los botones
                         botonAbrirMapa.setClickable(true);
                         botonAbrirMenu.setClickable(true);
-<<<<<<< HEAD
-=======
                         map.getUiSettings().setScrollGesturesEnabled(true);
-                        map.getUiSettings().setMyLocationButtonEnabled(true);
                         map.getUiSettings().setZoomGesturesEnabled(true);
->>>>>>> Aitor_22_12_2022
+                        map.getUiSettings().setMyLocationButtonEnabled(true);
+                        map.getUiSettings().setRotateGesturesEnabled(true);
 
                         //esconde la actividad
                         FrameLayout rootLayout = findViewById(android.R.id.content);
@@ -235,38 +261,8 @@ public class MenuPrincipalMapa extends AppCompatActivity {
             }
         });
     }
-}
 
-<<<<<<< HEAD
-/*
-    https://gist.github.com/joshdholtz/4522551
-    https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
- */
-=======
-    private class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
-        ImageView imageView;
-        public DownloadImageFromInternet(ImageView imageView) {
-            this.imageView=imageView;
-            Toast.makeText(getApplicationContext(), "Please wait, it may take a few minute...",Toast.LENGTH_SHORT).show();
-        }
-        protected Bitmap doInBackground(String... urls) {
-            String imageURL=urls[0];
-            Bitmap bimage=null;
-            try {
-                InputStream in=new java.net.URL(imageURL).openStream();
-                bimage=BitmapFactory.decodeStream(in);
-            } catch (Exception e) {
-                Log.e("Error Message", e.getMessage());
-                e.printStackTrace();
-            }
-            return bimage;
-        }
-        protected void onPostExecute(Bitmap result) {
-            imageView.setImageBitmap(result);
-        }
-    }
-
-    /*
+    @SuppressLint("NewApi")
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
 
@@ -288,11 +284,9 @@ public class MenuPrincipalMapa extends AppCompatActivity {
         }
 
         protected void onPostExecute(Bitmap result) {
-            infoMapBitmap = result;
             bmImage.setImageBitmap(result);
         }
     }
-    */
 
     /**==============================FUNCIONES DEL MAPA==================================*/
     @SuppressLint("MissingPermission")
@@ -306,25 +300,32 @@ public class MenuPrincipalMapa extends AppCompatActivity {
 
         map.addMarker(new MarkerOptions()
                 .position(Kurutziaga)
-                .title("Lehenengo gurutze"));
+                .title("1 - Kurutziagako Gurutzea")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Basilika)
-                .title("Bigarren gurutze"));
+                .title("2 - Sortzez Garbiaren Basilika")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Udaletxea)
-                .title("Hirugarren gurutze"));
+                .title("3 - Elorrioko Udaletxea")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Gozotegia)
-                .title("Laugarren gurutze"));
+                .title("4 - Pello Gozotegia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Jauregia)
-                .title("Bostgarren gurutze"));
+                .title("5 - Arespakotxaga Jauregia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Errebonbilloa)
-                .title("Seigarren gurutze"));
+                .title("6 - Errebonbilloak")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
-                .position(nekropolia)
-                .title("Lehenengo gurutze"));
+                .position(Nekropolia)
+                .title("7 - Arginetako Nekropolia")
+                .alpha(0.7f));
         map.addMarker(new MarkerOptions()
                 .position(Elorrieta)
                 .title("Elorrieta"));
@@ -343,7 +344,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
                         // Got last known location. In some rare situations this can be null.
                         if (location != null) {
                             // Logic to handle location object
-                            float zoom = 19.0f; //el valor maximo es 21!!
+                            float zoom = 18.0f; //el valor maximo es 21!!
                             LatLng lastKnownLatLng = new LatLng(location.getLatitude(), location.getLongitude());
                             map.moveCamera(CameraUpdateFactory.newLatLngZoom(lastKnownLatLng, zoom));
                         }
@@ -370,7 +371,7 @@ public class MenuPrincipalMapa extends AppCompatActivity {
 
     @Override
     public void onMyLocationClick(@NonNull Location location) {
-        Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
     }
 
     // [START maps_check_location_permission_result]
@@ -446,19 +447,55 @@ public class MenuPrincipalMapa extends AppCompatActivity {
     }
     private final LocationListener locationListener = new LocationListener() {
         @Override
-        public void onLocationChanged(Location location) {
-            if(location != null) {
-/**Solo cambiar la variable loc que es un marcador(anteriormente creado)
- * la comparativa es la distancia al marcador ej: 50 es en metros
- * Descomentar el intent provocara que cuando se este a menos de X metros se habra una nueva actividad*/
-                if (location.distanceTo(loc)<50){
-                    //Intent intent = new Intent(MapsActivity.this,Activity2.class);
-                    //MapsActivity.this.startActivity(intent);
-                } else {
+        public void onProviderEnabled(@NonNull String provider) {
 
+        }
+
+        @Override
+        public void onProviderDisabled(@NonNull String provider) {
+
+        }
+        @Override
+        public void onLocationChanged(Location location) {
+
+            //crear una instancia de la base de datos
+            AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+            //coge todas las actividades
+            List<Activity> actividades;
+            actividades = db.activityDao().getAll();
+
+            if(location != null) {
+                /*
+                 * Solo cambiar la variable loc que es un marcador(anteriormente creado)
+                 * la comparativa es la distancia al marcador ej: 10 es en metros
+                 * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
+                 */
+                //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
+                if ((location.distanceTo(KurutziagaLocation)<25)&&(!actividades.get(6).isActivity_visited())){
+                    //inicia primera actividad
+                    if ((location.distanceTo(BasilikaLocation)<25)&&(actividades.get(0).isActivity_visited())) {
+                        //inicia segunda actividad
+                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(actividades.get(1).isActivity_visited())){
+                            //inicia tercera actividad
+                            if ((location.distanceTo(GozotegiaLocation)<25)&&(actividades.get(2).isActivity_visited())){
+                                //inicia cuarta actividad
+                                if ((location.distanceTo(JauregiaLocation)<25)&&(actividades.get(3).isActivity_visited())){
+                                    //inicia quinta actividad
+                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(actividades.get(4).isActivity_visited())){
+                                        //inicia sexta actividad
+                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(actividades.get(5).isActivity_visited())){
+                                            //inicia septima actividad
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                } else {
+                    //nada
                 }
             }
         }
     };
 }
->>>>>>> Aitor_22_12_2022

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-34:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\48e56c303e0d31753f46166d8e551339\\transformed\\appcompat-1.5.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

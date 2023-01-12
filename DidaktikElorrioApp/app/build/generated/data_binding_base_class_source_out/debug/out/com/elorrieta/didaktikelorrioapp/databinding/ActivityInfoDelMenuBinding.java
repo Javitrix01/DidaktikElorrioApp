@@ -26,12 +26,6 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
   public final Button btnitzuli;
 
   @NonNull
-<<<<<<< HEAD
-  public final LinearLayout linearLayout6;
-
-  @NonNull
-  public final MapView mapView2;
-=======
   public final ImageView infoMap;
 
   @NonNull
@@ -42,7 +36,6 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
 
   @NonNull
   public final TextView textView2;
->>>>>>> Aitor_22_12_2022
 
   @NonNull
   public final TextView textViewDescripcion;
@@ -50,15 +43,10 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTituloAct;
 
+  @NonNull
+  public final View viewFondo;
+
   private ActivityInfoDelMenuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnitzuli,
-<<<<<<< HEAD
-      @NonNull LinearLayout linearLayout6, @NonNull MapView mapView2,
-      @NonNull TextView textViewDescripcion, @NonNull TextView textViewTituloAct) {
-    this.rootView = rootView;
-    this.btnitzuli = btnitzuli;
-    this.linearLayout6 = linearLayout6;
-    this.mapView2 = mapView2;
-=======
       @NonNull ImageView infoMap, @NonNull ConstraintLayout layoutInfoActividad,
       @NonNull LinearLayout linearLayout6, @NonNull TextView textView2,
       @NonNull TextView textViewDescripcion, @NonNull TextView textViewTituloAct,
@@ -69,9 +57,9 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
     this.layoutInfoActividad = layoutInfoActividad;
     this.linearLayout6 = linearLayout6;
     this.textView2 = textView2;
->>>>>>> Aitor_22_12_2022
     this.textViewDescripcion = textViewDescripcion;
     this.textViewTituloAct = textViewTituloAct;
+    this.viewFondo = viewFondo;
   }
 
   @Override
@@ -107,8 +95,6 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
         break missingId;
       }
 
-<<<<<<< HEAD
-=======
       id = R.id.infoMap;
       ImageView infoMap = ViewBindings.findChildViewById(rootView, id);
       if (infoMap == null) {
@@ -117,22 +103,15 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
 
       ConstraintLayout layoutInfoActividad = (ConstraintLayout) rootView;
 
->>>>>>> Aitor_22_12_2022
       id = R.id.linearLayout6;
       LinearLayout linearLayout6 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout6 == null) {
         break missingId;
       }
 
-<<<<<<< HEAD
-      id = R.id.mapView2;
-      MapView mapView2 = ViewBindings.findChildViewById(rootView, id);
-      if (mapView2 == null) {
-=======
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
->>>>>>> Aitor_22_12_2022
         break missingId;
       }
 
@@ -148,10 +127,6 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
         break missingId;
       }
 
-<<<<<<< HEAD
-      return new ActivityInfoDelMenuBinding((ConstraintLayout) rootView, btnitzuli, linearLayout6,
-          mapView2, textViewDescripcion, textViewTituloAct);
-=======
       id = R.id.viewFondo;
       View viewFondo = ViewBindings.findChildViewById(rootView, id);
       if (viewFondo == null) {
@@ -161,7 +136,6 @@ public final class ActivityInfoDelMenuBinding implements ViewBinding {
       return new ActivityInfoDelMenuBinding((ConstraintLayout) rootView, btnitzuli, infoMap,
           layoutInfoActividad, linearLayout6, textView2, textViewDescripcion, textViewTituloAct,
           viewFondo);
->>>>>>> Aitor_22_12_2022
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

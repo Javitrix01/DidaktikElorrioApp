@@ -57,11 +57,10 @@
 
         <ImageView
             android:id="@+id/infoMap"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/infoMapa"
-            app:srcCompat="@drawable/backgroundblue" />
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
 
     </LinearLayout>
 
@@ -71,15 +70,11 @@
         android:layout_height="48dp"
         android:background="@drawable/rounded_button"
         android:text="@string/itzuli"
-<<<<<<< HEAD
-        android:textColor="#EFEBE9"
-=======
         android:textColor="#E91E63"
->>>>>>> Aitor_22_12_2022
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.472"
+        app:layout_constraintVertical_bias="0.211"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

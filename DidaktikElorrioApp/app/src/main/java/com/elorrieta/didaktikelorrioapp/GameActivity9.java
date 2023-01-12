@@ -41,6 +41,9 @@ public class GameActivity9 extends AppCompatActivity {
     private ImageButton soundBtn;
     private boolean check;
 
+    //variable para el control de la opcion secreta para pasar el puzzle
+    private int contador = 0;
+
     DataBase dataBase = new DataBase(this);
     Sound sound=new Sound();
 
@@ -74,6 +77,14 @@ public class GameActivity9 extends AppCompatActivity {
         dataBase.setPrefRef("PRESNAME9", "PRESSCORE9");
         setContentView(R.layout.activity_game9);
 
+        //oculta la barra de arriba
+        getSupportActionBar().hide();
+
+        //BOTON PASAR PUZZLE
+        Button botonPasar = findViewById(R.id.button3);
+        botonPasar.setClickable(false);
+        botonPasar.setVisibility(View.INVISIBLE);
+
         whatToShow = getIntent().getStringExtra("whatToShow");
 
 
@@ -96,27 +107,31 @@ public class GameActivity9 extends AppCompatActivity {
         recordTV = findViewById(R.id.tBestScore9);
         Button hintBtn = findViewById(R.id.hint);
 
+        /*
         AnimationDrawable animationDrawable = (AnimationDrawable) hintBtn.getBackground();
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(2000);
         animationDrawable.start();
+         */
 
 
+        /*
         titleTV.setTypeface(digitalFont);
         textScoreTV.setTypeface(digitalFont);
         scoreTV.setTypeface(digitalFont);
         textRecordTV.setTypeface(digitalFont);
         recordTV.setTypeface(digitalFont);
+         */
 
-        hintBtn.setOnClickListener(navigateBtnsClickListener);
+        //hintBtn.setOnClickListener(navigateBtnsClickListener);
         newGameBtn.setOnClickListener(navigateBtnsClickListener);
         backBtn.setOnClickListener(navigateBtnsClickListener);
         soundBtn.setOnClickListener(navigateBtnsClickListener);
         if (whatToShow != null) {
-            if (whatToShow.equals("Zoo"))
-                hintBtn.setVisibility(View.VISIBLE);
+            if (whatToShow.equals("Zoo")){}
+                //hintBtn.setVisibility(View.VISIBLE);
             else
-                hintBtn.setVisibility(View.INVISIBLE);
+                //hintBtn.setVisibility(View.INVISIBLE);
 
             if (Sound.check)
                 soundBtn.setImageResource(R.drawable.soundon);
@@ -177,6 +192,16 @@ public class GameActivity9 extends AppCompatActivity {
                 numOfSteps++;
                 showGame(); // place the new images on the buttons
                 checkFinish();
+
+                //si se llega a 200 intentos deja que se salte el puzzle
+                if (numOfSteps >= 200) {
+                    //si pasa de un numero de pasos le permite pasar el puzzle
+                    Button botonPasar = findViewById(R.id.button3);
+                    botonPasar.setVisibility(View.VISIBLE);
+                    botonPasar.setClickable(true);
+
+                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+                }
             }
         }
     }
@@ -213,8 +238,7 @@ public class GameActivity9 extends AppCompatActivity {
         if(cards.finished(N, N)){
             showGame();
             Sound.winningSound.start();
-            Intent intent = new Intent(GameActivity9.this, MenuPrincipalMapa.class);
-            startActivity(intent);
+            startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class));
             //openDialog();
             if ((numOfSteps < recordSteps) || (recordSteps == 0)) {
                 recordTV.setText(Integer.toString(numOfSteps));
@@ -272,6 +296,7 @@ public class GameActivity9 extends AppCompatActivity {
 
     }
     public void soundOffOn(){
+        //contador para la opcion secreta para pasar el puzzle
         if(Sound.check)
         {
             Sound.check=false;
@@ -282,6 +307,18 @@ public class GameActivity9 extends AppCompatActivity {
             Sound.check=true;
             soundBtn.setImageResource(R.drawable.soundon);
         }
+
+        //si se hace click 10 veces en el cambio de sonido te muestra el boton para pasar el puzzle
+        contador++;
+        if (contador >= 10) {
+            //si pasa de un numero de pasos le permite pasar el puzzle
+            Button botonPasar = findViewById(R.id.button3);
+            botonPasar.setVisibility(View.VISIBLE);
+            botonPasar.setClickable(true);
+
+            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+        }
+
         sound.setSounds();
         sound.setMusic();
     }

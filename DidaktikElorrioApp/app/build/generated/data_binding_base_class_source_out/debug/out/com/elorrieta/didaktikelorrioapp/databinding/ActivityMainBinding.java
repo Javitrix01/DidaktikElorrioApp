@@ -37,15 +37,19 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTituloAct;
 
+  @NonNull
+  public final View view;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
       @NonNull ImageView imageView5, @NonNull LinearLayout linearLayout3,
-      @NonNull ProgressBar progressBar3, @NonNull TextView textViewTituloAct) {
+      @NonNull ProgressBar progressBar3, @NonNull TextView textViewTituloAct, @NonNull View view) {
     this.rootView = rootView;
     this.imageView = imageView;
     this.imageView5 = imageView5;
     this.linearLayout3 = linearLayout3;
     this.progressBar3 = progressBar3;
     this.textViewTituloAct = textViewTituloAct;
+    this.view = view;
   }
 
   @Override
@@ -105,8 +109,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.view;
+      View view = ViewBindings.findChildViewById(rootView, id);
+      if (view == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, imageView, imageView5,
-          linearLayout3, progressBar3, textViewTituloAct);
+          linearLayout3, progressBar3, textViewTituloAct, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
