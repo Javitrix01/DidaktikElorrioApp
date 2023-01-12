@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
     tools:context=".Puzzle_Poner_Nombre_Cruces">
 
     <LinearLayout
@@ -262,6 +261,7 @@
         app:layout_constraintVertical_bias="0.146"
         tools:ignore="SpeakableTextPresentCheck" />
 
+
     <EditText
         android:id="@+id/et_SantaElena"
         android:layout_width="85dp"
@@ -328,7 +328,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/et_SantaAna"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="84dp"
         android:layout_height="48dp"
         android:autofillHints=""

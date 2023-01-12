@@ -3048,18 +3048,9 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable background
-<<<<<<< HEAD
-drawable background2
-drawable background3
-drawable background4
-drawable background5
-drawable background6
-drawable background666
 drawable background7
 drawable background8
-=======
 drawable backgroundblue
->>>>>>> main
 drawable bird
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3592,13 +3583,6 @@ id easeInOut
 id easeOut
 id east
 id editTextTextPersonName
-id editTextTextPersonName10
-id editTextTextPersonName11
-id editTextTextPersonName12
-id editTextTextPersonName13
-id editTextTextPersonName14
-id editTextTextPersonName15
-id editTextTextPersonName8
 id edit_query
 id elastic
 id elephant
@@ -3745,6 +3729,7 @@ id line3
 id linear
 id linearLayout
 id linearLayout10
+id linearLayout11
 id linearLayout2
 id linearLayout3
 id linearLayout4
@@ -4008,7 +3993,6 @@ id textView17
 id textView18
 id textView19
 id textView2
-<<<<<<< HEAD
 id textView24
 id textView25
 id textView26
@@ -4035,8 +4019,6 @@ id textView6
 id textView7
 id textView8
 id textView9
-=======
->>>>>>> main
 id textViewDescripcion
 id textViewGaldera1
 id textViewGaldera2
@@ -4564,6 +4546,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string memoriza_ezazu
 string menu_actividades
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked

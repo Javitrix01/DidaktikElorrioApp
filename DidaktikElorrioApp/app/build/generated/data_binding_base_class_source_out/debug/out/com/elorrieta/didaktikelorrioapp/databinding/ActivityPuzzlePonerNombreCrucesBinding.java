@@ -123,28 +123,19 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
   public final TextView txtPreguntaCruces;
 
   private ActivityPuzzlePonerNombreCrucesBinding(@NonNull ConstraintLayout rootView,
-<<<<<<< HEAD
-      @NonNull Button btnJarraituPuzCrucesNombre, @NonNull EditText etGanondo,
-      @NonNull EditText etIguriakoGurutzea, @NonNull EditText etKurutzebarri,
-      @NonNull EditText etKurutziaga, @NonNull EditText etKurutzondo, @NonNull EditText etSanJuan,
-      @NonNull EditText etSantaAna, @NonNull EditText etSantaElena, @NonNull EditText etTxanberi,
-      @NonNull ImageView imageView7, @NonNull LinearLayout linearLayout2,
-      @NonNull LinearLayout linearLayoutNombresCruces, @NonNull TextView textView24,
-      @NonNull TextView textView25, @NonNull TextView textView26, @NonNull TextView textView27,
-      @NonNull TextView textView28, @NonNull TextView textView29, @NonNull TextView textView30,
-      @NonNull TextView textView31, @NonNull TextView textView32, @NonNull TextView textView33,
-      @NonNull TextView textView34, @NonNull TextView textView35, @NonNull TextView textView36,
-      @NonNull TextView textView37, @NonNull TextView textView38, @NonNull TextView textView39,
-      @NonNull TextView textView40, @NonNull TextView textView41, @NonNull TextView textView42,
-      @NonNull TextView txtPreguntaCruces) {
-=======
       @NonNull Button btnJarraituPuzCrucesNombre, @NonNull EditText editTextTextPersonName,
       @NonNull EditText etGanondo, @NonNull EditText etIguriakoGurutzea,
       @NonNull EditText etKurutzebarri, @NonNull EditText etKurutziaga,
       @NonNull EditText etKurutzondo, @NonNull EditText etSanJuan, @NonNull EditText etSantaElena,
       @NonNull EditText etTxanberi, @NonNull ImageView imageView7,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView txtPreguntaCruces) {
->>>>>>> main
+      @NonNull LinearLayout linearLayout2, @NonNull LinearLayout linearLayoutNombresCruces,
+      @NonNull TextView textView24, @NonNull TextView textView25, @NonNull TextView textView26,
+      @NonNull TextView textView27, @NonNull TextView textView28, @NonNull TextView textView29,
+      @NonNull TextView textView30, @NonNull TextView textView31, @NonNull TextView textView32,
+      @NonNull TextView textView33, @NonNull TextView textView34, @NonNull TextView textView35,
+      @NonNull TextView textView36, @NonNull TextView textView37, @NonNull TextView textView38,
+      @NonNull TextView textView39, @NonNull TextView textView40, @NonNull TextView textView41,
+      @NonNull TextView textView42, @NonNull TextView txtPreguntaCruces) {
     this.rootView = rootView;
     this.btnJarraituPuzCrucesNombre = btnJarraituPuzCrucesNombre;
     this.editTextTextPersonName = editTextTextPersonName;
@@ -407,18 +398,12 @@ public final class ActivityPuzzlePonerNombreCrucesBinding implements ViewBinding
       }
 
       return new ActivityPuzzlePonerNombreCrucesBinding((ConstraintLayout) rootView,
-<<<<<<< HEAD
-          btnJarraituPuzCrucesNombre, etGanondo, etIguriakoGurutzea, etKurutzebarri, etKurutziaga,
-          etKurutzondo, etSanJuan, etSantaAna, etSantaElena, etTxanberi, imageView7, linearLayout2,
-          linearLayoutNombresCruces, textView24, textView25, textView26, textView27, textView28,
-          textView29, textView30, textView31, textView32, textView33, textView34, textView35,
-          textView36, textView37, textView38, textView39, textView40, textView41, textView42,
-          txtPreguntaCruces);
-=======
           btnJarraituPuzCrucesNombre, editTextTextPersonName, etGanondo, etIguriakoGurutzea,
           etKurutzebarri, etKurutziaga, etKurutzondo, etSanJuan, etSantaElena, etTxanberi,
-          imageView7, linearLayout2, txtPreguntaCruces);
->>>>>>> main
+          imageView7, linearLayout2, linearLayoutNombresCruces, textView24, textView25, textView26,
+          textView27, textView28, textView29, textView30, textView31, textView32, textView33,
+          textView34, textView35, textView36, textView37, textView38, textView39, textView40,
+          textView41, textView42, txtPreguntaCruces);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

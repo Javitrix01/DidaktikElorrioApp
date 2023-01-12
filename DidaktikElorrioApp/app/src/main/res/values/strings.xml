@@ -105,14 +105,8 @@
     <string name="permission_rationale_location">PermissionRationaleLocation</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_maps2">MapsActivity</string>
-<<<<<<< HEAD
-    <string name="_1">1</string>
-    <string name="_2">2</string>
-    <string name="_3">3</string>
-    <string name="_4">4</string>
-    <string name="_5">5</string>
-    <string name="_6">6</string>
-    <string name="_7">7</string>
+
+
     <string name="memoriza_ezazu">Memoriza ezazu gurutzen izenak</string>
     <string name="iguriako">Iguriako =</string>
     <string name="ko">KO</string>
@@ -133,7 +127,6 @@
     <string name="kt">KT</string>
     <string name="santa_elena">Santa Elena =</string>
     <string name="nola_idatzi_behar_diren">Nola idatzi behar diren :</string>
-=======
->>>>>>> main
+
 
 </resources>

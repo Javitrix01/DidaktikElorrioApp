@@ -123,10 +123,7 @@ public class MainActivity extends AppCompatActivity {
             db.activityDao().deleteActivity(activity);
             db.activityDao().insertActivity(activity);
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> main
 
         //comprueba si existen las actividades necesarias
         List<Activity> comprobacionActividades;
