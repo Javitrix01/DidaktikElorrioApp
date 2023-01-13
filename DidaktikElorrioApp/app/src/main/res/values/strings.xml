@@ -106,4 +106,24 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_maps2">MapsActivity</string>
 
+    <string name="iguriako">Iguriako =</string>
+    <string name="ko">KO</string>
+    <string name="kurutzondo">Kurutzondo =</string>
+    <string name="sa">SA</string>
+    <string name="santa_ana">Santa Ana =</string>
+    <string name="kb">KB</string>
+    <string name="kurutzebarri">Kurutzebarri =</string>
+    <string name="tb">TB</string>
+    <string name="txanberi">Txanberi =</string>
+    <string name="gd">GD</string>
+    <string name="ganondo">Ganondo =</string>
+    <string name="se">SE</string>
+    <string name="sj">SJ</string>
+    <string name="ig">IG</string>
+    <string name="san_juan">San Juan =</string>
+    <string name="kurutziaga">Kurutziaga =</string>
+    <string name="kt">KT</string>
+    <string name="santa_elena">Santa Elena =</string>
+    <string name="nola_idatzi_behar_diren">Nola idatzi behar diren :</string>
+
 </resources>

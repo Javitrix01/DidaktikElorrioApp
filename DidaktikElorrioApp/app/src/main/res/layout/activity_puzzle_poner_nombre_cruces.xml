@@ -6,137 +6,358 @@
     android:layout_height="match_parent"
     tools:context=".Puzzle_Poner_Nombre_Cruces">
 
+    <LinearLayout
+        android:id="@+id/linearLayoutNombresCruces"
+        android:layout_width="139dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="144dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutNombresCruces"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/iguriako"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/ig"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/san_juan"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sj"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kurutziaga"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kt"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/santa_elena"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/se"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ganondo"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gd"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txanberi"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tb"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kurutzebarri"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kb"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/santa_ana"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sa"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kurutzondo"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ko"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="599dp"
-        android:layout_height="469dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:layout_width="401dp"
+        android:layout_height="229dp"
+        android:src="@drawable/mapacrucessinnombre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@drawable/mapacrucessinnombre" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_SanJuan"
         android:layout_width="89dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.076"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_kurutziaga"
         android:layout_width="89dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
     <EditText
         android:id="@+id/et_SantaElena"
         android:layout_width="85dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintVertical_bias="0.169"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_Ganondo"
         android:layout_width="85dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
-        android:textColorHint="#93E1D8"
+        android:textColor="@color/secondWood"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_Txanberi"
         android:layout_width="77dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_Kurutzebarri"
         android:layout_width="85dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="84dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.073"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_Kurutzondo"
         android:layout_width="85dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#93E1D8"
+        android:textColor="@color/secondWood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -146,8 +367,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745">
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/txtPreguntaCruces"
@@ -161,10 +382,11 @@
             android:id="@+id/et_Iguriako_Gurutzea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <Button
@@ -175,6 +397,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nola_idatzi_behar_diren"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
