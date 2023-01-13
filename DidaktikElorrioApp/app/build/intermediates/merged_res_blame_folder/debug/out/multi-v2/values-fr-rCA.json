@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-71:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\3ab57e222d20792f120b18e88dd10d60\\transformed\\ui-1.1.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,204,292,390,496,583,663,757,849,936,1007,1075,1151,1220",
+                        "endColumns": "98,87,97,105,86,79,93,91,86,70,67,75,68,121",
+                        "endOffsets": "199,287,385,491,578,658,752,844,931,1002,1070,1146,1215,1337"
+                    },
+                    "to": {
+                        "startLines": "37,38,57,58,59,63,64,116,117,118,119,130,132,133",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3472,3571,6071,6169,6275,6605,6685,10939,11031,11118,11189,12024,12201,12270",
+                        "endColumns": "98,87,97,105,86,79,93,91,86,70,67,75,68,121",
+                        "endOffsets": "3566,3654,6164,6270,6357,6680,6774,11026,11113,11184,11252,12095,12265,12387"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,41 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\832873f439420606276d927cc1153142\\transformed\\places-2.4.0\\res\\values-fr-rCA\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "188,266,332,422,489,535,602,696",
-                        "endColumns": "77,65,89,66,45,66,93,50",
-                        "endOffsets": "265,331,421,488,534,601,695,746"
-                    },
-                    "to": {
-                        "startLines": "121,122,123,124,125,126,127,128",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "11346,11428,11498,11592,11663,11713,11784,11882",
-                        "endColumns": "81,69,93,70,49,70,97,54",
-                        "endOffsets": "11423,11493,11587,11658,11708,11779,11877,11932"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\c75633332e0d7727fdc9111989dafeb4\\transformed\\core-1.8.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "131",
-                        "startColumns": "4",
-                        "startOffsets": "12100",
-                        "endColumns": "100",
-                        "endOffsets": "12196"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\482703b57e186ad5b17081ff1d18732e\\transformed\\navigation-ui-2.5.2\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\482703b57e186ad5b17081ff1d18732e\\transformed\\navigation-ui-2.5.2\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -74,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\e63148f59155546e23ce23794467cf5f\\transformed\\play-services-basement-18.0.0\\res\\values-fr-rCA\\values.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\e63148f59155546e23ce23794467cf5f\\transformed\\play-services-basement-18.0.0\\res\\values-fr-rCA\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -91,7 +74,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\c75633332e0d7727fdc9111989dafeb4\\transformed\\core-1.8.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "131",
+                        "startColumns": "4",
+                        "startOffsets": "12100",
+                        "endColumns": "100",
+                        "endOffsets": "12196"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,24 +108,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\3ab57e222d20792f120b18e88dd10d60\\transformed\\ui-1.1.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\832873f439420606276d927cc1153142\\transformed\\places-2.4.0\\res\\values-fr-rCA\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,204,292,390,496,583,663,757,849,936,1007,1075,1151,1220",
-                        "endColumns": "98,87,97,105,86,79,93,91,86,70,67,75,68,121",
-                        "endOffsets": "199,287,385,491,578,658,752,844,931,1002,1070,1146,1215,1337"
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "188,266,332,422,489,535,602,696",
+                        "endColumns": "77,65,89,66,45,66,93,50",
+                        "endOffsets": "265,331,421,488,534,601,695,746"
                     },
                     "to": {
-                        "startLines": "37,38,57,58,59,63,64,116,117,118,119,130,132,133",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3472,3571,6071,6169,6275,6605,6685,10939,11031,11118,11189,12024,12201,12270",
-                        "endColumns": "98,87,97,105,86,79,93,91,86,70,67,75,68,121",
-                        "endOffsets": "3566,3654,6164,6270,6357,6680,6774,11026,11113,11184,11252,12095,12265,12387"
+                        "startLines": "121,122,123,124,125,126,127,128",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "11346,11428,11498,11592,11663,11713,11784,11882",
+                        "endColumns": "81,69,93,70,49,70,97,54",
+                        "endOffsets": "11423,11493,11587,11658,11708,11779,11877,11932"
                     }
                 },
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\54662029eb1adec21824d6ae8cea3cdc\\transformed\\play-services-base-18.0.1\\res\\values-fr-rCA\\values.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\54662029eb1adec21824d6ae8cea3cdc\\transformed\\play-services-base-18.0.1\\res\\values-fr-rCA\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

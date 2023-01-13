@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -25,45 +27,78 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
   public final Button btnBaieztatuNombresElorrio;
 
   @NonNull
-  public final EditText editTextTextPersonName10;
+  public final EditText et1;
 
   @NonNull
-  public final EditText editTextTextPersonName11;
+  public final EditText et2;
 
   @NonNull
-  public final EditText editTextTextPersonName12;
+  public final EditText et3;
 
   @NonNull
-  public final EditText editTextTextPersonName13;
+  public final EditText et4;
 
   @NonNull
-  public final EditText editTextTextPersonName14;
+  public final EditText et5;
 
   @NonNull
-  public final EditText editTextTextPersonName15;
+  public final EditText et6;
 
   @NonNull
-  public final EditText editTextTextPersonName8;
+  public final EditText et7;
 
   @NonNull
-  public final ImageView imageView19;
+  public final ImageView imageView4;
+
+  @NonNull
+  public final LinearLayout linearLayout11;
+
+  @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView textView4;
+
+  @NonNull
+  public final TextView textView5;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
+  public final TextView textView7;
+
+  @NonNull
+  public final TextView textView8;
+
+  @NonNull
+  public final TextView textView9;
 
   private ActivityPuzzleMapaElorrioPonerNombresBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnBaieztatuNombresElorrio, @NonNull EditText editTextTextPersonName10,
-      @NonNull EditText editTextTextPersonName11, @NonNull EditText editTextTextPersonName12,
-      @NonNull EditText editTextTextPersonName13, @NonNull EditText editTextTextPersonName14,
-      @NonNull EditText editTextTextPersonName15, @NonNull EditText editTextTextPersonName8,
-      @NonNull ImageView imageView19) {
+      @NonNull Button btnBaieztatuNombresElorrio, @NonNull EditText et1, @NonNull EditText et2,
+      @NonNull EditText et3, @NonNull EditText et4, @NonNull EditText et5, @NonNull EditText et6,
+      @NonNull EditText et7, @NonNull ImageView imageView4, @NonNull LinearLayout linearLayout11,
+      @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView5,
+      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8,
+      @NonNull TextView textView9) {
     this.rootView = rootView;
     this.btnBaieztatuNombresElorrio = btnBaieztatuNombresElorrio;
-    this.editTextTextPersonName10 = editTextTextPersonName10;
-    this.editTextTextPersonName11 = editTextTextPersonName11;
-    this.editTextTextPersonName12 = editTextTextPersonName12;
-    this.editTextTextPersonName13 = editTextTextPersonName13;
-    this.editTextTextPersonName14 = editTextTextPersonName14;
-    this.editTextTextPersonName15 = editTextTextPersonName15;
-    this.editTextTextPersonName8 = editTextTextPersonName8;
-    this.imageView19 = imageView19;
+    this.et1 = et1;
+    this.et2 = et2;
+    this.et3 = et3;
+    this.et4 = et4;
+    this.et5 = et5;
+    this.et6 = et6;
+    this.et7 = et7;
+    this.imageView4 = imageView4;
+    this.linearLayout11 = linearLayout11;
+    this.textView3 = textView3;
+    this.textView4 = textView4;
+    this.textView5 = textView5;
+    this.textView6 = textView6;
+    this.textView7 = textView7;
+    this.textView8 = textView8;
+    this.textView9 = textView9;
   }
 
   @Override
@@ -100,58 +135,105 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName10;
-      EditText editTextTextPersonName10 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName10 == null) {
+      id = R.id.et_1;
+      EditText et1 = ViewBindings.findChildViewById(rootView, id);
+      if (et1 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName11;
-      EditText editTextTextPersonName11 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName11 == null) {
+      id = R.id.et_2;
+      EditText et2 = ViewBindings.findChildViewById(rootView, id);
+      if (et2 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName12;
-      EditText editTextTextPersonName12 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName12 == null) {
+      id = R.id.et_3;
+      EditText et3 = ViewBindings.findChildViewById(rootView, id);
+      if (et3 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName13;
-      EditText editTextTextPersonName13 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName13 == null) {
+      id = R.id.et_4;
+      EditText et4 = ViewBindings.findChildViewById(rootView, id);
+      if (et4 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName14;
-      EditText editTextTextPersonName14 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName14 == null) {
+      id = R.id.et_5;
+      EditText et5 = ViewBindings.findChildViewById(rootView, id);
+      if (et5 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName15;
-      EditText editTextTextPersonName15 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName15 == null) {
+      id = R.id.et_6;
+      EditText et6 = ViewBindings.findChildViewById(rootView, id);
+      if (et6 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName8;
-      EditText editTextTextPersonName8 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName8 == null) {
+      id = R.id.et_7;
+      EditText et7 = ViewBindings.findChildViewById(rootView, id);
+      if (et7 == null) {
         break missingId;
       }
 
-      id = R.id.imageView19;
-      ImageView imageView19 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView19 == null) {
+      id = R.id.imageView4;
+      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout11;
+      LinearLayout linearLayout11 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout11 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView7;
+      TextView textView7 = ViewBindings.findChildViewById(rootView, id);
+      if (textView7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView8;
+      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
+      if (textView8 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView9;
+      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
+      if (textView9 == null) {
         break missingId;
       }
 
       return new ActivityPuzzleMapaElorrioPonerNombresBinding((ConstraintLayout) rootView,
-          btnBaieztatuNombresElorrio, editTextTextPersonName10, editTextTextPersonName11,
-          editTextTextPersonName12, editTextTextPersonName13, editTextTextPersonName14,
-          editTextTextPersonName15, editTextTextPersonName8, imageView19);
+          btnBaieztatuNombresElorrio, et1, et2, et3, et4, et5, et6, et7, imageView4, linearLayout11,
+          textView3, textView4, textView5, textView6, textView7, textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
