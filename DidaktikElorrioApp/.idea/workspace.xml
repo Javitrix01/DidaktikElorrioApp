@@ -14,8 +14,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92948311-fba4-44d7-972b-3281da2c479f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MenuPrincipalMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/elorrieta/didaktikelorrioapp/MenuPrincipalMapa.java" afterDir="false" />
+    <list default="true" id="8e3f9ab2-40db-4c5e-bf89-fd3086a5ce0a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +215,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="613534f2-da25-4097-b6cf-4b1bce802194" name="Changes" comment="" />
+      <changelist id="8e3f9ab2-40db-4c5e-bf89-fd3086a5ce0a" name="Changes" comment="" />
       <created>1669190633370</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
