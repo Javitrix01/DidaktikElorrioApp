@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background7"
     tools:context=".IntroduccionParada6">
 
     <ScrollView
@@ -19,7 +20,8 @@
             android:id="@+id/textViewIntroErrenbonbiloa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/errebonbilloaren" />
+            android:text="@string/errebonbilloaren"
+            android:textColor="@color/White" />
     </ScrollView>
 
     <LinearLayout

@@ -125,5 +125,12 @@
     <string name="kt">KT</string>
     <string name="santa_elena">Santa Elena =</string>
     <string name="nola_idatzi_behar_diren">Nola idatzi behar diren :</string>
+    <string name="bainuetxeak">Bainuetxeak</string>
+    <string name="zearsolo_jauregia_edo_jara_etxe">Zearsolo jauregia edo Jara etxe</string>
+    <string name="urkizu_tola_jauregia">Urkizu Tola Jauregia</string>
+    <string name="arespakotxaga_jaur">Arespakotxaga Jauregia</string>
+    <string name="arespakotxaga_azkarraga">Arespakotxaga Azkarraga</string>
+    <string name="olazabal_jauregia_edo_modet">Olazabal Jauregia edo Modet</string>
+    <string name="urkizu_aldatsekua_jauregia">Urkizu Aldatsekua Jauregia</string>
 
 </resources>
