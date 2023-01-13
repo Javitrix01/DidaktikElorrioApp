@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.amalbit.trail.RouteOverlayView;
 import com.elorrieta.didaktikelorrioapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -35,17 +36,21 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   public final ListView listaMenuPrincipal;
 
   @NonNull
+  public final RouteOverlayView mapOverlayView;
+
+  @NonNull
   public final FragmentContainerView mapPRUEBA;
 
   private ActivityMenuPrincipalMapaBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnMapa, @NonNull Button btnMenuActividades,
       @NonNull LinearLayout linearLayout, @NonNull ListView listaMenuPrincipal,
-      @NonNull FragmentContainerView mapPRUEBA) {
+      @NonNull RouteOverlayView mapOverlayView, @NonNull FragmentContainerView mapPRUEBA) {
     this.rootView = rootView;
     this.btnMapa = btnMapa;
     this.btnMenuActividades = btnMenuActividades;
     this.linearLayout = linearLayout;
     this.listaMenuPrincipal = listaMenuPrincipal;
+    this.mapOverlayView = mapOverlayView;
     this.mapPRUEBA = mapPRUEBA;
   }
 
@@ -100,6 +105,12 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mapOverlayView;
+      RouteOverlayView mapOverlayView = ViewBindings.findChildViewById(rootView, id);
+      if (mapOverlayView == null) {
+        break missingId;
+      }
+
       id = R.id.mapPRUEBA;
       FragmentContainerView mapPRUEBA = ViewBindings.findChildViewById(rootView, id);
       if (mapPRUEBA == null) {
@@ -107,7 +118,7 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
       }
 
       return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, btnMapa,
-          btnMenuActividades, linearLayout, listaMenuPrincipal, mapPRUEBA);
+          btnMenuActividades, linearLayout, listaMenuPrincipal, mapOverlayView, mapPRUEBA);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

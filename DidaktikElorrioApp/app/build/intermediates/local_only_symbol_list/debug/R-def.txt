@@ -367,6 +367,7 @@ id lion
 id listaMenuPrincipal
 id logo
 id map
+id mapOverlayView
 id mapPRUEBA
 id progressBar3
 id rightBtn

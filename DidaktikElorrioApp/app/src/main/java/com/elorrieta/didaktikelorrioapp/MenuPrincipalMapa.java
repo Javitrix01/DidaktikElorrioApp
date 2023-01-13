@@ -1,4 +1,6 @@
 package com.elorrieta.didaktikelorrioapp;
+import static com.elorrieta.didaktikelorrioapp.BuildConfig.MAPS_API_KEY;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -26,8 +28,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.amalbit.trail.Route;
+import com.amalbit.trail.RouteOverlayView;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -41,23 +44,24 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
-import com.google.android.material.snackbar.Snackbar;
-import com.squareup.picasso.Picasso;
+import com.google.maps.DirectionsApi;
+import com.google.maps.DirectionsApiRequest;
+import com.google.maps.GeoApiContext;
+import com.google.maps.model.DirectionsLeg;
+import com.google.maps.model.DirectionsResult;
+import com.google.maps.model.DirectionsRoute;
+import com.google.maps.model.DirectionsStep;
+import com.google.maps.model.EncodedPolyline;
 
 import org.json.JSONObject;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -284,7 +288,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         /**
          * Recoge la url de la imagen que se quiere descargar y la convierte en un Bitmap.
          * @param urls  La url que se utiliza para conseguir el Bitmap.
-         * @return
+         * @return      El Bitmap que se consigue de la url.
          */
         protected Bitmap doInBackground(String... urls) {
             String urldisplay = urls[0];
@@ -484,41 +488,60 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             List<Activity> actividades;
             actividades = db.activityDao().getAll();
 
+            //crea la lista con las LatLng necesarias
+            List<LatLng> mRoute = new ArrayList<>();
+            LatLng origin = new LatLng(location.getLatitude(), location.getLongitude());
+            mRoute.add(origin);
+            RouteOverlayView mRouteOverlayView = findViewById(R.id.mapOverlayView);
             if(location != null) {
                 //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
-                LatLng origin = new LatLng(location.getLatitude(), location.getLongitude());
-                String url = "";
                 if (!actividades.get(0).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Kurutziaga);
+                    LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(1).isActivity_visited() && actividades.get(0).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Basilika);
+                    LatLng destination = new LatLng(BasilikaLocation.getLatitude(), BasilikaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(2).isActivity_visited() && actividades.get(1).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Udaletxea);
+                    LatLng destination = new LatLng(UdaletxeaLocation.getLatitude(), UdaletxeaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(3).isActivity_visited() && actividades.get(2).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Gozotegia);
+                    LatLng destination = new LatLng(GozotegiaLocation.getLatitude(), GozotegiaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(4).isActivity_visited() && actividades.get(3).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Jauregia);
+                    LatLng destination = new LatLng(JauregiaLocation.getLatitude(), JauregiaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(5).isActivity_visited() && actividades.get(4).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Errebonbilloa);
+                    LatLng destination = new LatLng(ErrebonbilloaLocation.getLatitude(), ErrebonbilloaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
                 if (!actividades.get(6).isActivity_visited() && actividades.get(5).isActivity_visited()){
-                    // Getting URL to the Google Directions API
-                    url = getDirectionsUrl(origin, Nekropolia);
+                    LatLng destination = new LatLng(NekropoliaLocation.getLatitude(), NekropoliaLocation.getLongitude());
+                    mRoute.add(destination);
                 }
-                DownloadTask downloadTask = new DownloadTask();
-                // Start downloading json data from Google Directions API
-                downloadTask.execute(url);
+                LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
+                mRoute.add(destination);
+
+                map.setOnMapLoadedCallback(() -> {
+                    Route normalOverlayPolyline = new Route.Builder(mRouteOverlayView)
+                            .setRouteType(RouteOverlayView.RouteType.PATH)
+                            .setCameraPosition(map.getCameraPosition())
+                            .setProjection(map.getProjection())
+                            .setLatLngs(mRoute)
+                            .setBottomLayerColor(Color.BLUE)
+                            .setTopLayerColor(Color.CYAN)
+                            .create();
+                });
+
+                map.setOnCameraMoveListener(() -> {
+                            mRouteOverlayView.onCameraMove(map.getProjection(), map.getCameraPosition());
+                        }
+                );
+
                 /*
                  * Solo cambiar la variable loc que es un marcador(anteriormente creado)
                  * la comparativa es la distancia al marcador ej: 10 es en metros
@@ -552,145 +575,4 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             }
         }
     };
-
-    private class DownloadTask extends AsyncTask {
-
-        @Override
-        protected String doInBackground(String... url) {
-
-            String data = "";
-
-            try {
-                data = downloadUrl(url[0]);
-            } catch (Exception e) {
-                Log.d("Background Task", e.toString());
-            }
-            return data;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-
-            ParserTask parserTask = new ParserTask();
-
-
-            parserTask.execute(result);
-
-        }
-    }
-
-    private class ParserTask extends AsyncTask<String, Integer, List<List<HashMap>>> {
-
-        // Parsing the data in non-ui thread
-        @Override
-        protected List<List<HashMap>> doInBackground(String... jsonData) {
-
-            JSONObject jObject;
-            List<List<HashMap>> routes = null;
-
-            try {
-                jObject = new JSONObject(jsonData[0]);
-                DirectionsJSONParser parser = new DirectionsJSONParser();
-
-                routes = parser.parse(jObject);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return routes;
-        }
-
-        @Override
-        protected void onPostExecute(List<List<HashMap>> result) {
-            ArrayList points = null;
-            PolylineOptions lineOptions = null;
-            MarkerOptions markerOptions = new MarkerOptions();
-
-            for (int i = 0; i < result.size(); i++) {
-                points = new ArrayList();
-                lineOptions = new PolylineOptions();
-
-                List<HashMap> path = result.get(i);
-
-                for (int j = 0; j < path.size(); j++) {
-                    HashMap point = path.get(j);
-
-                    double lat = Double.parseDouble(point.get("lat"));
-                    double lng = Double.parseDouble(point.get("lng"));
-                    LatLng position = new LatLng(lat, lng);
-
-                    points.add(position);
-                }
-
-                lineOptions.addAll(points);
-                lineOptions.width(12);
-                lineOptions.color(Color.RED);
-                lineOptions.geodesic(true);
-
-            }
-
-// Drawing polyline in the Google Map for the i-th route
-            map.addPolyline(lineOptions);
-        }
-    }
-
-    private String getDirectionsUrl(LatLng origin, LatLng dest) {
-
-        // Origin of route
-        String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
-
-        // Destination of route
-        String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
-
-        // Sensor enabled
-        String sensor = "sensor=false";
-        String mode = "mode=walking";
-
-        // Building the parameters to the web service
-        String parameters = str_origin + "&" + str_dest + "&" + sensor + "&" + mode;
-
-        // Output format
-        String output = "json";
-
-        // Building the url to the web service
-        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters;
-
-
-        return url;
-    }
-
-    private String downloadUrl(String strUrl) throws IOException {
-        String data = "";
-        InputStream iStream = null;
-        HttpURLConnection urlConnection = null;
-        try {
-            URL url = new URL(strUrl);
-
-            urlConnection = (HttpURLConnection) url.openConnection();
-
-            urlConnection.connect();
-
-            iStream = urlConnection.getInputStream();
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(iStream));
-
-            StringBuffer sb = new StringBuffer();
-
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                sb.append(line);
-            }
-
-            data = sb.toString();
-
-            br.close();
-
-        } catch (Exception e) {
-            Log.d("Exception", e.toString());
-        } finally {
-            iStream.close();
-            urlConnection.disconnect();
-        }
-        return data;
-    }
 }

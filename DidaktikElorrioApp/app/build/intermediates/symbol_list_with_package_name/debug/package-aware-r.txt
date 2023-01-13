@@ -998,6 +998,9 @@ attr rotationCenterId
 attr round
 attr roundPercent
 attr route
+attr routePrimaryColor
+attr routeSecondaryColor
+attr routeShadowColor
 attr saturation
 attr scaleFromTextSize
 attr scopeUris
@@ -2295,6 +2298,9 @@ color quantum_yellowA400
 color quantum_yellowA700
 color ripple_material_dark
 color ripple_material_light
+color routePrimaryColor
+color routeSecondaryColor
+color routeShadowColor
 color secondWood
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
@@ -3741,6 +3747,7 @@ id locale
 id logo
 id ltr
 id map
+id mapOverlayView
 id mapPRUEBA
 id marquee
 id masked
@@ -5813,6 +5820,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RouteOverlayView routePrimaryColor routeSecondaryColor routeShadowColor
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon

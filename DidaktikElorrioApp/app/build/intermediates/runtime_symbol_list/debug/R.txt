@@ -997,6 +997,9 @@ int attr rotationCenterId 0x7f04038d
 int attr round 0x7f04038e
 int attr roundPercent 0x7f04038f
 int attr route 0x7f040390
+int attr routePrimaryColor 0x7f0404d1
+int attr routeSecondaryColor 0x7f0404d2
+int attr routeShadowColor 0x7f0404d3
 int attr saturation 0x7f040391
 int attr scaleFromTextSize 0x7f040392
 int attr scopeUris 0x7f040393
@@ -2294,6 +2297,9 @@ int color quantum_yellowA400 0x7f0603ca
 int color quantum_yellowA700 0x7f0603cb
 int color ripple_material_dark 0x7f0603cc
 int color ripple_material_light 0x7f0603cd
+int color routePrimaryColor 0x7f0603e1
+int color routeSecondaryColor 0x7f0603e2
+int color routeShadowColor 0x7f0603e3
 int color secondWood 0x7f0603ce
 int color secondary_text_default_material_dark 0x7f0603cf
 int color secondary_text_default_material_light 0x7f0603d0
@@ -3740,6 +3746,7 @@ int id locale 0x7f0a01ca
 int id logo 0x7f0a01cb
 int id ltr 0x7f0a01cc
 int id map 0x7f0a01cd
+int id mapOverlayView 0x7f0a031f
 int id mapPRUEBA 0x7f0a01ce
 int id marquee 0x7f0a01cf
 int id masked 0x7f0a01d0
@@ -7390,6 +7397,10 @@ int styleable RecyclerView_layoutManager 8
 int styleable RecyclerView_reverseLayout 9
 int styleable RecyclerView_spanCount 10
 int styleable RecyclerView_stackFromEnd 11
+int[] styleable RouteOverlayView { 0x7f0404d1, 0x7f0404d2, 0x7f0404d3 }
+int styleable RouteOverlayView_routePrimaryColor 0
+int styleable RouteOverlayView_routeSecondaryColor 1
+int styleable RouteOverlayView_routeShadowColor 2
 int[] styleable ScrimInsetsFrameLayout { 0x7f040224 }
 int styleable ScrimInsetsFrameLayout_insetForeground 0
 int[] styleable ScrollingViewBehavior_Layout { 0x7f040062 }

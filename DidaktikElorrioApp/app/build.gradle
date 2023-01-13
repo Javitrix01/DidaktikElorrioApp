@@ -76,6 +76,11 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    //google-maps java implementation via gradle
+    implementation 'com.google.maps:google-maps-services:2.1.2'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+    //routes
+    implementation 'com.github.amalChandran:trail-android:v1.51'
 
 
     def room_version = "2.4.3"
