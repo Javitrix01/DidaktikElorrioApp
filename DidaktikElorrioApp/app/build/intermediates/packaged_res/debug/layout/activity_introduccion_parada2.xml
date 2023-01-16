@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context=".IntroduccionParada2">
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="409dp"
-        android:layout_height="147dp"
+        android:layout_width="401dp"
+        android:layout_height="161dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:orientation="vertical"
@@ -18,12 +19,28 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797">
+        app:layout_constraintVertical_bias="0.861">
 
-        <SeekBar
-            android:id="@+id/seekBar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="57dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSonidoP1"
+                android:layout_width="51dp"
+                android:layout_height="67dp"
+                android:background="@android:drawable/ic_media_play"
+                app:iconTint="@color/places_autocomplete_separator"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnJarraituP2"
@@ -33,33 +50,37 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="149dp"
-        android:layout_height="175dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424"
-        tools:srcCompat="@drawable/cura1" />
-
     <ScrollView
-        android:layout_width="413dp"
-        android:layout_height="216dp"
+        android:id="@+id/scrollView4"
+        android:layout_width="227dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textViewIntroBasilica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Intro_ActBasilica" />
+            android:text="@string/Intro_ActBasilica"
+            android:textColor="@color/black" />
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="173dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/cura1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

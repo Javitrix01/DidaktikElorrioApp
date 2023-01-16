@@ -30,23 +30,27 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   public final Button btnJarraituP7;
 
   @NonNull
+  public final Button btnSonidoP1;
+
+  @NonNull
   public final ImageView imageView18;
 
   @NonNull
-  public final SeekBar seekBar;
+  public final SeekBar seekBar4;
 
   @NonNull
   public final TextView textViewIntroNecropolis;
 
   private ActivityIntroduccionParada7Binding(@NonNull ConstraintLayout rootView,
-      @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP7,
-      @NonNull ImageView imageView18, @NonNull SeekBar seekBar,
+      @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP7, @NonNull Button btnSonidoP1,
+      @NonNull ImageView imageView18, @NonNull SeekBar seekBar4,
       @NonNull TextView textViewIntroNecropolis) {
     this.rootView = rootView;
     this.SVNecropolis = SVNecropolis;
     this.btnJarraituP7 = btnJarraituP7;
+    this.btnSonidoP1 = btnSonidoP1;
     this.imageView18 = imageView18;
-    this.seekBar = seekBar;
+    this.seekBar4 = seekBar4;
     this.textViewIntroNecropolis = textViewIntroNecropolis;
   }
 
@@ -89,15 +93,21 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnSonidoP1;
+      Button btnSonidoP1 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSonidoP1 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView18;
       ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
       if (imageView18 == null) {
         break missingId;
       }
 
-      id = R.id.seekBar;
-      SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
-      if (seekBar == null) {
+      id = R.id.seekBar4;
+      SeekBar seekBar4 = ViewBindings.findChildViewById(rootView, id);
+      if (seekBar4 == null) {
         break missingId;
       }
 
@@ -108,7 +118,7 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
       }
 
       return new ActivityIntroduccionParada7Binding((ConstraintLayout) rootView, SVNecropolis,
-          btnJarraituP7, imageView18, seekBar, textViewIntroNecropolis);
+          btnJarraituP7, btnSonidoP1, imageView18, seekBar4, textViewIntroNecropolis);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

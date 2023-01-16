@@ -16,10 +16,6 @@
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada6.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:/layout/activity_introduccion_parada1.xml",
-        "source": "com.elorrieta.didaktikelorrioapp-main-7:/layout/activity_introduccion_parada1.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_errebonbiloa.xml",
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_errebonbiloa.xml"
     },
@@ -56,6 +52,10 @@
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_crear_mapa_puzzle.xml"
     },
     {
+        "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_introduccion_parada2.xml",
+        "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada2.xml"
+    },
+    {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_introduccion_parada5.xml",
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada5.xml"
     },
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_game24.xml"
     },
     {
-        "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_introduccion_parada2.xml",
-        "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada2.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\dialog_zoo.xml",
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\dialog_zoo.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:/layout/activity_introduccion_parada3.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-7:/layout/activity_introduccion_parada3.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_info_del_menu.xml",
@@ -112,12 +112,12 @@
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada7.xml"
     },
     {
-        "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_puzzle_pasteleria.xml",
-        "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_puzzle_pasteleria.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_introduccion_parada3.xml",
         "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_introduccion_parada3.xml"
+    },
+    {
+        "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\activity_puzzle_pasteleria.xml",
+        "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-7:\\layout\\activity_puzzle_pasteleria.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-4:\\layout\\dialog_hint.xml",

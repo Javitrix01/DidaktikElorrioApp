@@ -10,5 +10,6 @@ public class IntroduccionParada1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada1);
+        getSupportActionBar().hide();
     }
 }
