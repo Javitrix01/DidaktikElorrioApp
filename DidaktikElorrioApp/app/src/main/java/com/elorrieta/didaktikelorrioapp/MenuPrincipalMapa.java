@@ -10,7 +10,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.graphics.text.LineBreaker;
 import android.location.Location;
 import android.location.LocationListener;
@@ -29,9 +28,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.amalbit.trail.Route;
-import com.amalbit.trail.RouteOverlayView;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+import com.elorrieta.didaktikelorrioapp.directionshelper.FetchURL;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -43,28 +41,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
-import com.google.maps.DirectionsApi;
-import com.google.maps.DirectionsApiRequest;
-import com.google.maps.GeoApiContext;
-import com.google.maps.model.DirectionsLeg;
-import com.google.maps.model.DirectionsResult;
-import com.google.maps.model.DirectionsRoute;
-import com.google.maps.model.DirectionsStep;
-import com.google.maps.model.EncodedPolyline;
 
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class MenuPrincipalMapa extends AppCompatActivity implements
@@ -93,6 +76,10 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     Location ErrebonbilloaLocation = new Location("");
     Location NekropoliaLocation = new Location("");
     Location ElorrietaLocation = new Location("");
+    //variables para la ruta
+    Polyline currentPolyline;
+
+    int iPATHS = 0;
 
 
     /**
@@ -148,6 +135,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         loc.setAltitude(0);
         loc.setLongitude(0);
 
+        Context context = MenuPrincipalMapa.this;
+
         //MAPA PRINCIPAL
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
@@ -177,6 +166,21 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         });
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
+
+            //TODO: DEBUG PATHS
+            if (lista.getVisibility() == View.INVISIBLE) {
+                AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+                iPATHS++;
+                if (iPATHS < 8) {
+                    db.activityDao().updateActivityVisitedById(iPATHS, true);
+                }
+                else if (iPATHS == 8){
+                    for (int i = 0; i<8; i++){
+                        db.activityDao().updateActivityVisitedById(i, false);
+                    }
+                }
+            }
+
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
@@ -489,58 +493,63 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             actividades = db.activityDao().getAll();
 
             //crea la lista con las LatLng necesarias
-            List<LatLng> mRoute = new ArrayList<>();
+//            List<LatLng> mRoute = new ArrayList<>();
             LatLng origin = new LatLng(location.getLatitude(), location.getLongitude());
-            mRoute.add(origin);
-            RouteOverlayView mRouteOverlayView = findViewById(R.id.mapOverlayView);
+//            mRoute.add(origin);
+//            RouteOverlayView mRouteOverlayView = findViewById(R.id.mapOverlayView);
+
+
+
             if(location != null) {
                 //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
                 if (!actividades.get(0).isActivity_visited()){
                     LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
+                    //TODO
+                    new FetchURL(MenuPrincipalMapa.this).execute(getUrl(origin, destination, "walking"), "walking");
                 }
                 if (!actividades.get(1).isActivity_visited() && actividades.get(0).isActivity_visited()){
                     LatLng destination = new LatLng(BasilikaLocation.getLatitude(), BasilikaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 if (!actividades.get(2).isActivity_visited() && actividades.get(1).isActivity_visited()){
                     LatLng destination = new LatLng(UdaletxeaLocation.getLatitude(), UdaletxeaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 if (!actividades.get(3).isActivity_visited() && actividades.get(2).isActivity_visited()){
                     LatLng destination = new LatLng(GozotegiaLocation.getLatitude(), GozotegiaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 if (!actividades.get(4).isActivity_visited() && actividades.get(3).isActivity_visited()){
                     LatLng destination = new LatLng(JauregiaLocation.getLatitude(), JauregiaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 if (!actividades.get(5).isActivity_visited() && actividades.get(4).isActivity_visited()){
                     LatLng destination = new LatLng(ErrebonbilloaLocation.getLatitude(), ErrebonbilloaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 if (!actividades.get(6).isActivity_visited() && actividades.get(5).isActivity_visited()){
                     LatLng destination = new LatLng(NekropoliaLocation.getLatitude(), NekropoliaLocation.getLongitude());
-                    mRoute.add(destination);
+//                    mRoute.add(destination);
                 }
                 LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
-                mRoute.add(destination);
+//                mRoute.add(destination);
 
-                map.setOnMapLoadedCallback(() -> {
-                    Route normalOverlayPolyline = new Route.Builder(mRouteOverlayView)
-                            .setRouteType(RouteOverlayView.RouteType.PATH)
-                            .setCameraPosition(map.getCameraPosition())
-                            .setProjection(map.getProjection())
-                            .setLatLngs(mRoute)
-                            .setBottomLayerColor(Color.BLUE)
-                            .setTopLayerColor(Color.CYAN)
-                            .create();
-                });
-
-                map.setOnCameraMoveListener(() -> {
-                            mRouteOverlayView.onCameraMove(map.getProjection(), map.getCameraPosition());
-                        }
-                );
+//                map.setOnMapLoadedCallback(() -> {
+//                    Route normalOverlayPolyline = new Route.Builder(mRouteOverlayView)
+//                            .setRouteType(RouteOverlayView.RouteType.PATH)
+//                            .setCameraPosition(map.getCameraPosition())
+//                            .setProjection(map.getProjection())
+//                            .setLatLngs(mRoute)
+//                            .setBottomLayerColor(Color.BLUE)
+//                            .setTopLayerColor(Color.CYAN)
+//                            .create();
+//                });
+//
+//                map.setOnCameraMoveListener(() -> {
+//                            mRouteOverlayView.onCameraMove(map.getProjection(), map.getCameraPosition());
+//                        }
+//                );
 
                 /*
                  * Solo cambiar la variable loc que es un marcador(anteriormente creado)
@@ -575,4 +584,30 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             }
         }
     };
+
+    public String getUrl(LatLng origin, LatLng destination, String directionMode){
+        // Origin of route
+        String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
+        // Destination of route
+        String str_dest = "destination=" + destination.latitude + "," + destination.longitude;
+        // Mode
+        String mode = "mode=" + directionMode;
+        // Building the parameters to the web service
+        String parameters = str_origin + "&" + str_dest + "&" + mode;
+        // Output format
+        String output = "json";
+        // Building the url to the web service
+        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "&key=" + MAPS_API_KEY;
+        return url;
+    }
+
+    //TODO
+    @Override
+    public void onTaskDone(Object... values) {
+        if (currentPolyline != null)
+            currentPolyline.remove();
+        currentPolyline = map.addPolyline((PolylineOptions) values[0]);
+    }
 }
+
+//https://www.youtube.com/watch?v=wRDLjUK8nyU
