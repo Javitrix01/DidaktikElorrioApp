@@ -3054,6 +3054,7 @@ int drawable background5 0x7f08007d
 int drawable background6 0x7f08007e
 int drawable background666 0x7f08007f
 int drawable background7 0x7f080080
+int drawable background8 0x7f080166
 int drawable backgroundblue 0x7f080081
 int drawable bird 0x7f080082
 int drawable btn_checkbox_checked_mtrl 0x7f080083
