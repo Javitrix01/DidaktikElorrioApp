@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/elorrioko_udaletxea_elorrioko_udaletxea_gernikako_arbola_plazan_kokatuta_dago_eta_xviii_mendean_eraiki_zuten_estilo_euskal_barrokoa_da_eta_asmo_urbanoa_eta_monumentala_du"
+            android:textAlignment="center"
             android:textColor="@color/black" />
     </ScrollView>
 
