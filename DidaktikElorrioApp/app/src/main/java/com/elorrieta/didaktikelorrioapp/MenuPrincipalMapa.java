@@ -1,4 +1,5 @@
 package com.elorrieta.didaktikelorrioapp;
+
 import static com.elorrieta.didaktikelorrioapp.BuildConfig.MAPS_API_KEY;
 
 import androidx.annotation.NonNull;
@@ -8,8 +9,10 @@ import androidx.core.app.ActivityCompat;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.text.LineBreaker;
 import android.location.Location;
 import android.location.LocationListener;
@@ -18,6 +21,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,9 +31,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.directionshelper.FetchURL;
+import com.elorrieta.didaktikelorrioapp.directionshelper.TaskLoadedCallback;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -54,19 +60,20 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         GoogleMap.OnMyLocationButtonClickListener,
         GoogleMap.OnMyLocationClickListener,
         OnMapReadyCallback,
-        ActivityCompat.OnRequestPermissionsResultCallback{
+        ActivityCompat.OnRequestPermissionsResultCallback,
+        TaskLoadedCallback {
 
     private Location loc;
     private LocationSource.OnLocationChangedListener mListener;
     ArrayList<String> menuEntries = new ArrayList<>();
     //localizaciones de las actividades
-    LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
+    LatLng Kurutziaga = new LatLng(43.1281365, -2.5397199);
     LatLng Basilika = new LatLng(43.1301944, -002.5425889);
     LatLng Udaletxea = new LatLng(43.1305250, -002.5420667);
     LatLng Gozotegia = new LatLng(43.1309750, -002.5432472);
     LatLng Jauregia = new LatLng(43.1306917, -002.5439056);
     LatLng Errebonbilloa = new LatLng(43.1301361, -002.5420306);
-    LatLng Nekropolia = new LatLng(	43.1399056, -002.5359750);
+    LatLng Nekropolia = new LatLng(43.1399056, -002.5359750);
     LatLng Elorrieta = new LatLng(43.28378511002439, -2.9643885432325296);
     Location KurutziagaLocation = new Location("");
     Location BasilikaLocation = new Location("");
@@ -109,7 +116,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         setContentView(R.layout.activity_menu_principal_mapa);
 
         //inicializar la API de google
-        Places.initialize(getApplicationContext(),"AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
+        Places.initialize(getApplicationContext(), "AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
 
         //poner la latitud y longitud de cada localizacion
         KurutziagaLocation.setLatitude(43.1281365);
@@ -164,21 +171,29 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.animate().translationX(0);
             lista.setVisibility(View.VISIBLE);
         });
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+        List<Activity> activities = db.activityDao().getAll();
+        for (int i = 0; i < activities.size(); i++) {
+            db.activityDao().updateActivityVisitedById(i, false);
+        }
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
 
             //TODO: DEBUG PATHS
             if (lista.getVisibility() == View.INVISIBLE) {
-                AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
-                iPATHS++;
-                if (iPATHS < 8) {
+                if (iPATHS < activities.size()) {
                     db.activityDao().updateActivityVisitedById(iPATHS, true);
-                }
-                else if (iPATHS == 8){
-                    for (int i = 0; i<8; i++){
+                } else if (iPATHS == activities.size()) {
+                    for (int i = 0; i < activities.size(); i++) {
                         db.activityDao().updateActivityVisitedById(i, false);
                     }
+                    iPATHS = 0;
+                    Toast.makeText(this, "Reiniciando caminos.", Toast.LENGTH_SHORT).show();
                 }
+                if (iPATHS != 0) {
+                    Toast.makeText(this, "Camino a la actividad " + (iPATHS + 1) + " - Visited: " + db.activityDao().isActivityVisited(iPATHS+1) + " | Actividad " + (iPATHS) + ": " + db.activityDao().isActivityVisited(iPATHS), Toast.LENGTH_SHORT).show();
+                }
+                iPATHS++;
             }
 
             //aplica la animacion para cuando desaparezca la lista
@@ -292,7 +307,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         /**
          * Recoge la url de la imagen que se quiere descargar y la convierte en un Bitmap.
          * @param urls  La url que se utiliza para conseguir el Bitmap.
-         * @return      El Bitmap que se consigue de la url.
+         * @return El Bitmap que se consigue de la url.
          */
         protected Bitmap doInBackground(String... urls) {
             String urldisplay = urls[0];
@@ -386,7 +401,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     @SuppressLint("MissingPermission")
     private void enableMyLocation() {
-         PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
+        PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
     }
 
     @Override
@@ -440,26 +455,21 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     //TODO:_______
     //PARTE QUE CONTROLA EL ZOOM DEL MAPA HACIA EL SITIO EN EL QUE ESTA EL TELEFONO
 
-    public void activate(LocationSource.OnLocationChangedListener listener)
-    {
+    public void activate(LocationSource.OnLocationChangedListener listener) {
         mListener = listener;
     }
 
-    public void deactivate()
-    {
+    public void deactivate() {
         mListener = null;
     }
 
-    public void onLocationChanged(Location location)
-    {
-        if( mListener != null )
-        {
-            mListener.onLocationChanged( location );
+    public void onLocationChanged(Location location) {
+        if (mListener != null) {
+            mListener.onLocationChanged(location);
 
             LatLngBounds bounds = this.map.getProjection().getVisibleRegion().latLngBounds;
 
-            if(!bounds.contains(new LatLng(location.getLatitude(), location.getLongitude())))
-            {
+            if (!bounds.contains(new LatLng(location.getLatitude(), location.getLongitude()))) {
                 //Move the camera to the user's location if they are off-screen!
                 map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
             }
@@ -473,6 +483,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         PermissionUtils.PermissionDeniedDialog
                 .newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
+
     private final LocationListener locationListener = new LocationListener() {
         @Override
         public void onProviderEnabled(@NonNull String provider) {
@@ -483,6 +494,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         public void onProviderDisabled(@NonNull String provider) {
 
         }
+
         @Override
         public void onLocationChanged(Location location) {
 
@@ -494,45 +506,63 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
             //crea la lista con las LatLng necesarias
 //            List<LatLng> mRoute = new ArrayList<>();
-            LatLng origin = new LatLng(location.getLatitude(), location.getLongitude());
 //            mRoute.add(origin);
 //            RouteOverlayView mRouteOverlayView = findViewById(R.id.mapOverlayView);
-
+            FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(MenuPrincipalMapa.this);
+            if (ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
+            fusedLocationClient.getLastLocation()
+                    .addOnSuccessListener(MenuPrincipalMapa.this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            // Got last known location. In some rare situations this can be null.
+                            if (location != null) {
+                                // Logic to handle location object
+                                LatLng origin = new LatLng(location.getLatitude(), location.getLongitude());
+                                //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
+                                if (!db.activityDao().isActivityVisited(0)){
+                                    String url = getUrl(origin, Kurutziaga, "walking");
+                                    new FetchURL(MenuPrincipalMapa.this).execute(url, "walking");
+                                }
+                                if (!db.activityDao().isActivityVisited(1) && db.activityDao().isActivityVisited(0)){
+                                    LatLng destination = new LatLng(BasilikaLocation.getLatitude(), BasilikaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                                if (!db.activityDao().isActivityVisited(2) && db.activityDao().isActivityVisited(1)){
+                                    LatLng destination = new LatLng(UdaletxeaLocation.getLatitude(), UdaletxeaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                                if (!db.activityDao().isActivityVisited(3) && db.activityDao().isActivityVisited(2)){
+                                    LatLng destination = new LatLng(GozotegiaLocation.getLatitude(), GozotegiaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                                if (!db.activityDao().isActivityVisited(4) && db.activityDao().isActivityVisited(3)){
+                                    LatLng destination = new LatLng(JauregiaLocation.getLatitude(), JauregiaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                                if (!db.activityDao().isActivityVisited(5) && db.activityDao().isActivityVisited(4)){
+                                    LatLng destination = new LatLng(ErrebonbilloaLocation.getLatitude(), ErrebonbilloaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                                if (!db.activityDao().isActivityVisited(6) && db.activityDao().isActivityVisited(5)){
+                                    LatLng destination = new LatLng(NekropoliaLocation.getLatitude(), NekropoliaLocation.getLongitude());
+//                    mRoute.add(destination);
+                                }
+                            }
+                        }
+                    });
 
 
             if(location != null) {
-                //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
-                if (!actividades.get(0).isActivity_visited()){
-                    LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
-//                    mRoute.add(destination);
-                    //TODO
-                    new FetchURL(MenuPrincipalMapa.this).execute(getUrl(origin, destination, "walking"), "walking");
-                }
-                if (!actividades.get(1).isActivity_visited() && actividades.get(0).isActivity_visited()){
-                    LatLng destination = new LatLng(BasilikaLocation.getLatitude(), BasilikaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                if (!actividades.get(2).isActivity_visited() && actividades.get(1).isActivity_visited()){
-                    LatLng destination = new LatLng(UdaletxeaLocation.getLatitude(), UdaletxeaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                if (!actividades.get(3).isActivity_visited() && actividades.get(2).isActivity_visited()){
-                    LatLng destination = new LatLng(GozotegiaLocation.getLatitude(), GozotegiaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                if (!actividades.get(4).isActivity_visited() && actividades.get(3).isActivity_visited()){
-                    LatLng destination = new LatLng(JauregiaLocation.getLatitude(), JauregiaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                if (!actividades.get(5).isActivity_visited() && actividades.get(4).isActivity_visited()){
-                    LatLng destination = new LatLng(ErrebonbilloaLocation.getLatitude(), ErrebonbilloaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                if (!actividades.get(6).isActivity_visited() && actividades.get(5).isActivity_visited()){
-                    LatLng destination = new LatLng(NekropoliaLocation.getLatitude(), NekropoliaLocation.getLongitude());
-//                    mRoute.add(destination);
-                }
-                LatLng destination = new LatLng(KurutziagaLocation.getLatitude(), KurutziagaLocation.getLongitude());
+
 //                mRoute.add(destination);
 
 //                map.setOnMapLoadedCallback(() -> {
@@ -557,19 +587,19 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                  * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
                 //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
-                if ((location.distanceTo(KurutziagaLocation)<25)&&(!actividades.get(6).isActivity_visited())){
+                if ((location.distanceTo(KurutziagaLocation)<25)&&(!db.activityDao().isActivityVisited(6))){
                     //inicia primera actividad
-                    if ((location.distanceTo(BasilikaLocation)<25)&&(actividades.get(0).isActivity_visited())) {
+                    if ((location.distanceTo(BasilikaLocation)<25)&&(db.activityDao().isActivityVisited(0))) {
                         //inicia segunda actividad
-                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(actividades.get(1).isActivity_visited())){
+                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(db.activityDao().isActivityVisited(1))){
                             //inicia tercera actividad
-                            if ((location.distanceTo(GozotegiaLocation)<25)&&(actividades.get(2).isActivity_visited())){
+                            if ((location.distanceTo(GozotegiaLocation)<25)&&(db.activityDao().isActivityVisited(2))){
                                 //inicia cuarta actividad
-                                if ((location.distanceTo(JauregiaLocation)<25)&&(actividades.get(3).isActivity_visited())){
+                                if ((location.distanceTo(JauregiaLocation)<25)&&(db.activityDao().isActivityVisited(3))){
                                     //inicia quinta actividad
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(actividades.get(4).isActivity_visited())){
+                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(db.activityDao().isActivityVisited(4))){
                                         //inicia sexta actividad
-                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(actividades.get(5).isActivity_visited())){
+                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(db.activityDao().isActivityVisited(5))){
                                             //inicia septima actividad
                                         }
                                     }
@@ -607,6 +637,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         if (currentPolyline != null)
             currentPolyline.remove();
         currentPolyline = map.addPolyline((PolylineOptions) values[0]);
+
     }
 }
 

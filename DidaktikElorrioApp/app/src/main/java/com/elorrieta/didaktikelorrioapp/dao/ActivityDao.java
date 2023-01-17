@@ -35,4 +35,8 @@ public interface ActivityDao {
     //actualizar el estado de visita de una actividad dependiendo de su id
     @Query("UPDATE activity SET activity_visited = :activity_visited WHERE id = :id")
     void updateActivityVisitedById(int id, boolean activity_visited);
+
+    //seleccionar si una actividad esta visitada o no
+    @Query("SELECT activity_visited FROM activity WHERE id = :id")
+    boolean isActivityVisited(int id);
 }

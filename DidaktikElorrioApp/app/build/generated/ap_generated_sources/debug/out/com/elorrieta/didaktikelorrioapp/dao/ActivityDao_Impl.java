@@ -306,6 +306,30 @@ public final class ActivityDao_Impl implements ActivityDao {
     }
   }
 
+  @Override
+  public boolean isActivityVisited(final int id) {
+    final String _sql = "SELECT activity_visited FROM activity WHERE id = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, id);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final boolean _result;
+      if(_cursor.moveToFirst()) {
+        final int _tmp;
+        _tmp = _cursor.getInt(0);
+        _result = _tmp != 0;
+      } else {
+        _result = false;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }
