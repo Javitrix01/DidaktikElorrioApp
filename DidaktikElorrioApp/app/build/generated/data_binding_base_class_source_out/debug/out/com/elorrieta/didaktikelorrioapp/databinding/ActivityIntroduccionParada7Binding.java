@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -36,6 +37,9 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   public final ImageView imageView18;
 
   @NonNull
+  public final LinearLayout linearLayout13;
+
+  @NonNull
   public final SeekBar seekBar4;
 
   @NonNull
@@ -43,13 +47,14 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
 
   private ActivityIntroduccionParada7Binding(@NonNull ConstraintLayout rootView,
       @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP7, @NonNull Button btnSonidoP1,
-      @NonNull ImageView imageView18, @NonNull SeekBar seekBar4,
-      @NonNull TextView textViewIntroNecropolis) {
+      @NonNull ImageView imageView18, @NonNull LinearLayout linearLayout13,
+      @NonNull SeekBar seekBar4, @NonNull TextView textViewIntroNecropolis) {
     this.rootView = rootView;
     this.SVNecropolis = SVNecropolis;
     this.btnJarraituP7 = btnJarraituP7;
     this.btnSonidoP1 = btnSonidoP1;
     this.imageView18 = imageView18;
+    this.linearLayout13 = linearLayout13;
     this.seekBar4 = seekBar4;
     this.textViewIntroNecropolis = textViewIntroNecropolis;
   }
@@ -105,6 +110,12 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout13;
+      LinearLayout linearLayout13 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout13 == null) {
+        break missingId;
+      }
+
       id = R.id.seekBar4;
       SeekBar seekBar4 = ViewBindings.findChildViewById(rootView, id);
       if (seekBar4 == null) {
@@ -118,7 +129,8 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
       }
 
       return new ActivityIntroduccionParada7Binding((ConstraintLayout) rootView, SVNecropolis,
-          btnJarraituP7, btnSonidoP1, imageView18, seekBar4, textViewIntroNecropolis);
+          btnJarraituP7, btnSonidoP1, imageView18, linearLayout13, seekBar4,
+          textViewIntroNecropolis);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -14,7 +14,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_mapa_elorrio_poner_nombres);
-
+        getSupportActionBar().hide();
 
         EditText et5=findViewById(R.id.et_5);
         EditText et3=findViewById(R.id.et_3);

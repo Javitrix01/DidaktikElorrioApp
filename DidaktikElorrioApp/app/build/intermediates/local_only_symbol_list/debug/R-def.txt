@@ -50,11 +50,11 @@ drawable background1
 drawable background2
 drawable background4
 drawable background5
+drawable background6
 drawable background666
 drawable background7
 drawable backgroundblue
 drawable bird
-drawable boxata_removebg_preview
 drawable card1500
 drawable card1501
 drawable card1502
@@ -367,6 +367,7 @@ id linearLayout
 id linearLayout10
 id linearLayout11
 id linearLayout12
+id linearLayout13
 id linearLayout2
 id linearLayout3
 id linearLayout4

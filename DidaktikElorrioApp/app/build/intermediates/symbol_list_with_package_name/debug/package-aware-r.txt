@@ -3052,11 +3052,11 @@ drawable background1
 drawable background2
 drawable background4
 drawable background5
+drawable background6
 drawable background666
 drawable background7
 drawable backgroundblue
 drawable bird
-drawable boxata_removebg_preview
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3737,6 +3737,7 @@ id linearLayout
 id linearLayout10
 id linearLayout11
 id linearLayout12
+id linearLayout13
 id linearLayout2
 id linearLayout3
 id linearLayout4
