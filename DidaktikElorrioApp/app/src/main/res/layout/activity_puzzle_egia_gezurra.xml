@@ -270,7 +270,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/BaieztatuEgiaGezurra"
         android:layout_width="185dp"
         android:layout_height="49dp"
         android:text="@string/baieztatu"
