@@ -8,16 +8,12 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
-import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.room.Room;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
@@ -35,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //oculta la barra de arriba
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) { getSupportActionBar().hide(); }
 
         final ProgressBar progressBar = findViewById(R.id.progressBar3);
 
@@ -74,11 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 permisos = false;
             }
         } while (permisos);
-
-//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//            Toast.makeText(this, "Ez dira kokapen-baimenak eman, aplikazioak ez du behar bezala funtzionatuko.", Toast.LENGTH_LONG).show();
-//            startActivity(new Intent(MainActivity.this, MainPuzzle.class));
-//        }
 
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
@@ -136,61 +127,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
-
-
-
-    //TODO: CÓDIGO DE PRUEBA DE LA BASE DE DATOS - NO BORRAR
-    /*
-        //asignar el textview a la variable por el id
-        textViewDB = findViewById(R.id.textViewDB);
-
-        //crear una lista de usuarios para poder manejarla mas tarde
-        List<User> userList;
-
-        //crear los objetos user
-        User user1 = new User(1, "nombre1", "apellido1", "email1@email.com");
-
-
-        //User user2 = new User(2, "nombre2", "apellido2", "email2@email.com");
-        //User user3 = new User(3, "nombre3", "apellido3", "email3@email.com");
-
-        //crear una instancia de la base de datos
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "pruebaDB").allowMainThreadQueries().build(); // <-- poner esto para que permita realizar consultas
-
-        //insertar todos los usuarios
-
-            //db.userDao().insertAll(user1, user2, user3);
-
-
-        //borrar un usuario de la base de datos
-            db.userDao().delete(user1);
-
-        //recuperar usuarios de la base de datos
-        userList = db.userDao().getAll();
-
-        //imprimirlo por pantalla
-            for (User user : userList) {
-            textViewDB.setText(textViewDB.getText()+user.toString()+"\n");
-        }
-    */
-
-    /*
-        COMO HACER UNA RELACION ENTRE DOS TABLAS
-
-        En una entidad intermedia que se crea por la relacion de las otras 2 entidades ->
-        @Entity(primaryKeys = {"id1","id2"])
-        Para hacer consultas entre entidades
-        @Query("SELECT * FROM entidad1 INNER JOIN entidad2 ON entidad2.id = entidad1.id")
-        List<entidad1> query();
-    */
-
-    /*
-        Comentar las creadciones de los objetos de la base de datos y sus inserts
-        Exportar la base de datos -> meterla en assets ->
-        en el archivo Appdatabase -> añadir .createFromAsset("path.db")
-        Appdatabase appDatabase = Room.database
-     */
 }
