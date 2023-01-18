@@ -3291,6 +3291,7 @@ font fontdiner_swanky
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BaieztatuEgiaGezurra
 id CTRL
 id Choose
 id FUNCTION
@@ -3485,6 +3486,7 @@ id btn2
 id btn3
 id btn4
 id btnBaieztatuNombresElorrio
+id btnCamara
 id btnJarraituCrucesCnombre
 id btnJarraituErre
 id btnJarraituP1
@@ -3504,7 +3506,6 @@ id btnitzuli
 id button
 id button2
 id button3
-id button7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3691,6 +3692,7 @@ id imageView13
 id imageView14
 id imageView15
 id imageView16
+id imageView17
 id imageView18
 id imageView19
 id imageView2
@@ -4266,6 +4268,7 @@ layout activity_mapa_cruces_con_nombre
 layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
+layout activity_mostrar_fotos_basilica
 layout activity_puzzle
 layout activity_puzzle_egia_gezurra
 layout activity_puzzle_mapa_elorrio_con_nombres
@@ -4436,6 +4439,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btnCamara
 string button
 string buttonSound
 string character_counter_content_description

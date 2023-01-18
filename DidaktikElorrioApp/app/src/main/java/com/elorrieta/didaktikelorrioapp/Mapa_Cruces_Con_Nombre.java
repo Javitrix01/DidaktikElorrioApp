@@ -10,5 +10,6 @@ public class Mapa_Cruces_Con_Nombre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa_cruces_con_nombre);
+        getSupportActionBar().hide();
     }
 }

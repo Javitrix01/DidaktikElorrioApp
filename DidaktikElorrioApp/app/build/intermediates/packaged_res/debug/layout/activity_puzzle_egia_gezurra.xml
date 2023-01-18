@@ -4,13 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background8"
     tools:context=".Puzzle_Egia_Gezurra">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="405dp"
+        android:layout_height="522dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/rounded_button" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="404dp"
-        android:layout_height="561dp"
+        android:layout_width="386dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -35,6 +49,7 @@
                     android:id="@+id/P1E"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                 <CheckBox
@@ -42,6 +57,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -54,6 +70,7 @@
                     android:id="@+id/P2E"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -61,6 +78,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -73,6 +91,7 @@
                     android:id="@+id/P3E"
                     android:layout_width="83dp"
                     android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -80,6 +99,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -92,6 +112,7 @@
                     android:id="@+id/P4E"
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -99,6 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -111,6 +133,7 @@
                     android:id="@+id/P5E"
                     android:layout_width="84dp"
                     android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -118,6 +141,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -130,6 +154,7 @@
                     android:id="@+id/P6E"
                     android:layout_width="82dp"
                     android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -137,6 +162,7 @@
                     android:layout_width="0dp"
                     android:layout_height="66dp"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -149,6 +175,7 @@
                     android:id="@+id/P7E"
                     android:layout_width="84dp"
                     android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -156,6 +183,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -168,6 +196,7 @@
                     android:id="@+id/P8E"
                     android:layout_width="83dp"
                     android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <CheckBox
@@ -175,6 +204,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColorHint="@color/black"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
@@ -184,28 +214,30 @@
             android:id="@+id/linearLayout4"
             android:layout_width="122dp"
             android:layout_height="35dp"
+            android:layout_marginStart="276dp"
             android:layout_marginBottom="7dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.942"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.625">
+            app:layout_constraintVertical_bias="1.0">
 
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/e" />
+                android:text="@string/e"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/g" />
+                android:text="@string/g"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -223,59 +255,69 @@
                 android:id="@+id/textViewGaldera1"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="@string/argi_etako_nekropolia" />
+                android:text="@string/argi_etako_nekropolia"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="@string/argi_etako_nekropolia_erromantikoa" />
+                android:text="@string/argi_etako_nekropolia_erromantikoa"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera3"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="@string/v_eta_x_mendeen_eraiki_zen" />
+                android:text="@string/v_eta_x_mendeen_eraiki_zen"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera4"
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
-                android:text="@string/_22_hilobik_osatzen_dute_nekropolia" />
+                android:text="@string/_22_hilobik_osatzen_dute_nekropolia"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera5"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="@string/bisigodoak_hilobiak_egin_zituzten" />
+                android:text="@string/bisigodoak_hilobiak_egin_zituzten"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera6"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
-                android:text="@string/hilobiak_3_zatitan_eginda" />
+                android:text="@string/hilobiak_3_zatitan_eginda"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera7"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:text="@string/ingelesezko_inskripzioak" />
+                android:text="@string/ingelesezko_inskripzioak"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textViewGaldera8"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="@string/estelak_hilobiak_baino_zaharragoak_dira" />
+                android:text="@string/estelak_hilobiak_baino_zaharragoak_dira"
+                android:textColor="@color/black" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/BaieztatuEgiaGezurra"
         android:layout_width="185dp"
         android:layout_height="49dp"
+        android:layout_marginBottom="76dp"
         android:text="@string/baieztatu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 

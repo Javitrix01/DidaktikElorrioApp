@@ -10,5 +10,6 @@ public class Puzzle_Pasteleria extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_pasteleria);
+        getSupportActionBar().hide();
     }
 }

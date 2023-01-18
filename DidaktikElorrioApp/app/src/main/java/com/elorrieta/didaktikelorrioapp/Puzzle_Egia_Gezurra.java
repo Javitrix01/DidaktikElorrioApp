@@ -15,7 +15,7 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_egia_gezurra);
-
+        getSupportActionBar().hide();
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button baieztatu = findViewById(R.id.BaieztatuEgiaGezurra);

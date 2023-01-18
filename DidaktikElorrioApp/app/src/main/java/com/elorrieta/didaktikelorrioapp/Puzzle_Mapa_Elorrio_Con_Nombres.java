@@ -10,5 +10,6 @@ public class Puzzle_Mapa_Elorrio_Con_Nombres extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_mapa_elorrio_con_nombres);
+        getSupportActionBar().hide();
     }
 }

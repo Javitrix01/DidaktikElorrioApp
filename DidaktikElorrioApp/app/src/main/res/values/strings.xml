@@ -132,5 +132,6 @@
     <string name="arespakotxaga_azkarraga">Arespakotxaga Azkarraga</string>
     <string name="olazabal_jauregia_edo_modet">Olazabal Jauregia edo Modet</string>
     <string name="urkizu_aldatsekua_jauregia">Urkizu Aldatsekua Jauregia</string>
+    <string name="btnCamara">btnCamara</string>
 
 </resources>
