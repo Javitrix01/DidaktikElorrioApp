@@ -107,7 +107,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         setContentView(R.layout.activity_menu_principal_mapa);
 
         //inicializar la API de google
-        Places.initialize(getApplicationContext(), "AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
+        Places.initialize(getApplicationContext(), MAPS_API_KEY);
 
         //poner la latitud y longitud de cada localizacion
         KurutziagaLocation.setLatitude(43.1281365);
@@ -160,27 +160,33 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.animate().translationX(0);
             lista.setVisibility(View.VISIBLE);
         });
+
+        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
         List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
         for (int i = 0; i < activities.size(); i++) {
-            db.activityDao().updateActivityVisitedById(i, false);
+            db.activityDao().updateActivityVisitedById((i+1), false);
         }
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
 
             //TODO: DEBUG PATHS
             if (lista.getVisibility() == View.INVISIBLE) {
-                if ((iPATHS-1) < activities.size()) {
-                    db.activityDao().updateActivityVisitedById(iPATHS, true);
-                } else if ((iPATHS-1) == activities.size()) {
+                if (iPATHS < 6){
+                    db.activityDao().updateActivityVisitedById((iPATHS), true);
+                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
+                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+                }
+                if (iPATHS == 6){
+                    db.activityDao().updateActivityVisitedById(6, true);
+                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+                }
+                if (iPATHS > 6){
+                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
                     for (int i = 0; i < activities.size(); i++) {
                         db.activityDao().updateActivityVisitedById((i+1), false);
                     }
-                    iPATHS = 0;
-                    Toast.makeText(this, "Reiniciando caminos.", Toast.LENGTH_SHORT).show();
-                }
-                if (iPATHS != 1 && iPATHS != 0) {
-                    Toast.makeText(this, "Camino a la actividad " + (iPATHS) + " - Visited: " + db.activityDao().isActivityVisited(iPATHS) + " | Actividad " + (iPATHS-1) + ": " + db.activityDao().isActivityVisited(iPATHS-1), Toast.LENGTH_SHORT).show();
+                    iPATHS = 1;
                 }
                 iPATHS++;
             }
@@ -469,25 +475,25 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                             map.animateCamera(CameraUpdateFactory.newLatLng(origin));
                             String url = "";
                             //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
-                            if (!db.activityDao().isActivityVisited(0)) {
+                            if (!db.activityDao().isActivityVisited(7) && !db.activityDao().isActivityVisited(1)) {
                                 url = getUrl(origin, Kurutziaga, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(1) && db.activityDao().isActivityVisited(0)) {
+                            if (!db.activityDao().isActivityVisited(2) && db.activityDao().isActivityVisited(1)) {
                                 url = getUrl(origin, Basilika, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(2) && db.activityDao().isActivityVisited(1)) {
+                            if (!db.activityDao().isActivityVisited(3) && db.activityDao().isActivityVisited(2)) {
                                 url = getUrl(origin, Udaletxea, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(3) && db.activityDao().isActivityVisited(2)) {
+                            if (!db.activityDao().isActivityVisited(4) && db.activityDao().isActivityVisited(3)) {
                                 url = getUrl(origin, Gozotegia, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(4) && db.activityDao().isActivityVisited(3)) {
+                            if (!db.activityDao().isActivityVisited(5) && db.activityDao().isActivityVisited(4)) {
                                 url = getUrl(origin, Jauregia, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(5) && db.activityDao().isActivityVisited(4)) {
+                            if (!db.activityDao().isActivityVisited(6) && db.activityDao().isActivityVisited(5)) {
                                 url = getUrl(origin, Errebonbilloa, "walking");
                             }
-                            if (!db.activityDao().isActivityVisited(6) && db.activityDao().isActivityVisited(5)) {
+                            if (!db.activityDao().isActivityVisited(7) && db.activityDao().isActivityVisited(6)) {
                                 url = getUrl(origin, Nekropolia, "walking");
                             }
                             //hace la peticion a la API para conseguir la ruta
@@ -506,19 +512,19 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                  */
 
                 //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
-                if ((location.distanceTo(KurutziagaLocation)<25)&&(!db.activityDao().isActivityVisited(6))){
+                if ((location.distanceTo(KurutziagaLocation)<20)&&(!db.activityDao().isActivityVisited(7))){
                     //inicia primera actividad
-                    if ((location.distanceTo(BasilikaLocation)<25)&&(db.activityDao().isActivityVisited(0))) {
+                    if ((location.distanceTo(BasilikaLocation)<20)&&(db.activityDao().isActivityVisited(1))) {
                         //inicia segunda actividad
-                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(db.activityDao().isActivityVisited(1))){
+                        if ((location.distanceTo(UdaletxeaLocation)<20)&&(db.activityDao().isActivityVisited(2))){
                             //inicia tercera actividad
-                            if ((location.distanceTo(GozotegiaLocation)<25)&&(db.activityDao().isActivityVisited(2))){
+                            if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))){
                                 //inicia cuarta actividad
-                                if ((location.distanceTo(JauregiaLocation)<25)&&(db.activityDao().isActivityVisited(3))){
+                                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))){
                                     //inicia quinta actividad
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(db.activityDao().isActivityVisited(4))){
+                                    if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))){
                                         //inicia sexta actividad
-                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(db.activityDao().isActivityVisited(5))){
+                                        if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))){
                                             //inicia septima actividad
                                         }
                                     }
