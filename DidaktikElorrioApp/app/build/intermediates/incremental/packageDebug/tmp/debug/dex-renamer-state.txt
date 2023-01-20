@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Thu Jan 19 14:23:06 CET 2023
+=======
+#Thu Jan 19 13:37:13 CET 2023
+>>>>>>> origin/Aitor_11_01_2023_DU
 path.4=1/classes.dex
 path.3=15/classes.dex
 path.2=12/classes.dex

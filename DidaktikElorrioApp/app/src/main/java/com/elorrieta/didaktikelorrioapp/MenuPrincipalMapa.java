@@ -1,4 +1,7 @@
 package com.elorrieta.didaktikelorrioapp;
+
+import static com.elorrieta.didaktikelorrioapp.BuildConfig.MAPS_API_KEY;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -6,6 +9,7 @@ import androidx.core.app.ActivityCompat;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -18,41 +22,31 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+import com.elorrieta.didaktikelorrioapp.directionshelper.FetchURL;
+import com.elorrieta.didaktikelorrioapp.directionshelper.TaskLoadedCallback;
 import com.elorrieta.didaktikelorrioapp.entities.Activity;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.CancellationToken;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.Places;
-import com.google.android.material.snackbar.Snackbar;
-import com.squareup.picasso.Picasso;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,19 +54,18 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         GoogleMap.OnMyLocationButtonClickListener,
         GoogleMap.OnMyLocationClickListener,
         OnMapReadyCallback,
-        ActivityCompat.OnRequestPermissionsResultCallback{
+        ActivityCompat.OnRequestPermissionsResultCallback,
+        TaskLoadedCallback {
 
     private Location loc;
-    private LocationSource.OnLocationChangedListener mListener;
-    ArrayList<String> menuEntries = new ArrayList<>();
     //localizaciones de las actividades
-    LatLng Kurutziaga = new LatLng(43.1281365,-2.5397199);
+    LatLng Kurutziaga = new LatLng(43.1281365, -2.5397199);
     LatLng Basilika = new LatLng(43.1301944, -002.5425889);
     LatLng Udaletxea = new LatLng(43.1305250, -002.5420667);
     LatLng Gozotegia = new LatLng(43.1309750, -002.5432472);
     LatLng Jauregia = new LatLng(43.1306917, -002.5439056);
     LatLng Errebonbilloa = new LatLng(43.1301361, -002.5420306);
-    LatLng Nekropolia = new LatLng(	43.1399056, -002.5359750);
+    LatLng Nekropolia = new LatLng(43.1399056, -002.5359750);
     LatLng Elorrieta = new LatLng(43.28378511002439, -2.9643885432325296);
     Location KurutziagaLocation = new Location("");
     Location BasilikaLocation = new Location("");
@@ -82,6 +75,10 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     Location ErrebonbilloaLocation = new Location("");
     Location NekropoliaLocation = new Location("");
     Location ElorrietaLocation = new Location("");
+    //variables para la ruta
+    Polyline currentPolyline;
+
+    int iPATHS = 1;
 
 
     /**
@@ -99,19 +96,18 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     private boolean permissionDenied = false;
 
     private GoogleMap map;
-    private GoogleMap infoMap;
 
     @SuppressLint({"MissingPermission", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         enableMyLocation();
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3, 1, locationListener);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_mapa);
 
         //inicializar la API de google
-        Places.initialize(getApplicationContext(),"AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc");
+        Places.initialize(getApplicationContext(), MAPS_API_KEY);
 
         //poner la latitud y longitud de cada localizacion
         KurutziagaLocation.setLatitude(43.1281365);
@@ -140,10 +136,10 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         //MAPA PRINCIPAL
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapPRUEBA);
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null ) { mapFragment.getMapAsync(this); }
 
         //oculta la barra de arriba
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) { getSupportActionBar().hide(); }
 
         //asignaciones de elementos del layout a variables
         Button botonAbrirMenu = findViewById(R.id.btnMenuActividades);
@@ -164,12 +160,43 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.animate().translationX(0);
             lista.setVisibility(View.VISIBLE);
         });
+
+        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
+        for (int i = 0; i < activities.size(); i++) {
+            db.activityDao().updateActivityVisitedById((i+1), false);
+        }
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
+
+            //TODO: DEBUG PATHS
+            if (lista.getVisibility() == View.INVISIBLE) {
+                if (iPATHS < 6){
+                    db.activityDao().updateActivityVisitedById((iPATHS), true);
+                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
+                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+                }
+                if (iPATHS == 6){
+                    db.activityDao().updateActivityVisitedById(6, true);
+                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+                }
+                if (iPATHS > 6){
+                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
+                    for (int i = 0; i < activities.size(); i++) {
+                        db.activityDao().updateActivityVisitedById((i+1), false);
+                    }
+                    iPATHS = 1;
+                }
+                iPATHS++;
+            }
+
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
         });
+
+
     }
 
     /**
@@ -199,66 +226,58 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         lista.setAdapter(arrayAdapter);
 
         //crea un escuchador para que se pueda mostrar la informacion de las actividades cuando se hace click en ellas
-        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //aplica la animacion para cuando desaparezca la lista
-                lista.animate().translationX(-200);
-                lista.setVisibility(View.INVISIBLE);
-                //desactiva los botones y opciones del mapa
-                botonAbrirMapa.setClickable(false);
-                botonAbrirMenu.setClickable(false);
-                map.getUiSettings().setScrollGesturesEnabled(false);
-                map.getUiSettings().setZoomGesturesEnabled(false);
-                map.getUiSettings().setMyLocationButtonEnabled(false);
-                map.getUiSettings().setRotateGesturesEnabled(false);
+        lista.setOnItemClickListener((adapterView, view, i, l) -> {
+            //aplica la animacion para cuando desaparezca la lista
+            lista.animate().translationX(-200);
+            lista.setVisibility(View.INVISIBLE);
+            //desactiva los botones y opciones del mapa
+            botonAbrirMapa.setClickable(false);
+            botonAbrirMenu.setClickable(false);
+            map.getUiSettings().setScrollGesturesEnabled(false);
+            map.getUiSettings().setZoomGesturesEnabled(false);
+            map.getUiSettings().setMyLocationButtonEnabled(false);
+            map.getUiSettings().setRotateGesturesEnabled(false);
 
-                //abre la nueva actividad
-                FrameLayout rootLayout = findViewById(android.R.id.content);
-                View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
+            //abre la nueva actividad
+            FrameLayout rootLayout = findViewById(android.R.id.content);
+            View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
 
-                //asigna los TextView
-                TextView tvTitulo = findViewById(R.id.textViewTituloAct);
-                TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
+            //asigna los TextView
+            TextView tvTitulo = findViewById(R.id.textViewTituloAct);
+            TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
 
-                //añade la informacion
-                tvTitulo.setText(actividades.get(i).getActivity_name());
-                tvDescripcion.setText(actividades.get(i).getActivity_description());
+            //añade la informacion
+            tvTitulo.setText(actividades.get(i).getActivity_name());
+            tvDescripcion.setText(actividades.get(i).getActivity_description());
 
-                //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
-                }
-
-                //latitud y longitud del mapa
-                ImageView mapaInfoActividad = findViewById(R.id.infoMap);
-                LinearLayout layoutInfoActividad = findViewById(R.id.linearLayout6);
-                String lat = actividades.get(i).getActivity_coords_lat();
-                String lng = actividades.get(i).getActivity_coords_long();
-                String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
-                //MAPA INFO
-                new DownloadImageTask(mapaInfoActividad)
-                        .execute(url);
-
-
-                Button botonVolver = findViewById(R.id.btnitzuli);
-                botonVolver.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //activa los botones
-                        botonAbrirMapa.setClickable(true);
-                        botonAbrirMenu.setClickable(true);
-                        map.getUiSettings().setScrollGesturesEnabled(true);
-                        map.getUiSettings().setZoomGesturesEnabled(true);
-                        map.getUiSettings().setMyLocationButtonEnabled(true);
-                        map.getUiSettings().setRotateGesturesEnabled(true);
-
-                        //esconde la actividad
-                        FrameLayout rootLayout = findViewById(android.R.id.content);
-                        rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
-                    }
-                });
+            //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
             }
+
+            //latitud y longitud del mapa
+            ImageView mapaInfoActividad = findViewById(R.id.infoMap);
+            String lat = actividades.get(i).getActivity_coords_lat();
+            String lng = actividades.get(i).getActivity_coords_long();
+            String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+            //MAPA INFO
+            new DownloadImageTask(mapaInfoActividad)
+                    .execute(url);
+
+
+            Button botonVolver = findViewById(R.id.btnitzuli);
+            botonVolver.setOnClickListener(view1 -> {
+                //activa los botones
+                botonAbrirMapa.setClickable(true);
+                botonAbrirMenu.setClickable(true);
+                map.getUiSettings().setScrollGesturesEnabled(true);
+                map.getUiSettings().setZoomGesturesEnabled(true);
+                map.getUiSettings().setMyLocationButtonEnabled(true);
+                map.getUiSettings().setRotateGesturesEnabled(true);
+
+                //esconde la actividad
+                rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
+            });
         });
     }
 
@@ -266,10 +285,19 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
 
+        /**
+         * Selecciona la imagen Bitmap para ponerla en un ImageView.
+         * @param bmImage   Imagen Bitmap que se quiere utilizar.
+         */
         public DownloadImageTask(ImageView bmImage) {
             this.bmImage = bmImage;
         }
 
+        /**
+         * Recoge la url de la imagen que se quiere descargar y la convierte en un Bitmap.
+         * @param urls  La url que se utiliza para conseguir el Bitmap.
+         * @return El Bitmap que se consigue de la url.
+         */
         protected Bitmap doInBackground(String... urls) {
             String urldisplay = urls[0];
             Bitmap mIcon11 = null;
@@ -283,6 +311,10 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             return mIcon11;
         }
 
+        /**
+         * Coloca el Bitmap en el Imageview seleccionado.
+         * @param result    El Bitmap que se quiere colocar.
+         */
         protected void onPostExecute(Bitmap result) {
             bmImage.setImageBitmap(result);
         }
@@ -330,7 +362,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 .position(Elorrieta)
                 .title("Elorrieta"));
         map.moveCamera(CameraUpdateFactory.newLatLng(Kurutziaga));
-        map.setMapType(googleMap.MAP_TYPE_HYBRID);
+        map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setOnMyLocationButtonClickListener(this);
         map.setOnMyLocationClickListener(this);
 
@@ -338,16 +370,13 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         FusedLocationProviderClient fusedLocationProviderClient;
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         fusedLocationProviderClient.getLastLocation()
-                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
-                    @Override
-                    public void onSuccess(Location location) {
-                        // Got last known location. In some rare situations this can be null.
-                        if (location != null) {
-                            // Logic to handle location object
-                            float zoom = 18.0f; //el valor maximo es 21!!
-                            LatLng lastKnownLatLng = new LatLng(location.getLatitude(), location.getLongitude());
-                            map.moveCamera(CameraUpdateFactory.newLatLngZoom(lastKnownLatLng, zoom));
-                        }
+                .addOnSuccessListener(this, location -> {
+                    // Got last known location. In some rare situations this can be null.
+                    if (location != null) {
+                        // Logic to handle location object
+                        float zoom = 18.0f; //el valor maximo es 21!!
+                        LatLng lastKnownLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(lastKnownLatLng, zoom));
                     }
                 });
     }
@@ -358,7 +387,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
     @SuppressLint("MissingPermission")
     private void enableMyLocation() {
-         PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
+        PermissionUtils.requestLocationPermissions(this, LOCATION_PERMISSION_REQUEST_CODE, true);
     }
 
     @Override
@@ -409,35 +438,6 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         }
     }
 
-    //TODO:_______
-    //PARTE QUE CONTROLA EL ZOOM DEL MAPA HACIA EL SITIO EN EL QUE ESTA EL TELEFONO
-
-    public void activate(LocationSource.OnLocationChangedListener listener)
-    {
-        mListener = listener;
-    }
-
-    public void deactivate()
-    {
-        mListener = null;
-    }
-
-    public void onLocationChanged(Location location)
-    {
-        if( mListener != null )
-        {
-            mListener.onLocationChanged( location );
-
-            LatLngBounds bounds = this.map.getProjection().getVisibleRegion().latLngBounds;
-
-            if(!bounds.contains(new LatLng(location.getLatitude(), location.getLongitude())))
-            {
-                //Move the camera to the user's location if they are off-screen!
-                map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
-            }
-        }
-    }
-
     /**
      * Displays a dialog with error message explaining that the location permission is missing.
      */
@@ -445,6 +445,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         PermissionUtils.PermissionDeniedDialog
                 .newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
+
     private final LocationListener locationListener = new LocationListener() {
         @Override
         public void onProviderEnabled(@NonNull String provider) {
@@ -455,35 +456,75 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         public void onProviderDisabled(@NonNull String provider) {
 
         }
+
         @Override
         public void onLocationChanged(Location location) {
 
             //crear una instancia de la base de datos
             AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
-            //coge todas las actividades
-            List<Activity> actividades;
-            actividades = db.activityDao().getAll();
+
+            FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(MenuPrincipalMapa.this);
+            if (ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) { return; }
+
+            fusedLocationClient.getLastLocation()
+                    .addOnSuccessListener(MenuPrincipalMapa.this, location1 -> {
+                        // Got last known location. In some rare situations this can be null.
+                        if (location1 != null) {
+                            // Logic to handle location object
+                            LatLng origin = new LatLng(location1.getLatitude(), location1.getLongitude());
+                            map.animateCamera(CameraUpdateFactory.newLatLng(origin));
+                            String url = "";
+                            //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
+                            if (!db.activityDao().isActivityVisited(7) && !db.activityDao().isActivityVisited(1)) {
+                                url = getUrl(origin, Kurutziaga, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(2) && db.activityDao().isActivityVisited(1)) {
+                                url = getUrl(origin, Basilika, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(3) && db.activityDao().isActivityVisited(2)) {
+                                url = getUrl(origin, Udaletxea, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(4) && db.activityDao().isActivityVisited(3)) {
+                                url = getUrl(origin, Gozotegia, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(5) && db.activityDao().isActivityVisited(4)) {
+                                url = getUrl(origin, Jauregia, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(6) && db.activityDao().isActivityVisited(5)) {
+                                url = getUrl(origin, Errebonbilloa, "walking");
+                            }
+                            if (!db.activityDao().isActivityVisited(7) && db.activityDao().isActivityVisited(6)) {
+                                url = getUrl(origin, Nekropolia, "walking");
+                            }
+                            //hace la peticion a la API para conseguir la ruta
+                            if (!url.isEmpty()) {
+                                new FetchURL(MenuPrincipalMapa.this).execute(url, "walking");
+                            }
+                        }
+                    });
 
             if(location != null) {
+
                 /*
                  * Solo cambiar la variable loc que es un marcador(anteriormente creado)
                  * la comparativa es la distancia al marcador ej: 10 es en metros
                  * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
+
                 //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
-                if ((location.distanceTo(KurutziagaLocation)<25)&&(!actividades.get(6).isActivity_visited())){
+                if ((location.distanceTo(KurutziagaLocation)<20)&&(!db.activityDao().isActivityVisited(7))){
                     //inicia primera actividad
-                    if ((location.distanceTo(BasilikaLocation)<25)&&(actividades.get(0).isActivity_visited())) {
+                    if ((location.distanceTo(BasilikaLocation)<20)&&(db.activityDao().isActivityVisited(1))) {
                         //inicia segunda actividad
-                        if ((location.distanceTo(UdaletxeaLocation)<25)&&(actividades.get(1).isActivity_visited())){
+                        if ((location.distanceTo(UdaletxeaLocation)<20)&&(db.activityDao().isActivityVisited(2))){
                             //inicia tercera actividad
-                            if ((location.distanceTo(GozotegiaLocation)<25)&&(actividades.get(2).isActivity_visited())){
+                            if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))){
                                 //inicia cuarta actividad
-                                if ((location.distanceTo(JauregiaLocation)<25)&&(actividades.get(3).isActivity_visited())){
+                                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))){
                                     //inicia quinta actividad
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<25)&&(actividades.get(4).isActivity_visited())){
+                                    if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))){
                                         //inicia sexta actividad
-                                        if ((location.distanceTo(NekropoliaLocation)<25)&&(actividades.get(5).isActivity_visited())){
+                                        if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))){
                                             //inicia septima actividad
                                         }
                                     }
@@ -491,11 +532,41 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                             }
                         }
                     }
-
-                } else {
-                    //nada
                 }
             }
         }
     };
+
+    /**
+     * Función que recoge el punto de origen y destino de la ruta junto a sus parametros y saca la url para hacer la petición a la API
+     * @param origin        Objeto LatLng que contiene la posición de origen.
+     * @param destination   Objeto LatLng que contiene la posición de destino.
+     * @param directionMode String que contiene el modo de desplazamiento que se va a utilizar.
+     * @return              La url con todos los parametros para hacer la petición a la API.
+     */
+    public String getUrl(LatLng origin, LatLng destination, String directionMode){
+        // Origin of route
+        String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
+        // Destination of route
+        String str_dest = "destination=" + destination.latitude + "," + destination.longitude;
+        // Mode
+        String mode = "mode=" + directionMode;
+        // Building the parameters to the web service
+        String parameters = str_origin + "&" + str_dest + "&" + mode;
+        // Output format
+        String output = "json";
+        // Building the url to the web service
+        return "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "&key=" + MAPS_API_KEY;
+    }
+
+    @Override
+    public void onTaskDone(Object... values) {
+        if (currentPolyline != null)
+            currentPolyline.remove();
+
+        PolylineOptions polylineOptions;
+        polylineOptions = (PolylineOptions) values[0];
+        polylineOptions.color(Color.CYAN);
+        currentPolyline = map.addPolyline(polylineOptions);
+    }
 }

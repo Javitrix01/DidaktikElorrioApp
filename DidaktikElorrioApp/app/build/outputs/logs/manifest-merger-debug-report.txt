@@ -35,6 +35,7 @@ MERGED from [androidx.navigation:navigation-fragment:2.5.2] C:\Users\in2dm3\.gra
 MERGED from [androidx.fragment:fragment-ktx:1.5.2] C:\Users\in2dm3\.gradle\caches\transforms-3\654e0e262117e2dbbf8474a354f9430b\transformed\fragment-ktx-1.5.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.5.2] C:\Users\in2dm3\.gradle\caches\transforms-3\6b750899e36e7502f6c1331a15be070a\transformed\navigation-runtime-2.5.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\in2dm3\.gradle\caches\transforms-3\162f79e0403f79b8ab6a9131fd413a01\transformed\activity-ktx-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.amalChandran:trail-android:v1.51] C:\Users\in2dm3\.gradle\caches\transforms-3\7c64085d076ccbf4887105cedcf96bb3\transformed\trail-android-v1.51\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\077b29e9c47f366bfca2dd1a8a631de6\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\2a7e8bdd5fc36c169f9a3e5e327522e5\transformed\play-services-location-18.0.0\AndroidManifest.xml:2:1-9:12
@@ -183,6 +184,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\in2dm3\.
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\in2dm3\.gradle\caches\transforms-3\a26e2f60e781370b2fcffed88d396fbc\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.github.amalChandran:trail-android:v1.51] C:\Users\in2dm3\.gradle\caches\transforms-3\7c64085d076ccbf4887105cedcf96bb3\transformed\trail-android-v1.51\AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.amalChandran:trail-android:v1.51] C:\Users\in2dm3\.gradle\caches\transforms-3\7c64085d076ccbf4887105cedcf96bb3\transformed\trail-android-v1.51\AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-location:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\2a7e8bdd5fc36c169f9a3e5e327522e5\transformed\play-services-location-18.0.0\AndroidManifest.xml:7:5-20
@@ -527,6 +530,8 @@ MERGED from [androidx.navigation:navigation-runtime:2.5.2] C:\Users\in2dm3\.grad
 MERGED from [androidx.navigation:navigation-runtime:2.5.2] C:\Users\in2dm3\.gradle\caches\transforms-3\6b750899e36e7502f6c1331a15be070a\transformed\navigation-runtime-2.5.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\in2dm3\.gradle\caches\transforms-3\162f79e0403f79b8ab6a9131fd413a01\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\in2dm3\.gradle\caches\transforms-3\162f79e0403f79b8ab6a9131fd413a01\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.amalChandran:trail-android:v1.51] C:\Users\in2dm3\.gradle\caches\transforms-3\7c64085d076ccbf4887105cedcf96bb3\transformed\trail-android-v1.51\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.amalChandran:trail-android:v1.51] C:\Users\in2dm3\.gradle\caches\transforms-3\7c64085d076ccbf4887105cedcf96bb3\transformed\trail-android-v1.51\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\077b29e9c47f366bfca2dd1a8a631de6\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
