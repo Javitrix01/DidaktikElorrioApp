@@ -25,7 +25,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         EditText et6=findViewById(R.id.et_6);
 
 
-
+        //comprobaciones de las respuestas del puzzle
         Button btnBaieztatu = findViewById(R.id.btnBaieztatuNombresElorrio);
         btnBaieztatu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
