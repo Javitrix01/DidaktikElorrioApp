@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -26,11 +27,16 @@ public final class ActivityErrebonbiloaBinding implements ViewBinding {
   @NonNull
   public final ImageView imageView3;
 
+  @NonNull
+  public final TextView textView10;
+
   private ActivityErrebonbiloaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituErre, @NonNull ImageView imageView3) {
+      @NonNull Button btnJarraituErre, @NonNull ImageView imageView3,
+      @NonNull TextView textView10) {
     this.rootView = rootView;
     this.btnJarraituErre = btnJarraituErre;
     this.imageView3 = imageView3;
+    this.textView10 = textView10;
   }
 
   @Override
@@ -72,8 +78,14 @@ public final class ActivityErrebonbiloaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView10;
+      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
+      if (textView10 == null) {
+        break missingId;
+      }
+
       return new ActivityErrebonbiloaBinding((ConstraintLayout) rootView, btnJarraituErre,
-          imageView3);
+          imageView3, textView10);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

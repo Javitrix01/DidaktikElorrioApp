@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,54 +26,58 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
   public final Button btnPasteleriaBaieztatu;
 
   @NonNull
-  public final ConstraintLayout constraintLayout2;
+  public final ImageButton imageAzucar;
 
   @NonNull
-  public final ImageButton imageButton10;
+  public final ImageButton imageChocolateBlanco;
 
   @NonNull
-  public final ImageButton imageButton11;
+  public final ImageButton imageChocolateNegro;
 
   @NonNull
-  public final ImageButton imageButton12;
+  public final ImageButton imageHarina;
 
   @NonNull
-  public final ImageButton imageButton4;
+  public final ImageButton imageHuevo;
 
   @NonNull
-  public final ImageButton imageButton5;
+  public final ImageButton imageManzana;
 
   @NonNull
-  public final ImageButton imageButton6;
+  public final ImageButton imageMermelada;
 
   @NonNull
-  public final ImageButton imageButton7;
+  public final ImageButton imagePera;
 
   @NonNull
-  public final ImageButton imageButton8;
+  public final ImageButton imageQueso;
 
   @NonNull
-  public final ImageButton imageButton9;
+  public final ImageView imageView8;
+
+  @NonNull
+  public final TextView txtExplicacionPasteleria;
 
   private ActivityPuzzlePasteleriaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnPasteleriaBaieztatu, @NonNull ConstraintLayout constraintLayout2,
-      @NonNull ImageButton imageButton10, @NonNull ImageButton imageButton11,
-      @NonNull ImageButton imageButton12, @NonNull ImageButton imageButton4,
-      @NonNull ImageButton imageButton5, @NonNull ImageButton imageButton6,
-      @NonNull ImageButton imageButton7, @NonNull ImageButton imageButton8,
-      @NonNull ImageButton imageButton9) {
+      @NonNull Button btnPasteleriaBaieztatu, @NonNull ImageButton imageAzucar,
+      @NonNull ImageButton imageChocolateBlanco, @NonNull ImageButton imageChocolateNegro,
+      @NonNull ImageButton imageHarina, @NonNull ImageButton imageHuevo,
+      @NonNull ImageButton imageManzana, @NonNull ImageButton imageMermelada,
+      @NonNull ImageButton imagePera, @NonNull ImageButton imageQueso,
+      @NonNull ImageView imageView8, @NonNull TextView txtExplicacionPasteleria) {
     this.rootView = rootView;
     this.btnPasteleriaBaieztatu = btnPasteleriaBaieztatu;
-    this.constraintLayout2 = constraintLayout2;
-    this.imageButton10 = imageButton10;
-    this.imageButton11 = imageButton11;
-    this.imageButton12 = imageButton12;
-    this.imageButton4 = imageButton4;
-    this.imageButton5 = imageButton5;
-    this.imageButton6 = imageButton6;
-    this.imageButton7 = imageButton7;
-    this.imageButton8 = imageButton8;
-    this.imageButton9 = imageButton9;
+    this.imageAzucar = imageAzucar;
+    this.imageChocolateBlanco = imageChocolateBlanco;
+    this.imageChocolateNegro = imageChocolateNegro;
+    this.imageHarina = imageHarina;
+    this.imageHuevo = imageHuevo;
+    this.imageManzana = imageManzana;
+    this.imageMermelada = imageMermelada;
+    this.imagePera = imagePera;
+    this.imageQueso = imageQueso;
+    this.imageView8 = imageView8;
+    this.txtExplicacionPasteleria = txtExplicacionPasteleria;
   }
 
   @Override
@@ -107,69 +113,76 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.constraintLayout2;
-      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (constraintLayout2 == null) {
+      id = R.id.imageAzucar;
+      ImageButton imageAzucar = ViewBindings.findChildViewById(rootView, id);
+      if (imageAzucar == null) {
         break missingId;
       }
 
-      id = R.id.imageButton10;
-      ImageButton imageButton10 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton10 == null) {
+      id = R.id.imageChocolateBlanco;
+      ImageButton imageChocolateBlanco = ViewBindings.findChildViewById(rootView, id);
+      if (imageChocolateBlanco == null) {
         break missingId;
       }
 
-      id = R.id.imageButton11;
-      ImageButton imageButton11 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton11 == null) {
+      id = R.id.imageChocolateNegro;
+      ImageButton imageChocolateNegro = ViewBindings.findChildViewById(rootView, id);
+      if (imageChocolateNegro == null) {
         break missingId;
       }
 
-      id = R.id.imageButton12;
-      ImageButton imageButton12 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton12 == null) {
+      id = R.id.imageHarina;
+      ImageButton imageHarina = ViewBindings.findChildViewById(rootView, id);
+      if (imageHarina == null) {
         break missingId;
       }
 
-      id = R.id.imageButton4;
-      ImageButton imageButton4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton4 == null) {
+      id = R.id.imageHuevo;
+      ImageButton imageHuevo = ViewBindings.findChildViewById(rootView, id);
+      if (imageHuevo == null) {
         break missingId;
       }
 
-      id = R.id.imageButton5;
-      ImageButton imageButton5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton5 == null) {
+      id = R.id.imageManzana;
+      ImageButton imageManzana = ViewBindings.findChildViewById(rootView, id);
+      if (imageManzana == null) {
         break missingId;
       }
 
-      id = R.id.imageButton6;
-      ImageButton imageButton6 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton6 == null) {
+      id = R.id.imageMermelada;
+      ImageButton imageMermelada = ViewBindings.findChildViewById(rootView, id);
+      if (imageMermelada == null) {
         break missingId;
       }
 
-      id = R.id.imageButton7;
-      ImageButton imageButton7 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton7 == null) {
+      id = R.id.imagePera;
+      ImageButton imagePera = ViewBindings.findChildViewById(rootView, id);
+      if (imagePera == null) {
         break missingId;
       }
 
-      id = R.id.imageButton8;
-      ImageButton imageButton8 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton8 == null) {
+      id = R.id.imageQueso;
+      ImageButton imageQueso = ViewBindings.findChildViewById(rootView, id);
+      if (imageQueso == null) {
         break missingId;
       }
 
-      id = R.id.imageButton9;
-      ImageButton imageButton9 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton9 == null) {
+      id = R.id.imageView8;
+      ImageView imageView8 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView8 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtExplicacionPasteleria;
+      TextView txtExplicacionPasteleria = ViewBindings.findChildViewById(rootView, id);
+      if (txtExplicacionPasteleria == null) {
         break missingId;
       }
 
       return new ActivityPuzzlePasteleriaBinding((ConstraintLayout) rootView,
-          btnPasteleriaBaieztatu, constraintLayout2, imageButton10, imageButton11, imageButton12,
-          imageButton4, imageButton5, imageButton6, imageButton7, imageButton8, imageButton9);
+          btnPasteleriaBaieztatu, imageAzucar, imageChocolateBlanco, imageChocolateNegro,
+          imageHarina, imageHuevo, imageManzana, imageMermelada, imagePera, imageQueso, imageView8,
+          txtExplicacionPasteleria);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -51,6 +51,49 @@
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_mapa_elorrio_con_nombres.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/list_card.xml" value="0.25" />
         <entry key="..\:/Users/in2dm3/Documents/GitHub/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1055" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable-v24/animationCruz.xml" value="0.3455" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animation.xml" value="0.217" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationalcalde.xml" value="0.1855" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationchef.xml" value="0.1855" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationcruz.xml" value="0.3665" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationmuerte.xml" value="0.1855" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationreina.xml" value="0.1855" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/animationsombrero.xml" value="0.1855" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/drawable/transicion.xml" value="0.217" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_choose_difficult.xml" value="0.5" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_crear_mapa_puzzle.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_errebonbiloa.xml" value="0.33" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_game15.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_game24.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_game9.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_info_del_menu.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada1.xml" value="0.33" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada3.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada4.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada5.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada6.xml" value="0.35688405797101447" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_introduccion_parada7.xml" value="0.35688405797101447" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_mapa_cruces_con_nombre.xml" value="0.33" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_maps.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_menu_principal_mapa.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_mostrar_foto_mapa.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada1_presentacion.xml" value="0.33" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada2_presentacion.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada3_presentacion.xml" value="0.35688405797101447" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada4_presentacion.xml" value="0.33" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada5_presentacion.xml" value="0.35688405797101447" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada6_presentacion.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_parada7_presentacion.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_egia_gezurra.xml" value="0.5" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_mapa_elorrio_con_nombres.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_mapa_elorrio_poner_nombres.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_pasteleria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_puzzle_poner_nombre_cruces.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/in2dm3/Documents/Jorge/DAM/ANDROID/DidaktikElorrioApp/DidaktikElorrioApp/app/src/main/res/layout/activity_view_pager.xml" value="0.17831813576494426" />
       </map>
     </option>
   </component>

@@ -12,7 +12,7 @@
     <string name="mapaelorrio">MapaElorrio</string>
     <string name="cruces_de_elorrio_con_nombre">Cruces de elorrio con nombre</string>
     <string name="mapaelorrioconnombresdeubicaciones">MapaElorrioConNombresDeUbicaciones</string>
-    <string name="explicacionPuzzle">1.- Jolastu eta gozatu. Zure helburua piezak mapatik bere lekura mugitzea da\n\n2.- Hasierako posizioarekin gustura ez bazaude edo akatsen bat egin bazenu, berriro aztertu eta has zaitezke. hasieratik, beti posible ez dela gogoratzen duzulako\n\n3.- Mapako argazki bakoitzean zenbakiak jarri ditugu jarduera errazteko\n\n4.- Azkenik, puzzlean ausartegiak bazaudete, ez egin, eta jauzi egin dezakegu, jarraian.</string>
+    <string name="explicacionPuzzle">1.- Jolastu eta gozatu. Zure helburua piezak mapatik bere lekura mugitzea da\n\n2.- Hasierako posizioarekin gustura ez bazaude edo akatsen bat egin bazenu, berriro aztertu eta has zaitezke. hasieratik, beti posible ez dela gogoratzen duzulako\n\n3.- Mapako argazki bakoitzean zenbakiak jarri ditugu jarduera errazteko\n\n4.- Azkenik, puzzlean trabatuta bazaude, gutxienez 200 mugimendu egin behar dituzu saiatu zarela ikusteko, eta gero jarraitu botoia agertuko zaizu..</string>
     <string name="logo">lorrion Barne</string>
     <string name="developers">developer - Gal Tager</string>
     <string name="game8">Puzzle Mapa</string>
@@ -56,6 +56,7 @@
     <string name="finished_name">Please Enter Your Name</string>
     <string name="finished_edittext">Enter you Name</string>
     <string name="finished_button">Submit</string>
+    <string name="explicacionPasteleria">Aukeratu osagai zuzenak eta sakatu botoia egokiak aukeratu dituzunean</string>
     <string name="you_won_toast">You Won the game, Go Back and try the Harder Board</string>
     <string name="you_won_24">You won the most difficult level\' new levels will open soon</string>
     <string name="mute_unmute_sound">Mute/Unmute Sound</string>
@@ -105,5 +106,81 @@
     <string name="permission_rationale_location">PermissionRationaleLocation</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_maps2">MapsActivity</string>
+
+    <string name="iguriako">Iguriako =</string>
+
+    <string name="ko">KO</string>
+
+    <string name="kurutzondo">Kurutzondo =</string>
+
+    <string name="sa">SA</string>
+
+    <string name="santa_ana">Santa Ana =</string>
+
+    <string name="kb">KB</string>
+
+    <string name="kurutzebarri">Kurutzebarri =</string>
+
+    <string name="tb">TB</string>
+
+    <string name="txanberi">Txanberi =</string>
+
+    <string name="gd">GD</string>
+
+    <string name="ganondo">Ganondo =</string>
+
+    <string name="se">SE</string>
+
+    <string name="sj">SJ</string>
+
+    <string name="ig">IG</string>
+
+    <string name="san_juan">San Juan =</string>
+
+    <string name="kurutziaga">Kurutziaga =</string>
+
+    <string name="kt">KT</string>
+
+    <string name="santa_elena">Santa Elena =</string>
+
+    <string name="nola_idatzi_behar_diren">Nola idatzi behar diren :</string>
+
+    <string-array name="lugares">
+        <item>Kurutzebarri</item>
+        <item>Ganondo</item>
+        <item>Iguriako_Gurutzea</item>
+        <item>SanJuan</item>
+        <item>kurutziaga</item>
+        <item>Kurutzondo</item>
+        <item>SantaElena</item>
+        <item>Txanberi</item>
+    </string-array>
+
+    <string name="bainuetxeak">Bainuetxeak</string>
+    <string name="zearsolo_jauregia_edo_jara_etxe">Zearsolo jauregia edo Jara etxe</string>
+    <string name="urkizu_tola_jauregia">Urkizu Tola Jauregia</string>
+    <string name="arespakotxaga_jaur">Arespakotxaga Jauregia</string>
+    <string name="arespakotxaga_azkarraga">Arespakotxaga Azkarraga</string>
+    <string name="olazabal_jauregia_edo_modet">Olazabal Jauregia edo Modet</string>
+    <string name="urkizu_aldatsekua_jauregia">Urkizu Aldatsekua Jauregia</string>
+
+
+    <string name="errebonbilo">Irudiarekin, kartoi meheen bidez txano bat sortu</string>
+
+
+    <string name="firstlogoparada1">K</string>
+    <string name="logoparada1">urutziagako Gurutzea</string>
+    <string name="firstlogoparada2">S</string>
+    <string name="logoparada2">ortzez Garbiaren Basilika</string>
+    <string name="firstlogoparada3">E</string>
+    <string name="logoparada3">lorrioko Udaletxea</string>
+    <string name="firstlogoparada4">G</string>
+    <string name="logoparada4">ozotegia Pello</string>
+    <string name="firstlogoparada5">A</string>
+    <string name="logoparada5">respakotxaga Jauregia</string>
+    <string name="firstlogoparada6">E</string>
+    <string name="logoparada6">rrebonbiloa</string>
+    <string name="firstlogoparada7">A</string>
+    <string name="logoparada7">rgiñetako Nekropolia</string>
 
 </resources>

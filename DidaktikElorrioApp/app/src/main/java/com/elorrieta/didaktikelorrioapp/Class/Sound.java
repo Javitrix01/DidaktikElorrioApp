@@ -10,18 +10,26 @@ import com.elorrieta.didaktikelorrioapp.R;
 public class Sound{
     public static  boolean activitySwitchFlag = false;
     public static  boolean backFromGame = false;
-    public static MediaPlayer menuClickSound, buttonGameSound,winningSound,backgroundMusic,gameMusic,testuGurutza;
+    public static MediaPlayer menuClickSound, buttonGameSound,winningSound,backgroundMusic,gameMusic,testuGurutza,grabacionparada1,grabacionparada2,grabacionparada3,grabacionparada4,grabacionparada5,grabacionparada6,grabacionparada7,error;
     public static boolean check = true;
 
     public Sound(){
     }
     public void createSound(Context mContext){
+        grabacionparada1 = MediaPlayer.create(mContext,R.raw.grabacionparada1);
+        grabacionparada2 = MediaPlayer.create(mContext,R.raw.grabacionparada2);
+        grabacionparada3 = MediaPlayer.create(mContext,R.raw.grabacionparada3);
+        grabacionparada4 = MediaPlayer.create(mContext,R.raw.grabacionparada4);
+        grabacionparada5 = MediaPlayer.create(mContext,R.raw.grabacionparada5);
+        grabacionparada6 = MediaPlayer.create(mContext,R.raw.grabacionparada6);
+        grabacionparada7 = MediaPlayer.create(mContext,R.raw.grabacionparada7);
         menuClickSound = MediaPlayer.create(mContext, R.raw.buttonpressed);
         buttonGameSound = MediaPlayer.create(mContext, R.raw.cardpress);
         winningSound =MediaPlayer.create(mContext,R.raw.victory);
         backgroundMusic = MediaPlayer.create(mContext,R.raw.backgroundsound);
         gameMusic = MediaPlayer.create(mContext,R.raw.gamesound);
         testuGurutza = MediaPlayer.create(mContext,R.raw.gurutza);
+        error = MediaPlayer.create(mContext,R.raw.error);
 
         gameMusic.setLooping(true);
         backgroundMusic.setLooping(true);

@@ -27,26 +27,30 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
   public final Button btnJarraituP6;
 
   @NonNull
-  public final ImageView imageView17;
+  public final Button btnSonidoP1;
+
+  @NonNull
+  public final ImageView imageView15;
 
   @NonNull
   public final ScrollView scrollView2;
 
   @NonNull
-  public final SeekBar seekBar;
+  public final SeekBar seekBar4;
 
   @NonNull
   public final TextView textViewIntroErrenbonbiloa;
 
   private ActivityIntroduccionParada6Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituP6, @NonNull ImageView imageView17,
-      @NonNull ScrollView scrollView2, @NonNull SeekBar seekBar,
+      @NonNull Button btnJarraituP6, @NonNull Button btnSonidoP1, @NonNull ImageView imageView15,
+      @NonNull ScrollView scrollView2, @NonNull SeekBar seekBar4,
       @NonNull TextView textViewIntroErrenbonbiloa) {
     this.rootView = rootView;
     this.btnJarraituP6 = btnJarraituP6;
-    this.imageView17 = imageView17;
+    this.btnSonidoP1 = btnSonidoP1;
+    this.imageView15 = imageView15;
     this.scrollView2 = scrollView2;
-    this.seekBar = seekBar;
+    this.seekBar4 = seekBar4;
     this.textViewIntroErrenbonbiloa = textViewIntroErrenbonbiloa;
   }
 
@@ -83,9 +87,15 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
+      id = R.id.btnSonidoP1;
+      Button btnSonidoP1 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSonidoP1 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView15;
+      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView15 == null) {
         break missingId;
       }
 
@@ -95,9 +105,9 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.seekBar;
-      SeekBar seekBar = ViewBindings.findChildViewById(rootView, id);
-      if (seekBar == null) {
+      id = R.id.seekBar4;
+      SeekBar seekBar4 = ViewBindings.findChildViewById(rootView, id);
+      if (seekBar4 == null) {
         break missingId;
       }
 
@@ -108,7 +118,7 @@ public final class ActivityIntroduccionParada6Binding implements ViewBinding {
       }
 
       return new ActivityIntroduccionParada6Binding((ConstraintLayout) rootView, btnJarraituP6,
-          imageView17, scrollView2, seekBar, textViewIntroErrenbonbiloa);
+          btnSonidoP1, imageView15, scrollView2, seekBar4, textViewIntroErrenbonbiloa);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

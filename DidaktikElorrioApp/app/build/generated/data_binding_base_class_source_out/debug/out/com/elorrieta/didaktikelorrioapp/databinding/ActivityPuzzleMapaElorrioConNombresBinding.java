@@ -24,13 +24,13 @@ public final class ActivityPuzzleMapaElorrioConNombresBinding implements ViewBin
   public final Button btnMapaElorrioConNombre;
 
   @NonNull
-  public final ImageView imageView20;
+  public final ImageView imageView23;
 
   private ActivityPuzzleMapaElorrioConNombresBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnMapaElorrioConNombre, @NonNull ImageView imageView20) {
+      @NonNull Button btnMapaElorrioConNombre, @NonNull ImageView imageView23) {
     this.rootView = rootView;
     this.btnMapaElorrioConNombre = btnMapaElorrioConNombre;
-    this.imageView20 = imageView20;
+    this.imageView23 = imageView23;
   }
 
   @Override
@@ -67,14 +67,14 @@ public final class ActivityPuzzleMapaElorrioConNombresBinding implements ViewBin
         break missingId;
       }
 
-      id = R.id.imageView20;
-      ImageView imageView20 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView20 == null) {
+      id = R.id.imageView23;
+      ImageView imageView23 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView23 == null) {
         break missingId;
       }
 
       return new ActivityPuzzleMapaElorrioConNombresBinding((ConstraintLayout) rootView,
-          btnMapaElorrioConNombre, imageView20);
+          btnMapaElorrioConNombre, imageView23);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
