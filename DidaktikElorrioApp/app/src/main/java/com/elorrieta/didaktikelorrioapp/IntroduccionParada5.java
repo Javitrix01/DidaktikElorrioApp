@@ -22,12 +22,18 @@ public class IntroduccionParada5 extends AppCompatActivity {
         Button botonPasar = findViewById(R.id.btnJarraituP5);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada5.this, Puzzle_Mapa_Elorrio_Con_Nombres.class)));
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView16);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationreina);
         myImageView.setBackgroundDrawable(myAnimation);
 
 
         getSupportActionBar().hide();
+
+
+         /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada5);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);

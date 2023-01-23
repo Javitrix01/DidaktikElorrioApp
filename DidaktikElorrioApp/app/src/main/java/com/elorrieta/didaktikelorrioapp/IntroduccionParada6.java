@@ -22,12 +22,17 @@ public class IntroduccionParada6 extends AppCompatActivity {
         Button botonPasar = findViewById(R.id.btnJarraituP6);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada6.this, Errebonbiloa.class)));
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView15);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationsombrero);
         myImageView.setBackgroundDrawable(myAnimation);
 
 
         getSupportActionBar().hide();
+
+         /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada6);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
