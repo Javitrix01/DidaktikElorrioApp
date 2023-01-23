@@ -186,11 +186,11 @@ public class GameActivity9 extends AppCompatActivity {
 
     public void buttonFunction(int row, int column) {
         if (cards != null) {
-            cards.moveCards(row, column); // re arrange the board when clicking button
-            if (cards.resultMove()) { // if the move is done correct
+            cards.moveCards(row, column); // volver a cargar el puzzle
+            if (cards.resultMove()) { // si los movimientos esta correctos
                 Sound.buttonGameSound.start();
                 numOfSteps++;
-                showGame(); // place the new images on the buttons
+                showGame(); // poner las imagenes en los botones
                 checkFinish();
 
                 //si se llega a 200 intentos deja que se salte el puzzle
