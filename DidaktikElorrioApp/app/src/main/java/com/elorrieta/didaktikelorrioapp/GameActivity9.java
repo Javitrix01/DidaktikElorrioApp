@@ -200,7 +200,7 @@ public class GameActivity9 extends AppCompatActivity {
                     botonPasar.setVisibility(View.VISIBLE);
                     botonPasar.setClickable(true);
 
-                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, parada1_presentacion.class)));
                 }
             }
         }
@@ -238,7 +238,7 @@ public class GameActivity9 extends AppCompatActivity {
         if(cards.finished(N, N)){
             showGame();
             Sound.winningSound.start();
-            startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class));
+            startActivity(new Intent(GameActivity9.this, parada1_presentacion.class));
             //openDialog();
             if ((numOfSteps < recordSteps) || (recordSteps == 0)) {
                 recordTV.setText(Integer.toString(numOfSteps));
@@ -316,7 +316,7 @@ public class GameActivity9 extends AppCompatActivity {
             botonPasar.setVisibility(View.VISIBLE);
             botonPasar.setClickable(true);
 
-            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, parada1_presentacion.class)));
         }
 
         sound.setSounds();
