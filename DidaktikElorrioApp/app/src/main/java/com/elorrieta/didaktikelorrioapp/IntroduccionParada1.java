@@ -22,7 +22,7 @@ public class IntroduccionParada1 extends AppCompatActivity {
         ImageView myImageView = (ImageView) findViewById(R.id.imageView2);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationcruz);
         myImageView.setBackgroundDrawable(myAnimation);
-        myAnimation.start();
+
 
         getSupportActionBar().hide();
 
@@ -39,9 +39,11 @@ public class IntroduccionParada1 extends AppCompatActivity {
                 if (mediaPlayer.isPlaying()) {
                     button.setAlpha(1f);
                     mediaPlayer.pause();
+                    myAnimation.stop();
                     handler.removeCallbacksAndMessages(null);
                 } else {
                     mediaPlayer.start();
+                    myAnimation.start();
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
