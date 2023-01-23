@@ -47,6 +47,12 @@ drawable back
 drawable background
 drawable background2
 drawable backgroundblue
+drawable basilika1
+drawable basilika2
+drawable basilika3
+drawable basilika4
+drawable basilika5
+drawable basilika6
 drawable bird
 drawable card1500
 drawable card1501
@@ -116,6 +122,7 @@ drawable gradient_1
 drawable gradient_2
 drawable gradient_3
 drawable gradient_list
+drawable greentick
 drawable grid_border
 drawable horse
 drawable ic_eem_logo_vertical
@@ -158,6 +165,8 @@ font baloo
 font fontdiner_swanky
 id BaieztatuEgiaGezurra
 id Choose
+id GuardarBtn
+id Layout
 id Levels
 id MapaElorrio
 id MenuLateral
@@ -252,7 +261,6 @@ id btn2
 id btn3
 id btn4
 id btnBaieztatuNombresElorrio
-id btnCamara
 id btnJarraituCrucesCnombre
 id btnJarraituErre
 id btnJarraituP1
@@ -288,6 +296,7 @@ id editTextTextPersonName12
 id editTextTextPersonName13
 id editTextTextPersonName14
 id editTextTextPersonName15
+id editTextTextPersonName2
 id editTextTextPersonName8
 id elephant
 id englishChip
@@ -319,13 +328,18 @@ id howToPlayBtn
 id imageButton10
 id imageButton11
 id imageButton12
+id imageButton1D
+id imageButton1I
+id imageButton2D
+id imageButton2I
+id imageButton3D
+id imageButton3I
 id imageButton4
 id imageButton5
 id imageButton6
 id imageButton7
 id imageButton8
 id imageButton9
-id imageView
 id imageView10
 id imageView11
 id imageView12
@@ -519,6 +533,7 @@ string argi_etako_nekropolia
 string argi_etako_nekropolia_erromantikoa
 string arginekropolia
 string baieztatu
+string baieztatu_eta_gorde
 string bestScore
 string bisigodoak_hilobiak_egin_zituzten
 string board_15

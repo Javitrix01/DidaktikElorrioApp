@@ -5,8 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -21,16 +22,48 @@ public final class ActivityMostrarFotosBasilicaBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnCamara;
+  public final Button GuardarBtn;
 
   @NonNull
-  public final ImageView imageView;
+  public final LinearLayout Layout;
+
+  @NonNull
+  public final TextView editTextTextPersonName2;
+
+  @NonNull
+  public final ImageButton imageButton1D;
+
+  @NonNull
+  public final ImageButton imageButton1I;
+
+  @NonNull
+  public final ImageButton imageButton2D;
+
+  @NonNull
+  public final ImageButton imageButton2I;
+
+  @NonNull
+  public final ImageButton imageButton3D;
+
+  @NonNull
+  public final ImageButton imageButton3I;
 
   private ActivityMostrarFotosBasilicaBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnCamara, @NonNull ImageView imageView) {
+      @NonNull Button GuardarBtn, @NonNull LinearLayout Layout,
+      @NonNull TextView editTextTextPersonName2, @NonNull ImageButton imageButton1D,
+      @NonNull ImageButton imageButton1I, @NonNull ImageButton imageButton2D,
+      @NonNull ImageButton imageButton2I, @NonNull ImageButton imageButton3D,
+      @NonNull ImageButton imageButton3I) {
     this.rootView = rootView;
-    this.btnCamara = btnCamara;
-    this.imageView = imageView;
+    this.GuardarBtn = GuardarBtn;
+    this.Layout = Layout;
+    this.editTextTextPersonName2 = editTextTextPersonName2;
+    this.imageButton1D = imageButton1D;
+    this.imageButton1I = imageButton1I;
+    this.imageButton2D = imageButton2D;
+    this.imageButton2I = imageButton2I;
+    this.imageButton3D = imageButton3D;
+    this.imageButton3I = imageButton3I;
   }
 
   @Override
@@ -60,19 +93,59 @@ public final class ActivityMostrarFotosBasilicaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnCamara;
-      Button btnCamara = ViewBindings.findChildViewById(rootView, id);
-      if (btnCamara == null) {
+      id = R.id.GuardarBtn;
+      Button GuardarBtn = ViewBindings.findChildViewById(rootView, id);
+      if (GuardarBtn == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      LinearLayout Layout = (LinearLayout) rootView;
+
+      id = R.id.editTextTextPersonName2;
+      TextView editTextTextPersonName2 = ViewBindings.findChildViewById(rootView, id);
+      if (editTextTextPersonName2 == null) {
         break missingId;
       }
 
-      return new ActivityMostrarFotosBasilicaBinding((LinearLayout) rootView, btnCamara, imageView);
+      id = R.id.imageButton1D;
+      ImageButton imageButton1D = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton1D == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton1I;
+      ImageButton imageButton1I = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton1I == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton2D;
+      ImageButton imageButton2D = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton2D == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton2I;
+      ImageButton imageButton2I = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton2I == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton3D;
+      ImageButton imageButton3D = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton3D == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton3I;
+      ImageButton imageButton3I = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton3I == null) {
+        break missingId;
+      }
+
+      return new ActivityMostrarFotosBasilicaBinding((LinearLayout) rootView, GuardarBtn, Layout,
+          editTextTextPersonName2, imageButton1D, imageButton1I, imageButton2D, imageButton2I,
+          imageButton3D, imageButton3I);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

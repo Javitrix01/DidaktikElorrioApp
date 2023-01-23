@@ -23,7 +23,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imageView;
+  public final ImageView Layout;
 
   @NonNull
   public final ImageView imageView5;
@@ -37,11 +37,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTituloAct;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView Layout,
       @NonNull ImageView imageView5, @NonNull LinearLayout linearLayout3,
       @NonNull ProgressBar progressBar3, @NonNull TextView textViewTituloAct) {
     this.rootView = rootView;
-    this.imageView = imageView;
+    this.Layout = Layout;
     this.imageView5 = imageView5;
     this.linearLayout3 = linearLayout3;
     this.progressBar3 = progressBar3;
@@ -75,9 +75,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.Layout;
+      ImageView Layout = ViewBindings.findChildViewById(rootView, id);
+      if (Layout == null) {
         break missingId;
       }
 
@@ -105,8 +105,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, imageView, imageView5,
-          linearLayout3, progressBar3, textViewTituloAct);
+      return new ActivityMainBinding((ConstraintLayout) rootView, Layout, imageView5, linearLayout3,
+          progressBar3, textViewTituloAct);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

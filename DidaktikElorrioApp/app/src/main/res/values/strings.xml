@@ -107,5 +107,6 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_maps2">MapsActivity</string>
     <string name="btnCamara">btnCamera</string>
+    <string name="baieztatu_eta_gorde">baieztatu eta gorde</string>
 
 </resources>
