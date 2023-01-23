@@ -25,9 +25,6 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button botonReiniciar;
-
-  @NonNull
   public final Button btnMapa;
 
   @NonNull
@@ -49,12 +46,10 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   public final FragmentContainerView mapPRUEBA;
 
   private ActivityMenuPrincipalMapaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button botonReiniciar, @NonNull Button btnMapa, @NonNull Button btnMenuActividades,
-      @NonNull FrameLayout frameLayout, @NonNull LinearLayout linearLayout,
-      @NonNull ListView listaMenuPrincipal, @NonNull RouteOverlayView mapOverlayView,
-      @NonNull FragmentContainerView mapPRUEBA) {
+      @NonNull Button btnMapa, @NonNull Button btnMenuActividades, @NonNull FrameLayout frameLayout,
+      @NonNull LinearLayout linearLayout, @NonNull ListView listaMenuPrincipal,
+      @NonNull RouteOverlayView mapOverlayView, @NonNull FragmentContainerView mapPRUEBA) {
     this.rootView = rootView;
-    this.botonReiniciar = botonReiniciar;
     this.btnMapa = btnMapa;
     this.btnMenuActividades = btnMenuActividades;
     this.frameLayout = frameLayout;
@@ -91,12 +86,6 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.botonReiniciar;
-      Button botonReiniciar = ViewBindings.findChildViewById(rootView, id);
-      if (botonReiniciar == null) {
-        break missingId;
-      }
-
       id = R.id.btnMapa;
       Button btnMapa = ViewBindings.findChildViewById(rootView, id);
       if (btnMapa == null) {
@@ -139,9 +128,9 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, botonReiniciar,
-          btnMapa, btnMenuActividades, frameLayout, linearLayout, listaMenuPrincipal,
-          mapOverlayView, mapPRUEBA);
+      return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, btnMapa,
+          btnMenuActividades, frameLayout, linearLayout, listaMenuPrincipal, mapOverlayView,
+          mapPRUEBA);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

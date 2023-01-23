@@ -28,7 +28,7 @@ public class IntroduccionParada2 extends AppCompatActivity {
         ImageView myImageView = (ImageView) findViewById(R.id.imageView4);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animation);
         myImageView.setBackgroundDrawable(myAnimation);
-        myAnimation.start();
+
 
         getSupportActionBar().hide();
 
@@ -43,10 +43,12 @@ public class IntroduccionParada2 extends AppCompatActivity {
                 if (mediaPlayer.isPlaying()) {
                     button.setAlpha(1f);
                     mediaPlayer.pause();
+                    myAnimation.stop();
                     handler.removeCallbacksAndMessages(null);
                 } else {
                     button.setAlpha(0.5f);
                     mediaPlayer.start();
+                    myAnimation.start();
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -58,20 +60,6 @@ public class IntroduccionParada2 extends AppCompatActivity {
             }
         });
 
-/*
-        final boolean[] isImageButtonClicked2 = {false};
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isImageButtonClicked2[0] = !isImageButtonClicked2[0];
-                if (isImageButtonClicked2[0]) {
-                    button.setAlpha(0.5f);
-                } else {
-                    button.setAlpha(1f);
-                }
-            }
-        });
-*/
         handler.post(new Runnable() {
             @Override
             public void run() {

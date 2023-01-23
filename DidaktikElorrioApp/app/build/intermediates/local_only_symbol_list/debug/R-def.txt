@@ -289,7 +289,6 @@ id bSoundOffOn24
 id bSoundOffOn9
 id bSoundOffOnChoose
 id bird
-id botonReiniciar
 id botonprueba
 id botonprueba2
 id btn1
@@ -615,7 +614,6 @@ string bisigodoak_hilobiak_egin_zituzten
 string board_15
 string board_24
 string board_8
-string botonReiniciar
 string button
 string buttonSound
 string choose_language
