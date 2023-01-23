@@ -121,6 +121,9 @@
             android:name=".Mostrar_Foto_Mapa"
             android:exported="false" />
         <activity
+            android:name=".CrearMapa_puzzle"
+            android:exported="false" />
+        <activity
             android:name=".Errebonbiloa"
             android:exported="false" />
         <activity
