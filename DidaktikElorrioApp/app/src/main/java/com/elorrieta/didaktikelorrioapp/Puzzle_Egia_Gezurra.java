@@ -25,7 +25,6 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
         //crea una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
-        //Definicion de variables
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button baieztatu = findViewById(R.id.BaieztatuEgiaGezurra);
         CheckBox P1E = findViewById(R.id.P1E);
