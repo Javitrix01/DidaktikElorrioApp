@@ -19,6 +19,7 @@ public class IntroduccionParada1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada1);
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView2);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationcruz);
         myImageView.setBackgroundDrawable(myAnimation);
@@ -27,6 +28,9 @@ public class IntroduccionParada1 extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
+        /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada1);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);

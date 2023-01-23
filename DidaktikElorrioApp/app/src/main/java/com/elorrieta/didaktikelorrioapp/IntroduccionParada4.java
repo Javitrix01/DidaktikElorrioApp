@@ -23,12 +23,17 @@ public class IntroduccionParada4 extends AppCompatActivity {
         Button botonPasar = findViewById(R.id.btnJarraituP4);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada4.this, Puzzle_Pasteleria.class)));
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView14);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationchef);
         myImageView.setBackgroundDrawable(myAnimation);
         myAnimation.start();
 
         getSupportActionBar().hide();
+
+         /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.gozotegi);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);

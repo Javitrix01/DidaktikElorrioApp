@@ -39,7 +39,7 @@ public class parada1_presentacion extends AppCompatActivity {
 
         Lang.lang = Locale.getDefault().getLanguage();
 
-
+        //animación monigote
         topAnimation= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottomAnimation= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
         middleAnimation= AnimationUtils.loadAnimation(this,R.anim.middle_animation);
@@ -63,7 +63,7 @@ public class parada1_presentacion extends AppCompatActivity {
         line6.setAnimation(topAnimation);
 
         logo.setAnimation(middleAnimation);
-
+         //animación
         signture.setAnimation(bottomAnimation);
         int TIME_OUT = 4000;
         new Handler().postDelayed(new Runnable() {
