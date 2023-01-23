@@ -40,7 +40,7 @@ public class parada2_presentacion extends AppCompatActivity {
 
         Lang.lang = Locale.getDefault().getLanguage();
 
-
+      //animación
         topAnimation= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottomAnimation= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
         middleAnimation= AnimationUtils.loadAnimation(this,R.anim.middle_animation);

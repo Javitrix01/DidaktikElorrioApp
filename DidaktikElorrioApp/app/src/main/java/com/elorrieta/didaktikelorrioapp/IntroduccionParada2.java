@@ -25,12 +25,18 @@ public class IntroduccionParada2 extends AppCompatActivity {
         Button botonPasar = findViewById(R.id.btnJarraituP2);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada2.this, parada3_presentacion.class)));
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView4);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animation);
         myImageView.setBackgroundDrawable(myAnimation);
 
 
         getSupportActionBar().hide();
+
+
+         /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada2);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
@@ -47,6 +53,7 @@ public class IntroduccionParada2 extends AppCompatActivity {
                     handler.removeCallbacksAndMessages(null);
                 } else {
                     button.setAlpha(0.5f);
+                    myAnimation.start();
                     mediaPlayer.start();
                     myAnimation.start();
                     handler.post(new Runnable() {

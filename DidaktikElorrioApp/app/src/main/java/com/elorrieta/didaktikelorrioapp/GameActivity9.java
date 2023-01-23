@@ -186,11 +186,11 @@ public class GameActivity9 extends AppCompatActivity {
 
     public void buttonFunction(int row, int column) {
         if (cards != null) {
-            cards.moveCards(row, column); // re arrange the board when clicking button
-            if (cards.resultMove()) { // if the move is done correct
+            cards.moveCards(row, column); // volver a cargar el puzzle
+            if (cards.resultMove()) { // si los movimientos esta correctos
                 Sound.buttonGameSound.start();
                 numOfSteps++;
-                showGame(); // place the new images on the buttons
+                showGame(); // poner las imagenes en los botones
                 checkFinish();
 
                 //si se llega a 200 intentos deja que se salte el puzzle
@@ -200,7 +200,7 @@ public class GameActivity9 extends AppCompatActivity {
                     botonPasar.setVisibility(View.VISIBLE);
                     botonPasar.setClickable(true);
 
-                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+                    botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, parada1_presentacion.class)));
                 }
             }
         }
@@ -238,7 +238,7 @@ public class GameActivity9 extends AppCompatActivity {
         if(cards.finished(N, N)){
             showGame();
             Sound.winningSound.start();
-            startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class));
+            startActivity(new Intent(GameActivity9.this, parada1_presentacion.class));
             //openDialog();
             if ((numOfSteps < recordSteps) || (recordSteps == 0)) {
                 recordTV.setText(Integer.toString(numOfSteps));
@@ -316,7 +316,7 @@ public class GameActivity9 extends AppCompatActivity {
             botonPasar.setVisibility(View.VISIBLE);
             botonPasar.setClickable(true);
 
-            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, parada1_presentacion.class)));
         }
 
         sound.setSounds();

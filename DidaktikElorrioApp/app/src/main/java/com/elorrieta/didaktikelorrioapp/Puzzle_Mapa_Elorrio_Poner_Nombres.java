@@ -24,6 +24,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         //inicia una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
+        //Variables inicializadas
         EditText et5=findViewById(R.id.et_5);
         EditText et3=findViewById(R.id.et_3);
         EditText et7=findViewById(R.id.et_7);
@@ -35,6 +36,8 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
 
         MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
         MediaPlayer error = MediaPlayer.create(this, R.raw.error);
+
+        /* Validacion de los resultados del puzzle*/
         Button btnBaieztatu = findViewById(R.id.btnBaieztatuNombresElorrio);
         btnBaieztatu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

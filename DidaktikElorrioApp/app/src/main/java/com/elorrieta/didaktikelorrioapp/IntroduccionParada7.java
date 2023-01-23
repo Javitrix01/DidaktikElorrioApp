@@ -22,12 +22,17 @@ public class IntroduccionParada7 extends AppCompatActivity {
         Button botonPasar = findViewById(R.id.btnJarraituP7);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada7.this, Puzzle_Egia_Gezurra.class)));
 
+        /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView18);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationmuerte);
         myImageView.setBackgroundDrawable(myAnimation);
         myAnimation.start();
 
         getSupportActionBar().hide();
+
+         /* Audio y movimiento del seekbar al pulsar el boton:
+        Al clickar el boton inicia el audio y empieza a moverse el seekbar acorde al audio,
+        si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada7);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
@@ -40,9 +45,11 @@ public class IntroduccionParada7 extends AppCompatActivity {
                 if (mediaPlayer.isPlaying()) {
                     button.setAlpha(1f);
                     mediaPlayer.pause();
+                    myAnimation.stop();
                     handler.removeCallbacksAndMessages(null);
                 } else {
                     mediaPlayer.start();
+                    myAnimation.start();
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
