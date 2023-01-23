@@ -24,6 +24,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         //inicia una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
+        //Variables inicializadas
         EditText et5=findViewById(R.id.et_5);
         EditText et3=findViewById(R.id.et_3);
         EditText et7=findViewById(R.id.et_7);
