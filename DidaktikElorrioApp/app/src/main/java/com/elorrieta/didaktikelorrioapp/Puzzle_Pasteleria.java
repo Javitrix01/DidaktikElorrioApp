@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.elorrieta.didaktikelorrioapp.Class.Sound;
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Pasteleria extends AppCompatActivity {
     @Override
@@ -23,6 +24,9 @@ public class Puzzle_Pasteleria extends AppCompatActivity {
 
         getSupportActionBar().hide();
         Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+
+        //crea una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         ImageButton imageButton1 = findViewById(R.id.imageQueso);
         final boolean[] isImageButtonClicked1 = {false};
@@ -166,6 +170,7 @@ public class Puzzle_Pasteleria extends AppCompatActivity {
                     toast.show();
                    /* Toast.makeText(getApplicationContext(), "Ingredientes correctos", Toast.LENGTH_LONG).show();*/
                     victory.start();
+                    db.activityDao().updateActivityVisitedById(4, true);
                     Handler handler = new Handler();
                     handler.postDelayed(() -> startActivity(new Intent(Puzzle_Pasteleria.this, parada5_presentacion.class)), 2200); //3 segundos
                 } else {

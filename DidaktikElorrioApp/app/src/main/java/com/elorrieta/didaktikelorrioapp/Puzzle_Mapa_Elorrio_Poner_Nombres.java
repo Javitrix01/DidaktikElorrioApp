@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+
 public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
 
     @Override
@@ -18,6 +20,9 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_mapa_elorrio_poner_nombres);
         getSupportActionBar().hide();
+
+        //inicia una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         EditText et5=findViewById(R.id.et_5);
         EditText et3=findViewById(R.id.et_3);
@@ -70,6 +75,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
                 if (et5.getText().toString().equals("5")&& et3.getText().toString().equals("3")&& et7.getText().toString().equals("7")&& et1.getText().toString().equals("1")&& et2.getText().toString().equals("2")&& et4.getText().toString().equals("4")&& et6.getText().toString().equals("6")){
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Oso Ondo", Toast.LENGTH_LONG).show();
                     victory.start();
+                    db.activityDao().updateActivityVisitedById(5, true);
                     Handler handler = new Handler();
                     handler.postDelayed(() -> startActivity(new Intent(Puzzle_Mapa_Elorrio_Poner_Nombres.this, parada6_presentacion.class)), 2200);
                 }

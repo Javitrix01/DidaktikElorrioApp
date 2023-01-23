@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
@@ -24,10 +25,16 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button botonReiniciar;
+
+  @NonNull
   public final Button btnMapa;
 
   @NonNull
   public final Button btnMenuActividades;
+
+  @NonNull
+  public final FrameLayout frameLayout;
 
   @NonNull
   public final LinearLayout linearLayout;
@@ -42,12 +49,15 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
   public final FragmentContainerView mapPRUEBA;
 
   private ActivityMenuPrincipalMapaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnMapa, @NonNull Button btnMenuActividades,
-      @NonNull LinearLayout linearLayout, @NonNull ListView listaMenuPrincipal,
-      @NonNull RouteOverlayView mapOverlayView, @NonNull FragmentContainerView mapPRUEBA) {
+      @NonNull Button botonReiniciar, @NonNull Button btnMapa, @NonNull Button btnMenuActividades,
+      @NonNull FrameLayout frameLayout, @NonNull LinearLayout linearLayout,
+      @NonNull ListView listaMenuPrincipal, @NonNull RouteOverlayView mapOverlayView,
+      @NonNull FragmentContainerView mapPRUEBA) {
     this.rootView = rootView;
+    this.botonReiniciar = botonReiniciar;
     this.btnMapa = btnMapa;
     this.btnMenuActividades = btnMenuActividades;
+    this.frameLayout = frameLayout;
     this.linearLayout = linearLayout;
     this.listaMenuPrincipal = listaMenuPrincipal;
     this.mapOverlayView = mapOverlayView;
@@ -81,6 +91,12 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.botonReiniciar;
+      Button botonReiniciar = ViewBindings.findChildViewById(rootView, id);
+      if (botonReiniciar == null) {
+        break missingId;
+      }
+
       id = R.id.btnMapa;
       Button btnMapa = ViewBindings.findChildViewById(rootView, id);
       if (btnMapa == null) {
@@ -90,6 +106,12 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
       id = R.id.btnMenuActividades;
       Button btnMenuActividades = ViewBindings.findChildViewById(rootView, id);
       if (btnMenuActividades == null) {
+        break missingId;
+      }
+
+      id = R.id.frameLayout;
+      FrameLayout frameLayout = ViewBindings.findChildViewById(rootView, id);
+      if (frameLayout == null) {
         break missingId;
       }
 
@@ -117,8 +139,9 @@ public final class ActivityMenuPrincipalMapaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, btnMapa,
-          btnMenuActividades, linearLayout, listaMenuPrincipal, mapOverlayView, mapPRUEBA);
+      return new ActivityMenuPrincipalMapaBinding((ConstraintLayout) rootView, botonReiniciar,
+          btnMapa, btnMenuActividades, frameLayout, linearLayout, listaMenuPrincipal,
+          mapOverlayView, mapPRUEBA);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

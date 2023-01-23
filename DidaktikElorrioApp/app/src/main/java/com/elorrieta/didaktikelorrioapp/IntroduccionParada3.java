@@ -2,6 +2,7 @@ package com.elorrieta.didaktikelorrioapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AppOpsManager;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
@@ -12,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+
 public class IntroduccionParada3 extends AppCompatActivity {
 
     @Override
@@ -19,9 +22,11 @@ public class IntroduccionParada3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada3);
 
+        //crea una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         Button botonPasar = findViewById(R.id.btnJarraituP3);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)));
+        botonPasar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)); });
 
         ImageView myImageView = (ImageView) findViewById(R.id.imageView22);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationalcalde);

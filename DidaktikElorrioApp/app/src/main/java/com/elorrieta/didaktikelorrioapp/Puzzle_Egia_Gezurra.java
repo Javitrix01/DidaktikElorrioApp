@@ -3,12 +3,15 @@ package com.elorrieta.didaktikelorrioapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 import android.os.Bundle;
+
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 
@@ -18,6 +21,9 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle_egia_gezurra);
 
         getSupportActionBar().hide();
+
+        //crea una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button baieztatu = findViewById(R.id.BaieztatuEgiaGezurra);
@@ -168,7 +174,9 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 /**----------------Baieztatu--------------------*/
         baieztatu.setOnClickListener(view -> {
             if(P1G.isChecked()&&P2E.isChecked()&&P3E.isChecked()&&P4G.isChecked()&&P5E.isChecked()&&P6G.isChecked()&&P7G.isChecked()&&P8E.isChecked()){
+                db.activityDao().updateActivityVisitedById(7, true);
                 Toast.makeText(this, "Nice", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Puzzle_Egia_Gezurra.this, MenuPrincipalMapa.class));
             }
         });
     }

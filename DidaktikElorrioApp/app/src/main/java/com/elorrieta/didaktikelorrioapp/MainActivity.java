@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if(control) {
             //se queda en espera unos segundos y pasa a la siguiente pantalla
             Handler handler = new Handler();
-            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, Errebonbiloa.class)), 3000); //3 segundos
+            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MainPuzzle.class)), 3000); //3 segundos
 
             handler.postDelayed(this::finish,3500); //3,5 segundos
         }
@@ -110,10 +110,10 @@ public class MainActivity extends AppCompatActivity {
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         //por cada actividad la borra de la base de datos para que no haya inconsistencias y la añade
-        for (Activity activity : actividades){
-            db.activityDao().deleteActivity(activity);
-            db.activityDao().insertActivity(activity);
-        }
+//        for (Activity activity : actividades){
+//            db.activityDao().deleteActivity(activity);
+//            db.activityDao().insertActivity(activity);
+//        }
 
 
         //comprueba si existen las actividades necesarias

@@ -289,6 +289,7 @@ id bSoundOffOn24
 id bSoundOffOn9
 id bSoundOffOnChoose
 id bird
+id botonReiniciar
 id botonprueba
 id botonprueba2
 id btn1
@@ -349,6 +350,7 @@ id first
 id first_line
 id fiveth_line
 id fourth_line
+id frameLayout
 id gameTitle15
 id gameTitle24
 id gameTitle9
@@ -613,6 +615,7 @@ string bisigodoak_hilobiak_egin_zituzten
 string board_15
 string board_24
 string board_8
+string botonReiniciar
 string button
 string buttonSound
 string choose_language

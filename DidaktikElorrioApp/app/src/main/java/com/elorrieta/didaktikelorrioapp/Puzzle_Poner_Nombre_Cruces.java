@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.elorrieta.didaktikelorrioapp.Class.Sound;
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
 
@@ -26,6 +27,9 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle_poner_nombre_cruces);
 
         getSupportActionBar().hide();
+
+        //inicia una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         flatante=(TextView) findViewById(R.id.et_Iguriako_Gurutzea);
         String[] faltan= getResources().getStringArray(R.array.lugares);
@@ -44,7 +48,7 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
         vectorAcierto=MediaPlayer.create(this,R.raw.error);
         vectorError=MediaPlayer.create(this,R.raw.error);
         //Boton esperando
-        btn_comprobar.setOnClickListener(view -> startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, parada2_presentacion.class)));
+        btn_comprobar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(1, true); startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, parada2_presentacion.class));});
 /*
         btn_comprobar.setOnClickListener(new View.OnClickListener() {
             @Override

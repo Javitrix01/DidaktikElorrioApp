@@ -3515,6 +3515,7 @@ id beginning
 id bestChoice
 id bird
 id blocking
+id botonReiniciar
 id botonprueba
 id botonprueba2
 id bottom
@@ -3679,6 +3680,7 @@ id floating
 id forever
 id fourth_line
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id gameTitle15
@@ -4496,6 +4498,7 @@ string bisigodoak_hilobiak_egin_zituzten
 string board_15
 string board_24
 string board_8
+string botonReiniciar
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
