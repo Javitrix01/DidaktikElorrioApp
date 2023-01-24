@@ -19,9 +19,6 @@ public class IntroduccionParada7 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada7);
 
-        Button botonPasar = findViewById(R.id.btnJarraituP7);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada7.this, Puzzle_Egia_Gezurra.class)));
-
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView18);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationmuerte);
@@ -61,6 +58,9 @@ public class IntroduccionParada7 extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonPasar = findViewById(R.id.btnJarraituP7);
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada7.this, Puzzle_Egia_Gezurra.class)); });
 
         handler.post(new Runnable() {
             @Override

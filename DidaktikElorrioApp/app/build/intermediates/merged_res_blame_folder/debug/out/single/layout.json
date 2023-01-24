@@ -52,6 +52,18 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\list_card.xml"
     },
     {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_mapa_cruces_con_nombre.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_mapa_cruces_con_nombre.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_introduccion_parada7.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_introduccion_parada7.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_game9.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_game9.xml"
+    },
+    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_introduccion_parada5.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_introduccion_parada5.xml"
     },
@@ -80,16 +92,16 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_parada7_presentacion.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_menu_principal_mapa.xml",
-        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_menu_principal_mapa.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_view_pager.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_view_pager.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_puzzle_mapa_elorrio_poner_nombres.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_puzzle_mapa_elorrio_poner_nombres.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_puzzle_mapa_elorrio_con_nombres.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_puzzle_mapa_elorrio_con_nombres.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_game15.xml",
@@ -112,12 +124,12 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\dialog_finished.xml"
     },
     {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_menu_principal_mapa.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_menu_principal_mapa.xml"
+    },
+    {
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_mostrar_foto_mapa.xml",

@@ -19,9 +19,6 @@ public class IntroduccionParada6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada6);
 
-        Button botonPasar = findViewById(R.id.btnJarraituP6);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada6.this, Errebonbiloa.class)));
-
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView15);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationsombrero);
@@ -61,6 +58,9 @@ public class IntroduccionParada6 extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonPasar = findViewById(R.id.btnJarraituP6);
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada6.this, Errebonbiloa.class)); });
 
         handler.post(new Runnable() {
             @Override

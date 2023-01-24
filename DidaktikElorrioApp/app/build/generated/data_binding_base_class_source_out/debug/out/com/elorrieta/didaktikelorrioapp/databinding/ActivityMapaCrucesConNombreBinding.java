@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -26,11 +27,16 @@ public final class ActivityMapaCrucesConNombreBinding implements ViewBinding {
   @NonNull
   public final ImageView imageView6;
 
+  @NonNull
+  public final AppCompatTextView puzzelIt;
+
   private ActivityMapaCrucesConNombreBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnJarraituCrucesCnombre, @NonNull ImageView imageView6) {
+      @NonNull Button btnJarraituCrucesCnombre, @NonNull ImageView imageView6,
+      @NonNull AppCompatTextView puzzelIt) {
     this.rootView = rootView;
     this.btnJarraituCrucesCnombre = btnJarraituCrucesCnombre;
     this.imageView6 = imageView6;
+    this.puzzelIt = puzzelIt;
   }
 
   @Override
@@ -72,8 +78,14 @@ public final class ActivityMapaCrucesConNombreBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.puzzelIt;
+      AppCompatTextView puzzelIt = ViewBindings.findChildViewById(rootView, id);
+      if (puzzelIt == null) {
+        break missingId;
+      }
+
       return new ActivityMapaCrucesConNombreBinding((ConstraintLayout) rootView,
-          btnJarraituCrucesCnombre, imageView6);
+          btnJarraituCrucesCnombre, imageView6, puzzelIt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

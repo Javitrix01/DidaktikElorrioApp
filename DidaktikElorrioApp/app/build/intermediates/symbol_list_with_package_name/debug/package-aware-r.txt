@@ -3544,7 +3544,6 @@ id btnMenuActividades
 id btnPasteleriaBaieztatu
 id btnSonidoP1
 id btnitzuli
-id button
 id button2
 id button3
 id buttonPanel
@@ -3726,10 +3725,6 @@ id imageMermelada
 id imagePera
 id imageQueso
 id imageView
-id imageView10
-id imageView11
-id imageView12
-id imageView13
 id imageView14
 id imageView15
 id imageView16
@@ -3745,7 +3740,6 @@ id imageView5
 id imageView6
 id imageView7
 id imageView8
-id imageView9
 id immediateStop
 id included
 id indeterminate
@@ -3920,6 +3914,8 @@ id pressed
 id progressBar3
 id progress_circular
 id progress_horizontal
+id puzzelIt
+id puzzelIt2
 id radio
 id ratio
 id rectangles
@@ -4028,7 +4024,6 @@ id tScore15
 id tScore24
 id tScore9
 id tabMode
-id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -4299,7 +4294,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_choose_difficult
-layout activity_crear_mapa_puzzle
 layout activity_errebonbiloa
 layout activity_game15
 layout activity_game24

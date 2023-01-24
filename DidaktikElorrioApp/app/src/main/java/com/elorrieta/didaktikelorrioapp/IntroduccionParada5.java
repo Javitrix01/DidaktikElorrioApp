@@ -19,8 +19,7 @@ public class IntroduccionParada5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada5);
 
-        Button botonPasar = findViewById(R.id.btnJarraituP5);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada5.this, Puzzle_Mapa_Elorrio_Con_Nombres.class)));
+
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView16);
@@ -62,6 +61,8 @@ public class IntroduccionParada5 extends AppCompatActivity {
                 }
             }
         });
+        Button botonPasar = findViewById(R.id.btnJarraituP5);
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada5.this, Puzzle_Mapa_Elorrio_Con_Nombres.class)); });
 
         handler.post(new Runnable() {
             @Override

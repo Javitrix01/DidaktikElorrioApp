@@ -3543,7 +3543,6 @@ int id btnMenuActividades 0x7f0a00d2
 int id btnPasteleriaBaieztatu 0x7f0a00d3
 int id btnSonidoP1 0x7f0a00d4
 int id btnitzuli 0x7f0a00d5
-int id button 0x7f0a00d6
 int id button2 0x7f0a00d7
 int id button3 0x7f0a00d8
 int id buttonPanel 0x7f0a00d9
@@ -3725,10 +3724,6 @@ int id imageMermelada 0x7f0a0187
 int id imagePera 0x7f0a0188
 int id imageQueso 0x7f0a0189
 int id imageView 0x7f0a018a
-int id imageView10 0x7f0a018b
-int id imageView11 0x7f0a018c
-int id imageView12 0x7f0a018d
-int id imageView13 0x7f0a018e
 int id imageView14 0x7f0a018f
 int id imageView15 0x7f0a0190
 int id imageView16 0x7f0a0191
@@ -3744,7 +3739,6 @@ int id imageView5 0x7f0a019a
 int id imageView6 0x7f0a019b
 int id imageView7 0x7f0a019c
 int id imageView8 0x7f0a019d
-int id imageView9 0x7f0a019e
 int id immediateStop 0x7f0a019f
 int id included 0x7f0a01a0
 int id indeterminate 0x7f0a01a1
@@ -3919,6 +3913,8 @@ int id pressed 0x7f0a0249
 int id progressBar3 0x7f0a024a
 int id progress_circular 0x7f0a024b
 int id progress_horizontal 0x7f0a024c
+int id puzzelIt 0x7f0a034d
+int id puzzelIt2 0x7f0a034e
 int id radio 0x7f0a024d
 int id ratio 0x7f0a024e
 int id rectangles 0x7f0a024f
@@ -4027,7 +4023,6 @@ int id tScore15 0x7f0a02b5
 int id tScore24 0x7f0a02b6
 int id tScore9 0x7f0a02b7
 int id tabMode 0x7f0a02b8
-int id tableLayout 0x7f0a02b9
 int id tag_accessibility_actions 0x7f0a02ba
 int id tag_accessibility_clickable_spans 0x7f0a02bb
 int id tag_accessibility_heading 0x7f0a02bc
@@ -4298,7 +4293,6 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_choose_difficult 0x7f0d001c
-int layout activity_crear_mapa_puzzle 0x7f0d001d
 int layout activity_errebonbiloa 0x7f0d001e
 int layout activity_game15 0x7f0d001f
 int layout activity_game24 0x7f0d0020

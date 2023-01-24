@@ -7,6 +7,23 @@
     android:background="@drawable/background6"
     tools:context=".Puzzle_Mapa_Elorrio_Con_Nombres">
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/puzzelIt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fontdiner_swanky"
+        android:paddingBottom="30dp"
+        android:text="@string/full_logo"
+        android:textAlignment="center"
+        android:textColor="#323232"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnMapaElorrioConNombre"
         android:layout_width="199dp"
@@ -26,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.378"
         app:srcCompat="@drawable/arespagotxajauregia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

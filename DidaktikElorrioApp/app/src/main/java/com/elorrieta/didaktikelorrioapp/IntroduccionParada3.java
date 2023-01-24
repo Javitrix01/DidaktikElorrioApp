@@ -25,8 +25,7 @@ public class IntroduccionParada3 extends AppCompatActivity {
         //crea una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
-        Button botonPasar = findViewById(R.id.btnJarraituP3);
-        botonPasar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)); });
+
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView22);
@@ -66,6 +65,9 @@ public class IntroduccionParada3 extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonPasar = findViewById(R.id.btnJarraituP3);
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)); });
 
         handler.post(new Runnable() {
             @Override

@@ -140,9 +140,6 @@
             android:name="com.elorrieta.didaktikelorrioapp.Mostrar_Foto_Mapa"
             android:exported="false" />
         <activity
-            android:name="com.elorrieta.didaktikelorrioapp.CrearMapa_puzzle"
-            android:exported="false" />
-        <activity
             android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
             android:exported="false" />
         <activity

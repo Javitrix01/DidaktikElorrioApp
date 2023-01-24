@@ -69,6 +69,6 @@ public class IntroduccionParada1 extends AppCompatActivity {
         });
         Button botonPasar = findViewById(R.id.btnJarraituP1);
 
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada1.this, Mapa_Cruces_Con_Nombre.class)));
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada1.this, Mapa_Cruces_Con_Nombre.class)); } );
     }
 }

@@ -20,8 +20,7 @@ public class IntroduccionParada4 extends AppCompatActivity {
         setContentView(R.layout.activity_introduccion_parada4);
 
 
-        Button botonPasar = findViewById(R.id.btnJarraituP4);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada4.this, Puzzle_Pasteleria.class)));
+
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView14);
@@ -61,6 +60,9 @@ public class IntroduccionParada4 extends AppCompatActivity {
                 }
             }
         });
+
+        Button botonPasar = findViewById(R.id.btnJarraituP4);
+        botonPasar.setOnClickListener(view ->{ mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada4.this, Puzzle_Pasteleria.class)); });
 
         handler.post(new Runnable() {
             @Override

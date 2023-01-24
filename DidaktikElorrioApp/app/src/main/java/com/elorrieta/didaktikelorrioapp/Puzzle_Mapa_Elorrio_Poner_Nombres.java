@@ -33,6 +33,13 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
         EditText et4=findViewById(R.id.et_4);
         EditText et6=findViewById(R.id.et_6);
 
+        String ett1 = et1.getText().toString();
+        String ett2 = et2.getText().toString();
+        String ett3 = et3.getText().toString();
+        String ett4 = et4.getText().toString();
+        String ett5 = et5.getText().toString();
+        String ett6 = et6.getText().toString();
+        String ett7 = et7.getText().toString();
 
         MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
         MediaPlayer error = MediaPlayer.create(this, R.raw.error);
@@ -44,35 +51,49 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
                 if(et5.getText().toString().equals("5")){
 
                 }else{
+                    et5.setError("Error");
+                    et5.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en BainuEtxea", Toast.LENGTH_LONG).show();
                 }
                 if(et3.getText().toString().equals("3")){
 
                 }else{
+                    et3.setError("Error");
+                    et3.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Zearsolo jauregia", Toast.LENGTH_LONG).show();
                 }
                 if(et7.getText().toString().equals("7")){
 
                 }else{
+                    et7.setError("Error");
+                    et7.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Tola Jauregia", Toast.LENGTH_LONG).show();
                 }
                 if(et1.getText().toString().equals("1")){
 
                 }else{
+                    et1.setError("Error");
+                    et1.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Jauregia", Toast.LENGTH_LONG).show();
                 }
                 if(et2.getText().toString().equals("2")){
 
                 }else{
+                    et2.setError("Error");
+                    et2.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Arespakotxaga Azkarraga", Toast.LENGTH_LONG).show();
                 }
                 if(et4.getText().toString().equals("4")){
 
                 }else{
+                    et4.setError("Error");
+                    et4.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Olazabal Jauregia", Toast.LENGTH_LONG).show();
                 } if(et6.getText().toString().equals("6")){
 
                 }else{
+                    et6.setError("Error");
+                    et6.requestFocus();
                     Toast.makeText(Puzzle_Mapa_Elorrio_Poner_Nombres.this, "Error en Urkizu Aldatsekua Jauregia", Toast.LENGTH_LONG).show();
                 }
                 if (et5.getText().toString().equals("5")&& et3.getText().toString().equals("3")&& et7.getText().toString().equals("7")&& et1.getText().toString().equals("1")&& et2.getText().toString().equals("2")&& et4.getText().toString().equals("4")&& et6.getText().toString().equals("6")){

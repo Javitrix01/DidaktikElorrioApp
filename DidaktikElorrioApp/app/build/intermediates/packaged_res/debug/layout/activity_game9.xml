@@ -17,11 +17,10 @@
 
         <ImageButton
             android:id="@+id/bBackMenu9"
-            android:background="@drawable/back"
             style="@style/bNavigationStyle"
             android:layout_alignParentLeft="true"
-            android:contentDescription="@string/button"
-            />
+            android:background="@drawable/back"
+            android:contentDescription="@string/button" />
 
         <ImageButton
             android:id="@+id/bSoundOffOn9"
