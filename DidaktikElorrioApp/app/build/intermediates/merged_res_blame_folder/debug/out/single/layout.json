@@ -28,10 +28,6 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_mapa_cruces_con_nombre.xml"
     },
     {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_info_del_menu.xml",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_info_del_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_parada6_presentacion.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_parada6_presentacion.xml"
     },
@@ -52,8 +48,13 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\list_card.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_reiniciar_actividades.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_reiniciar_actividades.xml"
+=======
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_info_del_menu.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_info_del_menu.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_introduccion_parada5.xml",

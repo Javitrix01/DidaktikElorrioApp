@@ -26,7 +26,7 @@ public class IntroduccionParada3 extends AppCompatActivity {
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         Button botonPasar = findViewById(R.id.btnJarraituP3);
-        botonPasar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)); });
+        botonPasar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, MenuPrincipalMapa.class)); });
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView22);

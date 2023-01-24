@@ -23,7 +23,9 @@
             android:id="@+id/textViewIntroNecropolis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/arginekropolia" />
+            android:text="@string/arginekropolia"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
     </ScrollView>
 
     <ImageView

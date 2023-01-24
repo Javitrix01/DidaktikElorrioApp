@@ -23,7 +23,7 @@ public class IntroduccionParada2 extends AppCompatActivity {
         setContentView(R.layout.activity_introduccion_parada2);
 
         Button botonPasar = findViewById(R.id.btnJarraituP2);
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada2.this, parada3_presentacion.class)));
+        botonPasar.setOnClickListener(view -> startActivity(new Intent(IntroduccionParada2.this, MenuPrincipalMapa.class)));
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView4);

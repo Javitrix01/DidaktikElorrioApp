@@ -79,7 +79,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     //variables para la ruta
     Polyline currentPolyline;
 
-    int iPATHS = 1;
+    //int iPATHS = 1;
 
 
     /**
@@ -165,42 +165,42 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.setVisibility(View.VISIBLE);
         });
 
-        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
-        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
-//        for (int i = 0; i < activities.size(); i++) {
-//            db.activityDao().updateActivityVisitedById((i+1), false);
-//        }
+//        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
+//        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
+////        for (int i = 0; i < activities.size(); i++) {
+////            db.activityDao().updateActivityVisitedById((i+1), false);
+////        }
 
 
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
 
 
-            //TODO: DEBUG PATHS
-            if (lista.getVisibility() == View.INVISIBLE) {
-                if (iPATHS < 6){
-                    db.activityDao().updateActivityVisitedById((iPATHS), true);
-                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
-                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-                }
-                if (iPATHS == 6){
-                    db.activityDao().updateActivityVisitedById(iPATHS, true);
-                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-                }
-                if (iPATHS == 7){
-                    db.activityDao().updateActivityVisitedById(iPATHS, true);
-                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS), Toast.LENGTH_SHORT).show();
-                }
-
-//                if (iPATHS > 6){
-//                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
-//                    for (int i = 0; i < activities.size(); i++) {
-//                        db.activityDao().updateActivityVisitedById((i+1), false);
-//                    }
-//                    iPATHS = 1;
+//            //TODO: DEBUG PATHS
+//            if (lista.getVisibility() == View.INVISIBLE) {
+//                if (iPATHS < 6){
+//                    db.activityDao().updateActivityVisitedById((iPATHS), true);
+//                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
 //                }
-                iPATHS++;
-            }
+//                if (iPATHS == 6){
+//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+//                }
+//                if (iPATHS == 7){
+//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS), Toast.LENGTH_SHORT).show();
+//                }
+//
+////                if (iPATHS > 6){
+////                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
+////                    for (int i = 0; i < activities.size(); i++) {
+////                        db.activityDao().updateActivityVisitedById((i+1), false);
+////                    }
+////                    iPATHS = 1;
+////                }
+//                iPATHS++;
+//            }
 
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
@@ -494,7 +494,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                         if (location1 != null) {
                             // Logic to handle location object
                             LatLng origin = new LatLng(location1.getLatitude(), location1.getLongitude());
-                            map.animateCamera(CameraUpdateFactory.newLatLng(origin));
+                            //map.animateCamera(CameraUpdateFactory.newLatLng(origin));
                             String url = "";
                             //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
                             if (!db.activityDao().isActivityVisited(7) && !db.activityDao().isActivityVisited(1)) {
@@ -533,34 +533,42 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                  * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
 
-                if ((location.distanceTo(KurutziagaLocation)<20)&&(!db.activityDao().isActivityVisited(7))){
+
+
+
+                //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
+                if ((location.distanceTo(KurutziagaLocation)<20&&location.distanceTo(KurutziagaLocation)>19)&&(!db.activityDao().isActivityVisited(7))){
+
                     //inicia primera actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada1_presentacion.class));
-                    if ((location.distanceTo(BasilikaLocation)<20)&&(db.activityDao().isActivityVisited(1))) {
-                        //inicia segunda actividad
-                        startActivity(new Intent(MenuPrincipalMapa.this, parada2_presentacion.class));
-                        if ((location.distanceTo(UdaletxeaLocation)<20)&&(db.activityDao().isActivityVisited(2))){
-                            //inicia tercera actividad
-                            startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
-                            if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))){
-                                //inicia cuarta actividad
-                                startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
-                                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))){
-                                    //inicia quinta actividad
-                                    startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))){
-                                        //inicia sexta actividad
-                                        startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
-                                        if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))){
-                                            //inicia septima actividad
-                                            startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+
                 }
+                if ((location.distanceTo(BasilikaLocation)<20&&location.distanceTo(BasilikaLocation)>19)&&(db.activityDao().isActivityVisited(1))) {
+                    //inicia segunda actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada2_presentacion.class));
+                }
+                if ((location.distanceTo(UdaletxeaLocation)<20&&location.distanceTo(UdaletxeaLocation)>19)&&(db.activityDao().isActivityVisited(2))) {
+                    //inicia tercera actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
+                }
+                if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))) {
+                    //inicia cuarta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
+                }
+                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))) {
+                    //inicia quinta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
+                }
+                if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))) {
+                    //inicia sexta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
+                }
+                if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))) {
+                    //inicia septima actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
+                }
+
+
             }
         }
     };

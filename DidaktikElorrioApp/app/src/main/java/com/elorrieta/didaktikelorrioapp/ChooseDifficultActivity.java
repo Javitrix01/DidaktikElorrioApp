@@ -143,17 +143,17 @@ public class ChooseDifficultActivity extends AppCompatActivity {
                 case R.id.btn1:
                     //Sound.menuClickSound.start();
                     Sound.activitySwitchFlag = true;
-                    sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
+                    //sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(3, "Cards");
                     break;
                 case R.id.btn2:
                     Sound.menuClickSound.start();
-                    sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
+                    //sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(4, "Cards");
                     break;
                 case R.id.btn3:
                     Sound.menuClickSound.start();
-                    sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
+                    //sound.switchMusic(Sound.gameMusic, Sound.backgroundMusic);
                     newGame(5, "Cards");
                     break;
                 case R.id.btn4:

@@ -19,7 +19,7 @@ public class Errebonbiloa extends AppCompatActivity {
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
         Button botonPasar = findViewById(R.id.btnJarraituErre);
-        botonPasar.setOnClickListener(view -> { db.activityDao().updateActivityVisitedById(6, true); startActivity(new Intent(Errebonbiloa.this, parada7_presentacion.class)); });
+        botonPasar.setOnClickListener(view -> { db.activityDao().updateActivityVisitedById(6, true); startActivity(new Intent(Errebonbiloa.this, MenuPrincipalMapa.class)); });
 
         getSupportActionBar().hide();
     }
