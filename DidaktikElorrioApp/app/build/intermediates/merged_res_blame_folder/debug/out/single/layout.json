@@ -8,16 +8,16 @@
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_introduccion_parada3.xml"
     },
     {
-        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_crear_mapa_puzzle.xml",
-        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_crear_mapa_puzzle.xml"
-    },
-    {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_puzzle_mapa_elorrio_con_nombres.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_puzzle_mapa_elorrio_con_nombres.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_errebonbiloa.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_errebonbiloa.xml"
+    },
+    {
+        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_puzzle_poner_nombre_cruces.xml",
+        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_puzzle_poner_nombre_cruces.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_parada3_presentacion.xml",
@@ -42,6 +42,10 @@
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_parada5_presentacion.xml",
         "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_parada5_presentacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\activity_mostrar_fotos_basilika.xml",
+        "source": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-main-76:\\layout\\activity_mostrar_fotos_basilika.xml"
     },
     {
         "merged": "C:\\Users\\in2dm3\\.gradle\\daemon\\7.3.3\\com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:\\layout\\dialog_setting.xml",

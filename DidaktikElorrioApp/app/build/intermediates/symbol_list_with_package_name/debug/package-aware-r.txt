@@ -3074,6 +3074,12 @@ drawable background666
 drawable background7
 drawable background8
 drawable backgroundblue
+drawable basilika1
+drawable basilika2
+drawable basilika3
+drawable basilika4
+drawable basilika5
+drawable basilika6
 drawable bird
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3185,6 +3191,7 @@ drawable gradient_1
 drawable gradient_2
 drawable gradient_3
 drawable gradient_list
+drawable greentick
 drawable grid_border
 drawable harina
 drawable horse
@@ -3336,6 +3343,8 @@ id BaieztatuEgiaGezurra
 id CTRL
 id Choose
 id FUNCTION
+id GuardarBtn
+id Layout
 id Levels
 id META
 id MapaElorrio
@@ -3515,7 +3524,6 @@ id beginning
 id bestChoice
 id bird
 id blocking
-id botonReiniciar
 id botonprueba
 id botonprueba2
 id bottom
@@ -3629,6 +3637,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextPersonName2
 id edit_query
 id elastic
 id elephant
@@ -3716,6 +3725,12 @@ id ignore
 id ignoreRequest
 id image
 id imageAzucar
+id imageButton1D
+id imageButton1I
+id imageButton2D
+id imageButton2I
+id imageButton3D
+id imageButton3I
 id imageChocolateBlanco
 id imageChocolateNegro
 id imageHarina
@@ -4312,6 +4327,7 @@ layout activity_mapa_cruces_con_nombre
 layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
+layout activity_mostrar_fotos_basilika
 layout activity_parada1_presentacion
 layout activity_parada2_presentacion
 layout activity_parada3_presentacion
@@ -4486,13 +4502,13 @@ string argi_etako_nekropolia
 string argi_etako_nekropolia_erromantikoa
 string arginekropolia
 string baieztatu
+string baieztatu_eta_gorde
 string bainuetxeak
 string bestScore
 string bisigodoak_hilobiak_egin_zituzten
 string board_15
 string board_24
 string board_8
-string botonReiniciar
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand

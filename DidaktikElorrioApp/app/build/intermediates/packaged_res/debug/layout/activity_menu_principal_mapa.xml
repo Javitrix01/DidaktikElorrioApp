@@ -7,18 +7,6 @@
     tools:context=".MenuPrincipalMapa"
     android:animateLayoutChanges="true">
 
-    <Button
-        android:id="@+id/botonReiniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/botonReiniciar"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="1.0" />
-
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="410dp"

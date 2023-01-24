@@ -48,7 +48,6 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.Places;
 
 import java.io.InputStream;
-import java.io.InterruptedIOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -80,7 +79,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     //variables para la ruta
     Polyline currentPolyline;
 
-    int iPATHS = 1;
+    //int iPATHS = 1;
 
 
     /**
@@ -166,63 +165,47 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.setVisibility(View.VISIBLE);
         });
 
-        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
-        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
-//        for (int i = 0; i < activities.size(); i++) {
-//            db.activityDao().updateActivityVisitedById((i+1), false);
-//        }
+//        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
+//        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
+////        for (int i = 0; i < activities.size(); i++) {
+////            db.activityDao().updateActivityVisitedById((i+1), false);
+////        }
 
 
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
 
 
-            //TODO: DEBUG PATHS
-            if (lista.getVisibility() == View.INVISIBLE) {
-                if (iPATHS < 6){
-                    db.activityDao().updateActivityVisitedById((iPATHS), true);
-                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
-                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-                }
-                if (iPATHS == 6){
-                    db.activityDao().updateActivityVisitedById(6, true);
-                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-                }
-
-//                if (iPATHS > 6){
-//                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
-//                    for (int i = 0; i < activities.size(); i++) {
-//                        db.activityDao().updateActivityVisitedById((i+1), false);
-//                    }
-//                    iPATHS = 1;
+//            //TODO: DEBUG PATHS
+//            if (lista.getVisibility() == View.INVISIBLE) {
+//                if (iPATHS < 6){
+//                    db.activityDao().updateActivityVisitedById((iPATHS), true);
+//                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
 //                }
-                iPATHS++;
-            }
+//                if (iPATHS == 6){
+//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
+//                }
+//                if (iPATHS == 7){
+//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
+//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS), Toast.LENGTH_SHORT).show();
+//                }
+//
+////                if (iPATHS > 6){
+////                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
+////                    for (int i = 0; i < activities.size(); i++) {
+////                        db.activityDao().updateActivityVisitedById((i+1), false);
+////                    }
+////                    iPATHS = 1;
+////                }
+//                iPATHS++;
+//            }
 
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
         });
-
-        //comprueba si se ha completado la ultima actividad para activar el boton
-        //oculta el boton para reinciar las actividades una vez las haga todas
-        Button botonReiniciar = findViewById(R.id.botonReiniciar);
-        if (!db.activityDao().isActivityVisited(7)) {
-            botonReiniciar.setVisibility(View.INVISIBLE);
-            botonReiniciar.setClickable(false);
-        }
-        else {
-            botonReiniciar.setVisibility(View.VISIBLE);
-            botonReiniciar.setClickable(true);
-            botonReiniciar.setOnClickListener(v -> {
-                List<Activity> activities1 = db.activityDao().getAll();
-                for (Activity activity : activities1){
-                    db.activityDao().updateActivityVisitedById(activity.getId(), false);
-                }
-                iPATHS = 1;
-            });
-        }
-
     }
 
     /**
@@ -246,6 +229,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             String stringVariable = (i + 1) + ". aktibitatea: \"" + actividades.get(i).getActivity_name() + "\"";
             listaActividades.add(stringVariable);
         }
+        String opcion_reiniciar_lista = " - AKTIBITATEAK BERRABIARAZI - ";
+        listaActividades.add(opcion_reiniciar_lista);
 
         //crea el adaptador para la lista
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, listaActividades);
@@ -256,54 +241,65 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
-            //desactiva los botones y opciones del mapa
-            botonAbrirMapa.setClickable(false);
-            botonAbrirMenu.setClickable(false);
-            map.getUiSettings().setScrollGesturesEnabled(false);
-            map.getUiSettings().setZoomGesturesEnabled(false);
-            map.getUiSettings().setMyLocationButtonEnabled(false);
-            map.getUiSettings().setRotateGesturesEnabled(false);
 
-            //abre la nueva actividad
-            FrameLayout rootLayout = findViewById(android.R.id.content);
-            View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
-
-            //asigna los TextView
-            TextView tvTitulo = findViewById(R.id.textViewTituloAct);
-            TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
-
-            //añade la informacion
-            tvTitulo.setText(actividades.get(i).getActivity_name());
-            tvDescripcion.setText(actividades.get(i).getActivity_description());
-
-            //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+            //si hace click en el septimo reinicia TODAS las actividades
+            if (i == 7){
+                Toast.makeText(MenuPrincipalMapa.this, "Aktibitateak berrabiarazten...", Toast.LENGTH_LONG).show();
+                for (int j=1; j<=7; j++){
+                    db.activityDao().updateActivityVisitedById(j, false);
+                }
             }
+            //so hace click en cualquier otro le enseña la informacion de la actividad
+            else {
+                //desactiva los botones y opciones del mapa
+                botonAbrirMapa.setClickable(false);
+                botonAbrirMenu.setClickable(false);
+                map.getUiSettings().setScrollGesturesEnabled(false);
+                map.getUiSettings().setZoomGesturesEnabled(false);
+                map.getUiSettings().setMyLocationButtonEnabled(false);
+                map.getUiSettings().setRotateGesturesEnabled(false);
 
-            //latitud y longitud del mapa
-            ImageView mapaInfoActividad = findViewById(R.id.infoMap);
-            String lat = actividades.get(i).getActivity_coords_lat();
-            String lng = actividades.get(i).getActivity_coords_long();
-            String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
-            //MAPA INFO
-            new DownloadImageTask(mapaInfoActividad)
-                    .execute(url);
+                //abre la nueva actividad
+                FrameLayout rootLayout = findViewById(android.R.id.content);
+                View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
+
+                //asigna los TextView
+                TextView tvTitulo = findViewById(R.id.textViewTituloAct);
+                TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
+
+                //añade la informacion
+                tvTitulo.setText(actividades.get(i).getActivity_name());
+                tvDescripcion.setText(actividades.get(i).getActivity_description());
+
+                //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+                }
+
+                //latitud y longitud del mapa
+                ImageView mapaInfoActividad = findViewById(R.id.infoMap);
+                String lat = actividades.get(i).getActivity_coords_lat();
+                String lng = actividades.get(i).getActivity_coords_long();
+                String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                //MAPA INFO
+                new DownloadImageTask(mapaInfoActividad)
+                        .execute(url);
 
 
-            Button botonVolver = findViewById(R.id.btnitzuli);
-            botonVolver.setOnClickListener(view1 -> {
-                //activa los botones
-                botonAbrirMapa.setClickable(true);
-                botonAbrirMenu.setClickable(true);
-                map.getUiSettings().setScrollGesturesEnabled(true);
-                map.getUiSettings().setZoomGesturesEnabled(true);
-                map.getUiSettings().setMyLocationButtonEnabled(true);
-                map.getUiSettings().setRotateGesturesEnabled(true);
+                Button botonVolver = findViewById(R.id.btnitzuli);
+                botonVolver.setOnClickListener(view1 -> {
+                    //activa los botones
+                    botonAbrirMapa.setClickable(true);
+                    botonAbrirMenu.setClickable(true);
+                    map.getUiSettings().setScrollGesturesEnabled(true);
+                    map.getUiSettings().setZoomGesturesEnabled(true);
+                    map.getUiSettings().setMyLocationButtonEnabled(true);
+                    map.getUiSettings().setRotateGesturesEnabled(true);
 
-                //esconde la actividad
-                rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
-            });
+                    //esconde la actividad
+                    rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
+                });
+            }
         });
     }
 
@@ -498,7 +494,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                         if (location1 != null) {
                             // Logic to handle location object
                             LatLng origin = new LatLng(location1.getLatitude(), location1.getLongitude());
-                            map.animateCamera(CameraUpdateFactory.newLatLng(origin));
+                            //map.animateCamera(CameraUpdateFactory.newLatLng(origin));
                             String url = "";
                             //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
                             if (!db.activityDao().isActivityVisited(7) && !db.activityDao().isActivityVisited(1)) {
@@ -537,35 +533,42 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                  * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
 
+
+
+
                 //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
-                if ((location.distanceTo(KurutziagaLocation)<20)&&(!db.activityDao().isActivityVisited(7))){
+                if ((location.distanceTo(KurutziagaLocation)<20&&location.distanceTo(KurutziagaLocation)>19)&&(!db.activityDao().isActivityVisited(7))){
+
                     //inicia primera actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada1_presentacion.class));
-                    if ((location.distanceTo(BasilikaLocation)<20)&&(db.activityDao().isActivityVisited(1))) {
-                        //inicia segunda actividad
-                        startActivity(new Intent(MenuPrincipalMapa.this, parada2_presentacion.class));
-                        if ((location.distanceTo(UdaletxeaLocation)<20)&&(db.activityDao().isActivityVisited(2))){
-                            //inicia tercera actividad
-                            startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
-                            if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))){
-                                //inicia cuarta actividad
-                                startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
-                                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))){
-                                    //inicia quinta actividad
-                                    startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
-                                    if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))){
-                                        //inicia sexta actividad
-                                        startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
-                                        if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))){
-                                            //inicia septima actividad
-                                            startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+
                 }
+                if ((location.distanceTo(BasilikaLocation)<20&&location.distanceTo(BasilikaLocation)>19)&&(db.activityDao().isActivityVisited(1))) {
+                    //inicia segunda actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada2_presentacion.class));
+                }
+                if ((location.distanceTo(UdaletxeaLocation)<20&&location.distanceTo(UdaletxeaLocation)>19)&&(db.activityDao().isActivityVisited(2))) {
+                    //inicia tercera actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
+                }
+                if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))) {
+                    //inicia cuarta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
+                }
+                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))) {
+                    //inicia quinta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
+                }
+                if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))) {
+                    //inicia sexta actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
+                }
+                if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))) {
+                    //inicia septima actividad
+                    startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
+                }
+
+
             }
         }
     };

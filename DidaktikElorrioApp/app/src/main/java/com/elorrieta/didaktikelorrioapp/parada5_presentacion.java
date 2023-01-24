@@ -34,7 +34,7 @@ public class parada5_presentacion extends AppCompatActivity {
         //oculta la barra de arriba
         getSupportActionBar().hide();
 
-        sound.createSound(parada5_presentacion.this);
+        //sound.createSound(parada5_presentacion.this);
 
 
         Lang.lang = Locale.getDefault().getLanguage();

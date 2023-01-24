@@ -178,7 +178,7 @@ public class Puzzle_Pasteleria extends AppCompatActivity {
                     //Para actualizar la base de datos
                     db.activityDao().updateActivityVisitedById(4, true);
                     Handler handler = new Handler();
-                    handler.postDelayed(() -> startActivity(new Intent(Puzzle_Pasteleria.this, parada5_presentacion.class)), 2200); //3 segundos
+                    handler.postDelayed(() -> startActivity(new Intent(Puzzle_Pasteleria.this, MenuPrincipalMapa.class)), 2200); //3 segundos
                 } else {
                     //Por aqui es que estan mal los ingredientes y pone una x roja en grande
                     view1.setImageResource(R.drawable.xroja1);
