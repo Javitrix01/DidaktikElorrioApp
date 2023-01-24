@@ -1,12 +1,4 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-#Mon Jan 23 14:05:32 CET 2023
-=======
-#Mon Jan 23 12:39:09 CET 2023
->>>>>>> e1d344cbe358f4a9d131df1bdf1888cc299741f0
-=======
-#Mon Jan 23 14:10:19 UTC 2023
->>>>>>> Stashed changes
+#Tue Jan 24 12:04:48 CET 2023
 path.4=1/classes.dex
 path.3=15/classes.dex
 path.2=12/classes.dex
@@ -17,38 +9,20 @@ path.7=9/classes.dex
 path.6=8/classes.dex
 path.5=5/classes.dex
 path.0=classes.dex
-<<<<<<< Updated upstream
-base.4=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.3=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.2=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.1=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-=======
-base.4=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.3=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.2=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.1=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
->>>>>>> Stashed changes
+base.4=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.3=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.2=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.1=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 renamed.7=classes8.dex
-<<<<<<< Updated upstream
-base.8=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.8=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 renamed.6=classes7.dex
-base.7=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.7=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 renamed.5=classes6.dex
-base.6=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.6=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
 renamed.4=classes5.dex
-base.5=C\:\\Users\\in2dm3\\Documents\\GitHub\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-=======
-base.8=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-renamed.6=classes7.dex
-base.7=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-renamed.5=classes6.dex
-base.6=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-renamed.4=classes5.dex
-base.5=C\:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
->>>>>>> Stashed changes
+base.5=C\:\\Users\\in2dm3\\Desktop\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex

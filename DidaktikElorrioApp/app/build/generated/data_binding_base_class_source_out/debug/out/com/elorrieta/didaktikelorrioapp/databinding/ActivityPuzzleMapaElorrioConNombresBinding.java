@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -26,11 +27,16 @@ public final class ActivityPuzzleMapaElorrioConNombresBinding implements ViewBin
   @NonNull
   public final ImageView imageView23;
 
+  @NonNull
+  public final AppCompatTextView puzzelIt2;
+
   private ActivityPuzzleMapaElorrioConNombresBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnMapaElorrioConNombre, @NonNull ImageView imageView23) {
+      @NonNull Button btnMapaElorrioConNombre, @NonNull ImageView imageView23,
+      @NonNull AppCompatTextView puzzelIt2) {
     this.rootView = rootView;
     this.btnMapaElorrioConNombre = btnMapaElorrioConNombre;
     this.imageView23 = imageView23;
+    this.puzzelIt2 = puzzelIt2;
   }
 
   @Override
@@ -73,8 +79,14 @@ public final class ActivityPuzzleMapaElorrioConNombresBinding implements ViewBin
         break missingId;
       }
 
+      id = R.id.puzzelIt2;
+      AppCompatTextView puzzelIt2 = ViewBindings.findChildViewById(rootView, id);
+      if (puzzelIt2 == null) {
+        break missingId;
+      }
+
       return new ActivityPuzzleMapaElorrioConNombresBinding((ConstraintLayout) rootView,
-          btnMapaElorrioConNombre, imageView23);
+          btnMapaElorrioConNombre, imageView23, puzzelIt2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

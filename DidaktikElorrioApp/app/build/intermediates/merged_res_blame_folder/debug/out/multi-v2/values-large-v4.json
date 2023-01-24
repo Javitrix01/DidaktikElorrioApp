@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-72:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-3:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,185,256,326,396,464,532,636",
-                        "endColumns": "58,70,70,69,69,67,67,103,115",
-                        "endOffsets": "109,180,251,321,391,459,527,631,747"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",
@@ -30,6 +20,16 @@
                         "endLines": "11,12,18,24",
                         "endColumns": "121,133,10,10",
                         "endOffsets": "869,1003,1444,1887"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\in2dm3\\Documents\\Isra\\Repositorios\\Event4u\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
                     }
                 }
             ]

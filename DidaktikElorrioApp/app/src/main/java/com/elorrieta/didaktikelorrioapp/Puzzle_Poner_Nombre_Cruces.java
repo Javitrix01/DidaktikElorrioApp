@@ -48,6 +48,8 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
         vectorError = MediaPlayer.create(this, R.raw.error);
         //Boton esperando
 
+        //crea una instancia de la base de datos
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
         btn_comprobar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(1, true); startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class));});
 
         btn_comprobar.setOnClickListener(new View.OnClickListener() {

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="32dp"
+        android:text="Sacatu pantaila argazkien gainean argazkia ateratzeko "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="196dp">
+
+            <ImageButton
+                android:id="@+id/imageButton1I"
+                android:layout_width="197dp"
+                android:layout_height="240dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika1"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/basilika1" />
+
+            <ImageButton
+                android:id="@+id/imageButton1D"
+                android:layout_width="193dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika2"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:src="@drawable/basilika2"
+                tools:srcCompat="@drawable/basilika2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="227dp">
+
+            <ImageButton
+                android:id="@+id/imageButton2I"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika3"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/basilika3" />
+
+            <ImageButton
+                android:id="@+id/imageButton2D"
+                android:layout_width="198dp"
+                android:layout_height="240dp"
+                android:background="#002656B5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika5"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:src="@drawable/basilika5"
+                tools:srcCompat="@drawable/basilika5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="206dp">
+
+            <ImageButton
+                android:id="@+id/imageButton3I"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="#00B52626"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika4"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/basilika4" />
+
+            <ImageButton
+                android:id="@+id/imageButton3D"
+                android:layout_width="206dp"
+                android:layout_height="197dp"
+                android:background="#003BB526"
+                android:scaleType="fitCenter"
+                android:src="@drawable/basilika6"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:src="@drawable/basilika6"
+                tools:srcCompat="@drawable/basilika6" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/GuardarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/baieztatu_eta_gorde" />
+
+</LinearLayout>

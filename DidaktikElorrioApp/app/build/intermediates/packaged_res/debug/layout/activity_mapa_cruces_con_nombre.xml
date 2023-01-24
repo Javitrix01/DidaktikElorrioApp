@@ -7,14 +7,31 @@
     android:background="@drawable/background1"
     tools:context=".Mapa_Cruces_Con_Nombre">
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/puzzelIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fontdiner_swanky"
+        android:paddingBottom="30dp"
+        android:text="@string/full_logo"
+        android:textAlignment="center"
+        android:textColor="#323232"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="470dp"
         android:layout_height="249dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="200dp"
         android:contentDescription="@string/cruces_de_elorrio_con_nombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cruceselorrio" />

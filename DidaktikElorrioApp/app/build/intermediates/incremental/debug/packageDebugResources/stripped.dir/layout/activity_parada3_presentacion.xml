@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:orientation="vertical"
+    tools:context=".parada3_presentacion">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/first_line"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/white_line" />
+
+            <View
+                android:id="@+id/second_line"
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/first_line"
+                android:background="@drawable/yellow_line" />
+
+            <View
+                android:id="@+id/third_line"
+                android:layout_width="20dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/second_line"
+                android:background="@drawable/white_line" />
+
+            <View
+                android:id="@+id/fourth_line"
+                android:layout_width="20dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/third_line"
+                android:background="@drawable/yellow_line" />
+
+            <View
+                android:id="@+id/fiveth_line"
+                android:layout_width="20dp"
+                android:layout_height="220dp"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/fourth_line"
+                android:background="@drawable/white_line" />
+
+            <View
+                android:id="@+id/sixth_line"
+                android:layout_width="20dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/fiveth_line"
+                android:background="@drawable/yellow_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/logo"
+
+            >
+
+            <TextView
+                android:id="@+id/startLogo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/fontdiner_swanky"
+                android:text="@string/firstlogoparada3"
+                android:textColor="#F5FFFFFF"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/startLogo3"
+
+                android:fontFamily="@font/fontdiner_swanky"
+                android:text="@string/logoparada3"
+                android:textColor="#000000"
+                android:textSize="48sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/fontdiner_swanky"
+                    android:text="DidaktikElorrioApp"
+                    android:textColor="@android:color/secondary_text_light_nodisable"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
