@@ -28,6 +28,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -48,6 +50,8 @@ public class MostrarFotosBasilica extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+
         String[] permissionsStorage = {WRITE_EXTERNAL_STORAGE};
         int requestExternalStorage = 1;
         int permission = ActivityCompat.checkSelfPermission(this, WRITE_EXTERNAL_STORAGE);
@@ -55,7 +59,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, permissionsStorage, requestExternalStorage);
         }
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_mostrar_fotos_basilica);
+        setContentView(R.layout.activity_mostrar_fotos_basilika);
         btnGuardar = findViewById(R.id.GuardarBtn);
         imgView_1I = findViewById(R.id.imageButton1I);
         imgView_1D = findViewById(R.id.imageButton1D);
@@ -66,8 +70,21 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         imgView_1I.setClickable(false);
 
         btnGuardar.setOnClickListener(view -> {
-            Bitmap bitmap = ((BitmapDrawable)imgView_1I.getDrawable()).getBitmap();
-            saveImage(bitmap);
+            Bitmap bitmap1D = ((BitmapDrawable)imgView_1D.getDrawable()).getBitmap();
+            saveImage(bitmap1D);
+            Bitmap bitmap1I = ((BitmapDrawable)imgView_1I.getDrawable()).getBitmap();
+            saveImage(bitmap1I);
+            Bitmap bitmap2I = ((BitmapDrawable)imgView_2I.getDrawable()).getBitmap();
+            saveImage(bitmap2I);
+            Bitmap bitmap2D = ((BitmapDrawable)imgView_2D.getDrawable()).getBitmap();
+            saveImage(bitmap2D);
+            Bitmap bitmap3I = ((BitmapDrawable)imgView_3I.getDrawable()).getBitmap();
+            saveImage(bitmap3I);
+            Bitmap bitmap3D = ((BitmapDrawable)imgView_3D.getDrawable()).getBitmap();
+            saveImage(bitmap3D);
+            db.activityDao().updateActivityVisitedById(2,true);
+            Intent intent = new Intent(MostrarFotosBasilica.this,MenuPrincipalMapa.class);
+            this.startActivity(intent);
         });
         imgView_1I.setOnClickListener(view -> {
             abrirCamara(1);
