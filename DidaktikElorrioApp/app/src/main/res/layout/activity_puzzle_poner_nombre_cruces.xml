@@ -366,18 +366,21 @@
             android:id="@+id/txtPreguntaCruces"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:paddingTop="20dp"
             android:text="@string/zein_gurutze"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/et_Iguriako_Gurutzea"
-            android:layout_width="match_parent"
+            android:layout_width="391dp"
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textAlignment="center"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
