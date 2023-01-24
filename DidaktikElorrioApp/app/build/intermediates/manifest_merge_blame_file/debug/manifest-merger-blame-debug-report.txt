@@ -102,9 +102,15 @@
 55        android:theme="@style/Theme.DidaktikElorrioApp" >
 55-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:9-56
 56        <activity
+<<<<<<< HEAD
 56-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
 57            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilika"
 57-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:38:13-49
+=======
+56-->C:\Users\in2dm3\Desktop\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
+57            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
+57-->C:\Users\in2dm3\Desktop\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:38:13-49
+>>>>>>> 3e435c0bc427b48d1c5331d52e5637146fb3134a
 58            android:exported="false" >
 58-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:39:13-37
 59            <meta-data

@@ -54,7 +54,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.DidaktikElorrioApp" >
         <activity
-            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilika"
+            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

@@ -19,6 +19,6 @@ public class Mapa_Cruces_Con_Nombre extends AppCompatActivity {
         botonPasar.setClickable(true);
 
         getSupportActionBar().hide();
-        botonPasar.setOnClickListener(view -> startActivity(new Intent(Mapa_Cruces_Con_Nombre.this, Puzzle_Poner_Nombre_Cruces.class)));
+        botonPasar.setOnClickListener(view -> startActivity(new Intent(Mapa_Cruces_Con_Nombre.this, MenuPrincipalMapa.class)));
     }
 }

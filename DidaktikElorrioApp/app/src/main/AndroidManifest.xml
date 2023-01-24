@@ -35,7 +35,7 @@
         android:theme="@style/Theme.DidaktikElorrioApp"
         tools:targetApi="31">
         <activity
-            android:name=".MostrarFotosBasilika"
+            android:name=".MostrarFotosBasilica"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

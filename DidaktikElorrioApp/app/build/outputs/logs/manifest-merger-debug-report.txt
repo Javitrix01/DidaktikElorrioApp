@@ -241,9 +241,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\in
 	android:theme
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:9-56
 	android:dataExtractionRules
+<<<<<<< HEAD
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-65
 activity#com.elorrieta.didaktikelorrioapp.MostrarFotosBasilika
 ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
+=======
+		ADDED from C:\Users\in2dm3\Desktop\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-65
+activity#com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica
+ADDED from C:\Users\in2dm3\Desktop\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
+>>>>>>> 3e435c0bc427b48d1c5331d52e5637146fb3134a
 	android:exported
 		ADDED from C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:39:13-37
 	android:name
