@@ -2,27 +2,20 @@ package com.elorrieta.didaktikelorrioapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import android.media.MediaPlayer;
 import com.elorrieta.didaktikelorrioapp.Class.Sound;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
-
-    TextView nonbre1, nonbre2, nonbre3, nonbre4, nonbre5, nonbre6, nonbre7, nonbre8, flatante;
+    TextView nombre1,nombre2,nombre3,nombre4,nombre5,nombre6,nombre7,faltante;
     Button btn_comprobar;
     Sound sonido;
-    MediaPlayer vectorAcierto = new MediaPlayer();
-    MediaPlayer vectorError = new MediaPlayer();
-    String textofalt;
-
-    String[] faltan = getResources().getStringArray(R.array.lugares);
+    MediaPlayer vectorAcierto=new MediaPlayer();
+    MediaPlayer vectorError=new MediaPlayer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,100 +23,83 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle_poner_nombre_cruces);
 
 
-        flatante = (TextView) findViewById(R.id.et_Iguriako_Gurutzea);
+        faltante = findViewById(R.id.et_Iguriako_Gurutzea);
 
-
-        final String[] text = new String[7];
         //Variables inicializadas
-        nonbre1 = (TextView) findViewById(R.id.et_Kurutzebarri);
-        nonbre2 = (TextView) findViewById(R.id.et_Ganondo);
-        nonbre3 = (TextView) findViewById(R.id.et_Iguriako_Gurutzea);
-        nonbre4 = (TextView) findViewById(R.id.et_SanJuan);
-        nonbre5 = (TextView) findViewById(R.id.et_kurutziaga);
-        nonbre6 = (TextView) findViewById(R.id.et_Kurutzondo);
-        nonbre7 = (TextView) findViewById(R.id.et_SantaElena);
-        nonbre8 = (TextView) findViewById(R.id.et_Txanberi);
-        btn_comprobar = (Button) findViewById(R.id.btnJarraituPuzCrucesNombre);
+        nombre1 = findViewById(R.id.et_Kurutzebarri);
+        nombre2 = findViewById(R.id.et_Ganondo);
+        nombre3 = findViewById(R.id.et_SanJuan);
+        nombre4 = findViewById(R.id.et_kurutziaga);
+        nombre5 = findViewById(R.id.et_Kurutzondo);
+        nombre6 = findViewById(R.id.et_SantaElena);
+        nombre7 = findViewById(R.id.et_Txanberi);
+        btn_comprobar = findViewById(R.id.btnJarraituPuzCrucesNombre);
         vectorAcierto = MediaPlayer.create(this, R.raw.victory);
         vectorError = MediaPlayer.create(this, R.raw.error);
         //Boton esperando
-
-        //crea una instancia de la base de datos
-        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
-        btn_comprobar.setOnClickListener(view -> {  db.activityDao().updateActivityVisitedById(1, true); startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class));});
-
-        btn_comprobar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Variables cargadas con los string recoguidos de sus respectivas cajas de texto
-                @SuppressLint("ResourceType") String text1 = nonbre1.getText().toString().trim();
-                @SuppressLint("ResourceType") String text2 = nonbre2.getText().toString().trim();
-                @SuppressLint("ResourceType") String text3 = nonbre3.getText().toString().trim();
-                @SuppressLint("ResourceType") String text4 = nonbre4.getText().toString().trim();
-                @SuppressLint("ResourceType") String text5 = nonbre5.getText().toString().trim();
-                @SuppressLint("ResourceType") String text6 = nonbre6.getText().toString().trim();
-                @SuppressLint("ResourceType") String text7 = nonbre7.getText().toString().trim();
-                @SuppressLint("ResourceType") String text8 = nonbre8.getText().toString().trim();
-                text[0] = text1;
-                text[1] = text2;
-                text[2] = text3;
-                text[3] = text4;
-                text[4] = text5;
-                text[5] = text6;
-                text[6] = text7;
-                text[7] = text8;
-                //if para enviar las variables con los strings a la funcion y determinar si es correcto
-                if (comprobar(text1, text2, text3, text4, text5, text6, text7, text8)) {
-                    if (vectorError.isPlaying()) {
-                        vectorError.pause();
-                    } else {
-                        vectorError.start();
-                        if (Sound.error != null) {
-                            if (Sound.error.isPlaying()) {
-                                sonido.switchMusic(Sound.gameMusic, Sound.error);
-                            }
-                        }
-                    }
-                    //textofalt=", "+faltan[1]+", "+faltan[2]+", "+faltan[3]+", "+faltan[4]+", "+faltan[6]+", "+faltan[7]+", "+faltan[8];
-                    //flatante.setText(textofalt);
-                } else {
-                    if (vectorAcierto.isPlaying()) {
-                        vectorAcierto.pause();
-                    } else {
-                        vectorAcierto.start();
-                        if (Sound.winningSound != null) {
-                            if (Sound.winningSound.isPlaying()) {
-                                sonido.switchMusic(Sound.gameMusic, Sound.winningSound);
-                            }
+        btn_comprobar.setOnClickListener(view -> {
+            //Variables cargadas con los string recoguidos de sus respectivas cajas de texto
+            String text1=nombre1.getText().toString().trim();
+            String text2=nombre2.getText().toString().trim();
+            String text3=nombre3.getText().toString().trim();
+            String text4=nombre4.getText().toString().trim();
+            String text5=nombre5.getText().toString().trim();
+            String text6=nombre6.getText().toString().trim();
+            String text7=nombre7.getText().toString().trim();
+            //if para enviar las variables con los strings a la funcion y determinar si es correcto
+            if(!Comprobar(text1,text2,text3,text4,text5,text6,text7)){
+                if(vectorError.isPlaying()){
+                    vectorError.pause();
+                }else{
+                    vectorError.start();
+                    if(Sound.error!=null) {
+                        if (Sound.error.isPlaying()) {
+                            sonido.switchMusic(Sound.gameMusic, Sound.error);
                         }
                     }
                 }
+                faltante.setText("Errorea");
 
+            }else{
+                if(vectorAcierto.isPlaying()){
+                    vectorAcierto.pause();
+                }else {
+                    vectorAcierto.start();
+                    if(Sound.winningSound!=null) {
+                        if (Sound.winningSound.isPlaying()) {
+                            sonido.switchMusic(Sound.gameMusic, Sound.winningSound);
+                        }
+                    }
+                }
+                faltante.setText("Iguriako");
+                //crea una instancia de la base de datos
+                AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
+                //actualiza el estado de la actividad en la base de datos
+                db.activityDao().updateActivityVisitedById(1, true);
+                //inicia la actividad del mapa principal
+                startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class));
             }
+
         });
     }
 
-    public boolean comprobar(String nombre1, String nombre2, String nombre3, String nombre4, String nombre5, String nombre6, String nombre7, String nombre8) {
-        Boolean compr = true;
-
+    /**
+     * Funcion que comprueba los valores introducidos por el usuario en los TextViews
+     * @param nombres   Lista de los nombres puestos por el usuario.
+     * @return          True si la comprobacion es correcta, false si hay errores.
+     */
+    public boolean Comprobar(String... nombres){
+        //array con todos los valores para la comprobacion
+        String[] array_comprobacion = new String[]{"KB", "GD", "SJ", "KT", "KO", "SE", "TB"};
+        int comprobacion = 0;
         //Comprobaciones de los strings
-        if (nombre1.equals("KB")) {
-            if (nombre2.equals("GD")) {
-                if (nombre3.equals("IG")) {
-                    if (nombre4.equals("SJ")) {
-                        if (nombre5.equals("KT")) {
-                            if (nombre6.equals("KO")) {
-                                if (nombre7.equals("SE")) {
-                                    if (nombre8.equals("TB")) {
-                                        compr = false;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+        for (int i=0; i<array_comprobacion.length; i++){
+            if (array_comprobacion[i].equals(nombres[i])){
+                comprobacion++;
             }
         }
-        return compr;
+        if (comprobacion == 7){return true;}
+        return false;
     }
+
 }
