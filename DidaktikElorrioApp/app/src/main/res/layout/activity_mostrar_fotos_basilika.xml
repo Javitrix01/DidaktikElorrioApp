@@ -21,11 +21,11 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="616dp">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="196dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/imageButton1I"
@@ -51,8 +51,8 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="227dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/imageButton2I"
@@ -77,8 +77,8 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="206dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/imageButton3I"
@@ -108,7 +108,8 @@
     <Button
         android:id="@+id/GuardarBtn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="57dp"
+        android:layout_margin="20dp"
         android:text="@string/baieztatu_eta_gorde" />
 
 </LinearLayout>
