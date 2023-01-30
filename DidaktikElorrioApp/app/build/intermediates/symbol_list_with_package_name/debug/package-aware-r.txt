@@ -3348,7 +3348,6 @@ id Layout
 id Levels
 id META
 id MapaElorrio
-id MenuLateral
 id NO_DEBUG
 id P1E
 id P1G
@@ -3524,8 +3523,6 @@ id beginning
 id bestChoice
 id bird
 id blocking
-id botonprueba
-id botonprueba2
 id bottom
 id bounce
 id bounceBoth
@@ -3807,7 +3804,6 @@ id listaMenuPrincipal
 id locale
 id logo
 id ltr
-id map
 id mapOverlayView
 id mapPRUEBA
 id marquee
@@ -4324,7 +4320,6 @@ layout activity_introduccion_parada6
 layout activity_introduccion_parada7
 layout activity_main
 layout activity_mapa_cruces_con_nombre
-layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
 layout activity_mostrar_fotos_basilika

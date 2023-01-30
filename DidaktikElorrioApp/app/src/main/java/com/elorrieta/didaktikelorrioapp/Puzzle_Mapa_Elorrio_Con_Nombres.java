@@ -8,6 +8,12 @@ import android.widget.Button;
 
 public class Puzzle_Mapa_Elorrio_Con_Nombres extends AppCompatActivity {
 
+    /**
+     * Pantalla en la que se les enseña una foto con distintos
+     * sitios señalados por numeros para que realizen la siguiente actividad.
+     * Pueden pasar cuando quieran mediante un boton.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

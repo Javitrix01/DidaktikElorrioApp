@@ -20,6 +20,10 @@ import java.util.Locale;
 
 public class parada3_presentacion extends AppCompatActivity {
 
+    /**
+     * Animacion de la presentacion de la parada 3.
+     */
+
     Animation topAnimation,bottomAnimation,middleAnimation;
     View line1,line2,line3,line4,line5,line6;
     TextView signture,startLogo;

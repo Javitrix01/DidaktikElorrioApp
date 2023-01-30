@@ -213,7 +213,6 @@ id GuardarBtn
 id Layout
 id Levels
 id MapaElorrio
-id MenuLateral
 id P1E
 id P1G
 id P2E
@@ -298,8 +297,6 @@ id bSoundOffOn24
 id bSoundOffOn9
 id bSoundOffOnChoose
 id bird
-id botonprueba
-id botonprueba2
 id btn1
 id btn2
 id btn3
@@ -427,7 +424,6 @@ id linearLayoutNombresCruces
 id lion
 id listaMenuPrincipal
 id logo
-id map
 id mapOverlayView
 id mapPRUEBA
 id progressBar3
@@ -555,7 +551,6 @@ layout activity_introduccion_parada6
 layout activity_introduccion_parada7
 layout activity_main
 layout activity_mapa_cruces_con_nombre
-layout activity_maps
 layout activity_menu_principal_mapa
 layout activity_mostrar_foto_mapa
 layout activity_mostrar_fotos_basilika

@@ -17,6 +17,13 @@ import com.elorrieta.didaktikelorrioapp.Class.Sound;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Pasteleria extends AppCompatActivity {
+
+    /**
+     * Pantalla en la que tienen que clickar en los diferentes ingredientes.
+     * Tienen un boton para comprobar las respuestas, una vez lo tengan bien pasan
+     * de actividad.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

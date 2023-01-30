@@ -12,6 +12,12 @@ import com.elorrieta.didaktikelorrioapp.Class.Sound;
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
+
+    /**
+     * Pantalla en la que tiene que poner cual es cada cruze basandose
+     * en el mapa.
+     */
+
     TextView nombre1,nombre2,nombre3,nombre4,nombre5,nombre6,nombre7,faltante;
     Button btn_comprobar;
     Sound sonido;

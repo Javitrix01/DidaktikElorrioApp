@@ -17,6 +17,8 @@ import java.util.List;
 
 
     /**
+     * Funciones utilizadas para replicar e implementar la funcionalidad de direcciones de Google Maps.
+     *
      * Created by Vishal on 10/20/2018.
      */
 

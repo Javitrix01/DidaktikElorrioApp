@@ -9,6 +9,11 @@ import android.widget.Button;
 
 public class Mapa_Cruces_Con_Nombre extends AppCompatActivity {
 
+    /**
+     * Pantalla en la que se le enseña los nombres de los cruces para que haga la
+     * actividad posteriormente. Simplemente la pasa cuando quiere con un boton.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

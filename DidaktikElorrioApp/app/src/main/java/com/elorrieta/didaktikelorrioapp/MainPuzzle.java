@@ -20,14 +20,15 @@ import java.util.Locale;
 
 public class MainPuzzle extends AppCompatActivity {
 
+    /**
+     * Pantalla de animacion antes de las introducciones.
+     */
+
     Animation topAnimation,bottomAnimation,middleAnimation;
     View line1,line2,line3,line4,line5,line6;
     TextView signture,startLogo;
     RelativeLayout logo;
     Sound sound=new Sound();
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

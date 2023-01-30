@@ -11,6 +11,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
     /**
+     * Funciones utilizadas para replicar e implementar la funcionalidad de direcciones de Google Maps.
+     *
      * Created by Vishal on 10/20/2018.
      */
 

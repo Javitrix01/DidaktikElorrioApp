@@ -20,6 +20,10 @@ import java.util.Locale;
 
 public class parada7_presentacion extends AppCompatActivity {
 
+    /**
+     * Animacion de la presentacion de la parada 7.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

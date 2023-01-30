@@ -17,6 +17,10 @@ import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class IntroduccionParada3 extends AppCompatActivity {
 
+    /**
+     * Pantalla de introduccion a la actividad 3, se muestra la animacion, el audio y el texto.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

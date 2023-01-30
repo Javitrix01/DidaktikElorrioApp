@@ -29,6 +29,9 @@ import androidx.fragment.app.DialogFragment;
 import android.widget.Toast;
 
 /**
+ * Clase para administrar todos los permisos que necesita la API Google para
+ * hacer uso del mapa y sus caracteristicas.
+ *
  * Utility class for access to runtime permissions.
  */
 public abstract class PermissionUtils {

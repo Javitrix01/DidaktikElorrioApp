@@ -58,6 +58,12 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         ActivityCompat.OnRequestPermissionsResultCallback,
         TaskLoadedCallback {
 
+    /**
+     * Pantalla principal de la aplicacion, muestra el mapa y tiene la opcion de desplegar una lista
+     * en la que se muestra un poco de informacion de cada actividad ademas de una opcion para reiniciar las
+     * actividades. Ademas muestra el camino a la actividad que se debe realizar en cada momento.
+     */
+
     private Location loc;
     //localizaciones de las actividades
     LatLng Kurutziaga = new LatLng(43.1281365, -2.5397199);
@@ -78,8 +84,6 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     Location ElorrietaLocation = new Location("");
     //variables para la ruta
     Polyline currentPolyline;
-
-    //int iPATHS = 1;
 
 
     /**
@@ -165,43 +169,8 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.setVisibility(View.VISIBLE);
         });
 
-//        //TODO: QUITAR EL REINICIO DE LA BASE DE DATOS AL ACABAR EL DEBUGG
-//        List<Activity> activities = db.activityDao().getAll(); //0-6 (7) -- 1-7 (7)
-////        for (int i = 0; i < activities.size(); i++) {
-////            db.activityDao().updateActivityVisitedById((i+1), false);
-////        }
-
-
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
-
-
-//            //TODO: DEBUG PATHS
-//            if (lista.getVisibility() == View.INVISIBLE) {
-//                if (iPATHS < 6){
-//                    db.activityDao().updateActivityVisitedById((iPATHS), true);
-//                                                        //ACTIVIDAD AHORA                                                   ACTIVIDAD SIGUIENTE
-//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-//                }
-//                if (iPATHS == 6){
-//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
-//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS)+" || Actividad "+(iPATHS+1)+": "+db.activityDao().isActivityVisited(iPATHS+1), Toast.LENGTH_SHORT).show();
-//                }
-//                if (iPATHS == 7){
-//                    db.activityDao().updateActivityVisitedById(iPATHS, true);
-//                    Toast.makeText(this, "Actividad "+(iPATHS)+": "+db.activityDao().isActivityVisited(iPATHS), Toast.LENGTH_SHORT).show();
-//                }
-//
-////                if (iPATHS > 6){
-////                    Toast.makeText(this, "Reiniciando...", Toast.LENGTH_SHORT).show();
-////                    for (int i = 0; i < activities.size(); i++) {
-////                        db.activityDao().updateActivityVisitedById((i+1), false);
-////                    }
-////                    iPATHS = 1;
-////                }
-//                iPATHS++;
-//            }
-
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
@@ -280,7 +249,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 ImageView mapaInfoActividad = findViewById(R.id.infoMap);
                 String lat = actividades.get(i).getActivity_coords_lat();
                 String lng = actividades.get(i).getActivity_coords_long();
-                String url = "https://maps.google.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                String url = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
                 //MAPA INFO
                 new DownloadImageTask(mapaInfoActividad)
                         .execute(url);
@@ -533,15 +502,10 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                  * Descomentar el intent provocara que cuando se este a menos de X metros se abra una nueva actividad
                  */
 
-
-
-
-                //TODO: Acordarse de cambiar el valor de isActivity_visited a true cuando se termine una actividad para poder pasar a la siguiente
+                // dependiendo de la distancia y las actividades completadas permite iniciar una actividad u otra
                 if ((location.distanceTo(KurutziagaLocation)<20&&location.distanceTo(KurutziagaLocation)>19)&&(!db.activityDao().isActivityVisited(7))){
-
                     //inicia primera actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada1_presentacion.class));
-
                 }
                 if ((location.distanceTo(BasilikaLocation)<20&&location.distanceTo(BasilikaLocation)>19)&&(db.activityDao().isActivityVisited(1))) {
                     //inicia segunda actividad

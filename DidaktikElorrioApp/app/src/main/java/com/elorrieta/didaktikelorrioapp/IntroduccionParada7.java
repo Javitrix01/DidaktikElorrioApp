@@ -14,6 +14,10 @@ import android.widget.SeekBar;
 
 public class IntroduccionParada7 extends AppCompatActivity {
 
+    /**
+     * Pantalla de introduccion a la actividad 7, se muestra la animacion, el audio y el texto.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

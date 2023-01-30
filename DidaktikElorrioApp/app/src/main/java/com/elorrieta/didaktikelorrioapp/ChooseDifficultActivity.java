@@ -28,6 +28,11 @@ import com.google.android.material.chip.ChipGroup;
 
 
 public class ChooseDifficultActivity extends AppCompatActivity {
+
+    /**
+     * Pantalla en la que aparece las reglas para el puzzle y pasa a la siguiente actividad.
+     */
+
     private ImageButton soundBtn;
     Sound sound = new Sound();
     ImageButton[] zooImages;

@@ -15,6 +15,13 @@ import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
 
+    /**
+     * Pantalla en la que tienen que conectar los nombres con los numeros
+     * utilizando la imagen que se muestra anteriormente. Tienen un boton
+     * para comprobar las respuestas y una vez las tengan bien terminan
+     * la actividad.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

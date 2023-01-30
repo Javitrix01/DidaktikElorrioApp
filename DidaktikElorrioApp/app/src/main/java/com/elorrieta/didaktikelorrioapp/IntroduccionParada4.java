@@ -14,13 +14,14 @@ import android.widget.SeekBar;
 
 public class IntroduccionParada4 extends AppCompatActivity {
 
+    /**
+     * Pantalla de introduccion a la actividad 4, se muestra la animacion, el audio y el texto.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduccion_parada4);
-
-
-
 
         /*Animacion del personaje*/
         ImageView myImageView = (ImageView) findViewById(R.id.imageView14);

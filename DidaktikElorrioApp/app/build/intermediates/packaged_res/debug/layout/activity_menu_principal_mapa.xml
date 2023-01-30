@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.025"
-            tools:context=".MapsActivity"
+            tools:context=".MenuPrincipalMapa"
             tools:ignore="MissingConstraints" />
 
         <com.amalbit.trail.RouteOverlayView

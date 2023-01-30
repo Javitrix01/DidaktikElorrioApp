@@ -31,8 +31,9 @@ import java.util.Locale;
 
 public class HomeActivity extends AppCompatActivity {
 
-
-
+    /**
+     * Pantalla que muestra la imagen del puzzle completada para que sea mas sencillo hacerlo despues.
+     */
 
     SwitchCompat soundSwitch;
     boolean langFlag = false;

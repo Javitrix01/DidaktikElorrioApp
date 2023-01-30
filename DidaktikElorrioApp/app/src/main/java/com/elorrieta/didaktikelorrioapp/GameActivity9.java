@@ -21,6 +21,11 @@ import com.elorrieta.didaktikelorrioapp.Class.Sound;
 
 public class GameActivity9 extends AppCompatActivity {
 
+    /**
+     * Actividad del puzzle, cada vez que mueve una pieza se le suma un movimiento. Para no hacerlo frustrante si realiza
+     * 200 movimientos o mas se le muestra un boton con el que puede pasar el puzzle directamente. Ademas, a forme de desarrollador
+     * si se le hace click 10 veces al icono de sonido tambien se muestra el boton para pasar el puzzle.
+     */
 
     private final int N = 3;
     Cards cards;
@@ -107,23 +112,6 @@ public class GameActivity9 extends AppCompatActivity {
         recordTV = findViewById(R.id.tBestScore9);
         Button hintBtn = findViewById(R.id.hint);
 
-        /*
-        AnimationDrawable animationDrawable = (AnimationDrawable) hintBtn.getBackground();
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(2000);
-        animationDrawable.start();
-         */
-
-
-        /*
-        titleTV.setTypeface(digitalFont);
-        textScoreTV.setTypeface(digitalFont);
-        scoreTV.setTypeface(digitalFont);
-        textRecordTV.setTypeface(digitalFont);
-        recordTV.setTypeface(digitalFont);
-         */
-
-        //hintBtn.setOnClickListener(navigateBtnsClickListener);
         newGameBtn.setOnClickListener(navigateBtnsClickListener);
         backBtn.setOnClickListener(navigateBtnsClickListener);
         soundBtn.setOnClickListener(navigateBtnsClickListener);

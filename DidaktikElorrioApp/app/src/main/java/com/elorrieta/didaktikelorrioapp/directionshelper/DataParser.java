@@ -9,6 +9,8 @@ import java.util.List;
 import com.google.android.gms.maps.model.LatLng;
 
     /**
+     * Funciones utilizadas para replicar e implementar la funcionalidad de direcciones de Google Maps.
+     *
      * Created by Vishal on 10/20/2018.
      */
 

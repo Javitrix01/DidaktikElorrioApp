@@ -15,6 +15,13 @@ import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
 public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 
+    /**
+     * Pantalla en la que tiene que marcar si los enunciados
+     * que aparecen son verdad o mentira. Tienen un boton para
+     * comprobar las respuestas y una vez las tengan bien pasan
+     * a la siguiente actividad.
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -22,6 +22,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * Patalla de carga, es la primera que sale al abrir la aplicación. Tambien se aprovecha
+     * para hacer una comprobacion de la base de datos para que todas las actividades esten
+     * bien guardadas.
+     */
+
     //variable para el control de la funcion carga()
     private static boolean control = true;
 
@@ -108,13 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
         //crear una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
-
-        //por cada actividad la borra de la base de datos para que no haya inconsistencias y la añade
-//        for (Activity activity : actividades){
-//            db.activityDao().deleteActivity(activity);
-//            db.activityDao().insertActivity(activity);
-//        }
-
 
         //comprueba si existen las actividades necesarias
         List<Activity> comprobacionActividades;

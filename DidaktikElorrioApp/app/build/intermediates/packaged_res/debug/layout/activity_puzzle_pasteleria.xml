@@ -140,8 +140,9 @@
         android:id="@+id/imageView8"
         android:layout_width="375dp"
         android:layout_height="468dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="102dp"
-         />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

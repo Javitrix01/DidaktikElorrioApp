@@ -38,6 +38,10 @@ import java.util.Random;
 
 public class MostrarFotosBasilica extends AppCompatActivity {
 
+    /**
+     * Pantalla en la que tienen que sacar varias fotos de la basilica,
+     * cuando las sacan todas tienen un boton para pasar a la siguiente actividad.
+     */
 
     Button btnGuardar;
     ImageButton imgView_1I;

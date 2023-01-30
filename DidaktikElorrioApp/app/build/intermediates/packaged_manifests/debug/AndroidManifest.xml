@@ -97,10 +97,6 @@
             android:value="AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc" />
 
         <activity
-            android:name="com.elorrieta.didaktikelorrioapp.MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps2" />
-        <activity
             android:name="com.elorrieta.didaktikelorrioapp.InfoDelMenu"
             android:exported="false" >
             <meta-data
@@ -154,9 +150,6 @@
             android:exported="false" />
         <activity
             android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
-            android:exported="false" />
-        <activity
-            android:name="com.elorrieta.didaktikelorrioapp.GameActivity15"
             android:exported="false" />
         <activity
             android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
