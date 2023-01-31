@@ -114,9 +114,6 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         //inicializar la API de google
         Places.initialize(getApplicationContext(), MAPS_API_KEY);
 
-        //crea una instancia de la base de datos
-        AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
-
         //poner la latitud y longitud de cada localizacion
         KurutziagaLocation.setLatitude(43.1281365);
         KurutziagaLocation.setLongitude(-2.5397199);
