@@ -900,10 +900,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-76:/drawable/tickverde.png"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-merged_res-74:/layout_activity_mostrar_foto_mapa.xml.flat",
-        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_mostrar_foto_mapa.xml"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-merged_res-74:/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "com.elorrieta.didaktikelorrioapp-main-76:/mipmap-mdpi/ic_launcher_round.png"
     },

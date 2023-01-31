@@ -140,9 +140,6 @@
             android:name="com.elorrieta.didaktikelorrioapp.Mapa_Cruces_Con_Nombre"
             android:exported="false" />
         <activity
-            android:name="com.elorrieta.didaktikelorrioapp.Mostrar_Foto_Mapa"
-            android:exported="false" />
-        <activity
             android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
             android:exported="false" />
         <activity

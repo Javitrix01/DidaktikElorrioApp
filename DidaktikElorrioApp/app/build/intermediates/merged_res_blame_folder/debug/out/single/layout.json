@@ -112,10 +112,6 @@
         "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_puzzle_egia_gezurra.xml"
     },
     {
-        "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_mostrar_foto_mapa.xml",
-        "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_mostrar_foto_mapa.xml"
-    },
-    {
         "merged": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-73:/layout/activity_puzzle_mapa_elorrio_poner_nombres.xml",
         "source": "com.elorrieta.didaktikelorrioapp-main-76:/layout/activity_puzzle_mapa_elorrio_poner_nombres.xml"
     },

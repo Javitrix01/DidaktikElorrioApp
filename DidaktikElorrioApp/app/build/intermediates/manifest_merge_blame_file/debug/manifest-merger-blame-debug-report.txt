@@ -80,7 +80,7 @@
 42    </queries>
 43
 44    <application
-44-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:5-159:19
+44-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:5-156:19
 45        android:allowBackup="true"
 45-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-35
 46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -261,233 +261,227 @@
 141-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:121:13-37
 142        <activity
 142-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:122:9-124:40
-143            android:name="com.elorrieta.didaktikelorrioapp.Mostrar_Foto_Mapa"
-143-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:13-46
+143            android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
+143-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:13-41
 144            android:exported="false" />
 144-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:124:13-37
 145        <activity
 145-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:125:9-127:40
-146            android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
-146-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:13-41
+146            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada1"
+146-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:13-48
 147            android:exported="false" />
 147-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:127:13-37
 148        <activity
 148-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:128:9-130:40
-149            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada1"
-149-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:13-48
+149            android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
+149-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:13-46
 150            android:exported="false" />
 150-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:130:13-37
 151        <activity
 151-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:131:9-133:40
-152            android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
-152-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-46
+152            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
+152-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-42
 153            android:exported="false" />
 153-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:13-37
 154        <activity
 154-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:134:9-136:40
-155            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
-155-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:13-42
+155            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
+155-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:13-52
 156            android:exported="false" />
 156-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:136:13-37
 157        <activity
 157-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:137:9-139:40
-158            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
-158-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:138:13-52
+158            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
+158-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:138:13-39
 159            android:exported="false" />
 159-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:139:13-37
 160        <activity
 160-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:140:9-142:40
-161            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
-161-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-39
+161            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
+161-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-41
 162            android:exported="false" />
 162-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:142:13-37
 163        <activity
-163-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:143:9-145:40
-164            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
+163-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:143:9-151:20
+164            android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
 164-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:144:13-41
-165            android:exported="false" />
-165-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:145:13-37
-166        <activity
-166-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:146:9-154:20
-167            android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
-167-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:13-41
-168            android:exported="true" >
-168-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:148:13-36
-169            <intent-filter>
-169-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:13-153:29
-170                <action android:name="android.intent.action.MAIN" />
-170-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:150:17-69
-170-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:150:25-66
-171
-172                <category android:name="android.intent.category.LAUNCHER" />
-172-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:152:17-77
-172-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:152:27-74
-173            </intent-filter>
-174        </activity>
-175
-176        <meta-data
-176-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:156:9-158:57
-177            android:name="preloaded_fonts"
-177-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:157:13-43
-178            android:resource="@array/preloaded_fonts" />
-178-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:158:13-54
-179
+165            android:exported="true" >
+165-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:145:13-36
+166            <intent-filter>
+166-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:146:13-150:29
+167                <action android:name="android.intent.action.MAIN" />
+167-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:17-69
+167-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:25-66
+168
+169                <category android:name="android.intent.category.LAUNCHER" />
+169-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:17-77
+169-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:27-74
+170            </intent-filter>
+171        </activity>
+172
+173        <meta-data
+173-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:153:9-155:57
+174            android:name="preloaded_fonts"
+174-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:154:13-43
+175            android:resource="@array/preloaded_fonts" />
+175-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:155:13-54
+176
+177        <activity
+177-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:25:9-27:39
+178            android:name="androidx.compose.ui.tooling.PreviewActivity"
+178-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:26:13-71
+179            android:exported="true" />
+179-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:27:13-36
 180        <activity
-180-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:25:9-27:39
-181            android:name="androidx.compose.ui.tooling.PreviewActivity"
-181-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:26:13-71
+180-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:25:9-27:39
+181            android:name="androidx.activity.ComponentActivity"
+181-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:26:13-63
 182            android:exported="true" />
-182-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:27:13-36
+182-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:27:13-36
 183        <activity
-183-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:25:9-27:39
-184            android:name="androidx.activity.ComponentActivity"
-184-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:26:13-63
-185            android:exported="true" />
-185-->[androidx.compose.ui:ui-test-manifest:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\f7807b4acd3b0500098a64bc662b1eae\transformed\ui-test-manifest-1.1.1\AndroidManifest.xml:27:13-36
-186        <activity
-186-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:14:9-20:20
-187            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-187-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:15:13-91
-188            android:exported="false"
-188-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:16:13-37
-189            android:label="@string/places_autocomplete_label"
-189-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:17:13-62
-190            android:theme="@style/PlacesAutocompleteOverlay"
-190-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:18:13-61
-191            android:windowSoftInputMode="adjustResize" >
-191-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:19:13-55
-192        </activity> <!-- Needs to be explicitly declared on P+ -->
-193        <uses-library
-193-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
-194            android:name="org.apache.http.legacy"
-194-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
-195            android:required="false" />
-195-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
-196
-197        <activity
-197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-198            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-198-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-199            android:exported="false"
-199-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-200-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-201
-202        <meta-data
-202-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-203            android:name="com.google.android.gms.version"
-203-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-204            android:value="@integer/google_play_services_version" />
-204-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-205
+183-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:14:9-20:20
+184            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+184-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:15:13-91
+185            android:exported="false"
+185-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:16:13-37
+186            android:label="@string/places_autocomplete_label"
+186-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:17:13-62
+187            android:theme="@style/PlacesAutocompleteOverlay"
+187-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:18:13-61
+188            android:windowSoftInputMode="adjustResize" >
+188-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:19:13-55
+189        </activity> <!-- Needs to be explicitly declared on P+ -->
+190        <uses-library
+190-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+191            android:name="org.apache.http.legacy"
+191-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+192            android:required="false" />
+192-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\696ccba8b000b4d270cad2c0b4ad3638\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+193
+194        <activity
+194-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+195-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+196            android:exported="false"
+196-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\in2dm3\.gradle\caches\transforms-3\54662029eb1adec21824d6ae8cea3cdc\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\e63148f59155546e23ce23794467cf5f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+202
+203        <uses-library
+203-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+204            android:name="androidx.window.extensions"
+204-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+205            android:required="false" />
+205-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 206        <uses-library
-206-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-207            android:name="androidx.window.extensions"
-207-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+206-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+207            android:name="androidx.window.sidecar"
+207-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 208            android:required="false" />
-208-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-209        <uses-library
-209-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-210            android:name="androidx.window.sidecar"
-210-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-211            android:required="false" />
-211-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-212
-213        <provider
-213-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
-214            android:name="com.squareup.picasso.PicassoProvider"
-214-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
-215            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
-215-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
-216            android:exported="false" />
-216-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
-217
-218        <service
-218-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
-219            android:name="androidx.room.MultiInstanceInvalidationService"
-219-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
-220            android:directBootAware="true"
-220-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
-221            android:exported="false" />
-221-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
-222
-223        <provider
-223-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-224            android:name="androidx.startup.InitializationProvider"
-224-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-225            android:authorities="com.elorrieta.didaktikelorrioapp.androidx-startup"
-225-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-226            android:exported="false" >
-226-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+208-->[androidx.window:window:1.0.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b9da34a3a46a86407a114d89f44935d6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+209
+210        <provider
+210-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+211            android:name="com.squareup.picasso.PicassoProvider"
+211-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+212            android:authorities="com.elorrieta.didaktikelorrioapp.com.squareup.picasso"
+212-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+213            android:exported="false" />
+213-->[com.squareup.picasso:picasso:2.8] C:\Users\in2dm3\.gradle\caches\transforms-3\51220cfdca8f241ac637b786c1a1136f\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+214
+215        <service
+215-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+216            android:name="androidx.room.MultiInstanceInvalidationService"
+216-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+217            android:directBootAware="true"
+217-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+218            android:exported="false" />
+218-->[androidx.room:room-runtime:2.4.3] C:\Users\in2dm3\.gradle\caches\transforms-3\1b94f3a72e2fb32110468e74c84d12bf\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+219
+220        <provider
+220-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+221            android:name="androidx.startup.InitializationProvider"
+221-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+222            android:authorities="com.elorrieta.didaktikelorrioapp.androidx-startup"
+222-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+223            android:exported="false" >
+223-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+224            <meta-data
+224-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+225                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+225-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+226                android:value="androidx.startup" />
+226-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 227            <meta-data
-227-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-228                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-228-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+227-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+228                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+228-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 229                android:value="androidx.startup" />
-229-->[androidx.emoji2:emoji2:1.2.0] C:\Users\in2dm3\.gradle\caches\transforms-3\8355ecd96b8b1044b5c963a0a1b71e6a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+229-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 230            <meta-data
-230-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-231                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-231-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+230-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:31:13-33:52
+231                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+231-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:32:17-85
 232                android:value="androidx.startup" />
-232-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\in2dm3\.gradle\caches\transforms-3\1e97d5a331cb237d5f880371b754714a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-233            <meta-data
-233-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:31:13-33:52
-234                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-234-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:32:17-85
-235                android:value="androidx.startup" />
-235-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:33:17-49
-236        </provider>
-237
-238        <receiver
-238-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:36:9-45:20
-239            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-239-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:37:13-76
-240            android:directBootAware="false"
-240-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:38:13-44
-241            android:enabled="true"
-241-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:39:13-35
-242            android:exported="true"
-242-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:40:13-36
-243            android:permission="android.permission.DUMP" >
-243-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:41:13-57
-244            <intent-filter>
-244-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:42:13-44:29
-245                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-245-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:17-91
-245-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:25-88
-246            </intent-filter>
-247        </receiver>
-248
-249        <service
-249-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
-250            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-250-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
-251            android:exported="false" >
-251-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
-252            <meta-data
-252-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
-253                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-253-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
-254                android:value="cct" />
-254-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
-255        </service>
-256        <service
-256-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
-257            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-257-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
-258            android:exported="false"
-258-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
-259            android:permission="android.permission.BIND_JOB_SERVICE" >
-259-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
-260        </service>
-261
-262        <receiver
-262-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
-263            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-263-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
-264            android:exported="false" />
-264-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
-265    </application>
-266
-267</manifest>
+232-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:33:17-49
+233        </provider>
+234
+235        <receiver
+235-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:36:9-45:20
+236            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+236-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:37:13-76
+237            android:directBootAware="false"
+237-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:38:13-44
+238            android:enabled="true"
+238-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:39:13-35
+239            android:exported="true"
+239-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:40:13-36
+240            android:permission="android.permission.DUMP" >
+240-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:41:13-57
+241            <intent-filter>
+241-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:42:13-44:29
+242                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+242-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:17-91
+242-->[androidx.profileinstaller:profileinstaller:1.1.0] C:\Users\in2dm3\.gradle\caches\transforms-3\b740d01bb97d4863c5d8b2f883da901f\transformed\profileinstaller-1.1.0\AndroidManifest.xml:43:25-88
+243            </intent-filter>
+244        </receiver>
+245
+246        <service
+246-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+247            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+247-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+248            android:exported="false" >
+248-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+249            <meta-data
+249-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+250                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+250-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+251                android:value="cct" />
+251-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\in2dm3\.gradle\caches\transforms-3\a2d6f80006684b6d964fa9c436e8120a\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+252        </service>
+253        <service
+253-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+254            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+254-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+255            android:exported="false"
+255-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+256            android:permission="android.permission.BIND_JOB_SERVICE" >
+256-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+257        </service>
+258
+259        <receiver
+259-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+260            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+260-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+261            android:exported="false" />
+261-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\in2dm3\.gradle\caches\transforms-3\889eb3069db0706c755f7711272f86a9\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+262    </application>
+263
+264</manifest>

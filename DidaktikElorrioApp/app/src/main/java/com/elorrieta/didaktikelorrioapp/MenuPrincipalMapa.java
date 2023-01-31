@@ -458,11 +458,11 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             if (ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MenuPrincipalMapa.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) { return; }
 
             fusedLocationClient.getLastLocation()
-                    .addOnSuccessListener(MenuPrincipalMapa.this, location1 -> {
+                    .addOnSuccessListener(MenuPrincipalMapa.this, lastLocation -> {
                         // Got last known location. In some rare situations this can be null.
-                        if (location1 != null) {
+                        if (lastLocation != null) {
                             // Logic to handle location object
-                            LatLng origin = new LatLng(location1.getLatitude(), location1.getLongitude());
+                            LatLng origin = new LatLng(lastLocation.getLatitude(), lastLocation.getLongitude());
                             //map.animateCamera(CameraUpdateFactory.newLatLng(origin));
                             String url = "";
                             //marca el camino tomando como parametros la posicion actual y la posicion de la siguiente actividad por completar
