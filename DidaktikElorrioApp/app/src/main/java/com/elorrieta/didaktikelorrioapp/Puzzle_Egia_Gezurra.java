@@ -6,11 +6,9 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
-import android.os.Bundle;
 
 import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
 
@@ -28,7 +26,9 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_egia_gezurra);
 
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         //crea una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
@@ -59,38 +59,15 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 
         CheckBox P8E = findViewById(R.id.P8E);
         CheckBox P8G = findViewById(R.id.P8G);
-/**------------------Pregunta 1------------------------*/
-        P1E.setOnClickListener(view -> {
-            if(P1E.isChecked()){
-                P1G.setChecked(false);
-            }else{
-                P1G.setChecked(true);
-            }
-        });
-        P1G.setOnClickListener(view -> {
-            if(P1G.isChecked()){
-                P1E.setChecked(false);
-            }else{
-                P1E.setChecked(true);
-            }
-        });
-/**------------------- Pregunta 2 ------------------*/
-        P2E.setOnClickListener(view -> {
-            if(P2E.isChecked()){
-                P2G.setChecked(false);
-            }else{
-                P2G.setChecked(true);
-            }
-        });
-        P2G.setOnClickListener(view -> {
-            if(P2G.isChecked()){
-                P2E.setChecked(false);
-            }else{
-                P2E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 3 -------------------*/
+/*------------------Pregunta 1------------------------*/
+        P1E.setOnClickListener(view -> P1G.setChecked(!P1E.isChecked()));
+        P1G.setOnClickListener(view -> P1E.setChecked(!P1G.isChecked()));
+/*------------------- Pregunta 2 ------------------*/
+        P2E.setOnClickListener(view -> P2G.setChecked(!P2E.isChecked()));
+        P2G.setOnClickListener(view -> P2E.setChecked(!P2G.isChecked()));
+/*-------------------Pregunta 3 -------------------*/
 
+<<<<<<< HEAD
         P3E.setOnClickListener(view -> {
             if(P3E.isChecked()){
                 P3G.setChecked(false);
@@ -183,6 +160,26 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
         MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
         MediaPlayer error = MediaPlayer.create(this, R.raw.error);
 /**----------------Baieztatu--------------------*/
+=======
+        P3E.setOnClickListener(view -> P3G.setChecked(!P3E.isChecked()));
+        P3G.setOnClickListener(view -> P3E.setChecked(!P3G.isChecked()));
+/*-------------------Pregunta 4 -------------------*/
+        P4E.setOnClickListener(view -> P4G.setChecked(!P4E.isChecked()));
+        P4G.setOnClickListener(view -> P4E.setChecked(!P4G.isChecked()));
+/*-------------------Pregunta 5 -------------------*/
+        P5E.setOnClickListener(view -> P5G.setChecked(!P5E.isChecked()));
+        P5G.setOnClickListener(view -> P5E.setChecked(!P5G.isChecked()));
+/*-------------------Pregunta 6 -------------------*/
+        P6E.setOnClickListener(view -> P6G.setChecked(!P6E.isChecked()));
+        P6G.setOnClickListener(view -> P6E.setChecked(!P6G.isChecked()));
+/*-------------------Pregunta 7 -------------------*/
+        P7E.setOnClickListener(view -> P7G.setChecked(!P7E.isChecked()));
+        P7G.setOnClickListener(view -> P7E.setChecked(!P7G.isChecked()));
+/*-------------------Pregunta 8 -------------------*/
+        P8E.setOnClickListener(view -> P8G.setChecked(!P8E.isChecked()));
+        P8G.setOnClickListener(view -> P8E.setChecked(!P8G.isChecked()));
+/*----------------Baieztatu--------------------*/
+>>>>>>> d895abcd154e44d27f72ece5e38ce45b2bee86d5
         baieztatu.setOnClickListener(view -> {
             if(P1G.isChecked()&&P2E.isChecked()&&P3E.isChecked()&&P4G.isChecked()&&P5E.isChecked()&&P6G.isChecked()&&P7G.isChecked()&&P8E.isChecked()){
                 db.activityDao().updateActivityVisitedById(7, true);
