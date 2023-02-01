@@ -3539,7 +3539,6 @@ int id btnJarraituP3 0x7f0a00c8
 int id btnJarraituP4 0x7f0a00c9
 int id btnJarraituP5 0x7f0a00ca
 int id btnJarraituP6 0x7f0a00cb
-int id btnJarraituP7 0x7f0a00cc
 int id btnJarraituPuzCrucesNombre 0x7f0a00cd
 int id btnMapa 0x7f0a00ce
 int id btnMapaElorrioConNombre 0x7f0a00cf
@@ -3783,7 +3782,6 @@ int id linear 0x7f0a01bc
 int id linearLayout 0x7f0a01bd
 int id linearLayout10 0x7f0a01be
 int id linearLayout11 0x7f0a01bf
-int id linearLayout12 0x7f0a01c0
 int id linearLayout13 0x7f0a01c1
 int id linearLayout2 0x7f0a01c2
 int id linearLayout3 0x7f0a01c3

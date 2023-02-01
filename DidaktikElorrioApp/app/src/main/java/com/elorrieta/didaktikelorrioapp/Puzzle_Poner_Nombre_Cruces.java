@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Button;
 import android.widget.TextView;
 import android.media.MediaPlayer;
@@ -88,7 +89,8 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
                 //actualiza el estado de la actividad en la base de datos
                 db.activityDao().updateActivityVisitedById(1, true);
                 //inicia la actividad del mapa principal
-                startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class));
+                Handler handler = new Handler();
+                handler.postDelayed(() ->startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class)), 2200);
             }
 
         });

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -179,12 +180,18 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
                 P8E.setChecked(true);
             }
         });
+        MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
+        MediaPlayer error = MediaPlayer.create(this, R.raw.error);
 /**----------------Baieztatu--------------------*/
         baieztatu.setOnClickListener(view -> {
             if(P1G.isChecked()&&P2E.isChecked()&&P3E.isChecked()&&P4G.isChecked()&&P5E.isChecked()&&P6G.isChecked()&&P7G.isChecked()&&P8E.isChecked()){
                 db.activityDao().updateActivityVisitedById(7, true);
-                Toast.makeText(this, "Nice", Toast.LENGTH_SHORT).show();
+                victory.start();
+                Toast.makeText(this, "Oso ondo", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Puzzle_Egia_Gezurra.this, MenuPrincipalMapa.class));
+            }else{
+                Toast.makeText(this, "Txarto", Toast.LENGTH_SHORT).show();
+                error.start();
             }
         });
     }

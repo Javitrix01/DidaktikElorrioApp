@@ -34,7 +34,7 @@ public final class ActivityIntroduccionParada1Binding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
-  public final LinearLayout linearLayout12;
+  public final LinearLayout linearLayout13;
 
   @NonNull
   public final ScrollView scrollView3;
@@ -47,13 +47,13 @@ public final class ActivityIntroduccionParada1Binding implements ViewBinding {
 
   private ActivityIntroduccionParada1Binding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnJarraituP1, @NonNull Button btnSonidoP1, @NonNull ImageView imageView2,
-      @NonNull LinearLayout linearLayout12, @NonNull ScrollView scrollView3,
+      @NonNull LinearLayout linearLayout13, @NonNull ScrollView scrollView3,
       @NonNull SeekBar seekBar4, @NonNull TextView textView) {
     this.rootView = rootView;
     this.btnJarraituP1 = btnJarraituP1;
     this.btnSonidoP1 = btnSonidoP1;
     this.imageView2 = imageView2;
-    this.linearLayout12 = linearLayout12;
+    this.linearLayout13 = linearLayout13;
     this.scrollView3 = scrollView3;
     this.seekBar4 = seekBar4;
     this.textView = textView;
@@ -104,9 +104,9 @@ public final class ActivityIntroduccionParada1Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout12;
-      LinearLayout linearLayout12 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout12 == null) {
+      id = R.id.linearLayout13;
+      LinearLayout linearLayout13 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout13 == null) {
         break missingId;
       }
 
@@ -129,7 +129,7 @@ public final class ActivityIntroduccionParada1Binding implements ViewBinding {
       }
 
       return new ActivityIntroduccionParada1Binding((ConstraintLayout) rootView, btnJarraituP1,
-          btnSonidoP1, imageView2, linearLayout12, scrollView3, seekBar4, textView);
+          btnSonidoP1, imageView2, linearLayout13, scrollView3, seekBar4, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

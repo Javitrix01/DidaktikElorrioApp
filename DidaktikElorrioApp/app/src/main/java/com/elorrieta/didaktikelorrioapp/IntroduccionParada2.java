@@ -69,7 +69,7 @@ public class IntroduccionParada2 extends AppCompatActivity {
             }
         });
         Button botonPasar = findViewById(R.id.btnJarraituP2);
-        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada2.this, parada3_presentacion.class));} );
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada2.this, MostrarFotosBasilica.class));} );
 
 /*
         final boolean[] isImageButtonClicked2 = {false};

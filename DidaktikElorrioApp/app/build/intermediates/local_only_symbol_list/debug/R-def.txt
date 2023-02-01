@@ -309,7 +309,6 @@ id btnJarraituP3
 id btnJarraituP4
 id btnJarraituP5
 id btnJarraituP6
-id btnJarraituP7
 id btnJarraituPuzCrucesNombre
 id btnMapa
 id btnMapaElorrioConNombre
@@ -408,7 +407,6 @@ id levelChipGroup
 id linearLayout
 id linearLayout10
 id linearLayout11
-id linearLayout12
 id linearLayout13
 id linearLayout2
 id linearLayout3

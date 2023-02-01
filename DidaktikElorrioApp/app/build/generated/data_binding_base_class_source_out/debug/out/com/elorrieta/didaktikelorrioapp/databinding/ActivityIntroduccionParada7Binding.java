@@ -28,7 +28,7 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   public final ScrollView SVNecropolis;
 
   @NonNull
-  public final Button btnJarraituP7;
+  public final Button btnJarraituP1;
 
   @NonNull
   public final Button btnSonidoP1;
@@ -46,12 +46,12 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
   public final TextView textViewIntroNecropolis;
 
   private ActivityIntroduccionParada7Binding(@NonNull ConstraintLayout rootView,
-      @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP7, @NonNull Button btnSonidoP1,
+      @NonNull ScrollView SVNecropolis, @NonNull Button btnJarraituP1, @NonNull Button btnSonidoP1,
       @NonNull ImageView imageView18, @NonNull LinearLayout linearLayout13,
       @NonNull SeekBar seekBar4, @NonNull TextView textViewIntroNecropolis) {
     this.rootView = rootView;
     this.SVNecropolis = SVNecropolis;
-    this.btnJarraituP7 = btnJarraituP7;
+    this.btnJarraituP1 = btnJarraituP1;
     this.btnSonidoP1 = btnSonidoP1;
     this.imageView18 = imageView18;
     this.linearLayout13 = linearLayout13;
@@ -92,9 +92,9 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnJarraituP7;
-      Button btnJarraituP7 = ViewBindings.findChildViewById(rootView, id);
-      if (btnJarraituP7 == null) {
+      id = R.id.btnJarraituP1;
+      Button btnJarraituP1 = ViewBindings.findChildViewById(rootView, id);
+      if (btnJarraituP1 == null) {
         break missingId;
       }
 
@@ -129,7 +129,7 @@ public final class ActivityIntroduccionParada7Binding implements ViewBinding {
       }
 
       return new ActivityIntroduccionParada7Binding((ConstraintLayout) rootView, SVNecropolis,
-          btnJarraituP7, btnSonidoP1, imageView18, linearLayout13, seekBar4,
+          btnJarraituP1, btnSonidoP1, imageView18, linearLayout13, seekBar4,
           textViewIntroNecropolis);
     }
     String missingId = rootView.getResources().getResourceName(id);

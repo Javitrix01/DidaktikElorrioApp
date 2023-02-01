@@ -6,56 +6,56 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml
+8-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml
+9-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-11-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:6:5-81
-11-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:6:22-78
+11-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:6:5-81
+11-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:6:22-78
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-12-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:7:5-79
-12-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:7:22-76
+12-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-13-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:5-85
-13-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:22-82
+13-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:5-85
+13-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:8:22-82
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:5-67
-14-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:22-64
+14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:5-67
+14-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:9:22-64
 15    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-15-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:5-98
-15-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:22-95
+15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:5-98
+15-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:10:22-95
 16    <uses-permission android:name="android.permission.VIBRATE" />
-16-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:5-66
-16-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:22-63
+16-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:5-66
+16-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:11:22-63
 17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-17-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:5-80
-17-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:22-77
+17-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:5-80
+17-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:12:22-77
 18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-18-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:5-71
-18-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:22-68
+18-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:5-71
+18-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:13:22-68
 19
 20    <permission
-20-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:15:5-17:47
+20-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:15:5-17:47
 21        android:name="com.example.permission.MAPS_RECEIVE"
-21-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
+21-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
 22        android:protectionLevel="signature" />
-22-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
+22-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
 23
 24    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
-24-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
-24-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
+24-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
+24-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
 25
 26    <permission
-26-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:15:5-17:47
+26-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:15:5-17:47
 27        android:name="com.example.permission.MAPS_RECEIVE"
-27-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
+27-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:16:9-59
 28        android:protectionLevel="signature" />
-28-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
+28-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:17:9-44
 29
 30    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
-30-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
-30-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
+30-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:5-75
+30-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:19:22-72
 31    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
 31-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:10:5-76
 31-->[com.google.android.libraries.places:places:2.4.0] C:\Users\in2dm3\.gradle\caches\transforms-3\832873f439420606276d927cc1153142\transformed\places-2.4.0\AndroidManifest.xml:10:22-73
@@ -80,82 +80,82 @@
 42    </queries>
 43
 44    <application
-44-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:5-156:19
+44-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:27:5-156:19
 45        android:allowBackup="true"
-45-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-35
+45-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:28:9-35
 46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 46-->[androidx.core:core:1.8.0] C:\Users\in2dm3\.gradle\caches\transforms-3\c75633332e0d7727fdc9111989dafeb4\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 47        android:dataExtractionRules="@xml/data_extraction_rules"
-47-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-65
+47-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:29:9-65
 48        android:debuggable="true"
 49        android:fullBackupContent="@xml/backup_rules"
-49-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:30:9-54
+49-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:30:9-54
 50        android:icon="@mipmap/ic_launcher"
-50-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-43
+50-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:31:9-43
 51        android:label="@string/app_name"
-51-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:32:9-41
+51-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:32:9-41
 52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:33:9-54
+52-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:33:9-54
 53        android:supportsRtl="true"
-53-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:34:9-35
+53-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:34:9-35
 54        android:testOnly="true"
 55        android:theme="@style/Theme.DidaktikElorrioApp" >
-55-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:9-56
+55-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:35:9-56
 56        <activity
-56-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
+56-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:37:9-43:20
 57            android:name="com.elorrieta.didaktikelorrioapp.MostrarFotosBasilica"
-57-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:38:13-49
+57-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:38:13-49
 58            android:exported="false" >
-58-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:39:13-37
+58-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:39:13-37
 59            <meta-data
-59-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:40:13-42:36
+59-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:40:13-42:36
 60                android:name="android.app.lib_name"
-60-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:41:17-52
+60-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:41:17-52
 61                android:value="" />
-61-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:42:17-33
+61-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:42:17-33
 62        </activity>
 63        <activity
-63-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:44:9-46:40
+63-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:44:9-46:40
 64            android:name="com.elorrieta.didaktikelorrioapp.parada7_presentacion"
-64-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:45:13-49
+64-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:45:13-49
 65            android:exported="false" />
-65-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:46:13-37
+65-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:46:13-37
 66        <activity
-66-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:47:9-49:40
+66-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:47:9-49:40
 67            android:name="com.elorrieta.didaktikelorrioapp.parada6_presentacion"
-67-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:48:13-49
+67-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:48:13-49
 68            android:exported="false" />
-68-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:49:13-37
+68-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:49:13-37
 69        <activity
-69-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:50:9-52:40
+69-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:50:9-52:40
 70            android:name="com.elorrieta.didaktikelorrioapp.parada5_presentacion"
-70-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:51:13-49
+70-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:51:13-49
 71            android:exported="false" />
-71-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:52:13-37
+71-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:52:13-37
 72        <activity
-72-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:53:9-55:40
+72-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:53:9-55:40
 73            android:name="com.elorrieta.didaktikelorrioapp.parada4_presentacion"
-73-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:54:13-49
+73-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:54:13-49
 74            android:exported="false" />
-74-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:55:13-37
+74-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:55:13-37
 75        <activity
-75-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:56:9-58:40
+75-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:56:9-58:40
 76            android:name="com.elorrieta.didaktikelorrioapp.parada3_presentacion"
-76-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:57:13-49
+76-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:57:13-49
 77            android:exported="false" />
-77-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:58:13-37
+77-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:58:13-37
 78        <activity
-78-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:59:9-61:40
+78-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:59:9-61:40
 79            android:name="com.elorrieta.didaktikelorrioapp.parada2_presentacion"
-79-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:60:13-49
+79-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:60:13-49
 80            android:exported="false" />
-80-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:61:13-37
+80-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:61:13-37
 81        <activity
-81-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:62:9-64:40
+81-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:62:9-64:40
 82            android:name="com.elorrieta.didaktikelorrioapp.parada1_presentacion"
-82-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:63:13-49
+82-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:63:13-49
 83            android:exported="false" />
-83-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:64:13-37
+83-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:64:13-37
 84        <!--
 85             TODO: Before you run your application, you need a Google Maps API key.
 86
@@ -168,163 +168,163 @@
 93             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
 94        -->
 95        <meta-data
-95-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:76:9-78:71
+95-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:76:9-78:71
 96            android:name="com.google.android.geo.API_KEY"
-96-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:77:13-58
+96-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:77:13-58
 97            android:value="AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc" />
-97-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:78:13-68
+97-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:78:13-68
 98
 99        <activity
-99-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:79:9-85:20
+99-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:79:9-85:20
 100            android:name="com.elorrieta.didaktikelorrioapp.InfoDelMenu"
-100-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:80:13-40
+100-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:80:13-40
 101            android:exported="false" >
-101-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:81:13-37
+101-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:81:13-37
 102            <meta-data
-102-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:40:13-42:36
+102-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:40:13-42:36
 103                android:name="android.app.lib_name"
-103-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:41:17-52
+103-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:41:17-52
 104                android:value="" />
-104-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:42:17-33
+104-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:42:17-33
 105        </activity>
 106        <activity
-106-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:86:9-88:40
+106-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:86:9-88:40
 107            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Egia_Gezurra"
-107-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:87:13-48
+107-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:87:13-48
 108            android:exported="false" />
-108-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:88:13-37
+108-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:88:13-37
 109        <activity
-109-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:89:9-91:40
+109-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:89:9-91:40
 110            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Con_Nombres"
-110-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:90:13-60
+110-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:90:13-60
 111            android:exported="false" />
-111-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:91:13-37
+111-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:91:13-37
 112        <activity
-112-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:92:9-94:40
+112-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:92:9-94:40
 113            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Mapa_Elorrio_Poner_Nombres"
-113-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:93:13-62
+113-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:93:13-62
 114            android:exported="false" />
-114-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:94:13-37
+114-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:94:13-37
 115        <activity
-115-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:95:9-97:40
+115-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:95:9-97:40
 116            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada7"
-116-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:96:13-48
+116-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:96:13-48
 117            android:exported="false" />
-117-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:97:13-37
+117-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:97:13-37
 118        <activity
-118-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:98:9-100:40
+118-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:98:9-100:40
 119            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada6"
-119-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:99:13-48
+119-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:99:13-48
 120            android:exported="false" />
-120-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:100:13-37
+120-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:100:13-37
 121        <activity
-121-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:101:9-103:40
+121-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:101:9-103:40
 122            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada5"
-122-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:102:13-48
+122-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:102:13-48
 123            android:exported="false" />
-123-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:103:13-37
+123-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:103:13-37
 124        <activity
-124-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:104:9-106:40
+124-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:104:9-106:40
 125            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Pasteleria"
-125-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:105:13-46
+125-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:105:13-46
 126            android:exported="false" />
-126-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:106:13-37
+126-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:106:13-37
 127        <activity
-127-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:107:9-109:40
+127-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:107:9-109:40
 128            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada4"
-128-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:108:13-48
+128-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:108:13-48
 129            android:exported="false" />
-129-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:109:13-37
+129-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:109:13-37
 130        <activity
-130-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:110:9-112:40
+130-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:110:9-112:40
 131            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada3"
-131-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:111:13-48
+131-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:111:13-48
 132            android:exported="false" />
-132-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:112:13-37
+132-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:112:13-37
 133        <activity
-133-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:113:9-115:40
+133-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:113:9-115:40
 134            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada2"
-134-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:114:13-48
+134-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:114:13-48
 135            android:exported="false" />
-135-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:115:13-37
+135-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:115:13-37
 136        <activity
-136-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:116:9-118:40
+136-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:116:9-118:40
 137            android:name="com.elorrieta.didaktikelorrioapp.Puzzle_Poner_Nombre_Cruces"
-137-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:117:13-55
+137-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:117:13-55
 138            android:exported="false" />
-138-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:118:13-37
+138-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:118:13-37
 139        <activity
-139-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:119:9-121:40
+139-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:119:9-121:40
 140            android:name="com.elorrieta.didaktikelorrioapp.Mapa_Cruces_Con_Nombre"
-140-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:120:13-51
+140-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:120:13-51
 141            android:exported="false" />
-141-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:121:13-37
+141-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:121:13-37
 142        <activity
-142-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:122:9-124:40
+142-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:122:9-124:40
 143            android:name="com.elorrieta.didaktikelorrioapp.Errebonbiloa"
-143-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:13-41
+143-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:123:13-41
 144            android:exported="false" />
-144-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:124:13-37
+144-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:124:13-37
 145        <activity
-145-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:125:9-127:40
+145-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:125:9-127:40
 146            android:name="com.elorrieta.didaktikelorrioapp.IntroduccionParada1"
-146-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:13-48
+146-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:126:13-48
 147            android:exported="false" />
-147-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:127:13-37
+147-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:127:13-37
 148        <activity
-148-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:128:9-130:40
+148-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:128:9-130:40
 149            android:name="com.elorrieta.didaktikelorrioapp.MenuPrincipalMapa"
-149-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:13-46
+149-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:129:13-46
 150            android:exported="false" />
-150-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:130:13-37
+150-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:130:13-37
 151        <activity
-151-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:131:9-133:40
+151-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:131:9-133:40
 152            android:name="com.elorrieta.didaktikelorrioapp.GameActivity9"
-152-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-42
+152-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:132:13-42
 153            android:exported="false" />
-153-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:13-37
+153-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:133:13-37
 154        <activity
-154-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:134:9-136:40
+154-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:134:9-136:40
 155            android:name="com.elorrieta.didaktikelorrioapp.ChooseDifficultActivity"
-155-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:13-52
+155-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:135:13-52
 156            android:exported="false" />
-156-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:136:13-37
+156-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:136:13-37
 157        <activity
-157-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:137:9-139:40
+157-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:137:9-139:40
 158            android:name="com.elorrieta.didaktikelorrioapp.MainPuzzle"
-158-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:138:13-39
+158-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:138:13-39
 159            android:exported="false" />
-159-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:139:13-37
+159-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:139:13-37
 160        <activity
-160-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:140:9-142:40
+160-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:140:9-142:40
 161            android:name="com.elorrieta.didaktikelorrioapp.HomeActivity"
-161-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-41
+161-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:141:13-41
 162            android:exported="false" />
-162-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:142:13-37
+162-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:142:13-37
 163        <activity
-163-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:143:9-151:20
+163-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:143:9-151:20
 164            android:name="com.elorrieta.didaktikelorrioapp.MainActivity"
-164-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:144:13-41
+164-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:144:13-41
 165            android:exported="true" >
-165-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:145:13-36
+165-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:145:13-36
 166            <intent-filter>
-166-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:146:13-150:29
+166-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:146:13-150:29
 167                <action android:name="android.intent.action.MAIN" />
-167-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:17-69
-167-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:25-66
+167-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:17-69
+167-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:147:25-66
 168
 169                <category android:name="android.intent.category.LAUNCHER" />
-169-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:17-77
-169-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:27-74
+169-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:17-77
+169-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:149:27-74
 170            </intent-filter>
 171        </activity>
 172
 173        <meta-data
-173-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:153:9-155:57
+173-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:153:9-155:57
 174            android:name="preloaded_fonts"
-174-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:154:13-43
+174-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:154:13-43
 175            android:resource="@array/preloaded_fonts" />
-175-->C:\Users\in2dm3\Documents\GitHub\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:155:13-54
+175-->C:\Users\in2dm3\Documents\Jorge\DAM\ANDROID\DidaktikElorrioApp\DidaktikElorrioApp\app\src\main\AndroidManifest.xml:155:13-54
 176
 177        <activity
 177-->[androidx.compose.ui:ui-tooling:1.1.1] C:\Users\in2dm3\.gradle\caches\transforms-3\c5fc0f11ee9b2b0f3256d38bdbfc8755\transformed\ui-tooling-1.1.1\AndroidManifest.xml:25:9-27:39
