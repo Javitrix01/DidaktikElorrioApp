@@ -27,6 +27,7 @@ public class Errebonbiloa extends AppCompatActivity {
         botonPasar.setOnClickListener(view -> { db.activityDao().updateActivityVisitedById(6, true); startActivity(new Intent(Errebonbiloa.this, MenuPrincipalMapa.class)); });
 
         //esconde la barra superior
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
     }
 }

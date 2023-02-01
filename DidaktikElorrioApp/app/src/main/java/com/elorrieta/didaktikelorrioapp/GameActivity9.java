@@ -1,13 +1,9 @@
 package com.elorrieta.didaktikelorrioapp;
 
-import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -83,6 +79,7 @@ public class GameActivity9 extends AppCompatActivity {
         setContentView(R.layout.activity_game9);
 
         //oculta la barra de arriba
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
         //BOTON PASAR PUZZLE
@@ -99,28 +96,17 @@ public class GameActivity9 extends AppCompatActivity {
                 button[i][j] = findViewById(BUTTON_ID[i][j]);
                 button[i][j].setOnClickListener(onClickListener);
             }
-        Typeface digitalFont = Typeface.createFromAsset(this.getAssets(), "font.ttf");
 
         soundBtn = findViewById(R.id.bSoundOffOn9);
         ImageButton newGameBtn = findViewById(R.id.bNewGame9);
         ImageButton backBtn = findViewById(R.id.bBackMenu9);
-
-        TextView titleTV = findViewById(R.id.gameTitle9);
-        TextView textScoreTV = findViewById(R.id.tSScore9);
         scoreTV = findViewById(R.id.tScore9);
-        TextView textRecordTV = findViewById(R.id.tBestSScore9);
         recordTV = findViewById(R.id.tBestScore9);
-        Button hintBtn = findViewById(R.id.hint);
 
         newGameBtn.setOnClickListener(navigateBtnsClickListener);
         backBtn.setOnClickListener(navigateBtnsClickListener);
         soundBtn.setOnClickListener(navigateBtnsClickListener);
         if (whatToShow != null) {
-            if (whatToShow.equals("Zoo")){}
-                //hintBtn.setVisibility(View.VISIBLE);
-            else
-                //hintBtn.setVisibility(View.INVISIBLE);
-
             if (Sound.check)
                 soundBtn.setImageResource(R.drawable.soundon);
 
@@ -146,9 +132,6 @@ public class GameActivity9 extends AppCompatActivity {
                 case R.id.bSoundOffOn9:
                     soundOffOn();
                     Sound.menuClickSound.start();
-                    break;
-                case R.id.hint:
-                    openHintDialog();
                     break;
 
                 default:
@@ -235,54 +218,13 @@ public class GameActivity9 extends AppCompatActivity {
         }
     }
 
-    private void openDialog() {
-        final Dialog dialog = new Dialog(GameActivity9.this);
-        dialog.setContentView(R.layout.dialog_finished);
-        Button finishButton = dialog.findViewById(R.id.finishButton);
-        final EditText finishName = dialog.findViewById(R.id.finishName);
-        TextView finishSteps = dialog.findViewById(R.id.finishSteps);
-        finishSteps.setText(numOfSteps +" "+getString(R.string.finished_steps));
-
-        dialog.show();
-        finishButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int numOfScores,checkPlace;
-                dataBase.setPrefRef("PRESNAME9","PRESSCORE9");
-                numOfScores = dataBase.preferencesCounter.getInt("game9counter",0);
-                if(numOfScores>=10) {
-                    checkPlace = dataBase.checkIfScoreIsBest("PRESSCORE9", numOfSteps);
-                    if (checkPlace!=(-1)) {
-                        dataBase.changeValues(finishName.getText().toString(),numOfSteps,checkPlace);
-                    }
-                }
-                else
-                    dataBase.setValues(finishName.getText().toString(),numOfSteps,1);
-                dialog.dismiss();
-            }
-        });
-    }
     @Override
     public void finish() {
         super.finish();
         overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
 
     }
-    private void openHintDialog(){
-        final Dialog dialog = new Dialog(GameActivity9.this);
-        dialog.setContentView(R.layout.dialog_hint);
-        ImageButton imageButton = dialog.findViewById(R.id.hintImage);
-        imageButton.setImageBitmap(SlicingImage.hint);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
 
-        dialog.show();
-
-    }
     public void soundOffOn(){
         //contador para la opcion secreta para pasar el puzzle
         if(Sound.check)

@@ -36,6 +36,7 @@ public class MainPuzzle extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle);
 
         //oculta la barra de arriba
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
         sound.createSound(MainPuzzle.this);
@@ -70,22 +71,13 @@ public class MainPuzzle extends AppCompatActivity {
 
         signture.setAnimation(bottomAnimation);
         int TIME_OUT = 4000;
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                YoYo.with(Techniques.Swing)
-                        .duration(1000)
-                        .repeat(1);
-
-            }
-        }, TIME_OUT /2);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainPuzzle.this, HomeActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> YoYo.with(Techniques.Swing)
+                .duration(1000)
+                .repeat(1), TIME_OUT /2);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainPuzzle.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
         }, TIME_OUT);
 
 

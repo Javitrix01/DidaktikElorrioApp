@@ -14,7 +14,6 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.elorrieta.didaktikelorrioapp.Class.Lang;
-import com.elorrieta.didaktikelorrioapp.Class.Sound;
 
 import java.util.Locale;
 
@@ -31,12 +30,13 @@ public class parada6_presentacion extends AppCompatActivity {
 
         Animation topAnimation,bottomAnimation,middleAnimation;
         View line1,line2,line3,line4,line5,line6;
-        TextView signture,startLogo;
+        TextView signture;
         RelativeLayout logo;
-        Sound sound=new Sound();
 
         //oculta la barra de arriba
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         //sound.createSound(parada6_presentacion.this);
 
@@ -56,7 +56,6 @@ public class parada6_presentacion extends AppCompatActivity {
         line6 = findViewById(R.id.sixth_line);
 
         logo = findViewById(R.id.logo);
-        startLogo = findViewById(R.id.startLogo);
         signture = findViewById(R.id.signature);
 
         line1.setAnimation(topAnimation);
@@ -70,22 +69,13 @@ public class parada6_presentacion extends AppCompatActivity {
 
         signture.setAnimation(bottomAnimation);
         int TIME_OUT = 4000;
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                YoYo.with(Techniques.Swing)
-                        .duration(1000)
-                        .repeat(1);
-
-            }
-        }, TIME_OUT /2);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(parada6_presentacion.this, IntroduccionParada6.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> YoYo.with(Techniques.Swing)
+                .duration(1000)
+                .repeat(1), TIME_OUT /2);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(parada6_presentacion.this, IntroduccionParada6.class);
+            startActivity(intent);
+            finish();
         }, TIME_OUT);
 
 

@@ -13,14 +13,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -34,7 +32,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.util.Random;
 
 public class MostrarFotosBasilica extends AppCompatActivity {
 
@@ -51,7 +48,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
     ImageButton imgView_2D;
     ImageButton imgView_3I;
     ImageButton imgView_3D;
-    boolean[] comp_imagenes_sacadas = new boolean[6];
+    boolean[] comp_imagenes_sacadas = new boolean[] {false, false, false, false, false, false};
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -68,6 +65,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, permissionsStorage, requestExternalStorage);
         }
         //esconde la barra superior de la aplicacion
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
         //asignaciones de variables con el layout
@@ -81,12 +79,8 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         imgView_3D = findViewById(R.id.imageButton3D);
         imgView_1I.setClickable(false);
 
-        //inicia el array enetero de comprobacion a false
-        for (boolean i : comp_imagenes_sacadas){
-            i = false;
-        }
-
-        //funcionalidad del boton
+        //Funcion del boton:
+        //Guardar las fotos visibles en pantalla en la galeria
         btnGuardar.setOnClickListener(view -> {
             Bitmap bitmap1D = ((BitmapDrawable)imgView_1D.getDrawable()).getBitmap();
             saveImage(bitmap1D);
@@ -106,7 +100,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
                     comp++;
                 }
             }
-
+            //actualiza la base de datos y pasa a la siguiente actividad si se a completado la actividad (sacar 6 fotos)
             if (comp == 6) {
                 db.activityDao().updateActivityVisitedById(2, true);
                 Intent intent = new Intent(MostrarFotosBasilica.this, MenuPrincipalMapa.class);
@@ -116,40 +110,42 @@ public class MostrarFotosBasilica extends AppCompatActivity {
                 Toast.makeText(MostrarFotosBasilica.this, "Argazki gustiak atera behar dira.", Toast.LENGTH_LONG).show();
             }
         });
+        //funcionalidad de las imagebutton (abrir las camaras y poner la vista previa)
         imgView_1I.setOnClickListener(view -> {
             abrirCamara(1);
-            Toast.makeText(this, "1", Toast.LENGTH_SHORT).show();
+
         });
         imgView_1D.setOnClickListener(view -> {
             abrirCamara(2);
-            Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+
         });
         imgView_2I.setOnClickListener(view -> {
             abrirCamara(3);
-            Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+
         });
         imgView_2D.setOnClickListener(view -> {
             abrirCamara(4);
-            Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+
         });
         imgView_3I.setOnClickListener(view -> {
             abrirCamara(5);
-            Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
+
         });
         imgView_3D.setOnClickListener(view -> {
             abrirCamara(6);
-            Toast.makeText(this, "6", Toast.LENGTH_SHORT).show();
+
         });
 
     }
-
+    //Funcion que abre la camara con el codigo pasado por parametro para diferenciar quien ha abierto la camara
     private void abrirCamara(int code){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if(intent.resolveActivity(getPackageManager()) != null){
             startActivityForResult(intent, code);
         }
     }
-
+    //al terminar de sacar la foto y aceptar volvera a esta actividad
+    // se comprobara que boton abrio la camara y se le asignara la imagen sacada
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
@@ -157,6 +153,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             Bitmap imgBitmap = (Bitmap) extras.get("data");
 
             //dependiendo la imagen que haga click se guarda en un imagebutton diferente
+            //se añade tambien un control para saber cuales han sido modificadas y cuales no
             switch (requestCode){
                 case 1:
                     comp_imagenes_sacadas[0] = true;
@@ -183,6 +180,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
                     imgView_3D.setImageBitmap(imgBitmap);
                     break;
             }
+            //se muestra un "tick" verde para que el usuario sepa que a salido bien y puede continuar
             Toast toast = new Toast(this);
             ImageView view1 = new ImageView(this);
             view1.setImageResource(R.drawable.greentick);
@@ -192,7 +190,9 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         }
 
     }
+    //Funcion que al pasarle un bitmap lo añade a la galeria como una imagen
     private void saveImage(Bitmap bitmap) {
+        //coge la hora (nombre de archivo) y el directorio lo añade a la galeria
         if (android.os.Build.VERSION.SDK_INT >= 29) {
             ContentValues values = contentValues();
             values.put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/" + getString(R.string.app_name));
@@ -209,6 +209,10 @@ public class MostrarFotosBasilica extends AppCompatActivity {
                 }
 
             }
+        //crea un file para guardar la imagen para sdk inferiores a 29 (la forma en que se hacen es diferente)
+        //comprueba la existencia del directorio y si no existe lo crea
+        //le da el nombre segun la hora del sistema
+        // y lo guarda en la galeria
         } else {
             File directory = new File(Environment.getExternalStorageDirectory().toString() + '/' + getString(R.string.app_name));
 
@@ -228,7 +232,8 @@ public class MostrarFotosBasilica extends AppCompatActivity {
 
         }
     }
-
+    //coge el tipo de imagen y la hora en segundos y los devuelve
+    //funcion de apoyo a la funcion "saveImage"
     private ContentValues contentValues() {
         ContentValues values = new ContentValues();
         values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
@@ -238,7 +243,8 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         }
         return values;
     }
-
+    //coge un bitmap y una corriente de salida (outputstream) y lo comprime en formato png
+    //funcion de apoyo a la funcion "saveImage"
     private void saveImageToStream(Bitmap bitmap, OutputStream outputStream) {
         if (outputStream != null) {
             try {

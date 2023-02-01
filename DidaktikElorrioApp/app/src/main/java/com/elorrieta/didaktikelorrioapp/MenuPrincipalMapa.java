@@ -199,7 +199,7 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
         listaActividades.add(opcion_reiniciar_lista);
 
         //crea el adaptador para la lista
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, listaActividades);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, listaActividades);
         lista.setAdapter(arrayAdapter);
 
         //crea un escuchador para que se pueda mostrar la informacion de las actividades cuando se hace click en ellas
