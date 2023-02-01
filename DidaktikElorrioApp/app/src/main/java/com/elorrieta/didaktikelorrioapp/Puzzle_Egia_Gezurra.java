@@ -59,108 +59,18 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 
         CheckBox P8E = findViewById(R.id.P8E);
         CheckBox P8G = findViewById(R.id.P8G);
+
+
+        MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
+        MediaPlayer error = MediaPlayer.create(this, R.raw.error);
+
 /*------------------Pregunta 1------------------------*/
         P1E.setOnClickListener(view -> P1G.setChecked(!P1E.isChecked()));
         P1G.setOnClickListener(view -> P1E.setChecked(!P1G.isChecked()));
 /*------------------- Pregunta 2 ------------------*/
         P2E.setOnClickListener(view -> P2G.setChecked(!P2E.isChecked()));
         P2G.setOnClickListener(view -> P2E.setChecked(!P2G.isChecked()));
-/*-------------------Pregunta 3 -------------------*/
-
-<<<<<<< HEAD
-        P3E.setOnClickListener(view -> {
-            if(P3E.isChecked()){
-                P3G.setChecked(false);
-            }else{
-                P3G.setChecked(true);
-            }
-        });
-        P3G.setOnClickListener(view -> {
-            if(P3G.isChecked()){
-                P3E.setChecked(false);
-            }else{
-                P3E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 4 -------------------*/
-        P4E.setOnClickListener(view -> {
-            if(P4E.isChecked()){
-                P4G.setChecked(false);
-            }else{
-                P4G.setChecked(true);
-            }
-        });
-        P4G.setOnClickListener(view -> {
-            if(P4G.isChecked()){
-                P4E.setChecked(false);
-            }else{
-                P4E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 5 -------------------*/
-        P5E.setOnClickListener(view -> {
-            if(P5E.isChecked()){
-                P5G.setChecked(false);
-            }else{
-                P5G.setChecked(true);
-            }
-        });
-        P5G.setOnClickListener(view -> {
-            if(P5G.isChecked()){
-                P5E.setChecked(false);
-            }else{
-                P5E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 6 -------------------*/
-        P6E.setOnClickListener(view -> {
-            if(P6E.isChecked()){
-                P6G.setChecked(false);
-            }else{
-                P6G.setChecked(true);
-            }
-        });
-        P6G.setOnClickListener(view -> {
-            if(P6G.isChecked()){
-                P6E.setChecked(false);
-            }else{
-                P6E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 7 -------------------*/
-        P7E.setOnClickListener(view -> {
-            if(P7E.isChecked()){
-                P7G.setChecked(false);
-            }else{
-                P7G.setChecked(true);
-            }
-        });
-        P7G.setOnClickListener(view -> {
-            if(P7G.isChecked()){
-                P7E.setChecked(false);
-            }else{
-                P7E.setChecked(true);
-            }
-        });
-/**-------------------Pregunta 8 -------------------*/
-        P8E.setOnClickListener(view -> {
-            if(P8E.isChecked()){
-                P8G.setChecked(false);
-            }else{
-                P8G.setChecked(true);
-            }
-        });
-        P8G.setOnClickListener(view -> {
-            if(P8G.isChecked()){
-                P8E.setChecked(false);
-            }else{
-                P8E.setChecked(true);
-            }
-        });
-        MediaPlayer victory = MediaPlayer.create(this, R.raw.victory);
-        MediaPlayer error = MediaPlayer.create(this, R.raw.error);
-/**----------------Baieztatu--------------------*/
-=======
+/*----------------Baieztatu--------------------*/
         P3E.setOnClickListener(view -> P3G.setChecked(!P3E.isChecked()));
         P3G.setOnClickListener(view -> P3E.setChecked(!P3G.isChecked()));
 /*-------------------Pregunta 4 -------------------*/
@@ -179,7 +89,6 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
         P8E.setOnClickListener(view -> P8G.setChecked(!P8E.isChecked()));
         P8G.setOnClickListener(view -> P8E.setChecked(!P8G.isChecked()));
 /*----------------Baieztatu--------------------*/
->>>>>>> d895abcd154e44d27f72ece5e38ce45b2bee86d5
         baieztatu.setOnClickListener(view -> {
             if(P1G.isChecked()&&P2E.isChecked()&&P3E.isChecked()&&P4G.isChecked()&&P5E.isChecked()&&P6G.isChecked()&&P7G.isChecked()&&P8E.isChecked()){
                 db.activityDao().updateActivityVisitedById(7, true);
