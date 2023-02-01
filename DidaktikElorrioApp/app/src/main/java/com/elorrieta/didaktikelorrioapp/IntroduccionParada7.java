@@ -63,7 +63,7 @@ public class IntroduccionParada7 extends AppCompatActivity {
             }
         });
 
-        Button botonPasar = findViewById(R.id.btnJarraituP7);
+        Button botonPasar = findViewById(R.id.btnJarraituP1);
         botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); startActivity(new Intent(IntroduccionParada7.this, Puzzle_Egia_Gezurra.class)); });
 
         handler.post(new Runnable() {

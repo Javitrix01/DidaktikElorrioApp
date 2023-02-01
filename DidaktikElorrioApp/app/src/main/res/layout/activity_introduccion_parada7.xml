@@ -11,12 +11,11 @@
         android:id="@+id/SVNecropolis"
         android:layout_width="224dp"
         android:layout_height="382dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/rounded_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -77,7 +76,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnJarraituP7"
+            android:id="@+id/btnJarraituP1"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:text="@string/jarraitu" />
