@@ -346,9 +346,6 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                 .position(Nekropolia)
                 .title("7 - Arginetako Nekropolia")
                 .alpha(0.7f));
-        map.addMarker(new MarkerOptions()
-                .position(Elorrieta)
-                .title("Elorrieta"));
         map.moveCamera(CameraUpdateFactory.newLatLng(Kurutziaga));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setOnMyLocationButtonClickListener(this);
@@ -512,19 +509,19 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                     //inicia tercera actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
                 }
-                if ((location.distanceTo(GozotegiaLocation)<20)&&(db.activityDao().isActivityVisited(3))) {
+                if ((location.distanceTo(GozotegiaLocation)<20&&location.distanceTo(GozotegiaLocation)>19)&&(db.activityDao().isActivityVisited(3))) {
                     //inicia cuarta actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
                 }
-                if ((location.distanceTo(JauregiaLocation)<20)&&(db.activityDao().isActivityVisited(4))) {
+                if ((location.distanceTo(JauregiaLocation)<20&&location.distanceTo(JauregiaLocation)>19)&&(db.activityDao().isActivityVisited(4))) {
                     //inicia quinta actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
                 }
-                if ((location.distanceTo(ErrebonbilloaLocation)<20)&&(db.activityDao().isActivityVisited(5))) {
+                if ((location.distanceTo(ErrebonbilloaLocation)<20&&location.distanceTo(ErrebonbilloaLocation)>19)&&(db.activityDao().isActivityVisited(5))) {
                     //inicia sexta actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
                 }
-                if ((location.distanceTo(NekropoliaLocation)<20)&&(db.activityDao().isActivityVisited(6))) {
+                if ((location.distanceTo(NekropoliaLocation)<20&&location.distanceTo(NekropoliaLocation)>19)&&(db.activityDao().isActivityVisited(6))) {
                     //inicia septima actividad
                     startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
                 }

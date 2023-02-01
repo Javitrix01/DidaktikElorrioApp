@@ -43,6 +43,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
      * cuando las sacan todas tienen un boton para pasar a la siguiente actividad.
      */
 
+    //variables a nivel de clase
     Button btnGuardar;
     ImageButton imgView_1I;
     ImageButton imgView_1D;
@@ -50,19 +51,26 @@ public class MostrarFotosBasilica extends AppCompatActivity {
     ImageButton imgView_2D;
     ImageButton imgView_3I;
     ImageButton imgView_3D;
+    boolean[] comp_imagenes_sacadas = new boolean[6];
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //crea una instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
 
+        //comprobacion de permisos
         String[] permissionsStorage = {WRITE_EXTERNAL_STORAGE};
         int requestExternalStorage = 1;
         int permission = ActivityCompat.checkSelfPermission(this, WRITE_EXTERNAL_STORAGE);
         if (permission != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, permissionsStorage, requestExternalStorage);
         }
+        //esconde la barra superior de la aplicacion
         getSupportActionBar().hide();
+
+        //asignaciones de variables con el layout
         setContentView(R.layout.activity_mostrar_fotos_basilika);
         btnGuardar = findViewById(R.id.GuardarBtn);
         imgView_1I = findViewById(R.id.imageButton1I);
@@ -73,6 +81,12 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         imgView_3D = findViewById(R.id.imageButton3D);
         imgView_1I.setClickable(false);
 
+        //inicia el array enetero de comprobacion a false
+        for (boolean i : comp_imagenes_sacadas){
+            i = false;
+        }
+
+        //funcionalidad del boton
         btnGuardar.setOnClickListener(view -> {
             Bitmap bitmap1D = ((BitmapDrawable)imgView_1D.getDrawable()).getBitmap();
             saveImage(bitmap1D);
@@ -86,9 +100,21 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             saveImage(bitmap3I);
             Bitmap bitmap3D = ((BitmapDrawable)imgView_3D.getDrawable()).getBitmap();
             saveImage(bitmap3D);
-            db.activityDao().updateActivityVisitedById(2,true);
-            Intent intent = new Intent(MostrarFotosBasilica.this,MenuPrincipalMapa.class);
-            this.startActivity(intent);
+            int comp = 0;
+            for (boolean i : comp_imagenes_sacadas) {
+                if (i){
+                    comp++;
+                }
+            }
+
+            if (comp == 6) {
+                db.activityDao().updateActivityVisitedById(2, true);
+                Intent intent = new Intent(MostrarFotosBasilica.this, MenuPrincipalMapa.class);
+                this.startActivity(intent);
+            }
+            else{
+                Toast.makeText(MostrarFotosBasilica.this, "Argazki gustiak atera behar dira.", Toast.LENGTH_LONG).show();
+            }
         });
         imgView_1I.setOnClickListener(view -> {
             abrirCamara(1);
@@ -130,18 +156,31 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imgBitmap = (Bitmap) extras.get("data");
 
+            //dependiendo la imagen que haga click se guarda en un imagebutton diferente
             switch (requestCode){
-                case 1:imgView_1I.setImageBitmap(imgBitmap);
+                case 1:
+                    comp_imagenes_sacadas[0] = true;
+                    imgView_1I.setImageBitmap(imgBitmap);
                     break;
-                case 2:imgView_1D.setImageBitmap(imgBitmap);
+                case 2:
+                    comp_imagenes_sacadas[1] = true;
+                    imgView_1D.setImageBitmap(imgBitmap);
                     break;
-                case 3:imgView_2I.setImageBitmap(imgBitmap);
+                case 3:
+                    comp_imagenes_sacadas[2] = true;
+                    imgView_2I.setImageBitmap(imgBitmap);
                     break;
-                case 4:imgView_2D.setImageBitmap(imgBitmap);
+                case 4:
+                    comp_imagenes_sacadas[3] = true;
+                    imgView_2D.setImageBitmap(imgBitmap);
                     break;
-                case 5:imgView_3I.setImageBitmap(imgBitmap);
+                case 5:
+                    comp_imagenes_sacadas[4] = true;
+                    imgView_3I.setImageBitmap(imgBitmap);
                     break;
-                case 6:imgView_3D.setImageBitmap(imgBitmap);
+                case 6:
+                    comp_imagenes_sacadas[5] = true;
+                    imgView_3D.setImageBitmap(imgBitmap);
                     break;
             }
             Toast toast = new Toast(this);
