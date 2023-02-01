@@ -79,12 +79,6 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         imgView_3D = findViewById(R.id.imageButton3D);
         imgView_1I.setClickable(false);
 
-        //funcionalidad del boton
-        //inicia el array enetero de comprobacion a false
-        for (boolean i : comp_imagenes_sacadas){
-            i = false;
-        }
-
         //Funcion del boton:
         //Guardar las fotos visibles en pantalla en la galeria
         btnGuardar.setOnClickListener(view -> {
