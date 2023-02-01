@@ -13,14 +13,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -34,7 +32,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.util.Random;
 
 public class MostrarFotosBasilica extends AppCompatActivity {
 
@@ -51,7 +48,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
     ImageButton imgView_2D;
     ImageButton imgView_3I;
     ImageButton imgView_3D;
-    boolean[] comp_imagenes_sacadas = new boolean[6];
+    boolean[] comp_imagenes_sacadas = new boolean[] {false, false, false, false, false, false};
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -68,6 +65,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, permissionsStorage, requestExternalStorage);
         }
         //esconde la barra superior de la aplicacion
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
         //asignaciones de variables con el layout
@@ -80,11 +78,6 @@ public class MostrarFotosBasilica extends AppCompatActivity {
         imgView_3I = findViewById(R.id.imageButton3I);
         imgView_3D = findViewById(R.id.imageButton3D);
         imgView_1I.setClickable(false);
-
-        //inicia el array enetero de comprobacion a false
-        for (boolean i : comp_imagenes_sacadas){
-            i = false;
-        }
 
         //funcionalidad del boton
         btnGuardar.setOnClickListener(view -> {

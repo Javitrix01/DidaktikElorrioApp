@@ -14,7 +14,6 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.elorrieta.didaktikelorrioapp.Class.Lang;
-import com.elorrieta.didaktikelorrioapp.Class.Sound;
 
 import java.util.Locale;
 
@@ -28,7 +27,6 @@ public class parada2_presentacion extends AppCompatActivity {
     View line1,line2,line3,line4,line5,line6;
     TextView signture,startLogo;
     RelativeLayout logo;
-    Sound sound=new Sound();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +35,7 @@ public class parada2_presentacion extends AppCompatActivity {
 
 
         //oculta la barra de arriba
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
         //sound.createSound(parada2_presentacion.this);
@@ -71,22 +70,13 @@ public class parada2_presentacion extends AppCompatActivity {
 
         signture.setAnimation(bottomAnimation);
         int TIME_OUT = 4000;
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                YoYo.with(Techniques.Swing)
-                        .duration(1000)
-                        .repeat(1);
-
-            }
-        }, TIME_OUT /2);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(parada2_presentacion.this, IntroduccionParada2.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> YoYo.with(Techniques.Swing)
+                .duration(1000)
+                .repeat(1), TIME_OUT /2);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(parada2_presentacion.this, IntroduccionParada2.class);
+            startActivity(intent);
+            finish();
         }, TIME_OUT);
 
 

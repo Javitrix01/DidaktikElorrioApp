@@ -24,11 +24,12 @@ public class IntroduccionParada7 extends AppCompatActivity {
         setContentView(R.layout.activity_introduccion_parada7);
 
         /*Animacion del personaje*/
-        ImageView myImageView = (ImageView) findViewById(R.id.imageView18);
+        ImageView myImageView = findViewById(R.id.imageView18);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationmuerte);
         myImageView.setBackgroundDrawable(myAnimation);
         myAnimation.start();
 
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
          /* Audio y movimiento del seekbar al pulsar el boton:
@@ -36,7 +37,7 @@ public class IntroduccionParada7 extends AppCompatActivity {
         si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada7);
-        SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
+        SeekBar seekBar = findViewById(R.id.seekBar4);
         seekBar.setMax(mediaPlayer.getDuration());
         final Handler handler = new Handler();
         Button button = findViewById(R.id.btnSonidoP1);

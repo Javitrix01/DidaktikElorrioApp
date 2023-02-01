@@ -82,7 +82,7 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
                     }
                 }
                 faltante.setTextColor(Color.GREEN);
-                faltante.setText("Odo ondo!");
+                faltante.setText(R.string.AciertoActividadCruces);
                 //crea una instancia de la base de datos
                 AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
                 //actualiza el estado de la actividad en la base de datos
@@ -109,8 +109,7 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
                 comprobacion++;
             }
         }
-        if (comprobacion == 8){return true;}
-        return false;
+        return comprobacion == 8;
     }
 
 }

@@ -15,12 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.elorrieta.didaktikelorrioapp.appdatabase.AppDatabase;
-import com.elorrieta.didaktikelorrioapp.entities.Activity;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
     /**

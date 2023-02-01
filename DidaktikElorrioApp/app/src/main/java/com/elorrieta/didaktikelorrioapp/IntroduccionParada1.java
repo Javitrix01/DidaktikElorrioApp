@@ -24,11 +24,11 @@ public class IntroduccionParada1 extends AppCompatActivity {
         setContentView(R.layout.activity_introduccion_parada1);
 
         /*Animacion del personaje*/
-        ImageView myImageView = (ImageView) findViewById(R.id.imageView2);
+        ImageView myImageView = findViewById(R.id.imageView2);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationcruz);
         myImageView.setBackgroundDrawable(myAnimation);
 
-
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
 
@@ -37,7 +37,7 @@ public class IntroduccionParada1 extends AppCompatActivity {
         si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada1);
-        SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
+        SeekBar seekBar = findViewById(R.id.seekBar4);
         seekBar.setMax(mediaPlayer.getDuration());
         final Handler handler = new Handler();
         Button button = findViewById(R.id.btnSonidoP1);

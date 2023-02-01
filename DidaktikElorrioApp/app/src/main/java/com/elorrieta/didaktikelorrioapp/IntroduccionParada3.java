@@ -2,7 +2,6 @@ package com.elorrieta.didaktikelorrioapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AppOpsManager;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
@@ -32,10 +31,11 @@ public class IntroduccionParada3 extends AppCompatActivity {
 
 
         /*Animacion del personaje*/
-        ImageView myImageView = (ImageView) findViewById(R.id.imageView22);
+        ImageView myImageView = findViewById(R.id.imageView22);
         AnimationDrawable myAnimation = (AnimationDrawable) getResources().getDrawable(R.drawable.animationalcalde);
         myImageView.setBackgroundDrawable(myAnimation);
 
+        if (getSupportActionBar() != null)
         getSupportActionBar().hide();
 
          /* Audio y movimiento del seekbar al pulsar el boton:
@@ -43,7 +43,7 @@ public class IntroduccionParada3 extends AppCompatActivity {
         si vuelves a clickar el boton se detiene el audio y el seekbar*/
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.grabacionparada3);
-        SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar4);
+        SeekBar seekBar = findViewById(R.id.seekBar4);
         seekBar.setMax(mediaPlayer.getDuration());
         final Handler handler = new Handler();
         Button button = findViewById(R.id.btnSonidoP1);

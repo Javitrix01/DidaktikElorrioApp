@@ -21,6 +21,8 @@ public class Puzzle_Mapa_Elorrio_Con_Nombres extends AppCompatActivity {
 
         Button botonPasar = findViewById(R.id.btnMapaElorrioConNombre);
         botonPasar.setOnClickListener(view -> startActivity(new Intent(Puzzle_Mapa_Elorrio_Con_Nombres.this, Puzzle_Mapa_Elorrio_Poner_Nombres.class)));
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 }
