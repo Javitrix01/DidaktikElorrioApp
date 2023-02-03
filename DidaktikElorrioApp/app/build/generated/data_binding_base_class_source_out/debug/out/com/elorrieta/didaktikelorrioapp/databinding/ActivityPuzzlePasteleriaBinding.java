@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -53,9 +52,6 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
   public final ImageButton imageQueso;
 
   @NonNull
-  public final ImageView imageView8;
-
-  @NonNull
   public final TextView txtExplicacionPasteleria;
 
   private ActivityPuzzlePasteleriaBinding(@NonNull ConstraintLayout rootView,
@@ -64,7 +60,7 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
       @NonNull ImageButton imageHarina, @NonNull ImageButton imageHuevo,
       @NonNull ImageButton imageManzana, @NonNull ImageButton imageMermelada,
       @NonNull ImageButton imagePera, @NonNull ImageButton imageQueso,
-      @NonNull ImageView imageView8, @NonNull TextView txtExplicacionPasteleria) {
+      @NonNull TextView txtExplicacionPasteleria) {
     this.rootView = rootView;
     this.btnPasteleriaBaieztatu = btnPasteleriaBaieztatu;
     this.imageAzucar = imageAzucar;
@@ -76,7 +72,6 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
     this.imageMermelada = imageMermelada;
     this.imagePera = imagePera;
     this.imageQueso = imageQueso;
-    this.imageView8 = imageView8;
     this.txtExplicacionPasteleria = txtExplicacionPasteleria;
   }
 
@@ -167,12 +162,6 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView8;
-      ImageView imageView8 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView8 == null) {
-        break missingId;
-      }
-
       id = R.id.txtExplicacionPasteleria;
       TextView txtExplicacionPasteleria = ViewBindings.findChildViewById(rootView, id);
       if (txtExplicacionPasteleria == null) {
@@ -181,7 +170,7 @@ public final class ActivityPuzzlePasteleriaBinding implements ViewBinding {
 
       return new ActivityPuzzlePasteleriaBinding((ConstraintLayout) rootView,
           btnPasteleriaBaieztatu, imageAzucar, imageChocolateBlanco, imageChocolateNegro,
-          imageHarina, imageHuevo, imageManzana, imageMermelada, imagePera, imageQueso, imageView8,
+          imageHarina, imageHuevo, imageManzana, imageMermelada, imagePera, imageQueso,
           txtExplicacionPasteleria);
     }
     String missingId = rootView.getResources().getResourceName(id);

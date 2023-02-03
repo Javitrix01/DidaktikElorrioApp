@@ -54,6 +54,9 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
   public final LinearLayout linearLayout11;
 
   @NonNull
+  public final LinearLayout linearLayout12;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -78,9 +81,9 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
       @NonNull Button btnBaieztatuNombresElorrio, @NonNull EditText et1, @NonNull EditText et2,
       @NonNull EditText et3, @NonNull EditText et4, @NonNull EditText et5, @NonNull EditText et6,
       @NonNull EditText et7, @NonNull ImageView imageView4, @NonNull LinearLayout linearLayout11,
-      @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView5,
-      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8,
-      @NonNull TextView textView9) {
+      @NonNull LinearLayout linearLayout12, @NonNull TextView textView3,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
+      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.btnBaieztatuNombresElorrio = btnBaieztatuNombresElorrio;
     this.et1 = et1;
@@ -92,6 +95,7 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
     this.et7 = et7;
     this.imageView4 = imageView4;
     this.linearLayout11 = linearLayout11;
+    this.linearLayout12 = linearLayout12;
     this.textView3 = textView3;
     this.textView4 = textView4;
     this.textView5 = textView5;
@@ -189,6 +193,12 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
         break missingId;
       }
 
+      id = R.id.linearLayout12;
+      LinearLayout linearLayout12 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout12 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -233,7 +243,8 @@ public final class ActivityPuzzleMapaElorrioPonerNombresBinding implements ViewB
 
       return new ActivityPuzzleMapaElorrioPonerNombresBinding((ConstraintLayout) rootView,
           btnBaieztatuNombresElorrio, et1, et2, et3, et4, et5, et6, et7, imageView4, linearLayout11,
-          textView3, textView4, textView5, textView6, textView7, textView8, textView9);
+          linearLayout12, textView3, textView4, textView5, textView6, textView7, textView8,
+          textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
