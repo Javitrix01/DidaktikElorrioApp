@@ -271,7 +271,6 @@ id btnitzuli
 id button3
 id card1515
 id card908
-id constraintLayout
 id editTextTextPersonName2
 id et_1
 id et_2
@@ -334,6 +333,7 @@ id levelBackMenu
 id linearLayout
 id linearLayout10
 id linearLayout11
+id linearLayout12
 id linearLayout13
 id linearLayout2
 id linearLayout3
