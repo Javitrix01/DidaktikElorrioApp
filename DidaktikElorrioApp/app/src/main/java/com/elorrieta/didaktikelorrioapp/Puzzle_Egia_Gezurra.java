@@ -70,7 +70,7 @@ public class Puzzle_Egia_Gezurra extends AppCompatActivity {
 /*------------------- Pregunta 2 ------------------*/
         P2E.setOnClickListener(view -> P2G.setChecked(!P2E.isChecked()));
         P2G.setOnClickListener(view -> P2E.setChecked(!P2G.isChecked()));
-/*----------------Baieztatu--------------------*/
+/*  ----------------Baieztatu--------------------*/
         P3E.setOnClickListener(view -> P3G.setChecked(!P3E.isChecked()));
         P3G.setOnClickListener(view -> P3E.setChecked(!P3G.isChecked()));
 /*-------------------Pregunta 4 -------------------*/

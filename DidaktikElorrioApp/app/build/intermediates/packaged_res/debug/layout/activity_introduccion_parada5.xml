@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/background6"
     tools:context=".IntroduccionParada5">
+
     <ScrollView
         android:id="@+id/SVJauregia"
         android:layout_width="224dp"
         android:layout_height="351dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/rounded_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -70,8 +71,8 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="176dp"
-        android:layout_height="245dp"
+        android:layout_width="154dp"
+        android:layout_height="210dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

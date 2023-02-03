@@ -103,7 +103,7 @@ public class MostrarFotosBasilica extends AppCompatActivity {
             //actualiza la base de datos y pasa a la siguiente actividad si se a completado la actividad (sacar 6 fotos)
             if (comp == 6) {
                 db.activityDao().updateActivityVisitedById(2, true);
-                Intent intent = new Intent(MostrarFotosBasilica.this, MenuPrincipalMapa.class);
+                Intent intent = new Intent(MostrarFotosBasilica.this, parada3_presentacion.class);
                 this.startActivity(intent);
             }
             else{

@@ -90,7 +90,7 @@ public class Puzzle_Poner_Nombre_Cruces extends AppCompatActivity {
                 db.activityDao().updateActivityVisitedById(1, true);
                 //inicia la actividad del mapa principal
                 Handler handler = new Handler();
-                handler.postDelayed(() ->startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, MenuPrincipalMapa.class)), 2200);
+                handler.postDelayed(() ->startActivity(new Intent(Puzzle_Poner_Nombre_Cruces.this, parada2_presentacion.class)), 2200);
             }
 
         });

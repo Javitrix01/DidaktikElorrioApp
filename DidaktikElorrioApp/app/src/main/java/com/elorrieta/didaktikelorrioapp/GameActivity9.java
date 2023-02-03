@@ -246,7 +246,7 @@ public class GameActivity9 extends AppCompatActivity {
             botonPasar.setVisibility(View.VISIBLE);
             botonPasar.setClickable(true);
 
-            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class)));
+            botonPasar.setOnClickListener(view -> startActivity(new Intent(GameActivity9.this, parada1_presentacion.class)));
         }
 
         sound.setSounds();
