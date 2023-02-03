@@ -4,24 +4,7 @@
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-72:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,46",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "100,170,254,338,434,536,638,3995",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "165,249,333,429,531,633,727,4079"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\in2dm3\\Documents\\Jorge\\DAM\\ANDROID\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\in2dm3\\Desktop\\Brayan\\DidaktikElorrioApp\\DidaktikElorrioApp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -37,6 +20,23 @@
                         "endLines": "21",
                         "endColumns": "12",
                         "endOffsets": "1336"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\in2dm3\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,46",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,170,254,338,434,536,638,3995",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "165,249,333,429,531,633,727,4079"
                     }
                 },
                 {

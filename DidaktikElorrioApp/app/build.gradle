@@ -3,7 +3,12 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
     id 'org.jetbrains.kotlin.android'
 }
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+task prepareKotlinBuildScriptModel {
 
+}
 android {
     compileSdk 32
 
