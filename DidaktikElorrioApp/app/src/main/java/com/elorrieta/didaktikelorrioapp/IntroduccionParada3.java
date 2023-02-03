@@ -71,7 +71,7 @@ public class IntroduccionParada3 extends AppCompatActivity {
         });
 
         Button botonPasar = findViewById(R.id.btnJarraituP3);
-        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, MenuPrincipalMapa.class)); });
+        botonPasar.setOnClickListener(view -> { mediaPlayer.pause(); db.activityDao().updateActivityVisitedById(3, true); startActivity(new Intent(IntroduccionParada3.this, parada4_presentacion.class)); });
 
         handler.post(new Runnable() {
             @Override

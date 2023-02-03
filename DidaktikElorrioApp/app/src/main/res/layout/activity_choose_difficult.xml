@@ -45,7 +45,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/Choose"
-                android:layout_width="349dp"
+                android:layout_width="305dp"
                 android:layout_height="46dp"
                 android:layout_gravity="center"
                 android:fontFamily="@font/baloo"
