@@ -2,6 +2,7 @@ package com.elorrieta.didaktikelorrioapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -19,7 +20,7 @@ public class GameActivity9 extends AppCompatActivity {
 
     /**
      * Actividad del puzzle, cada vez que mueve una pieza se le suma un movimiento. Para no hacerlo frustrante si realiza
-     * 200 movimientos o mas se le muestra un boton con el que puede pasar el puzzle directamente. Ademas, a forme de desarrollador
+     * 200 movimientos o mas se le muestra un boton con el que puede pasar el puzzle directamente. Ademas, a forma de desarrollador
      * si se le hace click 10 veces al icono de sonido tambien se muestra el boton para pasar el puzzle.
      */
 
@@ -209,11 +210,11 @@ public class GameActivity9 extends AppCompatActivity {
         if(cards.finished(N, N)){
             showGame();
             Sound.winningSound.start();
-            startActivity(new Intent(GameActivity9.this, parada1_presentacion.class));
             //openDialog();
             if ((numOfSteps < recordSteps) || (recordSteps == 0)) {
                 recordTV.setText(Integer.toString(numOfSteps));
             }
+            startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class));
             check = true;
         }
     }
@@ -245,7 +246,7 @@ public class GameActivity9 extends AppCompatActivity {
             Button botonPasar = findViewById(R.id.button3);
             botonPasar.setVisibility(View.VISIBLE);
             botonPasar.setClickable(true);
-            botonPasar.setOnClickListener(view -> { Sound.gameMusic.pause(); startActivity(new Intent(GameActivity9.this, parada1_presentacion.class));});
+            botonPasar.setOnClickListener(view -> { Sound.gameMusic.pause(); startActivity(new Intent(GameActivity9.this, MenuPrincipalMapa.class));});
         }
 
         sound.setSounds();

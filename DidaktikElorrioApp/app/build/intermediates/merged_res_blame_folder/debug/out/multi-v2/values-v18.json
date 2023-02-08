@@ -4,7 +4,7 @@
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-72:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\javit\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\aitor\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

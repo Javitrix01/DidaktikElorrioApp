@@ -221,8 +221,8 @@ public class ChooseDifficultActivity extends AppCompatActivity {
             Sound.check = true;
             soundBtn.setImageResource(R.drawable.soundon);
         }
-        sound.setSounds();
-        sound.setMusic();
+        //sound.setSounds();
+        //sound.setMusic();
     }
 
 

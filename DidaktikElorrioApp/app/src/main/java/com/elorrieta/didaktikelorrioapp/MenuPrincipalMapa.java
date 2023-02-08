@@ -85,6 +85,13 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
     //variables para la ruta
     Polyline currentPolyline;
 
+    //crea un arraylist para guardar el texto en la lista de actividades en el lateral izquierdo
+    ArrayList<String> listaActividades = new ArrayList<>();
+    //contador para administrar el uso del modo administrador (pasar actividades) en la lista
+    int cont_adm = 0;
+    //booleano para controlar las actividades que se muestran en la lista
+    boolean control_adm = false;
+
 
     /**
      * Request code for location permission request.
@@ -168,6 +175,21 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
 
         //accion del boton para volver al mapa
         botonAbrirMapa.setOnClickListener(view -> {
+            //controla la opcion del modo administrador, si hace click 10 veces en el boton de abrir mapa cuando la lista
+            //esta cerrada se le activa la opcion
+            if (lista.getVisibility() == View.INVISIBLE){
+                cont_adm++;
+                if (cont_adm >= 10){
+                    Toast.makeText(MenuPrincipalMapa.this, "Activando modo administrador...", Toast.LENGTH_LONG).show();
+                    if (!control_adm) {
+                        listaActividades.add("Pasar a la siguiente actividad (modo admin).");
+                        listaActividades.add("Comenzar actividad actual (modo admin).");
+                    }
+                    control_adm = true;
+                    cargarActividadesLista(lista, botonAbrirMenu, botonAbrirMapa);
+                }
+            }
+
             //aplica la animacion para cuando desaparezca la lista
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
@@ -182,21 +204,20 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
      * @param botonAbrirMapa Boton que cierra el menu de actividades y vuelve al mapa.
      */
     public void cargarActividadesLista(ListView lista, Button botonAbrirMenu, Button botonAbrirMapa) {
-        //crea un arraylist para guardar el texto en la lista
-        ArrayList<String> listaActividades = new ArrayList<>();
-
         //asigna la instancia de la base de datos
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
         //recoge todas las actividades de la base de datos
         List<Activity> actividades = db.activityDao().getAll();
 
         //guarda el texto de todas las actividades para mostrarlas en la lista
-        for (int i = 0; i < 7; i++) {
-            String stringVariable = (i + 1) + ". aktibitatea: \"" + actividades.get(i).getActivity_name() + "\"";
-            listaActividades.add(stringVariable);
+        if (!control_adm){
+            for (int i = 0; i < 7; i++) {
+                String stringVariable = (i + 1) + ". aktibitatea: \"" + actividades.get(i).getActivity_name() + "\"";
+                listaActividades.add(stringVariable);
+            }
+            String opcion_reiniciar_lista = " - AKTIBITATEAK BERRABIARAZI - ";
+            listaActividades.add(opcion_reiniciar_lista);
         }
-        String opcion_reiniciar_lista = " - AKTIBITATEAK BERRABIARAZI - ";
-        listaActividades.add(opcion_reiniciar_lista);
 
         //crea el adaptador para la lista
         ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), R.layout.list_card, listaActividades);
@@ -208,6 +229,66 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
             lista.animate().translationX(-200);
             lista.setVisibility(View.INVISIBLE);
 
+
+            //comprueba si el modo administrador esta activado y permite realizar la funcionalidad
+            if (listaActividades.size() == 10){
+                //funcionalidad de pasar de actividad
+                if (i == 8){
+                    List<Activity> activities = db.activityDao().getAll();
+                    for (Activity activity : activities){
+                        //comprueba si la actividad esta realizada y si no lo esta la actualiza
+                        if (!activity.isActivity_visited()){
+                            Toast.makeText(MenuPrincipalMapa.this, "Pasando a la siguiente actividad...", Toast.LENGTH_LONG).show();
+                            db.activityDao().updateActivityVisitedById(activity.getId(), true);
+                            return;
+                        }
+                        if (activity.getId() == 7 && activity.isActivity_visited()){
+                            Toast.makeText(MenuPrincipalMapa.this, "Ya has hecho todas las actividades, reinicialas.", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+                //funcionalidad de empezar actividad actual
+                if (i == 9){
+                    List<Activity> activities = db.activityDao().getAll();
+                    for (Activity activity : activities){
+                        //comprueba la ultima actividad realizada y comienza la siguiente
+                        if (!activity.isActivity_visited()){
+                            Toast.makeText(MenuPrincipalMapa.this, "Comenzando actividad actual...", Toast.LENGTH_LONG).show();
+                            //dependiendo de que actidad sea comienza una presentacion diferente
+                            switch (activity.getId()) {
+                                case 1:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada1_presentacion.class));
+                                    break;
+                                case 2:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada2_presentacion.class));
+                                    break;
+                                case 3:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada3_presentacion.class));
+                                    break;
+                                case 4:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada4_presentacion.class));
+                                    break;
+                                case 5:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada5_presentacion.class));
+                                    break;
+                                case 6:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada6_presentacion.class));
+                                    break;
+                                case 7:
+                                    startActivity(new Intent(MenuPrincipalMapa.this, parada7_presentacion.class));
+                                    break;
+                                default:
+                                    Log.d("Modo admin", "Error al comenzar la actividad.");
+                                    break;
+                            }
+                            return;
+                        }
+                        if (activity.getId() == 7 && activity.isActivity_visited()){
+                            Toast.makeText(MenuPrincipalMapa.this, "Ya has hecho todas las actividades, reinicialas.", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+            }
             //si hace click en el septimo reinicia TODAS las actividades
             if (i == 7){
                 Toast.makeText(MenuPrincipalMapa.this, "Aktibitateak berrabiarazten...", Toast.LENGTH_LONG).show();
@@ -215,56 +296,62 @@ public class MenuPrincipalMapa extends AppCompatActivity implements
                     db.activityDao().updateActivityVisitedById(j, false);
                 }
             }
-            //so hace click en cualquier otro le enseña la informacion de la actividad
+            //si hace click en cualquier otro le enseña la informacion de la actividad
             else {
-                //desactiva los botones y opciones del mapa
-                botonAbrirMapa.setClickable(false);
-                botonAbrirMenu.setClickable(false);
-                map.getUiSettings().setScrollGesturesEnabled(false);
-                map.getUiSettings().setZoomGesturesEnabled(false);
-                map.getUiSettings().setMyLocationButtonEnabled(false);
-                map.getUiSettings().setRotateGesturesEnabled(false);
+                //solo muestra la ventana de informacion si hace click en una actividad i = (0-6)
+                if (i < 7) {
+                    //desactiva los botones y opciones del mapa
+                    botonAbrirMapa.setClickable(false);
+                    botonAbrirMenu.setClickable(false);
+                    map.getUiSettings().setScrollGesturesEnabled(false);
+                    map.getUiSettings().setZoomGesturesEnabled(false);
+                    map.getUiSettings().setMyLocationButtonEnabled(false);
+                    map.getUiSettings().setRotateGesturesEnabled(false);
 
-                //abre la nueva actividad
-                FrameLayout rootLayout = findViewById(android.R.id.content);
-                View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
+                    //abre la nueva actividad
+                    FrameLayout rootLayout = findViewById(android.R.id.content);
+                    View.inflate(getApplicationContext(), R.layout.activity_info_del_menu, rootLayout);
 
-                //asigna los TextView
-                TextView tvTitulo = findViewById(R.id.textViewTituloAct);
-                TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
+                    //asigna los TextView
+                    TextView tvTitulo = findViewById(R.id.textViewTituloAct);
+                    TextView tvDescripcion = findViewById(R.id.textViewDescripcion);
 
-                //añade la informacion
-                tvTitulo.setText(actividades.get(i).getActivity_name());
-                tvDescripcion.setText(actividades.get(i).getActivity_description());
+                    //añade la informacion
+                    tvTitulo.setText(actividades.get(i).getActivity_name());
+                    tvDescripcion.setText(actividades.get(i).getActivity_description());
 
-                //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+                    //justifica el texto de la descripcion (solo disponible a partir de Android 8.0+)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                        tvDescripcion.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+                    }
+
+                    //latitud y longitud del mapa
+                    ImageView mapaInfoActividad = findViewById(R.id.infoMap);
+                    String lat = "";
+                    String lng = "";
+                    lat = actividades.get(i).getActivity_coords_lat();
+                    lng = actividades.get(i).getActivity_coords_long();
+
+                    String url = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
+                    //MAPA INFO
+                    new DownloadImageTask(mapaInfoActividad)
+                            .execute(url);
+
+
+                    Button botonVolver = findViewById(R.id.btnitzuli);
+                    botonVolver.setOnClickListener(view1 -> {
+                        //activa los botones
+                        botonAbrirMapa.setClickable(true);
+                        botonAbrirMenu.setClickable(true);
+                        map.getUiSettings().setScrollGesturesEnabled(true);
+                        map.getUiSettings().setZoomGesturesEnabled(true);
+                        map.getUiSettings().setMyLocationButtonEnabled(true);
+                        map.getUiSettings().setRotateGesturesEnabled(true);
+
+                        //esconde la actividad
+                        rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
+                    });
                 }
-
-                //latitud y longitud del mapa
-                ImageView mapaInfoActividad = findViewById(R.id.infoMap);
-                String lat = actividades.get(i).getActivity_coords_lat();
-                String lng = actividades.get(i).getActivity_coords_long();
-                String url = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=19&size=600x355&markers=color:red%7Clabel:%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyAfAYPmTFEr2ykofZMnfXo9fwk-s5m-wzc";
-                //MAPA INFO
-                new DownloadImageTask(mapaInfoActividad)
-                        .execute(url);
-
-
-                Button botonVolver = findViewById(R.id.btnitzuli);
-                botonVolver.setOnClickListener(view1 -> {
-                    //activa los botones
-                    botonAbrirMapa.setClickable(true);
-                    botonAbrirMenu.setClickable(true);
-                    map.getUiSettings().setScrollGesturesEnabled(true);
-                    map.getUiSettings().setZoomGesturesEnabled(true);
-                    map.getUiSettings().setMyLocationButtonEnabled(true);
-                    map.getUiSettings().setRotateGesturesEnabled(true);
-
-                    //esconde la actividad
-                    rootLayout.removeViewAt(rootLayout.getChildCount() - 1);
-                });
             }
         });
     }

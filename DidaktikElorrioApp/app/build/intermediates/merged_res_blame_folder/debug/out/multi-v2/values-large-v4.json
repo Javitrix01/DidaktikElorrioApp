@@ -4,7 +4,7 @@
             "outputFile": "com.elorrieta.didaktikelorrioapp-mergeDebugResources-72:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\javit\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\aitor\\.gradle\\caches\\transforms-3\\09edcc933cb1e59c0224eb5c949c246e\\transformed\\material-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\javit\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\aitor\\.gradle\\caches\\transforms-3\\9af82c025c5cbe729e71dc54d1dac74d\\transformed\\appcompat-1.5.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
