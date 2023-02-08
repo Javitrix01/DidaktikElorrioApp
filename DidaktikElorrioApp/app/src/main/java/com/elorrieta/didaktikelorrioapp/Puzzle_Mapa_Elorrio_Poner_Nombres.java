@@ -52,7 +52,7 @@ public class Puzzle_Mapa_Elorrio_Poner_Nombres extends AppCompatActivity {
                 victory.start();
                 db.activityDao().updateActivityVisitedById(5, true);
                 Handler handler = new Handler();
-                handler.postDelayed(() -> startActivity(new Intent(Puzzle_Mapa_Elorrio_Poner_Nombres.this, parada6_presentacion.class)), 2200);
+                handler.postDelayed(() -> startActivity(new Intent(Puzzle_Mapa_Elorrio_Poner_Nombres.this, MenuPrincipalMapa.class)), 2200);
             }
             else{
                 if(!et5.getText().toString().equals("5")){
